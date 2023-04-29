@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Dasar Pemrograman Rust',
-  tagline: 'Cara Cepat Belajar Pemrograman Python',
+  tagline: 'Panduan Ringkas untuk Cepat Belajar Pemrograman Python',
   url: 'https://dasarpemrogramanpython.novalagung.com',
   baseUrl: '/',
   trailingSlash: false,
@@ -74,7 +74,7 @@ const config = {
       navbar: {
         title: 'Dasar Pemrograman Python',
         logo: {
-          alt: 'Ebook Dasar Pemrograman Python - Cara Cepat Belajar Pemrograman Python',
+          alt: 'Ebook Dasar Pemrograman Python - Panduan Ringkas untuk Cepat Belajar Pemrograman Python',
           src: 'https://dasarpemrogramanpython.novalagung.com/img/logo_small_dark.png',
           srcDark: 'https://dasarpemrogramanpython.novalagung.com/img/logo_small_light.png',
         },
