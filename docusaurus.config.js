@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Dasar Pemrograman Rust',
+  title: 'Dasar Pemrograman Python',
   tagline: 'Panduan Ringkas untuk Cepat Belajar Pemrograman Python',
   url: 'https://dasarpemrogramanpython.novalagung.com',
   baseUrl: '/',

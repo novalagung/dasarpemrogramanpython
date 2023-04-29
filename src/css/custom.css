@@ -49,7 +49,7 @@ blockquote {
   background-color: #282a36;
 }
 
-.theme-code-block.language-rust,
+.theme-code-block.language-python,
 .theme-code-block.language-bash {
   background: #2e8555 !important;
   color: #ffffff !important;
