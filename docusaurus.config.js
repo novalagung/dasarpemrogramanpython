@@ -75,8 +75,7 @@ const config = {
         title: 'Dasar Pemrograman Python',
         logo: {
           alt: 'Ebook Dasar Pemrograman Python - Panduan Ringkas untuk Cepat Belajar Pemrograman Python',
-          src: 'https://dasarpemrogramanpython.novalagung.com/img/logo_small_dark.png',
-          srcDark: 'https://dasarpemrogramanpython.novalagung.com/img/logo_small_light.png',
+          src: 'https://dasarpemrogramanpython.novalagung.com/img/logo_small.png',
         },
         items: [
           {
