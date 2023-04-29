@@ -1,0 +1,54 @@
+name: 'continous deployment'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate_webbook:
+    name: 'generate webbook'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        check-latest: true
+    - run: npm install
+    - name: generate assets
+      run: |
+        npm run build
+    - name: publish webbook
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: gh-pages
+
+  generate_ebook:
+    name: 'generate ebook'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: install prince
+      run: |
+        curl https://www.princexml.com/download/prince-14.2-linux-generic-x86_64.tar.gz -O
+        tar zxf prince-14.2-linux-generic-x86_64.tar.gz
+        cd prince-14.2-linux-generic-x86_64
+        yes "" | sudo ./install.sh
+    - name: build pdf
+      run: npx docusaurus-prince-pdf -u https://dasarpemrogramanpython.novalagung.com --include-index
+    - name: install pdftk
+      run: sudo apt install pdftk
+    - name: join cover and pdf
+      # run: |
+      #   pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanpython.novalagung.com.pdf cat output pdf/dasarpemrogramanpython.pdf
+      #   rm -f pdf/dasarpemrogramanpython.novalagung.*
+      run: mv pdf/dasarpemrogramanpython.novalagung.com.pdf pdf/dasarpemrogramanpython.pdf
+    - name: publish ebook
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./pdf
+        publish_branch: ebooks
