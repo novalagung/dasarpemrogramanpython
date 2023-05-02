@@ -1,4 +1,7 @@
 https://dasarpemrogramanpython.novalagung.com/
-https://dasarpemrogramanpython.novalagung.com/category/tutorial---extras
-https://dasarpemrogramanpython.novalagung.com/tutorial-extras/manage-docs-versions
-https://dasarpemrogramanpython.novalagung.com/tutorial-extras/translate-your-site
+https://dasarpemrogramanpython.novalagung.com/pengelanan-python-programming
+https://dasarpemrogramanpython.novalagung.com/CONTRIBUTING
+https://dasarpemrogramanpython.novalagung.com/installation/instalasi-python
+https://dasarpemrogramanpython.novalagung.com/installation/instalasi-jupyter-notebook
+https://dasarpemrogramanpython.novalagung.com/installation/python-editor-plugin
+https://dasarpemrogramanpython.novalagung.com/basic/hello-rust
