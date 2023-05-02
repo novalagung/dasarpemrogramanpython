@@ -7,3 +7,5 @@ https://dasarpemrogramanpython.novalagung.com/installation/python-editor-plugin
 https://dasarpemrogramanpython.novalagung.com/basic/hello-python
 https://dasarpemrogramanpython.novalagung.com/basic/run-program-python
 https://dasarpemrogramanpython.novalagung.com/basic/komentar
+https://dasarpemrogramanpython.novalagung.com/basic/variabel
+https://dasarpemrogramanpython.novalagung.com/basic/konstanta
