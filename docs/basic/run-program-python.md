@@ -17,7 +17,7 @@ Cara ini sudah kita terapkan pada chapter [Program Pertama → Hello Python](/ba
 python main.py
 ```
 
-### ◉ Menggunakan tombol run / `▶`
+### ◉ Menggunakan tombol run `▶`
 
 Di toolbar sebelah kanan atas ada tombol `▶` yang bisa digunakan untuk run program.
 
