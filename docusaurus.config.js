@@ -43,9 +43,9 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        // gtag: {
-        //   trackingID: '',
-        // },
+        gtag: {
+          trackingID: 'G-JLWG9B72SF',
+        },
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
