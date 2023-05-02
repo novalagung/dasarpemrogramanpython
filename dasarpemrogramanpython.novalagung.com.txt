@@ -1,7 +1,9 @@
 https://dasarpemrogramanpython.novalagung.com/
 https://dasarpemrogramanpython.novalagung.com/pengelanan-python-programming
 https://dasarpemrogramanpython.novalagung.com/CONTRIBUTING
+https://dasarpemrogramanpython.novalagung.com/LICENSE
 https://dasarpemrogramanpython.novalagung.com/installation/instalasi-python
-https://dasarpemrogramanpython.novalagung.com/installation/instalasi-jupyter-notebook
 https://dasarpemrogramanpython.novalagung.com/installation/python-editor-plugin
-https://dasarpemrogramanpython.novalagung.com/basic/hello-rust
+https://dasarpemrogramanpython.novalagung.com/basic/hello-python
+https://dasarpemrogramanpython.novalagung.com/basic/run-program-python
+https://dasarpemrogramanpython.novalagung.com/basic/komentar
