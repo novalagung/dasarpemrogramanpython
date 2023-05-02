@@ -13,7 +13,7 @@ const config = {
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.png?v=1',
+  favicon: 'img/favicon.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
