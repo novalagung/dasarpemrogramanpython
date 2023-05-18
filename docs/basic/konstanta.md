@@ -2,6 +2,8 @@
 sidebar_position: 5
 title: A.5. Konstanta
 sidebar_label: A.5. Konstanta
+description: Tutorial belajar konstanta di Python
+keywords: [konstanta python]
 ---
 
 ## A.5.1. Konstanta di Python
@@ -18,6 +20,8 @@ print("pi: %f" % (PI))
 ```
 
 ![konstanta python](img/konstanta-1.png)
+
+### ◉ Module import
 
 Keyword `import` digunakan untuk meng-import sesuatu, sedangkan keyword `from` digunakan untuk menentukan dari module mana sesuatu tersebut akan di-import.
 
@@ -40,11 +44,15 @@ PI: Final = 3.14
 TOTAL_MONTH: Final[int] = 12
 ```
 
+> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](#)
+
 ## A.5.3. *Naming convention* konstanta
 
 Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama konstanta harus dituliskan dalam huruf besar (UPPER_CASE).
 
 ---
+
+<div class="section-footnote">
 
 ## Catatan chapter 📑
 
@@ -60,3 +68,5 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
 
 - https://docs.python.org/3/library/typing.html#typing.Final
 - https://peps.python.org/pep-0008/
+
+</div>

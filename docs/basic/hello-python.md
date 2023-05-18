@@ -2,6 +2,8 @@
 sidebar_position: 1
 title: A.1. Program Pertama → Hello Python
 sidebar_label: A.1. Program Pertama → Hello Python
+description: Tutorial belajar python, membuat program hello world di python
+keywords: [tutorial python, belajar python, hello world python, pemrograman python, bahasa python]
 ---
 
 Bahasa pemrograman Python sangat sederhana dan mudah untuk dipelajari. Pada chapter ini kita akan langsung mempraktikannya dengan membuat program hello world.
@@ -43,6 +45,8 @@ Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built
 
 ---
 
+<div class="section-footnote">
+
 ## Catatan chapter 📑
 
 ### ◉ Source code praktik
@@ -57,3 +61,5 @@ Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built
 
 - https://www.learnpython.org/en/Hello,_World!
 - https://docs.python.org/3/library/functions.html
+
+</div>

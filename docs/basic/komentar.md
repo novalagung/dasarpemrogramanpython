@@ -2,6 +2,8 @@
 sidebar_position: 3
 title: A.3. Komentar
 sidebar_label: A.3. Komentar
+description: Tutorial belajar penerapan komentar di Python
+keywords: [komentar python, multi line komentar python]
 ---
 
 Komentar atau *mark* adalah sebuah statement yang tidak akan dijalankan oleh interpreter. Biasanya digunakan untuk menambahkan keterangan atau men-disable statements agar tidak dieksekusi saat run program.
@@ -56,6 +58,8 @@ Untuk penerapan `"""` pada komentar satu baris bisa dengan cara:
 
 ---
 
+<div class="section-footnote">
+
 ## Catatan chapter 📑
 
 ### ◉ Source code praktik
@@ -69,3 +73,5 @@ Untuk penerapan `"""` pada komentar satu baris bisa dengan cara:
 ### ◉ Referensi
 
 - https://docs.python-guide.org/writing/documentation/
+
+</div>

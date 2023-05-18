@@ -2,6 +2,8 @@
 sidebar_position: 2
 title: A.2. Run Python di VSCode
 sidebar_label: A.2. Run Python di VSCode
+description: Tutorial cara menjalankan program Python
+keywords: [python interpreter, python compiler, run program di python, run python]
 ---
 
 Chapter ini membahas tentang pilihan opsi cara run program Python di Visual Studio Code.
@@ -33,6 +35,10 @@ Setelah itu, muncul tombol `Run Cell`, klik untuk run program.
 
 ![hello world python](img/hello-python-5.png)
 
+---
+
+<div class="section-footnote">
+
 ## Catatan chapter 📑
 
 ### ◉ Chapter relevan lainnya
@@ -44,3 +50,5 @@ Setelah itu, muncul tombol `Run Cell`, klik untuk run program.
 - https://code.visualstudio.com/docs/python/python-tutorial
 - https://code.visualstudio.com/docs/datascience/jupyter-notebooks
 - https://docs.python.org/3/using/cmdline.html
+
+</div>

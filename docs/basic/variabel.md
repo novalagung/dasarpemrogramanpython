@@ -2,6 +2,8 @@
 sidebar_position: 4
 title: A.4. Variabel
 sidebar_label: A.4. Variabel
+description: Tutorial belajar penerapan variabel di Python
+keywords: [variabel python]
 ---
 
 ## A.4.1. Deklarasi variabel
@@ -85,6 +87,8 @@ laki: bool = True
 nilai_ujian: float = 99.2
 ```
 
+> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](#)
+
 ## A.4.5. Deklarasi banyak variabel sebaris
 
 Contoh penulisan deklarasi banyak variabel dalam satu baris bisa dilihat pada kode berikut:
@@ -98,9 +102,13 @@ print("rata-rata nilai: %f" % (nilai_rata_rata))
 
 > Karakter `%f` digunakan untuk mem-format nilai `float`
 
+Output program di atas:
+
 ![variabel python](img/variables-2.png)
 
 ---
+
+<div class="section-footnote">
 
 ## Catatan chapter 📑
 
@@ -118,3 +126,5 @@ print("rata-rata nilai: %f" % (nilai_rata_rata))
 - https://peps.python.org/pep-0008/
 - https://en.wikipedia.org/wiki/Snake_case
 - https://www.learnpython.org/en/String_Formatting
+
+</div>

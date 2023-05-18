@@ -1,0 +1,181 @@
+---
+sidebar_position: 7
+title: A.7. Operator
+sidebar_label: A.7. Operator
+description: Belajar macam-macam operator di Python.
+keywords: [tutorial operator python, operator aritmatika, operator logika, operator perbandingan, operator assignment, operator bitwise]
+---
+
+Python mengenal beberapa jenis operator, dan pada chapter ini kita akan mempelajarinya.
+
+## A.7.1. Operator aritmatika
+
+| Operator | Keterangan | Contoh
+| :-: | :- | :- |
+| binary `+` | operasi tambah | `num = 2 + 2` → hasilnya `num` nilainya `4` |
+| unary `+` | penanda nilai positif | `num = +2 + 2` → hasilnya `num` nilainya `4` |
+| binary `-` | operasi pengurangan | `num = 3 - 2` → hasilnya `num` nilainya `1` |
+| unary `-` | penanda nilai negatif | `num = -2 + 3` → hasilnya `num` nilainya `1` |
+| `*` | operasi perkalian | `num = 3 * 3` → hasilnya `num` nilainya `9` |
+| `/` | operasi pembagian | `num = 8 / 2` → hasilnya `num` nilainya `4` |
+| `//` | operasi bagi dengan hasil dibulatkan ke bawah | `num = 10 // 3` → hasilnya `num` nilainya `3` |
+| `%` | operasi modulo (pencarian sisa hasil bagi) | `num = 7 % 4` → hasilnya `num` nilainya `3` |
+| `**` | operasi pangkat | `num = 3 ** 2` → hasilnya `num` nilainya `9` |
+
+## A.7.2. Operator *assignment*
+
+Operator assignment adalah `=`, digunakan untuk operasi assignment (atau penentuan nilai) sekaligus untuk deklarasi variabel jika variabel tersebut sebelumnya belum terdeklarasi. Contoh:
+
+```python
+num_1 = 12
+num_2 = 24
+
+num_2 = 12
+num_3 = num_1 + num_2
+
+print(num_3)
+# output: 24
+```
+
+## A.7.3. Operator perbandingan
+
+Operator perbandingan pasti menghasilkan nilai kebenaran `bool` dengan kemungkinan hanya dua nilai, yaitu benar (`True`) atau salah (`False`).
+
+Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa lain.
+
+| Operator | Keterangan | Contoh
+| :-: | :- | :- |
+| `==` | apakah kiri sama dengan kanan | `res = 4 == 5` → hasilnya `res` nilainya `False` |
+| `!=` | apakah kiri tidak sama dengan kanan | `res = 4 != 5` → hasilnya `res` nilainya `True` |
+| `>` | apakah kiri lebih besar dibanding kanan | `res = 4 > 5` → hasilnya `res` nilainya `False` |
+| `<` | apakah kiri lebih kecil dibanding kanan | `res = 4 < 5` → hasilnya `res` nilainya `True` |
+| `>=` | apakah kiri lebih besar atau sama dengan kanan | `res = 5 >= 5` → hasilnya `res` nilainya `True` |
+| `<=` | apakah kiri lebih kecil atau sama dengan kanan | `res = 4 <= 5` → hasilnya `res` nilainya `False` |
+
+## A.7.4. Operator logika
+
+| Operator | Keterangan | Contoh |
+| :-: | :- | :- |
+| `and` | operasi logika **AND** | `res = (4 == 5) and (2 != 3)` → hasilnya `res` nilainya `False` |
+| `or` | operasi logika **OR** | `res = (4 == 5) or (2 != 3)` → hasilnya `res` nilainya `True` |
+| `not` atau `!` | operasi logika **negasi** (atau **NOT**) | `res = not (2 == 3)` → hasilnya `res` nilainya `True`<br />`res = !(2 == 3)` → hasilnya `res` nilainya `True` |
+
+## A.7.5. Operator bitwise
+
+| Operator | Keterangan | Contoh |
+| :-: | :- | :- |
+| `&` | operasi bitwise **AND** | `x & y = 0 (0000 0000)` |
+| <code>\|</code> | operasi bitwise **OR** | <code>x \| y = 14 (0000 1110)</code> |
+| `~` | operasi bitwise **NOT** | `~x = -11 (1111 0101)` |
+| `^` | operasi bitwise **XOR** | `x ^ y = 14 (0000 1110)` |
+| `>>` | operasi bitwise **right shift** | `x >> 2 = 2 (0000 0010)` |
+| `<<` | operasi bitwise **left shift** | `x << 2 = 40 (0010 1000)` |
+
+## A.7.6. Operator *identity* (`is`)
+
+Operator `is` memiliki kemiripan dengan operator logika `==`, perbedaannya pada operator `is` yang dibandingkan bukan nilai, melainkan identitas atau ID-nya.
+
+Bisa saja ada 2 variabel bernilai sama tapi identitasnya berbeda. Contoh:
+
+```python
+num_1 = 100001
+num_2 = 100001
+
+res = num_1 is num_2
+print("num_1 is num_2 =", res)
+print("id(num_1): %s, id(num_2): %s" % (id(num_1), id(num_2)))
+```
+
+![operator is dan not di python](img/operator-1.png)
+
+:::danger
+
+Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik. Silakan cek https://stackoverflow.com/a/15172182/1467988 untuk lebih jelasnya.
+
+:::
+
+### ◉ Fungsi `print()` tanpa output formatting
+
+Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan output formatting (seperti `%s`).
+
+Yang terjadi pada statement tersebut adalah, semua nilai argument pemanggilan fungsi `print()` akan digabung dengan delimiter ` ` kemudian ditampilkan ke layar console.
+
+Agar lebih jelas, silakan perhatikan statement berikut, keduanya adalah menghasilkan output yang sama.
+
+```python
+print("message: %s %s %s" % ("hello", "python", "learner"))
+print("message:", "hello", "python", "learner")
+```
+
+![print](img/operator-2.png)
+
+### ◉ Fungsi `id()`
+
+Digunakan untuk mengambil nilai identitas atau ID suatu data. Contoh penerapannya sangat mudah, cukup panggil fungsi dan tulis data yang ingin diambil ID-nya sebagai argument pemanggilan fungsi.
+
+```python
+data_1 = "hello world"
+id_data_1 = id(data_1)
+
+print("data_1:", data_1)        # hello world
+print("id_data_1:", id_data_1)  # 19441xxxxxxxx
+```
+
+Nilai kembalian fungsi `id()` bertipe numerik.
+
+## A.7.7. Operator *membership* (`in`)
+
+Operator `in` digunakan untuk mengecek apakah suatu nilai merupakan bagian dari data kolektif atau tidak.
+
+Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary, sets, tuple, dan list. Selain itu, operator `in` juga bisa digunakan pada `str` untuk pengecekan substring
+
+```python
+sample_list = [2, 3, 4]
+print(3 in sample_list)
+# False
+
+sample_tuple = ("hello", "rust")
+print("hello" in sample_tuple)
+# True
+
+sample_dict = { "nama": "noval", "age": 12 }
+print("nama" in sample_dict)
+# True
+
+sample_set = { "sesuk", "preiiii" }
+print("preiiii" in sample_set)
+# True
+
+sample_str = 'Hello world'
+print('orl' in sample_str)
+# True
+```
+
+> Operator `in` jika diterapkan pada tipe dictionary, yang di-check adalah key-nya bukan value-nya.
+
+---
+
+<div class="section-footnote">
+
+## Catatan chapter 📑
+
+### ◉ Source code praktik
+
+<pre>
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/operator">
+        github.com/novalagung/dasarpemrogramanpython-example/../operator
+    </a>
+</pre>
+
+### ◉ Chapter relevan lainnya
+
+- [Variabel](/basic/variabel)
+- [Tipe Data](/basic/tipe-data)
+
+### ◉ Referensi
+
+- https://realpython.com/python-operators-expressions/
+- https://www.programiz.com/python-programming/operators
+- https://stackoverflow.com/a/15172182/1467988
+
+</div>
