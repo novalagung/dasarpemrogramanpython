@@ -4,18 +4,21 @@ title: A.7. Operator
 sidebar_label: A.7. Operator
 description: Belajar macam-macam operator di Python.
 keywords: [tutorial operator python, operator aritmatika, operator logika, operator perbandingan, operator assignment, operator bitwise]
+faqs:
+  - question: Operator di Python?
+    answer: Python mengenal operator assignment, perbandingan, logika, bitwise, operator identity dan membership
 ---
 
-Python mengenal beberapa jenis operator, dan pada chapter ini kita akan mempelajarinya.
+Operator adalah suatu karakter yang memiliki kegunaan khusus contohnya seperti `+` untuk operasi aritmatika tambah, dan `and` untuk operasi logika **AND**. Pada chapter ini kita akan mempelajari macam-macam operator yang ada di Python.
 
 ## A.7.1. Operator aritmatika
 
-| Operator | Keterangan | Contoh
+| Operator | Keterangan | Contoh |
 | :-: | :- | :- |
-| binary `+` | operasi tambah | `num = 2 + 2` → hasilnya `num` nilainya `4` |
-| unary `+` | penanda nilai positif | `num = +2 + 2` → hasilnya `num` nilainya `4` |
-| binary `-` | operasi pengurangan | `num = 3 - 2` → hasilnya `num` nilainya `1` |
-| unary `-` | penanda nilai negatif | `num = -2 + 3` → hasilnya `num` nilainya `1` |
+| `+` | operasi tambah | `num = 2 + 2` → hasilnya `num` nilainya `4` |
+| unary `+` | penanda nilai positif | `num = +2` → hasilnya `num` nilainya `2` |
+| `-` | operasi pengurangan | `num = 3 - 2` → hasilnya `num` nilainya `1` |
+| unary `-` | penanda nilai negatif | `num = -2` → hasilnya `num` nilainya `-2` |
 | `*` | operasi perkalian | `num = 3 * 3` → hasilnya `num` nilainya `9` |
 | `/` | operasi pembagian | `num = 8 / 2` → hasilnya `num` nilainya `4` |
 | `//` | operasi bagi dengan hasil dibulatkan ke bawah | `num = 10 // 3` → hasilnya `num` nilainya `3` |
@@ -43,7 +46,7 @@ Operator perbandingan pasti menghasilkan nilai kebenaran `bool` dengan kemungkin
 
 Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa lain.
 
-| Operator | Keterangan | Contoh
+| Operator | Keterangan | Contoh |
 | :-: | :- | :- |
 | `==` | apakah kiri sama dengan kanan | `res = 4 == 5` → hasilnya `res` nilainya `False` |
 | `!=` | apakah kiri tidak sama dengan kanan | `res = 4 != 5` → hasilnya `res` nilainya `True` |
@@ -131,23 +134,28 @@ Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary,
 
 ```python
 sample_list = [2, 3, 4]
-print(3 in sample_list)
+is_3_exists = 3 in sample_list
+print(is_3_exists)
 # False
 
-sample_tuple = ("hello", "rust")
-print("hello" in sample_tuple)
+sample_tuple = ("hello", "python")
+is_hello_exists = "hello" in sample_tuple
+print(is_hello_exists)
 # True
 
 sample_dict = { "nama": "noval", "age": 12 }
-print("nama" in sample_dict)
+is_key_nama_exists = "nama" in sample_dict
+print(is_key_nama_exists)
 # True
 
 sample_set = { "sesuk", "preiiii" }
-print("preiiii" in sample_set)
+is_prei = "preiiii" in sample_set
+print(is_prei)
 # True
 
 sample_str = 'Hello world'
-print('orl' in sample_str)
+is_substring_exists = 'orl' in sample_str
+print(is_substring_exists)
 # True
 ```
 

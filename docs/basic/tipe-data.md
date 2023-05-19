@@ -2,11 +2,14 @@
 sidebar_position: 6
 title: A.6. Tipe Data
 sidebar_label: A.6. Tipe Data
-# description: Macam tipe data di python
+# description: 
 keywords: [tipe data python]
+faqs:
+  - question: Tipe data di Python
+    answer: Python mengenal cukup banyak tipe data, mulai dari yang built-in maupun custom type. Contohnya int, float, complex, str, bool, list, tuple, sets, dict
 ---
 
-Python mengenal cukup banyak tipe data, mulai dari yang *built-in* maupun custom type. Pada chapter ini kita akan belajar *high-level overview* mengenai tipe-tipe tersebut.
+Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan belajar *high-level overview* mengenai tipe-tipe tersebut.
 
 ## A.6.1. Tipe data numerik
 
@@ -17,8 +20,6 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 | `int` | menampung bilangan bulat atau *integer* | ` number_1 = 10000024 ` |
 | `float` | menampung bilangan desimal atau *floating point* | ` number_2 = 3.14 ` |
 | `complex` | menampung nilai berisi kombinasi bilangan real dan imajiner | ` number_3 = 120+3j ` |
-
-> Lebih detailnya mengenai tipe data numerik dibahas pada chapter [Tipe Data Numerik](#)
 
 ## A.6.2. Tipe data `str`
 

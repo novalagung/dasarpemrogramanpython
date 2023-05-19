@@ -4,7 +4,14 @@ title: A.5. Konstanta
 sidebar_label: A.5. Konstanta
 description: Tutorial belajar konstanta di Python
 keywords: [konstanta python]
+faqs:
+  - question: Apa itu konstanta di Python?
+    answer: Konstanta adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah
+  - question: Cara membuat konstanta di Python
+    answer: Konstanta di Python versi 3 bisa dibuat menggunakan bantuan module typing.Final.
 ---
+
+Konstanta adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah. Pada chapter ini kita akan mempelajari tentang penerapan Konstanta di Python.
 
 ## A.5.1. Konstanta di Python
 
@@ -44,7 +51,7 @@ PI: Final = 3.14
 TOTAL_MONTH: Final[int] = 12
 ```
 
-> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](#)
+> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](/basic/tipe-data)
 
 ## A.5.3. *Naming convention* konstanta
 

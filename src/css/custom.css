@@ -90,6 +90,11 @@ blockquote {
   margin-top: calc(var(--ifm-h3-vertical-rhythm-top) * var(--ifm-leading));
 }
 
-.theme-doc-markdown.markdown td > code {
+.theme-doc-markdown.markdown td > code,
+.theme-doc-markdown.markdown p > code,
+.theme-doc-markdown.markdown h1 > code,
+.theme-doc-markdown.markdown h2 > code,
+.theme-doc-markdown.markdown h3 > code,
+.theme-doc-markdown.markdown li > code {
   padding: 2px 5px;
 }

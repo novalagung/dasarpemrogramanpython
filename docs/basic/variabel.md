@@ -4,11 +4,22 @@ title: A.4. Variabel
 sidebar_label: A.4. Variabel
 description: Tutorial belajar penerapan variabel di Python
 keywords: [variabel python]
+faqs:
+  - question: Apa itu variabel di Python?
+    answer: Dalam konsep programming, variabel adalah suatu nama yang dikenali komputer sebagai penampung suatu nilai/data yang disimpan di memory. Sebagai contoh nilai 3.14 disimpan di variabel bernama PI
+  - question: Cara deklarasi variabel di Python
+    answer: Deklarasi variabel di Python cukup sederhana, caranya tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai yang ingin dimasukan ke variabel tersebut. Contoh → nama = "noval"
+  - question: Naming convention atau aturan penamaan variabel di Python
+    answer: Mengacu ke dokumentasi https://peps.python.org/pep-0008/, nama variabel dianjurkan untuk menggunakan snake_case. Contoh → pesan = 'halo, selamat pagi'
 ---
+
+Dalam konsep programming, variabel adalah suatu nama yang dikenali komputer sebagai penampung suatu nilai/data yang disimpan di memory. Sebagai contoh nilai `3.14` disimpan di variabel bernama `PI`.
+
+Pada chapter ini kita akan belajar tentang penerapan variabel di Python.
 
 ## A.4.1. Deklarasi variabel
 
-Deklarasi variabel di Python cukup sederhana, tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai yang ingin dimasukan ke variabel tersebut. Contoh:
+Agar dikenali oleh komputer, variabel harus dideklarasikan. Deklarasi variabel di Python cukup sederhana, caranya tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai yang ingin dimasukan ke variabel tersebut. Contoh:
 
 ```python
 nama = "noval"
@@ -53,7 +64,7 @@ print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
 # output => "hobi: makan, umur: 18, laki: True"
 ```
 
-> Lebih detailnya mengenai output formatting dibahas terpisah pada chapter [String formatting](#)
+> Lebih detailnya mengenai output formatting dibahas terpisah pada chapter [Output formatting](#)
 
 ## A.4.2. *Naming convention* variabel
 
@@ -87,7 +98,7 @@ laki: bool = True
 nilai_ujian: float = 99.2
 ```
 
-> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](#)
+> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](/basic/tipe-data)
 
 ## A.4.5. Deklarasi banyak variabel sebaris
 
