@@ -50,6 +50,17 @@ Tipe string direpresentasikan oleh `str`, pembuatannya bisa menggunakan literal 
     '''
     ```
 
+Jika ada baris baru (atau *newline*) di bagian awal penulisan `'''` atau `"""` maka baris baru tersebut merupakan bagian dari string. Jika ingin meng-*exclude*-nya bisa menggunakan `"""\` atau `'''\`. Contoh:
+
+```python
+string_5 = '''\
+Sesuk
+Preiiii
+'''
+```
+
+> Lebih detailnya mengenai string dibahas pada chapter [String dan Operasi String](#)
+
 ## A.6.3. Tipe data `bool`
 
 Literal untuk tipe data boolean di Python adalah `True` untuk nilai benar, dan `False` untuk nilai salah.
@@ -177,6 +188,7 @@ Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset,
 
 ### ◉ Referensi
 
+- https://docs.python.org/3/tutorial/introduction.html
 - https://www.digitalocean.com/community/tutorials/python-data-types
 - https://note.nkmk.me/en/python-int-max-value/
 

@@ -95,6 +95,24 @@ blockquote {
 .theme-doc-markdown.markdown h1 > code,
 .theme-doc-markdown.markdown h2 > code,
 .theme-doc-markdown.markdown h3 > code,
-.theme-doc-markdown.markdown li > code {
+.theme-doc-markdown.markdown li > code,
+.table-of-contents li a > code {
   padding: 2px 5px;
+}
+
+.theme-doc-markdown.markdown table.custom-table tr td,
+.theme-doc-markdown.markdown table.custom-table-full tr td {
+  vertical-align: top;
+}
+.theme-doc-markdown.markdown table.custom-table-full {
+  display: table;
+  width: 100%;
+}
+.theme-doc-markdown.markdown table.custom-table tr td > *,
+.theme-doc-markdown.markdown table.custom-table-full tr td > * {
+  margin: 0;
+}
+.theme-doc-markdown.markdown table.custom-table tr:nth-child(2n),
+.theme-doc-markdown.markdown table.custom-table-full tr:nth-child(2n) {
+  background-color: transparent !important;
 }
