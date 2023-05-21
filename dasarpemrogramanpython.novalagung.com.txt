@@ -10,3 +10,4 @@ https://dasarpemrogramanpython.novalagung.com/basic/variabel
 https://dasarpemrogramanpython.novalagung.com/basic/konstanta
 https://dasarpemrogramanpython.novalagung.com/basic/tipe-data
 https://dasarpemrogramanpython.novalagung.com/basic/operator
+https://dasarpemrogramanpython.novalagung.com/basic/if-elif-else
