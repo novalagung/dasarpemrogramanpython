@@ -2,18 +2,18 @@
 sidebar_position: 9
 title: A.9. Perulangan → for, range
 sidebar_label: A.9. Perulangan → for, range
-# description: 
-# keywords: []
-# faqs:
-#   - question: Seleksi kondisi di Python
-#     answer: Seleksi kondisi di python dilakukan menggunakan if, elif (untuk else if), dan else
-#   - question: Ternary di Python
-#     answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
+description: Tutorial belajar perulangan/iterasi di Python menggunakan for dan range. 
+keywords: [perulangan, loop, for, range, looping]
+faqs:
+  - question: Perulangan di Python
+    answer: Perulangan di Python bisa dilakukan menggunakan while, for range, dan juga kombinasi for dengan tipe data sequence seperti list, tuple, dan lainnya.
+  - question: For di Python
+    answer: 'Contoh perulanga di Python menggunakan keyword for → for i in range(5): print("index:", i)'
 ---
 
 Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blok kode. Pada chapter ini kita akan mempelajari penerapannya di Python.
 
-## A.9.1. `for` dan `range()`
+## A.9.1. Keyword `for` dan fungsi `range()`
 
 Perulangan di Python bisa dibuat menggunakan kombinasi keyword `for` dan fungsi `range()`.
 
@@ -61,7 +61,7 @@ Selain `range(n)` ada juga beberapa cara penulisan lainnya:
 
 Agar lebih jelas, silakan perhatikan kode berikut. Ke-3 perulangan ini ekuivalen, menghasilkan output yang sama.
 
-<table class="custom-table-full">
+<table class="custom-table">
 <tr>
 <td>
 
@@ -110,7 +110,7 @@ for i in range(0, 3, 1):
 
 Tambahan contoh penerapan `for` dan `range()`:
 
-<table class="custom-table">
+<table class="custom-table top">
 <tr>
 <td>
 
@@ -204,7 +204,7 @@ for n in numbers:
 
 ![perulangan for range](img/for-range-10.png)
 
-## A.9.4. Perulangan bercabang / *nested*
+## A.9.4. Perulangan bercabang / *nested* `for`
 
 Cara penerapan *nested loop* adalah cukup dengan menuliskan statement `for` sebagai isi dari statement `for` atasnya. Contoh:
 

@@ -100,19 +100,16 @@ blockquote {
   padding: 2px 5px;
 }
 
-.theme-doc-markdown.markdown table.custom-table tr td,
-.theme-doc-markdown.markdown table.custom-table-full tr td {
+.theme-doc-markdown.markdown table.custom-table.top tr td {
   vertical-align: top;
 }
-.theme-doc-markdown.markdown table.custom-table-full {
+.theme-doc-markdown.markdown table.custom-table.full {
   display: table;
   width: 100%;
 }
-.theme-doc-markdown.markdown table.custom-table tr td > *,
-.theme-doc-markdown.markdown table.custom-table-full tr td > * {
+.theme-doc-markdown.markdown table.custom-table tr td > * {
   margin: 0;
 }
-.theme-doc-markdown.markdown table.custom-table tr:nth-child(2n),
-.theme-doc-markdown.markdown table.custom-table-full tr:nth-child(2n) {
+.theme-doc-markdown.markdown table.custom-table tr:nth-child(2n) {
   background-color: transparent !important;
 }
