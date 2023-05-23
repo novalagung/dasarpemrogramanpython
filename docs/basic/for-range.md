@@ -227,6 +227,10 @@ Statement `print("*", end=" ")` akan menghasilkan pesan `* ` yang di-akhiri deng
 
 > Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Fungsi](#)
 
+### ◉ Fungsi `print()` tanpa parameter
+
+Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
+
 ---
 
 <div class="section-footnote">
