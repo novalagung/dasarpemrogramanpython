@@ -254,7 +254,7 @@ x = list_3.pop(7)
 
 ![list python](img/list-2.png)
 
-> - Lebih detailnya mengenai error dibahas pada chapter [Error](x)
+> - Lebih detailnya mengenai error dibahas pada chapter [Error](#)
 
 ### ◉ Menghapus element pada range index
 
