@@ -2,13 +2,13 @@
 sidebar_position: 12
 title: A.12. List
 sidebar_label: A.12. List
-# description: 
-# keywords: []
-# faqs:
-#   - question: Seleksi kondisi di Python
-#     answer: Seleksi kondisi di python dilakukan menggunakan if, elif (untuk else if), dan else
-#   - question: Ternary di Python
-#     answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
+description: List di Python ini memiliki banyak kemiripan dengan array, bedanya list bisa berisi data dengan berbagai macam tipe data, jadi tidak harus sejenis tipe datanya.
+keywords: [list python, list, matrix, array]
+faqs:
+  - question: Perbedaan list vs array di Python
+    answer: List mirip dengan array, perbedaannya list bisa menampung data yang tidak sejenis, sedangkan data element array harus sejenis
+  - question: List di Python
+    answer: Contoh list di python → list_1 = [10, 70, 20]
 ---
 
 List adalah tipe data kolektif yang disimpan secara urut dan bisa diubah nilainya.

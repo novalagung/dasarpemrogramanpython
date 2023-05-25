@@ -2,13 +2,11 @@
 sidebar_position: 13
 title: A.13. List Comprehension
 sidebar_label: A.13. List Comprehension
-# description: 
-# keywords: []
-# faqs:
-#   - question: Seleksi kondisi di Python
-#     answer: Seleksi kondisi di python dilakukan menggunakan if, elif (untuk else if), dan else
-#   - question: Ternary di Python
-#     answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
+description: List comprehension adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru.
+keywords: [list comprehension, python list comprehension, shortcut list]
+faqs:
+  - question: Apa itu list comprehension di Python?
+    answer: List comprehension adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru
 ---
 
 *List comprehension* adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru.
