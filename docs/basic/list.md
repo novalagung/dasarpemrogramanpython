@@ -145,7 +145,7 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     # output → after : [10, 70, 20, 88, 87]
     ```
 
-> - Lebih detailnya mengenai method dibahas pada chapter [Method](x)
+> - Lebih detailnya mengenai method dibahas pada chapter [Method](#)
 
 ### ◉ Extend/concat element
 
