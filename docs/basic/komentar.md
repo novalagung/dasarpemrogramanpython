@@ -31,6 +31,8 @@ Jika di-run, outputnya:
 
 ![komentar di python](img/komentar-1.png)
 
+Bisa dilihat statement yang diawali dengan tanda `#` tidak dieksekusi.
+
 ## A.3.2. Komentar multi-baris
 
 Komentar multi-baris bisa diterapkan melalui dua cara:
@@ -43,9 +45,9 @@ Komentar multi-baris bisa diterapkan melalui dua cara:
 # komentar baris ke-3
 ```
 
-### ◉ Komentar menggunakan `"""`
+### ◉ Komentar menggunakan `"""` atau `'''`
 
-Tulis komentar multi baris kemudian apit menggunakan karakter `"""`. Contoh:
+Karakter `"""` atau `'''` sebenarnya digunakan untuk membuat *multiline string* atau string banyak baris. Selain itu, bisa juga dipergunakan sebagai penanda komentar multi baris. Contoh penerapannya:
 
 ```python
 """
@@ -55,11 +57,13 @@ komentar baris ke-3
 """
 ```
 
-Untuk penerapan `"""` pada komentar satu baris bisa dengan cara:
+Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 
 ```python
 """ini adalah komentar"""
 ```
+
+> - Lebih detailnya mengenai string dibahas pada chapter [String dan Operasi String](#)
 
 ---
 

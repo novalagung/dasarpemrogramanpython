@@ -247,7 +247,7 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 
 ### ◉ Chapter relevan lainnya
 
-- [List](#)
+- [List](/basic/list)
 - [String](#)
 - [Fungsi](#)
 

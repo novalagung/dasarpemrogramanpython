@@ -9,7 +9,7 @@ faqs:
     answer: Python mengenal cukup banyak tipe data, mulai dari yang built-in maupun custom type. Contohnya int, float, complex, str, bool, list, tuple, sets, dict
 ---
 
-Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan belajar *high-level overview* mengenai tipe-tipe tersebut.
+Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan mempelajari *high-level overview* mengenai tipe-tipe tersebut.
 
 ## A.6.1. Tipe data numerik
 
@@ -72,7 +72,7 @@ bool_2 = False
 
 ## A.6.4. Tipe data list
 
-List adalah tipe data di Python untuk menampung nilai kolektif yang disimpan secara urut. Tipe ini biasa disebut sebagai **array**. Cara penerapan list adalah dengan menuliskan nilai kolektif dengan pembatas `,` dan diapit tanda `[` dan `]`.
+List adalah tipe data di Python untuk menampung nilai kolektif yang disimpan secara urut, dan isinya bisa banyak varian tipe data (tidak harus sejenis). Cara penerapan list adalah dengan menuliskan nilai kolektif dengan pembatas `,` dan diapit tanda `[` dan `]`.
 
 ```python
 # list with int as element's data type

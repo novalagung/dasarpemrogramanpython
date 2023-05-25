@@ -12,7 +12,7 @@ Chapter ini membahas tentang pilihan opsi cara run program Python di Visual Stud
 
 ### ◉ Menggunakan command `python`
 
-Cara ini sudah kita terapkan pada chapter [Program Pertama → Hello Python](/basic/hello-python), dan caranya cukup mudah, tinggal jalankan saja command berikut di terminal.
+Command ini sudah kita terapkan pada chapter [Program Pertama → Hello Python](/basic/hello-python), cara penggunaannya cukup mudah, tinggal jalankan saja command di terminal.
 
 ```bash
 # python <nama_file_program>
@@ -21,13 +21,13 @@ python main.py
 
 ### ◉ Menggunakan tombol run `▶`
 
-Di toolbar sebelah kanan atas ada tombol `▶` yang bisa digunakan untuk run program.
+Cara run program ini lebih praktis karena tingal klik-klik saja. Di toolbar VSCode sebelah kanan atas ada tombol `▶`, gunakan tombol tersebut untuk menjalankan program.
 
 ![hello world python](img/hello-python-3.png)
 
 ### ◉ Menggunakan jupyter `code cells`
 
-Pertama tambahkan kode `#%%` pada baris di atas statement `print("hello python")`, dengan ini maka blok kode dianggap sebagai `code cell`.
+Untuk menerapkan cara ini, tambahkan kode `# %%` pada baris di atas statement `print("hello python")`, dengan ini maka blok kode dianggap sebagai `code cell`.
 
 ![hello world python](img/hello-python-4.png)
 

@@ -13,13 +13,13 @@ faqs:
     answer: Mengacu ke dokumentasi https://peps.python.org/pep-0008/, nama variabel dianjurkan untuk menggunakan snake_case. Contoh → pesan = 'halo, selamat pagi'
 ---
 
-Dalam konsep programming, variabel adalah suatu nama yang dikenali komputer sebagai penampung suatu nilai/data yang disimpan di memory. Sebagai contoh nilai `3.14` disimpan di variabel bernama `PI`.
+Dalam konsep programming, variabel adalah suatu nama yang dikenali komputer sebagai penampung nilai/data yang disimpan di memory. Sebagai contoh nilai `3.14` disimpan di variabel bernama `PI`.
 
 Pada chapter ini kita akan belajar tentang penerapan variabel di Python.
 
 ## A.4.1. Deklarasi variabel
 
-Agar dikenali oleh komputer, variabel harus dideklarasikan. Deklarasi variabel di Python cukup sederhana, caranya tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai yang ingin dimasukan ke variabel tersebut. Contoh:
+Agar dikenali oleh komputer, variabel harus dideklarasikan. Deklarasi variabel di Python cukup sederhana, caranya tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai awal yang ingin dimasukan ke variabel tersebut. Contoh:
 
 ```python
 nama = "noval"

@@ -33,15 +33,16 @@ Selamat, secara official sekarang anda adalah programmer Python! 🎉 Mudah buka
 
 ## A.1.2. Penjelasan program
 
-Folder `hello-python` bisa disebut dengan folder *project*, dimana isinya adalah file-file program Python berekstensi `.py`.
+Folder `hello-python` bisa disebut dengan folder **project**, dimana isinya adalah file-file program Python berekstensi `.py`.
 
 File `main.py` adalah file program python. Nama file program bisa apa saja, tapi umumnya pada pemrograman Python, file program utama bernama `main.py`.
 
 Command `python <nama_file_program>` digunakan untuk menjalankan program. Cukup ganti `<nama_file_program>` dengan nama file program (yang pada contoh ini adalah `main.py`) maka kode program di dalam file tersebut akan di-run oleh Python interpreter.
 
-Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built-in* yang ada dalam Python stdlib (standard library), yaitu fungsi bernama `print()` yang kegunaannya adalah untuk menampilkan pesan string (yang disipkan di argument fungsi) ke layar output atau stdout (yang pada contoh ini adalah terminal milik editor penulis).
+Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built-in* yang ada dalam Python stdlib (standard library), yaitu fungsi bernama `print()` yang kegunaannya adalah untuk menampilkan pesan string (yang disipkan pada argument pemanggilan fungsi `print()`) yang pesan tersebut akan mucnul ke layar output stdout (pada contoh ini adalah terminal milik editor penulis).
 
-> Lebih detailnya mengenai Python standard library (stdlib) dibahas terpisah pada chapter [Python standard library (stdlib)](#)
+> - Lebih detailnya mengenai fungsi dibahas pada chapter [Fungsi](#)
+> - Lebih detailnya mengenai Python standard library (stdlib) dibahas terpisah pada chapter [Python standard library (stdlib)](#)
 
 ---
 
