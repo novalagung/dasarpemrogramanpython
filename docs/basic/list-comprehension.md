@@ -9,13 +9,13 @@ faqs:
     answer: List comprehension adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru
 ---
 
-*List comprehension* adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru.
+*List comprehension* adalah metode ringkas pembuatan list (selain menggunakan literal `[]` atau menggunakan fungsi `list()`). Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru.
 
 Pada chapter ini kita akan mempelajarinya.
 
 ## A.13.1. Penerapan list comprehension
 
-Metode penulisan ini membuat kode menjadi sangat ringkas, dengan konsekuensi agak sedikit membingungkan untuk yang belum terbiasa. Jadi gunakan sesuai kebutuhan.
+Metode penulisan list comprehension membuat kode menjadi sangat ringkas, dengan konsekuensi agak sedikit membingungkan untuk yang belum terbiasa. Jadi penulis sarankan gunakan sesuai kebutuhan.
 
 Silakan pelajari contoh berikut agar lebih mudah memahami seperti apa itu *list comprehension*.
 
@@ -52,7 +52,7 @@ for i in range(10):
 print(seq) # output → [1, 3, 5, 7, 9]
 ```
 
-... bisa dituliskan lebih ringkas menggunakan *list comprehension*, menjadi seperti berikut:
+... bisa dituliskan lebih ringkas menjadi seperti berikut:
 
 ```python
 seq = [i for i in range(10) if i % 2 == 1]
@@ -109,7 +109,7 @@ for x in list_x:
 print(seq) # output → ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
 ```
 
-... bisa dituliskan lebih ringkas menggunakan *list comprehension*, menjadi seperti berikut:
+... bisa dituliskan lebih ringkas menjadi seperti berikut:
 
 ```python
 comb = [x + y for x in list_x for y in list_y]

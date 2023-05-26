@@ -19,7 +19,7 @@ Pada chapter ini kita akan mempelajarinya.
 
 Pengaplikasian `break` biasanya dikombinasikan dengan seleksi kondisi. Sebagai contoh program sederhana berikut, yaitu program dengan spesifikasi:
 
-- Berisi perulangan yang sifatnya berjalan terus-menerus tanpa henti (karenam menggunakan nilai `True` sebagai kontrol).
+- Berisi perulangan yang sifatnya berjalan terus-menerus tanpa henti (karena menggunakan nilai `True` sebagai kontrol).
 - Perulangan hanya berhenti jika nilai `n` (yang didapat dari inputan user) adalah tidak bisa dibagi dengan angka `3`.
 
 ```python
@@ -37,9 +37,9 @@ while True:
 
 Keyword `continue` digunakan untuk memaksa perulangan lanjut ke iterasi berikutnya (seperti proses skip).
 
-Contoh penerapannya bisa dilihat pada kode berikut.
+Contoh penerapannya bisa dilihat pada program berikut, yang spesifikasinya:
 
-- Program berisi perulangan dengan kontrol adalah data *range* sebanyak 10 (dimana isinya adalah angka numerik dari `0` hingga `9`).
+- Program berisi perulangan dengan kontrol adalah data *range* sebanyak 10 (dimana isinya adalah angka numerik `0` hingga `9`).
 - Ketika nilai variabel counter `i` adalah dibawah `3` atau di atas `7` maka iterasi di-skip.
 
 ```python

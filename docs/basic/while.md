@@ -84,7 +84,7 @@ Pada program yang sudah di tulis di atas, perulangan akan menjadi lebih ringkas 
         print("number", i)
     ```
 
-Sedangkan keyword `for` lebih pas digunakan pada perulangan yang kontrolnya adalah data *range* atau data *sequence* seperti list atau lainnya.
+Sedangkan keyword `for` lebih pas digunakan pada perulangan yang kontrolnya adalah data *sequence*, contohnya seperti range dan list.
 
 ## A.10.3. Perulangan bercabang / *nested* `while`
 
