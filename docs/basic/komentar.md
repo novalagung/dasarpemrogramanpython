@@ -37,7 +37,7 @@ Bisa dilihat statement yang diawali dengan tanda `#` tidak dieksekusi.
 
 Komentar multi-baris bisa diterapkan melalui dua cara:
 
-### ◉ Komentar menggunakan `#`
+### ◉ Komentar menggunakan `#` dituliskan
 
 ```python
 # ini adalah komentar
@@ -63,7 +63,7 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 """ini adalah komentar"""
 ```
 
-> - Lebih detailnya mengenai string dibahas pada chapter [String dan Operasi String](#)
+> - Lebih detailnya mengenai string dibahas pada chapter [String & Operasi String](#)
 
 ---
 
@@ -78,6 +78,10 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
         github.com/novalagung/dasarpemrogramanpython-example/../komentar
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [String & Operasi String](#)
 
 ### ◉ Referensi
 

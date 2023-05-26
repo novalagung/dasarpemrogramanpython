@@ -66,7 +66,85 @@ Fungsi `len()` digunakan untuk menghitung jumlah element list. Dengan mengkombin
 
 > Lebih detailnya mengenai fungsi `len()` dibahas setelah ini
 
-## A.12.3. Operasi pada list
+## A.12.3. Nested list
+
+Penulisan nested list cukup mudah, contohnya bisa dilihat pada program matrix berikut:
+
+```python
+matrix = [
+    [0, 1, 0, 1, 0],
+    [1, 1, 1, 0, 0],
+    [0, 0, 0, 1, 1],
+    [0, 1, 1, 1, 0],
+]
+
+for row in matrix:
+    for cel in row:
+        print(cel, end=" ")
+    print()
+```
+
+![list matrix python](img/list-4.png)
+
+## A.12.4. Fungsi `list()`
+
+### ◉ Konversi range ke list
+
+Data range (hasil pemanggilan fungsi `range()`) bisa dikonversi ke bentuk list menggunakan fungsi `list()`. Cara ini cukup efisien untuk pembuatan data list yang memiliki *pattern* atau pola. Sebagai contoh:
+
+- List dimulai angka `0` hingga `9`:
+
+    ```python
+    range_1 = range(0, 10)
+    list_1 = list(range_1)
+    print(list_1)
+    # output → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    ```
+
+- List dimulai angka `1` hingga `21` dengan penambahan `3`:
+
+    ```python
+    range_2 = range(0, 22, 3)
+    list_2 = list(range_2)
+    print(list_2)
+    # output → [0, 3, 6, 9, 12, 15, 18, 21]
+    ```
+
+- List dimulai angka `100` hingga `0` dengan pengurangan `-10`:
+
+    ```python
+    range_3 = range(100, 0, -10)
+    list_3 = list(range_3)
+    print(list_3)
+    # output → [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+    ```
+
+> Selain metode ini, ada juga cara lainnya untuk membuat list, yaitu menggunakan metode *list comprehension*, yang akan dibahas pada chapter berikutnya, yaitu [List Comprehension](/basic/list-comprehension)
+
+### ◉ Konversi string ke list
+
+Selain untuk konversi data range ke list, fungsi `list()` bisa digunakan untuk konversi data string ke list, dengan hasil adalah setiap karakter string menjadi element list.
+
+```python
+alphabets = list('abcdefgh')
+print(alphabets)
+# output → ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+```
+
+### ◉ Konversi tuple ke list
+
+Tipe data tuple bisa diubah bentuknya menjadi list dengan menggunakan fungsi `list()`. Contoh penerapannya:
+
+```python
+tuple_1 = (1, 2, 3, 4)
+numbers = list(tuple_1)
+print(numbers)
+# output → [1, 2, 3, 4]
+```
+
+> Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
+
+## A.12.6. Operasi pada list
 
 ### ◉ Mengakses element via index
 
@@ -403,26 +481,6 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 
 > Lebih detailnya mengenai closure/lambda dibahas pada chapter [Closure/Lambda](#)
 
-## A.12.4. Nested list
-
-Penulisan nested list cukup mudah, contohnya bisa dilihat pada program matrix berikut:
-
-```python
-matrix = [
-    [0, 1, 0, 1, 0],
-    [1, 1, 1, 0, 0],
-    [0, 0, 0, 1, 1],
-    [0, 1, 1, 1, 0],
-]
-
-for row in matrix:
-    for cel in row:
-        print(cel, end=" ")
-    print()
-```
-
-![list matrix python](img/list-4.png)
-
 ---
 
 <div class="section-footnote">
@@ -447,5 +505,6 @@ for row in matrix:
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/datastructures.html
+- https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>

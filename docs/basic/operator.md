@@ -9,7 +9,9 @@ faqs:
     answer: Python mengenal operator assignment, perbandingan, logika, bitwise, operator identity dan membership
 ---
 
-Operator adalah suatu karakter yang memiliki kegunaan khusus contohnya seperti `+` untuk operasi aritmatika tambah, dan `and` untuk operasi logika **AND**. Pada chapter ini kita akan mempelajari macam-macam operator yang ada di Python.
+Operator adalah suatu karakter yang memiliki kegunaan khusus contohnya seperti `+` untuk operasi aritmatika tambah, dan `and` untuk operasi logika **AND**.
+
+Pada chapter ini kita akan mempelajari macam-macam operator yang ada di Python.
 
 ## A.7.1. Operator aritmatika
 
@@ -27,22 +29,28 @@ Operator adalah suatu karakter yang memiliki kegunaan khusus contohnya seperti `
 
 ## A.7.2. Operator *assignment*
 
-Operator assignment adalah `=`, digunakan untuk operasi assignment (atau penentuan nilai) sekaligus untuk deklarasi variabel jika variabel tersebut sebelumnya belum terdeklarasi. Contoh:
+Operator assignment adalah `=`, digunakan untuk operasi assignment (penugasan nilai atau penentuan nilai), sekaligus untuk deklarasi variabel jika variabel tersebut sebelumnya belum terdeklarasi. Contoh:
 
 ```python
+# deklarasi variabel num_1
 num_1 = 12
+
+# deklarasi variabel num_2
 num_2 = 24
 
+# nilai baru ditugaskan ke variabel num_2
 num_2 = 12
+
+# deklarasi variabel num_3 dengan isi nilai hasil operasi aritmatika `num_1 + num_2`
 num_3 = num_1 + num_2
 
 print(num_3)
-# output: 24
+# output → 24
 ```
 
 ## A.7.3. Operator perbandingan
 
-Operator perbandingan pasti menghasilkan nilai kebenaran `bool` dengan kemungkinan hanya dua nilai, yaitu benar (`True`) atau salah (`False`).
+Operator perbandingan pasti menghasilkan nilai kebenaran `bool` dengan kemungkinannya hanya dua nilai, yaitu benar (`True`) atau salah (`False`).
 
 Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa lain.
 
@@ -101,7 +109,7 @@ Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator 
 
 Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan output formatting (seperti `%s`).
 
-Yang terjadi pada statement tersebut adalah, semua nilai argument pemanggilan fungsi `print()` akan digabung dengan delimiter ` ` kemudian ditampilkan ke layar console.
+Yang terjadi pada statement tersebut adalah, semua nilai argument pemanggilan fungsi `print()` akan digabung dengan delimiter karakter spasi (` `) kemudian ditampilkan ke layar console.
 
 Agar lebih jelas, silakan perhatikan statement berikut, keduanya adalah menghasilkan output yang sama.
 
@@ -114,7 +122,7 @@ print("message:", "hello", "python", "learner")
 
 ### ◉ Fungsi `id()`
 
-Digunakan untuk mengambil nilai identitas atau ID suatu data. Contoh penerapannya sangat mudah, cukup panggil fungsi dan tulis data yang ingin diambil ID-nya sebagai argument pemanggilan fungsi.
+Digunakan untuk mengambil nilai identitas atau ID suatu data. Contoh penerapannya sangat mudah, cukup panggil fungsi `id()` kemudian tulis data yang ingin diambil ID-nya sebagai argument pemanggilan fungsi tersebut.
 
 ```python
 data_1 = "hello world"
@@ -179,6 +187,7 @@ print(is_substring_exists)
 
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
+- [Output Formatting](#)
 
 ### ◉ Referensi
 

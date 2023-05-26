@@ -9,7 +9,7 @@ faqs:
     answer: Python mengenal cukup banyak tipe data, mulai dari yang built-in maupun custom type. Contohnya int, float, complex, str, bool, list, tuple, sets, dict
 ---
 
-Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan mempelajari *high-level overview* mengenai tipe-tipe tersebut.
+Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan mempelajari *high-level overview* tipe-tipe tersebut.
 
 ## A.6.1. Tipe data numerik
 
@@ -59,7 +59,7 @@ Preiiii
 '''
 ```
 
-> Lebih detailnya mengenai string dibahas pada chapter [String dan Operasi String](#)
+> Lebih detailnya mengenai string dibahas pada chapter [String & Operasi String](#)
 
 ## A.6.3. Tipe data `bool`
 
@@ -72,7 +72,7 @@ bool_2 = False
 
 ## A.6.4. Tipe data list
 
-List adalah tipe data di Python untuk menampung nilai kolektif yang disimpan secara urut, dan isinya bisa banyak varian tipe data (tidak harus sejenis). Cara penerapan list adalah dengan menuliskan nilai kolektif dengan pembatas `,` dan diapit tanda `[` dan `]`.
+List adalah tipe data di Python untuk menampung nilai kolektif yang disimpan secara urut, dengan isi bisa berupa banyak varian tipe data (tidak harus sejenis). Cara penerapan list adalah dengan menuliskan nilai kolektif dengan pembatas `,` dan diapit tanda `[` dan `]`.
 
 ```python
 # list with int as element's data type
@@ -90,10 +90,10 @@ Pengaksesan element list menggunakan notasi `list[index_number]`. Contoh:
 ```python
 list_1 = [2, 4, 8, 16]
 print(list_1[2])
-# output: 8
+# output → 8
 ```
 
-> Lebih detailnya mengenai list dibahas pada chapter [Tipe Data List](#)
+> Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
 
 ## A.6.5. Tipe data tuple
 
@@ -118,10 +118,10 @@ Pengaksesan element tuple menggunakan notasi `tuple[index_number]`. Contoh:
 ```python
 tuple_1 = (2, 3, 4)
 print(tuple_1[2])
-# output: 4
+# output → 4
 ```
 
-> Lebih detailnya mengenai tuple dibahas pada chapter [Tipe Data Tuple](#)
+> Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
 
 ## A.6.6. Tipe data dictionary
 
@@ -149,7 +149,7 @@ Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti ber
 profile_1 = { "name": "Noval", "hobbies": ["gaming", "learning"] }
 ```
 
-> Lebih detailnya mengenai dictionary dibahas pada chapter [Tipe Data Dictionary & Sets](#)
+> Lebih detailnya mengenai dictionary dibahas pada chapter [Dictionary](#)
 
 ## A.6.7. Tipe data sets
 
@@ -166,7 +166,7 @@ set_1 = {"pineapple", "spaghetti"}
 print(set_1)
 ```
 
-> Lebih detailnya mengenai sets dibahas pada chapter [Tipe Data Dictionary & Sets](#)
+> Lebih detailnya mengenai sets dibahas pada chapter [Sets](#)
 
 ## A.6.8. Tipe data lainnya
 
@@ -186,10 +186,17 @@ Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset,
     </a>
 </pre>
 
+### ◉ Chapter relevan lainnya
+
+- [String & Operasi String](#)
+- [List](/basic/list)
+- [Tuple](/basic/tuple)
+- [Dictionary](#)
+- [Sets](#)
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/introduction.html
-- https://www.digitalocean.com/community/tutorials/python-data-types
-- https://note.nkmk.me/en/python-int-max-value/
+- https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>

@@ -11,13 +11,15 @@ faqs:
     answer: Konstanta di Python versi 3 bisa dibuat menggunakan bantuan module typing.Final.
 ---
 
-Konstanta adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah. Pada chapter ini kita akan mempelajari tentang penerapan Konstanta di Python.
+Konstanta (atau nilai konstan) adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah setelahnya.
+
+Pada chapter ini kita akan mempelajari tentang penerapan Konstanta di Python.
 
 ## A.5.1. Konstanta di Python
 
-Deklarasi konstanta (atau sebuah nilai konstan yang tidak bisa diubah setelah didefinisikan) di Python bisa dilakukan menggunakan bantuan tipe *class* bernama `typing.Final`.
+Deklarasi konstanta di Python dilakukan menggunakan bantuan tipe *class* bernama `typing.Final`.
 
-Untuk menggunakannya, `typing.Final` perlu di-import terlebih dahulu menggunakan statement `from` dan `import`.
+Untuk menggunakannya, `typing.Final` perlu di-import terlebih dahulu menggunakan keyword `from` dan `import`.
 
 ```python
 from typing import Final
@@ -40,7 +42,7 @@ Statement `from typing import Final` artinya adalah meng-import tipe `Final` dar
 
 ## A.5.2. Tipe *class* `typing.Final`
 
-Tipe `Final` digunakan untuk menandai suatu variabel adalah tidak bisa diubah nilainya (konstanta). Cara penerapan `Final` bisa dengan dituliskan tipe data konstanta-nya secara eksplisit, atau tidak ditentukan.
+Tipe `Final` digunakan untuk menandai suatu variabel adalah tidak bisa diubah nilainya (konstanta). Cara penerapan `Final` bisa dengan dituliskan tipe data konstanta-nya secara eksplisit, atau boleh tidak ditentukan (tipe akan diidentifikasi oleh interpreter berdasarkan tipe data nilainya).
 
 ```python
 # tipe konstanta PI tidak ditentukan secara explisit,
@@ -70,6 +72,11 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
         github.com/novalagung/dasarpemrogramanpython-example/../konstanta
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [Module Import](#)
+- [Python standard library (stdlib)](#)
 
 ### ◉ Referensi
 

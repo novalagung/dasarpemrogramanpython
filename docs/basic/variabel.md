@@ -28,9 +28,11 @@ umur = 18
 laki = True
 ```
 
+Karakter `=` adalah **operator assignment**, digunakan untuk operasi penugasan. Nilai yang ada di sebelah kanan `=` ditugaskan untuk ditampung oleh variabel yang berada di sebelah kiri `=`. Contoh pada statement `nama = "noval"`, nilai `"nama"` ditugaskan untuk ditampung oleh variabel `nama`.
+
 > Nilai string (`str`) bisa dituliskan dengan menggunakan literal `"` ataupun `'`
 
-Selanjutnya, coba kita munculkan nilai ke-empat variabel di atas ke layar menggunakan statement `print`. Caranya:
+Ok. Selanjutnya, coba kita munculkan nilai ke-empat variabel di atas ke layar menggunakan fungsi `print()`. Caranya:
 
 ```python
 print("==== biodata ====")
@@ -40,15 +42,19 @@ print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
 
 ![variabel python](img/variables-1.png)
 
+Penjelasan mengenai program di atas bisa dilihat di bawah ini:
+
 ### ◉ *Output formatting* `print`
 
-Statement berikut adalah contoh cara memunculkan string ke layar output (`stdout`):
+Di program yang sudah ditulis, ada statement berikut:
 
 ```python
 print("==== biodata ====")
 ```
 
-Sedangkan contoh berikut adalah penerapan teknik *output formatting* untuk mem-format string ke layar output:
+Statement tersebut adalah contoh cara memunculkan string ke layar output (`stdout`):
+
+Lalu di bawahnya ada statement ini, yang merupakan contoh penerapan teknik *output formatting* untuk mem-format string ke layar output:
 
 ```python
 print("nama: %s" % (nama))
@@ -57,7 +63,7 @@ print("nama: %s" % (nama))
 
 Karakter `%s` disitu akan di-replace dengan nilai variabel `nama` sebelum dimunculkan. Dan `%s` disini menandakan bahwa data yang akan me-replace-nya bertipe data `string`.
 
-Selain `%s` ada juga `%d` untuk data bertipe numerik integer, dan `%r` untuk data bertipe `bool`.
+Selain `%s`, ada juga `%d` untuk data bertipe numerik integer, dan `%r` untuk data bertipe `bool`. Contoh penerapannya bisa dilihat pada statement ke-3 program yang sudah di tulis.
 
 ```python
 print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
@@ -77,7 +83,7 @@ nilai_ujian = 99.2
 
 ## A.4.3. Operasi *assignment*
 
-Penulisan statement operasi *assignment* sama seperti statement deklarasi variabel.
+Di pemrograman Python, deklarasi variabel adalah pasti operasi assignment. Variabel dideklarasikan dengan ditentukan langsung nilai awalnya.
 
 ```python
 nama = "noval"
@@ -130,6 +136,11 @@ Output program di atas:
         github.com/novalagung/dasarpemrogramanpython-example/../variables
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [Tipe Data](/basic/tipe-data)
+- [Output Formatting](#)
 
 ### ◉ Referensi
 

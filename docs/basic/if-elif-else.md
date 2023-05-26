@@ -80,7 +80,7 @@ Kode di atas menghasilkan:
 
 Fungsi input digunakan untuk menampilkan suatu pesan text (yang disisipkan saat fungsi dipanggil) dan mengembalikan nilai inputan user dalam bentuk string.
 
-Agar makin jelas, silakan praktekan kode berikut:
+Agar makin jelas, silakan praktikan kode berikut:
 
 ```python
 str_input = input('Enter your grade: ')

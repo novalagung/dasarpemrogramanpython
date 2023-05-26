@@ -27,7 +27,7 @@ Cara run program ini lebih praktis karena tingal klik-klik saja. Di toolbar VSCo
 
 ### ◉ Menggunakan jupyter `code cells`
 
-Untuk menerapkan cara ini, tambahkan kode `# %%` pada baris di atas statement `print("hello python")`, dengan ini maka blok kode dianggap sebagai `code cell`.
+Untuk menerapkan cara ini, tambahkan kode `#%%` atau `# %%` pada baris di atas statement `print("hello python")` agar blok kode di bawahnya dianggap sebagai satu `code cell`.
 
 ![hello world python](img/hello-python-4.png)
 
