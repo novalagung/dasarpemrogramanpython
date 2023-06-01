@@ -43,7 +43,7 @@ Sebagai contoh, pada variabel `list_1` di atas:
 - Element index ke-`1` adalah data `70`
 - Element index ke-`2` adalah data `20`
 
-## A.12.2. Perulangan data list
+## A.12.2. Perulangan list
 
 List adalah salah satu tipe data yang dapat digunakan langsung pada perulangan `for`. Contoh:
 
@@ -65,6 +65,17 @@ for i in range(0, len(list_1)):
 Fungsi `len()` digunakan untuk menghitung jumlah element list. Dengan mengkombinasikan nilai balik fungsi ini dan fungsi `range()` bisa terbentuk data range dengan lebar sama dengan lebar list.
 
 > Lebih detailnya mengenai fungsi `len()` dibahas setelah ini
+
+### ◉ Fungsi `enumerate()`
+
+Fungsi `enumerate()` digunakan untuk membuat data sequence menjadi data enumerasi, yang jika dimasukan ke perulangan di setiap iterasinya bisa kita akses index beserta element-nya.
+
+```python
+list_1 = [10, 70, 20]
+
+for i, v in enumerate(list_1):
+    print("index:", i, "elem:", v)
+```
 
 ## A.12.3. Nested list
 
@@ -144,7 +155,7 @@ print(numbers)
 
 > Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
 
-## A.12.6. Operasi pada list
+## A.12.5. Operasi pada list
 
 ### ◉ Mengakses element via index
 
@@ -159,6 +170,22 @@ elem_3rd = list_1[2]
 
 print(elem_1st, elem_2nd, elem_3rd)
 # output → [10, 70, 20]
+```
+
+### ◉ Mengecek apakah element ada
+
+Kombinasi keyword `if` dan `in` bisa digunakan untuk mengidentifikasi apakah suatu element merupakan bagian dari list atau tidak. Contoh penerapannya:
+
+```python
+list_1 = [10, 70, 20]
+n = 70
+
+if n in list_1:
+    print(n, "is exists")
+else:
+    print(n, "is NOT exists")
+
+# output → 70 is exists
 ```
 
 ### ◉ *Slicing* list
@@ -508,3 +535,9 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

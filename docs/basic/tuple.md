@@ -48,7 +48,7 @@ print("elem 1:", tuple_1[1])
 # data → 3
 ```
 
-## A.14.3. Perulangan data tuple
+## A.14.3. Perulangan tuple
 
 Tuple adalah salah satu tipe data yang bisa digunakan secara langsung pada perulangan menggunakan keyword `for`.
 
@@ -69,10 +69,37 @@ Perulangan di atas ekuivalen dengan perulangan berikut:
 tuple_2 = ('ultra instinc shaggy', 'nightwing', 'noob saibot')
 
 for i in range(0, len(tuple_2)):
-    print(tuple_2[i])
+    print("index:", i, "elem:", tuple_2[i])
 ```
 
-## A.14.4. Nested tuple
+### ◉ Fungsi `enumerate()`
+
+Fungsi `enumerate()` digunakan untuk membuat data sequence menjadi data enumerasi, yang jika dimasukan ke perulangan di setiap iterasinya bisa kita akses index beserta element-nya.
+
+```python
+tuple_2 = ('ultra instinc shaggy', 'nightwing', 'noob saibot')
+
+for i, v in enumerate(tuple_2):
+    print("index:", i, "elem:", v)
+```
+
+## A.14.4. Mengecek apakah element ada
+
+Kombinasi keyword `if` dan `in` bisa digunakan untuk mengidentifikasi apakah suatu element merupakan bagian dari tuple atau tidak. Contoh penerapannya:
+
+```python
+tuple_1 = (10, 70, 20)
+n = 70
+
+if n in tuple_1:
+    print(n, "is exists")
+else:
+    print(n, "is NOT exists")
+
+# output → 70 is exists
+```
+
+## A.14.5. Nested tuple
 
 Nested tuple dibuat dengan menuliskan data tuple sebagai element tuple. Contoh:
 
@@ -102,7 +129,7 @@ tuple_nested = (
 )
 ```
 
-## A.14.5. List dan tuple
+## A.14.6. List dan tuple
 
 Tipe data list dan tuple umum dikombinasikan. Keduanya sangat mirip tapi memiliki perbedaan yang jelas, yaitu nilai tuple tidak bisa dimodifikasi sedangkan list bisa.
 
@@ -130,7 +157,7 @@ for row in data:
 
 ![tuple python](img/tuple-3.png)
 
-## A.14.6. Fungsi `tuple()`
+## A.14.7. Fungsi `tuple()`
 
 ### ◉ Konversi string ke tuple
 
@@ -163,7 +190,7 @@ print(rtuple)
 # data → (0, 1, 2)
 ```
 
-## A.14.7. Tuple *packing* dan *unpacking*
+## A.14.8. Tuple *packing* dan *unpacking*
 
 ### ◉ Tuple *packing*
 
@@ -218,7 +245,7 @@ print(first_name, rank, win)
 # data → aerith gainsborough 11 False
 ```
 
-## A.14.8. Tuple kosong `()`
+## A.14.9. Tuple kosong `()`
 
 Tuple bisa saja tidak berisi apapun, contohnya data `()`, yang cukup umum digunakan untuk merepresentasikan data kolektif yang isinya bisa saja kosong.
 
@@ -271,3 +298,9 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

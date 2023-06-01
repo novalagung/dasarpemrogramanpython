@@ -245,3 +245,9 @@ Metode penulisan ini sebetulnya sama seperti yang di atas, perbedaannya adalah s
 - https://docs.python.org/3/tutorial/controlflow.html
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

@@ -258,3 +258,9 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 - https://python-reference.readthedocs.io/en/latest/docs/functions/range.html
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

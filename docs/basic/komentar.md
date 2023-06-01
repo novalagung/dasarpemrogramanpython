@@ -88,3 +88,9 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 - https://docs.python-guide.org/writing/documentation/
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />

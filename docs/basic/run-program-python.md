@@ -52,3 +52,9 @@ Setelah itu, muncul tombol `Run Cell`, klik untuk run program.
 - https://docs.python.org/3/using/cmdline.html
 
 </div>
+
+---
+
+import Substack from '@site/src/components/Substack';
+
+<Substack />
