@@ -17,5 +17,7 @@ https://dasarpemrogramanpython.novalagung.com/basic/break-continue
 https://dasarpemrogramanpython.novalagung.com/basic/list
 https://dasarpemrogramanpython.novalagung.com/basic/list-comprehension
 https://dasarpemrogramanpython.novalagung.com/basic/tuple
+https://dasarpemrogramanpython.novalagung.com/basic/set
+https://dasarpemrogramanpython.novalagung.com/basic/frozenset
+https://dasarpemrogramanpython.novalagung.com/basic/dictionary
 https://dasarpemrogramanpython.novalagung.com/basic/not yet reviewed, 8, 9, 12
-https://dasarpemrogramanpython.novalagung.com/basic/sets
