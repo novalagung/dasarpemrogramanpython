@@ -84,14 +84,14 @@ const config = {
         items: [
           {
             position: 'left',
-            label: '📖 Web-book/E-book',
+            label: '📖 Webbook/Ebook',
             items: [
               {
-                label: 'Ebook: Dasar Pemrograman Golang ',
+                label: 'Dasar Pemrograman Golang ',
                 href: 'https://dasarpemrogramangolang.novalagung.com',
               },
               {
-                label: 'Ebook: Dasar Pemrograman Rust ',
+                label: 'Dasar Pemrograman Rust ',
                 href: 'https://dasarpemrogramanrust.novalagung.com',
               },
               {
