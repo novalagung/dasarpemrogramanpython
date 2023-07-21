@@ -15,7 +15,6 @@ const SubStack = () => {
 }
 
 export default function ContentWrapper(props) {
-  console.log('props', props)
   return (
     <>
       <Content {...props} />
