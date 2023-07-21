@@ -108,9 +108,3 @@ for i in range(max):
 - https://docs.python.org/3/tutorial/controlflow.html
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

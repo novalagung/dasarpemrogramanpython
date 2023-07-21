@@ -22,8 +22,10 @@ Pada chapter ini kita akan belajar lebih detail mengenai list dan pengoperasiann
 Deklarasi variabel dan data list adalah menggunakan *literal* list dengan notasi penulisan seperti berikut:
 
 ```python
+# contoh list
 list_1 = [10, 70, 20]
 
+# list dengan deklarasi element secara vertikal 
 list_2 = [
     'ab',
     'cd',
@@ -31,7 +33,11 @@ list_2 = [
     'ca'
 ]
 
+# list dengan element berisi bermacam-macam tipe data
 list_3 = [3.14, 'hello python', True, False]
+
+# list kosong
+list_4 = []
 ```
 
 Data dalam list biasa disebut dengan **element**. Setiap elemen disimpan dalam list secara urut dengan penanda urutan yang disebut **index**.
@@ -529,15 +535,13 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 - [Slice](#)
 - [Closure/lambda](#)
 
+### ◉ TBA
+
+- Pack & Unpack with `*` & `**`
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/datastructures.html
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

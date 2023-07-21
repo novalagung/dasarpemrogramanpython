@@ -146,9 +146,3 @@ for i in range(n):
 - https://docs.python.org/3/tutorial/controlflow.html
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

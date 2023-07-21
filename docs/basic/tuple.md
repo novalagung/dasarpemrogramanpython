@@ -292,15 +292,13 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 
 - [List](/basic/list)
 
+### ◉ TBA
+
+- Pack & Unpack with `*` & `**`
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/datastructures.html
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

@@ -200,9 +200,3 @@ Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset,
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

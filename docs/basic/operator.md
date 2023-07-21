@@ -196,9 +196,3 @@ print(is_substring_exists)
 - https://stackoverflow.com/a/15172182/1467988
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

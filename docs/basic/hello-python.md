@@ -64,9 +64,3 @@ Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built
 - https://docs.python.org/3/library/functions.html
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

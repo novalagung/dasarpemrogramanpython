@@ -150,9 +150,3 @@ Output program di atas:
 - https://www.learnpython.org/en/String_Formatting
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />

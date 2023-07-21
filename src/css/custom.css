@@ -28,10 +28,13 @@
 }
 
 /* custom css */
-.theme-doc-markdown.markdown hr {
+.theme-doc-markdown.markdown hr, .theme-doc-markdown.markdown + hr {
   background-color: var(--ifm-color-emphasis-300);
   margin-top: 40px;
   margin-bottom: 40px;
+}
+.theme-doc-markdown.markdown + hr {
+  margin-top: 20px;
 }
 
 blockquote {
@@ -44,10 +47,18 @@ blockquote {
   background-color: #282a36;
 }
 
-.theme-code-block.language-python,
-.theme-code-block.language-bash {
+.theme-code-block[class*="language-"] {
   background: #FF874B !important;
   color: #ffffff !important;
+  font-size: 0.9em !important;
+  border-radius: 0 !important;
+}
+.theme-code-block[class*="language-"] > div > pre {
+  border-radius: 0;
+}
+.theme-code-block[class*="language-"] > div > pre > code > span {
+  display: block;
+  margin-bottom: 1px;
 }
 
 .navbar__brand {
@@ -112,4 +123,8 @@ blockquote {
 }
 .theme-doc-markdown.markdown table.custom-table tr:nth-child(2n) {
   background-color: transparent !important;
+}
+
+.theme-doc-markdown.markdown table td code {
+  white-space: nowrap;
 }

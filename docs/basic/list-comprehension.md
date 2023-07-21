@@ -197,9 +197,3 @@ print(transposed) # output → [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 - https://docs.python.org/3/library/stdtypes.html#typesseq
 
 </div>
-
----
-
-import Substack from '@site/src/components/Substack';
-
-<Substack />
