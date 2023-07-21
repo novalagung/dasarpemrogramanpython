@@ -29,12 +29,9 @@
 
 /* custom css */
 .theme-doc-markdown.markdown hr, .theme-doc-markdown.markdown + hr {
-  background-color: var(--ifm-color-emphasis-300);
+  background-color: #eeeeee;
   margin-top: 40px;
   margin-bottom: 40px;
-}
-.theme-doc-markdown.markdown + hr {
-  margin-top: 20px;
 }
 
 blockquote {
