@@ -17,7 +17,86 @@ Tuple adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolek
 
 Pada chapter ini kita akan belajar tentang topik ini.
 
-## A.14.1. Penerapan tuple
+## A.15.1. Tuple vs. List
+
+Tipe data tuple sekilas memiliki beberapa kemiripan dan juga perbedaan jika dibandingkan dengan list.
+
+<table class="no-content-background content-align-center">
+    <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th class="align-center">Tuple</th>
+            <th class="align-center">List</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Literal</td>
+            <td class="align-center"><code>()</code>, atau <code>tuple()</code>,<br />atau elemen ditulis tanpa <code>()</code></td>
+            <td class="align-center"><code>[]</code>, atau <code>list()</code></td>
+        </tr>
+        <tr>
+<td>Contoh</td>
+<td class="vertical-align-top">
+
+```
+x = ()
+```
+
+```
+x = tuple()
+```
+
+```
+x = (1, True, "h", 2, 1)
+```
+
+```
+x = 1, True, "h", 2, 1
+```
+
+</td>
+<td class="vertical-align-top">
+
+```
+x = []
+```
+
+```
+x = list()
+```
+
+```
+x = [1, True, "h", 2, 1]
+```
+
+</td>
+        </tr>
+        <tr>
+            <td>Urutan elemen</td>
+            <td class="align-center" colspan="2">urut sesuai index</td>
+        </tr>
+        <tr>
+            <td>Pengaksesan elemen</td>
+            <td class="align-center" colspan="2">via index dan perulangan</td>
+        </tr>
+        <tr>
+            <td><i>Mutability</i></td>
+            <td class="align-center">elemen tidak bisa diubah</td>
+            <td class="align-center">elemen bisa diubah</td>
+        </tr>
+        <tr>
+            <td>Duplikasi elemen</td>
+            <td class="align-center" colspan="2">elemen bisa duplikat</td>
+        </tr>
+        <tr>
+            <td>Tipe data elemen</td>
+            <td class="align-center" colspan="2">bisa sejenis maupun berbeda satu sama lain</td>
+        </tr>
+    </tbody>
+</table>
+
+## A.14.2. Penerapan tuple
 
 Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut:
 
@@ -25,16 +104,16 @@ Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Cont
 tuple_1 = (2, 3, 4, "hello python", False)
 
 print("data:", tuple_1)
-# data → (2, 3, 4, "hello python", False)
+# output → data: (2, 3, 4, "hello python", False)
 
 print("total elem:", len(tuple_1))
-# total elem → 5
+# output → total elem: 5
 ```
 
 - Tuple bisa menampung element yang tipe datanya bisa sejenis bisa tidak, sama seperti list.
 - Fungsi `len()` digunakan untuk menghitung lebar tuple.
 
-## A.14.2. Mengakses element tuple
+## A.14.3. Mengakses element tuple
 
 Element tuple bisa diakses menggunakan notasi `tuple[index]`.
 
@@ -42,13 +121,13 @@ Element tuple bisa diakses menggunakan notasi `tuple[index]`.
 tuple_1 = (2, 3, 4, 5)
 
 print("elem 0:", tuple_1[0])
-# data → 2
+# output → elem 0: 2
 
 print("elem 1:", tuple_1[1])
-# data → 3
+# output → elem 1: 3
 ```
 
-## A.14.3. Perulangan tuple
+## A.14.4. Perulangan tuple
 
 Tuple adalah salah satu tipe data yang bisa digunakan secara langsung pada perulangan menggunakan keyword `for`.
 
@@ -83,7 +162,7 @@ for i, v in enumerate(tuple_2):
     print("index:", i, "elem:", v)
 ```
 
-## A.14.4. Mengecek apakah element ada
+## A.14.5. Mengecek apakah element ada
 
 Kombinasi keyword `if` dan `in` bisa digunakan untuk mengidentifikasi apakah suatu element merupakan bagian dari tuple atau tidak. Contoh penerapannya:
 
@@ -99,7 +178,7 @@ else:
 # output → 70 is exists
 ```
 
-## A.14.5. Nested tuple
+## A.14.6. Nested tuple
 
 Nested tuple dibuat dengan menuliskan data tuple sebagai element tuple. Contoh:
 
@@ -129,7 +208,7 @@ tuple_nested = (
 )
 ```
 
-## A.14.6. List dan tuple
+## A.14.7. List dan tuple
 
 Tipe data list dan tuple umum dikombinasikan. Keduanya sangat mirip tapi memiliki perbedaan yang jelas, yaitu nilai tuple tidak bisa dimodifikasi sedangkan list bisa.
 
@@ -157,7 +236,7 @@ for row in data:
 
 ![tuple python](img/tuple-3.png)
 
-## A.14.7. Fungsi `tuple()`
+## A.14.8. Fungsi `tuple()`
 
 ### ◉ Konversi string ke tuple
 
@@ -166,7 +245,7 @@ Fungsi `tuple()` bisa digunakan untuk konversi data string ke tuple. Hasilnya ad
 ```python
 alphabets = tuple('abcdefgh')
 print(alphabets)
-# data → ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+# output → ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
 ```
 
 ### ◉ Konversi list ke tuple
@@ -176,7 +255,7 @@ Konversi list ke tuple bisa dilakukan dengan mudah menggunakan fungsi `tuple()`.
 ```python
 numbers = tuple([2, 3, 4, 5])
 print(numbers)
-# data → (2, 3, 4, 5)
+# output → (2, 3, 4, 5)
 ```
 
 ### ◉ Konversi range ke tuple
@@ -187,10 +266,10 @@ Range juga bisa dikonversi ke tuple menggunakan fungsi `tuple()`.
 r = range(0, 3)
 rtuple = tuple(r)
 print(rtuple)
-# data → (0, 1, 2)
+# output → (0, 1, 2)
 ```
 
-## A.14.8. Tuple *packing* dan *unpacking*
+## A.14.9. Tuple *packing* dan *unpacking*
 
 ### ◉ Tuple *packing*
 
@@ -204,7 +283,7 @@ win = False
 row_data = (first_name, rank, win)
 
 print(row_data)
-# data → ('aerith gainsborough', 11, False)
+# output → ('aerith gainsborough', 11, False)
 ```
 
 Bisa dilihat penerapan metode *packing* cukup mudah. Tulis saja data atau variabel yang ingin di-*pack* dalam notasi tuple, kemudian gunakan sebagai nilai pada operasi *assignment*.
@@ -242,17 +321,17 @@ row_data = ('aerith gainsborough', 11, False)
 first_name, rank, win = row_data
 
 print(first_name, rank, win)
-# data → aerith gainsborough 11 False
+# output → aerith gainsborough 11 False
 ```
 
-## A.14.9. Tuple kosong `()`
+## A.14.10. Tuple kosong `()`
 
 Tuple bisa saja tidak berisi apapun, contohnya data `()`, yang cukup umum digunakan untuk merepresentasikan data kolektif yang isinya bisa saja kosong.
 
 ```python
 empty_tuple = ()
 print(empty_tuple)
-# data → ()
+# output → ()
 ```
 
 Berikut adalah contoh penerapannya, dimisalkan ada data kolektif yang didapat dari database berbentuk array object. Data tersebut perlu disimpan oleh variabel list yang element-nya adalah tuple dengan spesifikasi:

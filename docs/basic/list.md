@@ -258,9 +258,9 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
 
 > - Lebih detailnya mengenai method dibahas pada chapter [Method](#)
 
-### ◉ Extend/concat element
+### ◉ *Extend/concat/union* element
 
-Operasi *extend* (atau *concat*) mirip seperti append, perbedaannya ada pada data baru yang akan ditambahkan yang harus bertipe data list juga.
+Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua data list. Ada beberapa metode yang tersedia, diantaranya:
 
 - via method `extend()`:
 
@@ -466,9 +466,9 @@ print(list_1)
 # output → [20, 70, 10]
 ```
 
-### ◉ *Cloning*/duplikasi list
+### ◉ *Copy* list
 
-Ada 2 cara untuk menduplikasi list:
+Ada 2 cara untuk menduplikasi list, menggunakan method `copy()` dan teknik slicing.
 
 - Menggunakan method `copy()`:
 
@@ -491,6 +491,9 @@ Ada 2 cara untuk menduplikasi list:
     print(list_2)
     # output → [10, 70, 20]
     ```
+
+> Operasi copy disini jenisnya adalah shallow copy.<br />
+> Lebih detailya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
 
 ### ◉ Sorting
 

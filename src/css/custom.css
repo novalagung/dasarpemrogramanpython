@@ -129,3 +129,18 @@ blockquote {
 .theme-doc-markdown.markdown table td code {
   white-space: nowrap;
 }
+.theme-doc-markdown.markdown table td > div {
+  margin-bottom: 0;
+}
+.theme-doc-markdown.markdown table tr td > .theme-code-block:nth-of-type(n+1) {
+  margin-top: 10px;
+}
+.theme-doc-markdown.markdown table.no-content-background tr:nth-child(2n) {
+  background-color: transparent;
+}
+.theme-doc-markdown.markdown table tr td.align-center {
+  text-align: center;
+}
+.theme-doc-markdown.markdown table tr td.vertical-align-top {
+  vertical-align: top;
+}
