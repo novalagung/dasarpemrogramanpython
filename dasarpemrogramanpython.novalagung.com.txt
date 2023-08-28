@@ -18,3 +18,4 @@ https://dasarpemrogramanpython.novalagung.com/basic/list
 https://dasarpemrogramanpython.novalagung.com/basic/list-comprehension
 https://dasarpemrogramanpython.novalagung.com/basic/tuple
 https://dasarpemrogramanpython.novalagung.com/basic/set
+https://dasarpemrogramanpython.novalagung.com/basic/dictionary
