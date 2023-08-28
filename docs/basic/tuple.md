@@ -374,6 +374,7 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 ### ◉ TBA
 
 - Pack & Unpack with `*` & `**`
+- Zip
 
 ### ◉ Referensi
 

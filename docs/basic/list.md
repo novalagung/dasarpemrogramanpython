@@ -367,6 +367,16 @@ x = list_3.pop(7)
 
 > - Lebih detailnya mengenai error dibahas pada chapter [Error](#)
 
+Selain menggunakan method `pop()`, keyword `del` bisa difungsikan untuk hal yang sama, yaitu menghapus elemen tertentu. Contoh penerapannya:
+
+```python
+list_3 = [10, 70, 20, 70]
+print('len:', len(list_3), "data:", list_3)
+
+del list_3[1]
+print('len:', len(list_3), "data:", list_3)
+```
+
 ### ◉ Menghapus element pada range index
 
 Python memiliki keyword `del` yang berguna untuk menghapus suatu data. Dengan menggabungkan keyword ini dan operasi slicing, kita bisa menghapus element dalam range tertentu dengan cukup mudah.
