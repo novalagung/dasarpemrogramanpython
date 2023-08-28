@@ -1,8 +1,8 @@
 ---
 sidebar_position: 10
-title: A.10. Perulangan → while
+title: A.10. Perulangan Python → while
 sidebar_label: A.10. Perulangan → while
-# description: 
+description: Tutorial perulangan while di python
 keywords: [while, perulangan, python while, looping]
 faqs:
   - question: Perulangan di Python

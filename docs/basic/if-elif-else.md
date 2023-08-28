@@ -1,6 +1,6 @@
 ---
 sidebar_position: 8
-title: A.8. Seleksi kondisi → if, elif, else
+title: A.8. Seleksi kondisi Python → if, elif, else
 sidebar_label: A.8. Seleksi kondisi → if, elif, else
 description: Belajar seleksi kondisi di python menggunakan if, elif, dan else. Juga belajar tentang operasi ternary dan pass dalam seleksi kondisi.
 keywords: [python if else, if elif else]

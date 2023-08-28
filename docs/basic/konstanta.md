@@ -1,6 +1,6 @@
 ---
 sidebar_position: 5
-title: A.5. Konstanta
+title: A.5. Python Konstanta
 sidebar_label: A.5. Konstanta
 description: Tutorial belajar konstanta di Python
 keywords: [konstanta python]

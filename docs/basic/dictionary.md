@@ -1,7 +1,7 @@
 ---
 sidebar_position: 16
-title: A.16. Frozen Set
-sidebar_label: A.16. Frozen Set
+title: A.16. Python Dictionary
+sidebar_label: A.16. Dictionary
 # description: 
 # keywords: []
 # faqs:

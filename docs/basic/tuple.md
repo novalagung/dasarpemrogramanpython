@@ -1,6 +1,6 @@
 ---
 sidebar_position: 14
-title: A.14. Tuple
+title: A.14. Python Tuple
 sidebar_label: A.14. Tuple
 description: Tuple adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolektif yang isinya tidak akan berubah (immutable), berbeda dengan list yang lebih cocok untuk data yang bisa berubah nilai elemen-nya (mutable).
 keywords: [tuple, python tuple, python object]

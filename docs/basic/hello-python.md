@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: A.1. Program Pertama → Hello Python
-sidebar_label: A.1. Program Pertama → Hello Python
+title: A.1. Python Hello World
+sidebar_label: A.1. Program Pertama → Hello World
 description: Tutorial belajar python, membuat program hello world di python
 keywords: [tutorial python, belajar python, hello world python, pemrograman python, bahasa python]
 ---

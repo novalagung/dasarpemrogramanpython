@@ -1,6 +1,6 @@
 ---
 sidebar_position: 9
-title: A.9. Perulangan → for, range
+title: A.9. Perulangan Python → for, range
 sidebar_label: A.9. Perulangan → for, range
 description: Tutorial belajar perulangan/iterasi di Python menggunakan for dan range. 
 keywords: [perulangan, loop, for, range, looping]

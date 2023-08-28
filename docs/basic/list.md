@@ -1,6 +1,6 @@
 ---
 sidebar_position: 12
-title: A.12. List
+title: A.12. Python List
 sidebar_label: A.12. List
 description: List di Python ini memiliki banyak kemiripan dengan array, bedanya list bisa berisi data dengan berbagai macam tipe data, jadi tidak harus sejenis tipe datanya.
 keywords: [list python, list, matrix, array]

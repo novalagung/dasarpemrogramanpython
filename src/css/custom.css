@@ -17,7 +17,7 @@
   --ifm-color-primary-lightest: #f7834a;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --doc-sidebar-width: 400px !important;
+  --doc-sidebar-width: 330px !important;
   --ifm-blockquote-border-left-width: 4px;
   --ifm-blockquote-border-color: #e16021;
 }
@@ -28,6 +28,11 @@
 }
 
 /* custom css */
+
+.menu__link {
+  padding-right: 0px !important;
+}
+
 .markdown h1:first-child {
   font-weight: normal;
 }

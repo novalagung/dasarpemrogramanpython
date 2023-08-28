@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-title: A.3. Komentar
+title: A.3. Python Komentar
 sidebar_label: A.3. Komentar
 description: Tutorial belajar penerapan komentar di Python
 keywords: [komentar python, multi line komentar python]

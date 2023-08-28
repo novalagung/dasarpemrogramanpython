@@ -1,6 +1,6 @@
 ---
 sidebar_position: 15
-title: A.15. Set
+title: A.15. Python Set
 sidebar_label: A.15. Set
 description: Set adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolektif unik, berbeda dengan list yang lebih cocok untuk data yang bisa berubah nilai elemen-nya (mutable).
 keywords: [set, python set, frozenset]

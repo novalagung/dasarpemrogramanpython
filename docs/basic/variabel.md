@@ -1,6 +1,6 @@
 ---
 sidebar_position: 4
-title: A.4. Variabel
+title: A.4. Python Variabel
 sidebar_label: A.4. Variabel
 description: Tutorial belajar penerapan variabel di Python
 keywords: [variabel python]

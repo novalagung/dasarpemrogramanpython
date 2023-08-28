@@ -1,6 +1,6 @@
 ---
 sidebar_position: 13
-title: A.13. List Comprehension
+title: A.13. Python List Comprehension
 sidebar_label: A.13. List Comprehension
 description: List comprehension adalah metode ringkas pembuatan list selain menggunakan literal `[]`. Cara ini lebih banyak diterapkan untuk operasi list yang menghasilkan struktur baru.
 keywords: [list comprehension, python list comprehension, shortcut list]

@@ -1,6 +1,6 @@
 ---
 sidebar_position: 6
-title: A.6. Tipe Data
+title: A.6. Python Tipe Data
 sidebar_label: A.6. Tipe Data
 # description: 
 keywords: [tipe data python]

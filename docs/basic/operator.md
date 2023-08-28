@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-title: A.7. Operator
+title: A.7. Python Operator
 sidebar_label: A.7. Operator
 description: Belajar macam-macam operator di Python.
 keywords: [tutorial operator python, operator aritmatika, operator logika, operator perbandingan, operator assignment, operator bitwise]
