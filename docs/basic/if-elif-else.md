@@ -11,7 +11,7 @@ faqs:
     answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
 ---
 
-Seleksi kondisi adalah suatu blok kode yang dieksekusi hanya ketika kriteria yang ditentukan terpenuhi. Seleksi kondisi banyak digunakan untuk kontrol alur program.
+Seleksi kondisi adalah suatu blok kode yang dieksekusi hanya ketika kriteria yang ditentukan terpenuhi. Teknik seleksi kondisi banyak digunakan untuk kontrol alur program.
 
 Python mengenal beberapa keyword seleksi kondisi, yang pada chapter ini akan kita pelajari.
 

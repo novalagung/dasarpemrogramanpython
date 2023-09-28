@@ -11,7 +11,7 @@ faqs:
     answer: 'Contoh perulanga di Python menggunakan keyword for → for i in range(5): print("index:", i)'
 ---
 
-Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blok kode. Pada chapter ini kita akan mempelajari penerapannya di Python.
+Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blok kode, atau mengiterasi elemen milik tipe data kolektif (contohnya: list). Chapter ini membahas tentang penerapannya di Python.
 
 ## A.9.1. Keyword `for` dan fungsi `range()`
 
@@ -29,11 +29,13 @@ for i in range(5):
 
 ![perulangan for range](img/for-range-1.png)
 
-Statement `print("index:", i)` muncul 5 kali, karena perulangan dilakukan dengan kontrol `range(5)` dimana fungsi ini menciptakan object *range* dengan isi deret angka sejumlah `5` dimulai dari angka `0` hingga `4`.
+Penjelasan:
 
-Statement `for i in range(5):` adalah contoh penulisan perulangan menggunakan `for` dan `range()`. Variabel `i` berisi nilai *counter* setiap iterasi, yang pada konteks ini adalah angka `0` hingga `4`.
+- Statement `print("index:", i)` muncul 5 kali, karena perulangan dilakukan dengan kontrol `range(5)` dimana fungsi ini menciptakan object *range* dengan isi deret angka sejumlah `5` dimulai dari angka `0` hingga `4`.
 
-Statement `print("index:", i)` wajib ditulis menjorok ke kanan karena merupakan isi dari blok perulangan `for i in range(5):`.
+- Statement `for i in range(5):` adalah contoh penulisan perulangan menggunakan `for` dan `range()`. Variabel `i` berisi nilai *counter* setiap iterasi, yang pada konteks ini adalah angka `0` hingga `4`.
+
+- Statement `print("index:", i)` wajib ditulis menjorok ke kanan karena merupakan isi dari blok perulangan `for i in range(5):`.
 
 ### ◉ Fungsi `list()`
 
@@ -143,7 +145,7 @@ for i in range(5, -5, -1):
 </tr>
 </table>
 
-## A.9.3. Perulangan `for` tanpa `range()`
+## A.9.3. Iterasi element data kolektif
 
 Perulangan menggunakan `for` bisa dilakukan pada beberapa jenis tipe data (seperti list, string, tuple, dan lainnya) caranya dengan langsung menuliskan saja variabel atau data tersebut pada statement `for`. Contoh penerapannya bisa dilihat di bawah ini:
 
