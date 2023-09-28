@@ -13,11 +13,11 @@ faqs:
 
 Seleksi kondisi adalah suatu blok kode yang dieksekusi hanya ketika kriteria yang ditentukan terpenuhi. Teknik seleksi kondisi banyak digunakan untuk kontrol alur program.
 
-Python mengenal beberapa keyword seleksi kondisi, yang pada chapter ini akan kita pelajari.
+Python mengenal beberapa keyword seleksi kondisi, dan pada chapter ini akan kita pelajari.
 
 ## A.8.1. Keyword `if`
 
-`if` adalah keyword seleksi kondisi di Python. Cara penerapannya sangat mudah, cukup tulis saja keyword tersebut, kemudian diikuti dengan kondisi berupa nilai `bool` atau statement operasi logika, lalu dibawahnya ditulis blok kode yang ingin dieksekusi ketika kondisi tersebut terpenuhi. Contoh:
+`if` adalah keyword seleksi kondisi di Python. Cara penerapan keyword ini sangat mudah, cukup tulis saja `if` diikuti dengan kondisi berupa nilai `bool` atau statement operasi logika, lalu dibawahnya ditulis blok kode yang ingin dieksekusi ketika kondisi tersebut terpenuhi. Contoh:
 
 ```python
 grade = 100
@@ -52,7 +52,7 @@ if grade == 90:
 
 `elif` (kependekan dari **else if**) digunakan untuk menambahkan blok seleksi kondisi baru, untuk mengantisipasi blok `if` yang tidak terpenuhi.
 
-Dalam penerapannya, suatu blok seleksi kondisi harus diawali dengan `if`. Keyword `elif` hanya bisa dipergunakan pada kondisi setelahnya yang masih satu rantai (atau *chain*). Contoh:
+Dalam penerapannya, suatu blok seleksi kondisi harus diawali dengan `if`. Keyword `elif` hanya bisa dipergunakan pada kondisi setelahnya yang masih satu rantai (masih satu *chain*). Contoh:
 
 ```python
 str_input = input('Enter your grade: ')
@@ -93,7 +93,7 @@ Kode di atas menghasilkan:
 
 1. Text `Enter your grade :` muncul, kemudian kursor akan berhenti disitu.
 1. User perlu menuliskan sesuatu kemudian menekan tombol enter agar eksekusi program berlanjut.
-1. Inputan dari user kemudian menjadi nilai balik fungsi `input()` (yang pada contoh di atas ditangkap oleh variabel `input_str`).
+1. Inputan dari user kemudian menjadi nilai balik fungsi `input()` (yang pada contoh di atas ditampung oleh variabel `input_str`).
 1. Nilai inputan user di print menggunakan statement `print("inputan user:", str_input)`.
 
 ### ◉ Fungsi `type()`
@@ -189,7 +189,7 @@ if (grade >= 65 and not prev_grade >= 65) or (not grade >= 65 and prev_grade >= 
 
 ## A.8.6. Seleksi kondisi sebaris & *ternary*
 
-Silakan perhatikan kode berikut:
+Silakan perhatikan kode sederhana berikut, isinya adalah seleksi kondisi sederhana pengecekan nilai `grade >= 65` atau tidak.
 
 ```python
 if grade >= 65:
@@ -198,7 +198,7 @@ else:
     print("below the passing grade")
 ```
 
-Kode di atas bisa dituliskan menggunakan beberapa metode:
+Kode di atas bisa dituliskan dalam bentuk alternatif penulisan kode lainnya:
 
 ### ◉ *One-line* / sebaris
 
@@ -207,7 +207,7 @@ if grade >= 65: print("passed the exam")
 if grade < 65: print("below the passing grade")
 ```
 
-Metode penulisan ini bisa diterapkan pada blok kode seleksi kondisi yang hanya memiliki 1 kondisi.
+Metode penulisan sebaris ini cocok diterapkan pada situasi dimana seleksi kondisi hanya memiliki 1 kondisi saja.
 
 ### ◉ *Ternary*
 
@@ -215,7 +215,7 @@ Metode penulisan ini bisa diterapkan pada blok kode seleksi kondisi yang hanya m
 print("passed the exam") if grade >= 65 else print("below the passing grade")
 ```
 
-Metode penulisan ini bisa diterapkan pada blok kode seleksi kondisi yang memiliki 2 kondisi (`True` dan `False`).
+Metode penulisan *ternary* umum diterapkan pada blok kode seleksi kondisi yang memiliki 2 kondisi (`True` dan `False`).
 
 ### ◉ *Ternary* dengan nilai balik
 
@@ -224,7 +224,7 @@ message = "passed the exam" if grade >= 65 else "below the passing grade"
 print(message)
 ```
 
-Metode penulisan ini sebetulnya sama seperti yang di atas, perbedaannya adalah setiap kondisi menghasilkan nilai balik (yang kemudian ditangkap variabel `message`).
+Metode penulisan ini sebenarnya adalah sama seperti penerapan ternary sebelumnya, perbedaannya: pada metode ini setiap kondisi menghasilkan nilai balik yang umumnya ditampung oleh variabel. Pada contoh di atas, nilai balik ditampung variabel `message`.
 
 ---
 

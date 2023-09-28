@@ -49,6 +49,14 @@ print("hobbies:", profile["hobbies"])
 # output → ['playing with pencil']
 ```
 
+:::danger
+
+Pengaksesan item menggunakan key yang tidak dikenali akan menghasilkan error.
+
+Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `umur` misalnya (`profile["umur"]`) hasilnya adalah error. 
+
+:::
+
 ### ◉ Urutan item dictionary
 
 Mulai dari Python version 3.7, item dictionary tersimpan secara urut. Artinya urutan item dictionary akan selalu sesuai dengan bagaimana inisialisasi awalnya.

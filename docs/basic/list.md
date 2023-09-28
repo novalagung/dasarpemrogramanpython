@@ -178,6 +178,14 @@ print(elem_1st, elem_2nd, elem_3rd)
 # output → [10, 70, 20]
 ```
 
+:::danger
+
+Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan error.
+
+Sebagai contoh, data `list_1` di atas jika diakses index ke-3-nya misalnya (`list_1[3]`) hasilnya adalah error. 
+
+:::
+
 ### ◉ Mengecek apakah element ada
 
 Kombinasi keyword `if` dan `in` bisa digunakan untuk mengidentifikasi apakah suatu element merupakan bagian dari list atau tidak. Contoh penerapannya:

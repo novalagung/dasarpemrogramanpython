@@ -113,7 +113,7 @@ print("total elem:", len(tuple_1))
 - Tuple bisa menampung element yang tipe datanya bisa sejenis bisa tidak, sama seperti list.
 - Fungsi `len()` digunakan untuk menghitung lebar tuple.
 
-## A.14.3. Mengakses element tuple
+## A.14.3. Mengakses element tuple via index
 
 Element tuple bisa diakses menggunakan notasi `tuple[index]`.
 
@@ -126,6 +126,14 @@ print("elem 0:", tuple_1[0])
 print("elem 1:", tuple_1[1])
 # output → elem 1: 3
 ```
+
+:::danger
+
+Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan error.
+
+Sebagai contoh, data `tuple_1` di atas jika diakses index ke-4-nya misalnya (`tuple_1[4]`) hasilnya adalah error. 
+
+:::
 
 ## A.14.4. Perulangan tuple
 
