@@ -283,3 +283,199 @@ print(str[:4])
 ```
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](#)
+
+## A.17.7. Operasi *character & case*
+
+Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
+
+### ◉ Pengecekan karakter alfabet dan angka
+
+- Method `isalpha()` digunakan untuk mengecek apakah string berisi karakter alfabet atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah alfabet.
+
+    ```python
+    print("abcdef".isalpha())
+    # output → True, karena abcdef adalah alfabet
+
+    print("abc123".isalpha())
+    # output → False, karena ada karakter 123 yang bukan merupakan alfabet
+
+    print("موز".isalpha())
+    # output → True, karena موز adalah abjad arabic 
+
+    print("バナナ".isalpha())
+    # output → True, karena バナナ adalah karakter jepang
+    ```
+
+- Method `isdigit()` digunakan untuk mengecek apakah string berisi karakter digit atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik (termasuk pangkat).
+
+    ```python
+    print("123456".isdigit())
+    # output → True, karena 123456 adalah digit
+
+    print("123abc".isdigit())
+    # output → False, karena ada karakter abc yang bukan merupakan digit
+
+    print('2⅓'.isdigit())
+    # output → False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori digit
+
+    print('4²'.isdigit())
+    # output → True, karena 4² adalah bilangan pangkat
+
+    print('٢٨'.isdigit())
+    # output → True, karena ٢٨ adalah digit arabic
+
+    print('𝟜'.isdigit())
+    # output → True, karena 𝟜 adalah digit
+    ```
+
+- Method `isdecimal()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik desimal.
+
+    ```python
+    print("123456".isdecimal())
+    # output → True, karena 123456 adalah angka desimal
+
+    print("123abc".isdecimal())
+    # output → False, karena ada karakter abc yang bukan merupakan angka desimal
+
+    print('2⅓'.isdecimal())
+    # output → False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori angka desimal
+
+    print('4²'.isdecimal())
+    # output → False, karena bilangan pangkat yang tidak termasuk dalam kategori angka desimal
+
+    print('٢٨'.isdecimal())
+    # output → True, karena ٢٨ adalah angka desimal arabic
+
+    print('𝟜'.isdecimal())
+    # output → True, karena 𝟜 adalah angka desimal
+    ```
+
+- Method `isnumeric()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik desimal.
+
+    ```python
+    print("123456".isnumeric())
+    # output → True, karena 123456 adalah angka numerik
+
+    print("123abc".isnumeric())
+    # output → False, karena ada karakter abc yang bukan merupakan numerik
+
+    print('2⅓'.isnumeric())
+    # output → True, karena bilangan pecahan termasuk dalam kategori numerik
+
+    print('4²'.isnumeric())
+    # output → True, karena bilangan pangkat termasuk dalam kategori numerik
+
+    print('٢٨'.isnumeric())
+    # output → True, karena ٢٨ adalah angka numerik arabic
+
+    print('𝟜'.isnumeric())
+    # output → True, karena 𝟜 adalah angka numerik
+    ```
+
+- Method `isalnum()` digunakan untuk mengecek apakah string berisi setidaknya karakter alfabet atau digit, atau tidak keduanya. Nilai kembaliannya `True` jika semua karakter dalam string adalah alfabet/angka.
+
+    ```python
+    print("123abc".isalnum())
+    # output → True, karena 123 adalah digit dan abc adalah alfabet 
+
+    print("12345⅓".isalnum())
+    # output → True, karena 12345⅓ adalah digit
+
+    print("abcdef".isalnum())
+    # output → True, karena abcdef adalah alfabet
+
+    print("abc 12".isalnum())
+    # output → False, karena ada karakter spasi yang bukan merupakan karakter digit ataupun alfabet
+
+    print("موز".isalnum())
+    # output → True, karena موز adalah abjad arabic 
+
+    print("バナナ".isalnum())
+    # output → True, karena バナナ adalah karakter jepang
+    ```
+
+### ◉ Pengecekan karakter *whitespace*
+
+Method `isspace()` digunakan untuk mengecek apakah string berisi karakter *whitespace*.
+
+    ```python
+    print(" ".isspace())
+    # output → True, karena string berisi karakter spasi
+
+    print("\n".isspace())
+    # output → True, karena string berisi karakter newline
+
+    print("\n\r".isspace())
+    # output → True, karena string berisi karakter newline 
+
+    print("hello\n\r".isspace())
+    # output → False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
+    ```
+
+### ◉ Pengecekan karakter *case*
+
+- Method `islower()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf kecil (*lower case*), jika iya maka nilai kembaliannya adalah `True`.
+
+    ```python
+    print("hello python".islower())
+    # output → True
+
+    print("Hello Python".islower())
+    # output → False
+
+    print("HELLO PYTHON".islower())
+    # output → False
+    ```
+
+- Method `istitle()` digunakan untuk mengecek apakah kata dalam string adalah ditulis dengan awalan huruf besar (*title case*), jika iya maka nilai kembaliannya adalah `True`.
+
+    ```python
+    print("hello python".istitle())
+    # output → False
+
+    print("Hello Python".istitle())
+    # output → True
+
+    print("HELLO PYTHON".istitle())
+    # output → False
+    ```
+
+- Method `isupper()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf besar (*upper case*), jika iya maka nilai kembaliannya adalah `True`.
+
+    ```python
+    print("hello python".isupper())
+    # output → False
+
+    print("Hello Python".isupper())
+    # output → False
+
+    print("HELLO PYTHON".isupper())
+    # output → True
+    ```
+
+### ◉ Mengubah karakter *case*
+
+Beberapa method yang bisa digunakan untuk mengubah *case* suatu string:
+
+- Method `capitalize()` berfungsi untuk mengubah penulisan karakter pertama string menjadi huruf besar (*capitalize*).
+- Method `title()` berfungsi untuk mengubah penulisan kata dalam string diawali dengan huruf besar (*title case*).
+- Method `upper()` berfungsi untuk mengubah penulisan semua karakter string menjadi huruf besar (*upper case*).
+- Method `lower()` berfungsi untuk mengubah penulisan semua karakter string menjadi huruf kecil (*lower case*).
+- Method `swapcase()` berfungsi untuk membalik penulisan case karakter string. Untuk karakter yang awalnya huruf kecil menjadi huruf besar, dan sebaliknya.
+
+```python
+print("hello python".capitalize())
+# output → Hello python
+
+print("hello python".title())
+# output → Hello Python
+
+print("hello python".upper())
+# output → HELLO PYTHON
+
+print("Hello Python".lower())
+# output → hello python
+
+print("Hello Python".swapcase())
+# output → hELLO pYTHON
+```
