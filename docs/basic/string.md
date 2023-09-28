@@ -398,19 +398,19 @@ Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi st
 
 Method `isspace()` digunakan untuk mengecek apakah string berisi karakter *whitespace*.
 
-    ```python
-    print(" ".isspace())
-    # output → True, karena string berisi karakter spasi
+```python
+print(" ".isspace())
+# output → True, karena string berisi karakter spasi
 
-    print("\n".isspace())
-    # output → True, karena string berisi karakter newline
+print("\n".isspace())
+# output → True, karena string berisi karakter newline
 
-    print("\n\r".isspace())
-    # output → True, karena string berisi karakter newline 
+print("\n\r".isspace())
+# output → True, karena string berisi karakter newline 
 
-    print("hello\n\r".isspace())
-    # output → False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
-    ```
+print("hello\n\r".isspace())
+# output → False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
+```
 
 ### ◉ Pengecekan karakter *case*
 
@@ -479,3 +479,35 @@ print("Hello Python".lower())
 print("Hello Python".swapcase())
 # output → hELLO pYTHON
 ```
+
+## A.17.8. Operasi pencarian string & substring
+
+### ◉ Pengecekan string menggunakan keyword `in`
+
+Keyword `in` bisa digunakan untuk mengecek apakah suatu string merupakan bagian dari string lain. Nilai balik statement adalah boolean. Contoh:
+
+```python
+str = "hello world"
+print("ello" in str)
+# output → True
+```
+
+Contoh lain dengan mempergunakan keyword `in` pada seleksi kondisi `if`:
+
+```python
+str = "hello world"
+if "ello" in str:
+    print(f"py is in {str}")
+# output → py is in hello world
+```
+
+
+### ◉ Pengecekan awalan dan akhiran string
+
+str = "hello world"
+print(str.startswith("hell"))
+print(str.startswith("ello"))
+
+str = "hello world"
+print(str.endswith("orld"))
+print(str.endswith("worl"))
