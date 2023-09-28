@@ -17,8 +17,8 @@ Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blo
 
 Perulangan di Python bisa dibuat menggunakan kombinasi keyword `for` dan fungsi `range()`.
 
-- `for` adalah keyword untuk perulangan, dalam penerapannya diikuti dengan keyword `in`.
-- fungsi `range()` digunakan untuk membuat object *range*, yang umumnya dipakai sebagai kontrol perulangan.
+- Keyword `for` adalah keyword untuk perulangan, dalam penerapannya diikuti dengan keyword `in`.
+- Fungsi `range()` digunakan untuk membuat object *range*, yang umumnya dipakai sebagai kontrol perulangan.
 
 Agar lebih jelas, silakan perhatikan dan test kode berikut:
 
@@ -29,15 +29,19 @@ for i in range(5):
 
 ![perulangan for range](img/for-range-1.png)
 
-Statement `print("index:", i)` muncul 5 kali, karena perulangan dilakukan dengan kontrol `range(5)` dimana fungsi ini menciptakan object *range* dengan isi deret angka sejumlah `5` dimulai dari angka `0` hingga `4`.
+Penjelasan:
 
-Statement `for i in range(5):` adalah contoh penulisan perulangan menggunakan `for` dan `range()`. Variabel `i` berisi nilai *counter* setiap iterasi, yang pada konteks ini adalah angka `0` hingga `4`.
+- Statement `print("index:", i)` muncul 5 kali, karena perulangan dilakukan dengan kontrol `range(5)` dimana statement tersebut menghasilkan object *range* dengan isi deret angka sejumlah `5` dimulai dari angka `0` hingga `4`.
 
-Statement `print("index:", i)` wajib ditulis menjorok ke kanan karena merupakan isi dari blok perulangan `for i in range(5):`.
+- Statement `for i in range(5):` adalah contoh penulisan perulangan menggunakan `for` dan `range()`. Variabel `i` berisi nilai *counter* setiap iterasi, yang pada konteks ini adalah angka `0` hingga `4`.
+
+- Statement `print("index:", i)` wajib ditulis menjorok ke kanan karena merupakan isi dari blok perulangan `for i in range(5):`.
 
 ### ◉ Fungsi `list()`
 
-Fungsi `range()` menghasilkan object *sequence*, yaitu suatu data yang strukturnya mirip seperti list. Object tersebut bisa ditampilkan dalam bentuk list dengan cara membungkusnya menggunakan fungsi `list()` (konversi tipe data *range* ke list).
+Fungsi `range()` menghasilkan object *sequence*, yaitu jenis data yang strukturnya mirip seperti list (tapi bukan list) yang kegunaan utamanya adalah untuk kontrol perulangan.
+
+Object *sequence* bisa dikonversi bentuk list dengan cara dibungkus menggunakan fungsi `list()`.
 
 ```python
 r = range(5)
