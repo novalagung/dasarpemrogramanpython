@@ -87,6 +87,10 @@ blockquote {
   content: "Search ...";
 }
 
+.token-line .token.comment {
+  font-style: normal !important;
+}
+
 .menu.thin-scrollbar {
   padding-bottom: 25px;
 }
@@ -148,4 +152,10 @@ blockquote {
 }
 .theme-doc-markdown.markdown table tr td.vertical-align-top {
   vertical-align: top;
+}
+.markdown > h2 {
+  --ifm-h2-font-size: 1.7rem;
+}
+.markdown > h3 {
+  --ifm-h3-font-size: 1.3rem;
 }

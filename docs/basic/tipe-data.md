@@ -21,6 +21,8 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 | `float` | menampung bilangan desimal atau *floating point* | ` number_2 = 3.14 ` |
 | `complex` | menampung nilai berisi kombinasi bilangan real dan imajiner | ` number_3 = 120+3j ` |
 
+> Lebih detailnya mengenai string dibahas pada chapter [Numeric](/basic/numeric)
+
 ## A.6.2. Tipe data `str`
 
 Tipe string direpresentasikan oleh `str`, pembuatannya bisa menggunakan literal string yang ditandai dengan tanda awalan dan akhiran tanda `"` atau `'`.
@@ -59,7 +61,7 @@ Preiiii
 '''
 ```
 
-> Lebih detailnya mengenai string dibahas pada chapter [String & Operasi String](#)
+> Lebih detailnya mengenai string dibahas pada chapter [String](/basic/string)
 
 ## A.6.3. Tipe data `bool`
 
