@@ -87,6 +87,10 @@ blockquote {
   content: "Search ...";
 }
 
+.token-line .token.comment {
+  font-style: normal !important;
+}
+
 .menu.thin-scrollbar {
   padding-bottom: 25px;
 }

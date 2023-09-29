@@ -1,14 +1,14 @@
 ---
 sidebar_position: 17
 title: A.17. Python String
-sidebar_label: A.17. String (WIP)
+sidebar_label: A.17. String
 ---
 
-Konsep string di Python sama dengan bahasa pemrograman lain pada umumnya. String (atau `str`) merupakan kumpulan data `char` atau karakter yang tersimpan secara urut.
+String (atau `str`) merupakan kumpulan data `char` atau karakter yang tersimpan secara urut (*text sequence*). String di Python mengadopsi standar Unicode dengan *default encoding* adalah `UTF-8`.
 
 ## A.17.1. Penerapan string
 
-Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah digunakan. Untuk membuat data string, cukup tulis saja text yang diinginkan dengan diapit tanda petik satu atau petik dua. Contoh:
+Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah digunakan. Untuk membuat string cukup tulis saja text yang diinginkan dengan diapit tanda petik satu atau petik dua. Contoh:
 
 ```python
 str = "hello python"
@@ -35,7 +35,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
     # in python
     ```
 
-- Atau menggunakan tanda `"""` untuk mengapit karakter string. Contoh:
+- Atau menggunakan tanda `"""` untuk mengapit text. Contoh:
 
     ```python
     str = """a multiline string
@@ -49,7 +49,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
 
 ### ◉ Escape character
 
-Python mengenal standar *escape character* umum yang ada di banyak bahasa pemrograman, contohnya seperti `\"` digunakan untuk menuliskan karakter `"` pada string yang dibuat menggunakan literal `" "`. Ini penting karena jika tidak di-escape menggunakan `\` maka karakter `"` terdeteksi sebagai penanda string.
+Python mengenal *escape character* umum yang ada di banyak bahasa pemrograman, contohnya seperti `\"` digunakan untuk menuliskan karakter `"` (pada string yang dibuat menggunakan literal `" "`). Penambahan karakter `\` adalah penting agar karakter `"` terdeteksi sebagai penanda string.
 
 Sebagai contoh, dua statement berikut adalah ekuivalen:
 
@@ -65,9 +65,9 @@ print(str)
 
 ## A.17.2. String *special characters*
 
-Di atas telah dicontohkan bagaimana cara menulis karakter *newline* atau baris baru menggunakan `\n`, dan karakter petik dua menggunakan `\"`. Dua karakter tersebut marupakan *special characters*.
+Di atas telah dicontohkan bagaimana cara menulis karakter *newline* atau baris baru menggunakan `\n`, dan karakter petik dua menggunakan `\"`. Dua karakter tersebut adalah contoh dari *special characters*.
 
-Python mengenal banyak special characters yang masing-masing memiliki kegunaan yang cukup spesifik. Lebih detailnya silakan lihat tabel berikut:
+Python mengenal banyak special characters yang masing-masing memiliki kegunaan yang cukup spesifik. Agar lebih jelas silakan lihat tabel berikut:
 
 | Special character | Kegunaan |
 | :-: | :- |
@@ -84,55 +84,29 @@ Python mengenal banyak special characters yang masing-masing memiliki kegunaan y
 | \\{oktal} | nilai oktal, contoh: `\122`, `\004`, `\024` |
 | \x{hex} | nilai heksadesimal, contoh: `\xA4`, `\x5B` |
 
-Contoh salah satu penggunaan special character `\t` (horizontal tab):
+Tambahan contoh penggunaan salah satu special character `\t` (horizontal tab):
+
+```python
+print("Nama\t\t| Umur\t| Gender")
+print("--------------------------------")
+print("Bruce Wayne\t| 34\t| laki-laki")
+print("Cassandra Cain\t| 22\t| perempuan")
+```
+
+Program di atas menghasilkan output berikut:
 
 ![special char python](img/string-1.png)
 
-## A.17.3. *Unicode character*
 
-https://docs.python.org/3/howto/unicode.html?highlight=unicode%20howto#the-string-type
+> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Numeric](/basic/numeric).
 
-<!-- "\N{GREEK CAPITAL LETTER DELTA}"  # Using the character name
-'\u0394'
-"\u0394"                          # Using a 16-bit hex value
-'\u0394'
-"\U00000394"                      # Using a 32-bit hex value
-'\u0394' -->
-(3,4)
+## A.17.3. String formatting
 
-Escape sequences only recognized in string literals are:
-
-Escape Sequence
-
-Meaning
-
-Notes
-
-\N{name}
-
-Character named name in the Unicode database
-
-(5)
-
-\uxxxx
-
-Character with 16-bit hex value xxxx
-
-(6)
-
-\Uxxxxxxxx
-
-Character with 32-bit hex value xxxxxxxx
-
-(7)
-
-## A.17.4. String formatting
-
-String formatting adalah teknik untuk mem-format string agar menghasilkan data tekstual sesuai format yang diinginkan.
+String formatting adalah teknik untuk mem-format string agar menghasilkan text sesuai dengan format yang diinginkan.
 
 Cara termudah melakukan string formatting adalah dengan menggunakan **f-strings** (atau [formatted string literals](https://docs.python.org/3/reference/lexical_analysis.html#f-strings)). Tulis string seperti biasa tapi diawali dengan huruf `f` atau `F` sebelum penulisan `" "`.
 
-Pada contoh berikut, sebuah string dibuat dimana ada dua bagian string didalamnya yang bersumber dari data string.
+Pada contoh berikut, sebuah string dibuat dimana dua bagian string didalamnya datanya bersumber dari variabel string lain.
 
 ```python
 name = "Aiden Pearce"
@@ -150,6 +124,8 @@ Penjelasan:
 - Text `{occupation}` di dalam string di-replace oleh nilai variable `occupation`, yang pada konteks ini nilainya `IT support`.
 - f-strings di atas menghasilkan text `hello, my name is Aiden Pearce, I'm an IT support`.
 
+> Pada penerapan metode **f-strings**, isi dari `{}` tidak harus data string, tetapi tipe data lainnya juga bisa digunakan salahkan *printable* atau bisa di-print.
+
 Selain menggunakan metode di atas, ada beberapa alternatif cara lain yang bisa digunakan, diantaranya:
 
 ```python
@@ -166,9 +142,9 @@ print(str)
 # output → hello, my name is Aiden Pearce, I'm an IT support
 ```
 
-Semua metode string formatting di atas menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Silakan pilih gunakan cara sesuai selera.
+Semua metode string formatting yang telah dipelajari menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Mana yang lebih baik? Silakan pilih saja metode yang sesuai selera.
 
-## A.17.5. Penggabungan string (*concatenation*)
+## A.17.4. Penggabungan string (*concatenation*)
 
 Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operasi penggabungan string.
 
@@ -205,9 +181,9 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     # output → hello python
     ```
 
-## A.17.6. Operasi sequence pada string
+## A.17.5. Operasi sequence pada string
 
-String masih termasuk kategori tipe data sequence. Operasi standar tipe data sequence bisa diterapkan di string.
+String masih termasuk kategori tipe data sequence, yang artinya bisa digunakan pada operasi standar sequence, contoh seperti perulangan, pengaksesan elemen, dan slicing.
 
 ### ◉ Mengecek lebar karakter string
 
@@ -284,7 +260,7 @@ print(str[:4])
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](#)
 
-## A.17.7. Operasi *character & case*
+## A.17.6. Operasi *character & case*
 
 Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
 
@@ -350,7 +326,7 @@ Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi st
     # output → True, karena 𝟜 adalah angka desimal
     ```
 
-- Method `isnumeric()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik desimal.
+- Method `isnumeric()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik (termasuk pecahan, pangkat, dan angka numerik lainnya).
 
     ```python
     print("123456".isnumeric())
@@ -372,7 +348,7 @@ Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi st
     # output → True, karena 𝟜 adalah angka numerik
     ```
 
-- Method `isalnum()` digunakan untuk mengecek apakah string berisi setidaknya karakter alfabet atau digit, atau tidak keduanya. Nilai kembaliannya `True` jika semua karakter dalam string adalah alfabet/angka.
+- Method `isalnum()` digunakan untuk mengecek apakah string berisi setidaknya karakter alfabet atau digit, atau tidak keduanya. Nilai kembaliannya `True` jika semua karakter dalam string adalah alfabet atau angka numerik.
 
     ```python
     print("123abc".isalnum())
@@ -414,7 +390,7 @@ print("hello\n\r".isspace())
 
 ### ◉ Pengecekan karakter *case*
 
-- Method `islower()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf kecil (*lower case*), jika iya maka nilai kembaliannya adalah `True`.
+- Method `islower()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf kecil (*lower case*), jika kondisi tersebut terpenuhi maka nilai kembaliannya adalah `True`.
 
     ```python
     print("hello python".islower())
@@ -427,7 +403,7 @@ print("hello\n\r".isspace())
     # output → False
     ```
 
-- Method `istitle()` digunakan untuk mengecek apakah kata dalam string adalah ditulis dengan awalan huruf besar (*title case*), jika iya maka nilai kembaliannya adalah `True`.
+- Method `istitle()` digunakan untuk mengecek apakah kata dalam string adalah ditulis dengan awalan huruf besar (*title case*), jika kondisi tersebut terpenuhi maka nilai kembaliannya adalah `True`.
 
     ```python
     print("hello python".istitle())
@@ -440,7 +416,7 @@ print("hello\n\r".isspace())
     # output → False
     ```
 
-- Method `isupper()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf besar (*upper case*), jika iya maka nilai kembaliannya adalah `True`.
+- Method `isupper()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf besar (*upper case*), jika kondisi tersebut terpenuhi maka nilai kembaliannya adalah `True`.
 
     ```python
     print("hello python".isupper())
@@ -480,7 +456,7 @@ print("Hello Python".swapcase())
 # output → hELLO pYTHON
 ```
 
-## A.17.8. Operasi pencarian string & substring
+## A.17.7. Operasi pencarian string & substring
 
 ### ◉ Pengecekan string menggunakan keyword `in`
 
@@ -492,7 +468,7 @@ print("ello" in str)
 # output → True
 ```
 
-Contoh lain dengan mempergunakan keyword `in` pada seleksi kondisi `if`:
+Teknik tersebut bisa dikombinasikan dengan seleksi kondisi `if`:
 
 ```python
 str = "hello world"
@@ -501,13 +477,193 @@ if "ello" in str:
 # output → py is in hello world
 ```
 
+### ◉ Pengecekan substring
 
-### ◉ Pengecekan awalan dan akhiran string
+Ada beberapa Method yang bisa digunakan untuk keperluan pengecekan substring, apakah suatu string merupakan dari string lain.
 
-str = "hello world"
-print(str.startswith("hell"))
-print(str.startswith("ello"))
+- Menggunakan method `startswith()` untuk mengecek apakah suatu string diawali dengan huruf/kata tertentu.
 
-str = "hello world"
-print(str.endswith("orld"))
-print(str.endswith("worl"))
+    ```python
+    print("hello world".startswith("hell"))
+    # output → True
+
+    print("hello world".startswith("ello"))
+    # output → False
+    ```
+
+- Menggunakan method `endswith()` untuk mengecek apakah suatu string diakhiri dengan huruf/kata tertentu.
+
+    ```python
+    print("hello world".endswith("orld"))
+    # output → True
+
+    print("hello world".endswith("worl"))
+    # output → False
+    ```
+
+- Menggunakan method `count()` untuk mengecek apakah suatu string merupakan bagian dari string lain.
+
+    ```python
+    print("hello world".count("ello"))
+    # output → 1
+    ```
+
+    Method ini mengembalikan jumlah huruf/kata yang ditemukan. Jika kebutuhannya adalah mencari tau apakah suatu substring ada atau tidak, maka gunakan operasi logika lebih dari 0 (atau `n > 0`).
+
+    ```python
+    print("hello world".count("ello") > 0)
+    # output → True
+    ```
+
+### ◉ Pencarian index substring
+
+Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecekan substring, perbedaannya adalah nilai balik pemanggilan method berupa index substring.
+
+- Method `count()` mengembalikan jumlah substring yang ditemukan sesuai kata kunci yang dicari.
+
+    ```python
+    str = "hello world hello world"
+    print(str.count("ello"))
+    # output → 2
+    ```
+
+- Method `index()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan error.
+
+    ```python
+    str = "hello world hello world"
+    print(str.index("worl"))
+    # output → 6
+    ```
+
+- Method `rindex()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan error.
+
+    ```python
+    str = "hello world hello world"
+    print(str.rindex("worl"))
+    # output → 18
+    ```
+
+- Method `find()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
+
+    ```python
+    str = "hello world hello world"
+    print(str.find("worl"))
+    # output → 6
+    ```
+
+- Method `rfind()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
+
+    ```python
+    str = "hello world hello world"
+    print(str.rfind("worl"))
+    # output → 18
+    ```
+
+## A.17.8. Operasi string lainnya
+
+### ◉ Replace substring
+
+Method `replace()` digunakan untuk me-replace suatu substring dengan string lain. Contoh penggunaan:
+
+```python
+str_old = "hello world"
+str_new = str_old.replace("world", "python")
+print(str_new)
+# output → hello python
+```
+
+### ◉ Trim / strip
+
+Metode trimming/stripping digunakan untuk menghapus *whitespace* yang diantaranya adalah baris baru dan juga spasi.
+
+Sebelum kita mulai, coba perhatikan kode berikut. String `str` dideklarasikan menggunakan `""" """` yang dalam penerapannya tidak akan meng-*escape* whitespace.
+
+```python
+str = """
+hello python
+"""
+
+print(f"--{str}--")
+# output ↓
+# --
+# hello python
+# --
+```
+
+Bisa dilihat saat di print kelihatan *newline* atau baris barunya pada awal string dan juga akhir string.
+
+Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa method yang bisa digunakan, diantaranya:
+
+- Method `lstrip()` untuk trim *whitespace* karakter di awal atau sebelah kiri string.
+
+    ```python
+    str = """
+    hello python
+    """
+
+    print(f"--{str.lstrip()}--")
+    # output ↓
+    # --hello python
+    # --
+    ```
+
+- Method `rstrip()` untuk trim *whitespace* karakter di akhir atau sebelah kanan string.
+
+    ```python
+    str = """
+    hello python
+    """
+
+    print(f"--{str.rstrip()}--")
+    # output ↓
+    # --
+    # hello python--
+    ```
+
+- Method `strip()` untuk trim *whitespace* karakter di awal dan akhir string.
+
+    ```python
+    str = """
+    hello python
+    """
+
+    print(f"--{str.strip()}--")
+    # output → --hello python--
+    ```
+
+### ◉ Join string
+
+Method `join()` berguna untuk menggabungkan list berisi element string. String yang digunakan untuk memanggil method ini menjadi *separator* operasi join.
+
+```python
+data = ["hello", "world", "abcdef"]
+res = "-".join(data)
+print(res)
+# output → hello-world-abcdef
+```
+
+---
+
+<div class="section-footnote">
+
+## Catatan chapter 📑
+
+### ◉ Source code praktik
+
+<pre>
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/string">
+        github.com/novalagung/dasarpemrogramanpython-example/../string
+    </a>
+</pre>
+
+### ◉ TBA
+
+- Bytes
+
+### ◉ Referensi
+
+- https://docs.python.org/3/library/string.html
+- https://docs.python.org/3/library/stdtypes.html#text-sequence-type-str
+- https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+
+</div>
