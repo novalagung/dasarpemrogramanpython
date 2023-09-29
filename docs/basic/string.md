@@ -98,7 +98,7 @@ Program di atas menghasilkan output berikut:
 ![special char python](img/string-1.png)
 
 
-> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Numeric](/basic/numeric).
+> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Numeric](#).
 
 ## A.17.3. String formatting
 
