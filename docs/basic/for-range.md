@@ -198,7 +198,7 @@ for key in bio:
 
 ![perulangan for range](img/for-range-9.png)
 
-### ◉ Iterasi data sets
+### ◉ Iterasi data set
 
 ```python
 numbers = {"twenty four", 24}

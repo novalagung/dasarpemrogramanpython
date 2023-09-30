@@ -538,7 +538,7 @@ Nilai `res` berisi elemen set unik yang merupakan anggota set `a` tapi bukan ang
 
 ### ◉ Konversi string ke set
 
-String dibungkus menggunakan method `set()` menghasilkan data sets berisi karakter string yang unik.
+String dibungkus menggunakan method `set()` menghasilkan data set berisi karakter string yang unik.
 
 ```python
 data = set('abcda')
