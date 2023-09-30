@@ -1,14 +1,14 @@
 ---
 sidebar_position: 11
-title: A.11. Perulangan Python → break, continue
-sidebar_label: A.11. Perulangan → break, continue
+title: A.11. Perulangan Python ➜ break, continue
+sidebar_label: A.11. Perulangan ➜ break, continue
 # description: 
 # keywords: []
 # faqs:
 #   - question: Seleksi kondisi di Python
 #     answer: Seleksi kondisi di python dilakukan menggunakan if, elif (untuk else if), dan else
 #   - question: Ternary di Python
-#     answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
+#     answer: Contoh ternary di python ➜ "passed the exam" if grade >= 65 else "below the passing grade"
 ---
 
 Keyword `break` dan `continue` sering dipergunakan dalam perulangan untuk alterasi flow secara paksa, seperti memberhentikan perulangan atau memaksa perulangan untuk lanjut ke iterasi berikutnya.
@@ -102,8 +102,8 @@ Penjelasan:
 
 ### ◉ Chapter relevan lainnya
 
-- [Perulangan → For](/basic/for-range)
-- [Perulangan → While](/basic/while)
+- [Perulangan ➜ For](/basic/for-range)
+- [Perulangan ➜ While](/basic/while)
 
 ### ◉ Referensi
 

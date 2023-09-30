@@ -12,7 +12,7 @@ Chapter ini membahas tentang pilihan opsi cara run program Python di Visual Stud
 
 ### ◉ Menggunakan command `python`
 
-Command ini sudah kita terapkan pada chapter [Program Pertama → Hello Python](/basic/hello-python), cara penggunaannya cukup mudah, tinggal jalankan saja command di terminal.
+Command ini sudah kita terapkan pada chapter [Program Pertama ➜ Hello Python](/basic/hello-python), cara penggunaannya cukup mudah, tinggal jalankan saja command di terminal.
 
 ```bash
 # python <nama_file_program>
@@ -43,7 +43,7 @@ Setelah itu, muncul tombol `Run Cell`, klik untuk run program.
 
 ### ◉ Chapter relevan lainnya
 
-- [Program Pertama → Hello Python](/basic/hello-python)
+- [Program Pertama ➜ Hello Python](/basic/hello-python)
 
 ### ◉ Referensi
 

@@ -75,6 +75,7 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
 
 ### ◉ Chapter relevan lainnya
 
+- [Variabel](/basic/variabel)
 - [Module Import](#)
 - [Python standard library (stdlib)](#)
 

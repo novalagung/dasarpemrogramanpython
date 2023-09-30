@@ -1,14 +1,14 @@
 ---
 sidebar_position: 9
-title: A.9. Perulangan Python → for, range
-sidebar_label: A.9. Perulangan → for, range
+title: A.9. Perulangan Python ➜ for, range
+sidebar_label: A.9. Perulangan ➜ for, range
 description: Tutorial belajar perulangan/iterasi di Python menggunakan for dan range. 
 keywords: [perulangan, loop, for, range, looping]
 faqs:
   - question: Perulangan di Python
     answer: Perulangan di Python bisa dilakukan menggunakan while, for range, dan juga kombinasi for dengan tipe data sequence seperti list, tuple, dan lainnya.
   - question: For di Python
-    answer: 'Contoh perulanga di Python menggunakan keyword for → for i in range(5): print("index:", i)'
+    answer: 'Contoh perulanga di Python menggunakan keyword for ➜ for i in range(5): print("index:", i)'
 ---
 
 Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blok kode, atau mengiterasi elemen milik tipe data kolektif (contohnya: list). Chapter ini membahas tentang penerapannya di Python.
@@ -50,7 +50,7 @@ print("r:", list(r))
 
 ![perulangan for range](img/for-range-2.png)
 
-> - Lebih detailnya mengenai list dibahas pada chapter [List](#)
+> - Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
 > - Lebih detailnya mengenai mengenai *type conversion* dibahas pada chapter [Konversi Tipe Data](#)
 
 ## A.9.2. Penerapan fungsi `range()`
@@ -198,7 +198,7 @@ for key in bio:
 
 ![perulangan for range](img/for-range-9.png)
 
-### ◉ Iterasi data sets
+### ◉ Iterasi data set
 
 ```python
 numbers = {"twenty four", 24}
@@ -252,7 +252,7 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 ### ◉ Chapter relevan lainnya
 
 - [List](/basic/list)
-- [String](#)
+- [String](/basic/string)
 - [Fungsi](#)
 
 ### ◉ Referensi

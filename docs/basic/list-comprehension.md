@@ -28,7 +28,8 @@ seq = []
 for i in range(5):
     seq.append(i * 2)
 
-print(seq) # output → [0, 2, 4, 6, 8]
+print(seq)
+# output ➜ [0, 2, 4, 6, 8]
 ```
 
 ... bisa dituliskan lebih ringkas menggunakan *list comprehension*, menjadi seperti berikut:
@@ -36,7 +37,8 @@ print(seq) # output → [0, 2, 4, 6, 8]
 ```python
 seq = [i * 2 for i in range(5)]
 
-print(seq) # output → [0, 2, 4, 6, 8]
+print(seq)
+# output ➜ [0, 2, 4, 6, 8]
 ```
 
 ### ◉ Contoh #2
@@ -49,7 +51,8 @@ for i in range(10):
     if i % 2 == 1:
         seq.append(i)
 
-print(seq) # output → [1, 3, 5, 7, 9]
+print(seq)
+# output ➜ [1, 3, 5, 7, 9]
 ```
 
 ... bisa dituliskan lebih ringkas menjadi seperti berikut:
@@ -57,7 +60,8 @@ print(seq) # output → [1, 3, 5, 7, 9]
 ```python
 seq = [i for i in range(10) if i % 2 == 1]
 
-print(seq) # output → [1, 3, 5, 7, 9]
+print(seq)
+# output ➜ [1, 3, 5, 7, 9]
 ```
 
 ### ◉ Contoh #3
@@ -72,7 +76,8 @@ for i in range(1, 10):
     else:
         seq.append(i * 3)
 
-print(seq) # output → [3, 4, 9, 8, 15, 12, 21, 16, 27]
+print(seq)
+# output ➜ [3, 4, 9, 8, 15, 12, 21, 16, 27]
 ```
 
 ... bisa dituliskan lebih ringkas menjadi dengan bantuan *ternary* menjadi seperti ini:
@@ -82,7 +87,8 @@ seq = []
 for i in range(1, 10):
     seq.append(i * (2 if i % 2 == 0 else 3))
 
-print(seq) # output → [3, 4, 9, 8, 15, 12, 21, 16, 27]
+print(seq)
+# output ➜ [3, 4, 9, 8, 15, 12, 21, 16, 27]
 ```
 
 ... dan bisa dijadikan lebih ringkas lagi menggunakan *list comprehension*:
@@ -90,7 +96,8 @@ print(seq) # output → [3, 4, 9, 8, 15, 12, 21, 16, 27]
 ```python
 seq = [(i * (2 if i % 2 == 0 else 3)) for i in range(1, 10)]
 
-print(seq) # output → [3, 4, 9, 8, 15, 12, 21, 16, 27]
+print(seq)
+# output ➜ [3, 4, 9, 8, 15, 12, 21, 16, 27]
 ```
 
 ### ◉ Contoh #4
@@ -106,7 +113,8 @@ for x in list_x:
     for y in list_y:
         comb.append(x + y)
 
-print(seq) # output → ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
+print(seq)
+# output ➜ ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
 ```
 
 ... bisa dituliskan lebih ringkas menjadi seperti berikut:
@@ -114,7 +122,8 @@ print(seq) # output → ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
 ```python
 comb = [x + y for x in list_x for y in list_y]
 
-print(seq) # output → ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
+print(seq)
+# output ➜ ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
 ```
 
 ### ◉ Contoh #5
@@ -135,7 +144,8 @@ for i in range(4):
         tr.append(row[i])
     transposed.append(tr)
 
-print(transposed) # output → [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+print(transposed)
+# output ➜ [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 
 ... bisa dituliskan lebih ringkas menjadi seperti ini:
@@ -151,7 +161,8 @@ transposed = []
 for i in range(4):
     transposed.append([row[i] for row in matrix])
 
-print(transposed) # output → [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+print(transposed)
+# output ➜ [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 
 ... dan bisa dijadikan lebih ringkas lagi menggunakan *list comprehension*:
@@ -165,7 +176,8 @@ matrix = [
 
 transposed = [[row[i] for row in matrix] for i in range(4)]
 
-print(transposed) # output → [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+print(transposed)
+# output ➜ [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 ```
 
 ---
@@ -184,8 +196,8 @@ print(transposed) # output → [[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
 
 ### ◉ Chapter relevan lainnya
 
+- [Perulangan ➜ for, range](/basic/for-range)
 - [List](/basic/list)
-- [Perulangan → for, range](/basic/for-range)
 
 ### ◉ TBA
 

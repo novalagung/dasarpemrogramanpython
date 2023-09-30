@@ -21,7 +21,7 @@ Cara penulisan karakter unicode sendiri bisa dengan langsung menuliskan karakter
     ```python
     message = "안녕하세요 😀"
     print(message)
-    # output → 안녕하세요 😀
+    # output ➜ 안녕하세요 😀
     ```
 
 - Menggunakan notasi special character `\uXXXX`, dimana `XXXX` diisi dengan *code point* dalam encoding 16-bit.
@@ -29,7 +29,7 @@ Cara penulisan karakter unicode sendiri bisa dengan langsung menuliskan karakter
     ```python
     message = "\uC548\uB155\uD558\uC138\uC694"
     print(message)
-    # output → 안녕하세요
+    # output ➜ 안녕하세요
     ```
 
     <ul>
@@ -47,7 +47,7 @@ Cara penulisan karakter unicode sendiri bisa dengan langsung menuliskan karakter
     ```python
     message = "\U0000C548\U0000B155\U0000D558\U0000C138\U0000C694 \U0001F600"
     print(message)
-    # output → 안녕하세요 😀
+    # output ➜ 안녕하세요 😀
     ```
 
     - *Code point* 32-bit `0000C548` merepresentasikan karakter `안`
@@ -62,7 +62,7 @@ Cara penulisan karakter unicode sendiri bisa dengan langsung menuliskan karakter
     ```python
     message = "\N{HANGUL SYLLABLE AN}\N{HANGUL SYLLABLE NYEONG} \N{GRINNING FACE}"
     print(message)
-    # output → 안녕 😀
+    # output ➜ 안녕 😀
     ```
 
     - Nama karakter Unicode `HANGUL SYLLABLE AN` merepresentasikan karakter `안`
@@ -81,12 +81,12 @@ Fungsi `ord()` digunakan untuk mengambil nilai code point dari suatu karakter. N
 str = "N"
 codePoint = ord(str)
 print(f'code point of {str} in decimal: {codePoint}')
-# output → code point of N in decimal: 78
+# output ➜ code point of N in decimal: 78
 
 str = "안"
 codePoint = ord(str)
 print(f'code point of {str} in decimal: {codePoint}')
-# output → code point of 안 in decimal: 50504
+# output ➜ code point of 안 in decimal: 50504
 ```
 
 Untuk menampilkan code point dalam notasi hexadesimal, cukup bungkus menggunakan fungsi `hex()`.
@@ -96,10 +96,10 @@ str = "안"
 codePoint = ord(str)
 
 print(f'code point of {str} in decimal: {codePoint}')
-# output → code point of 안 in decimal: 50504
+# output ➜ code point of 안 in decimal: 50504
 
 print(f'code point of {str} in hex: {hex(codePoint)}')
-# output → code point of 안 in hex: 0xc548
+# output ➜ code point of 안 in hex: 0xc548
 ```
 
 Bisa dilihat dari program di atas, unicode code point dari karakter `안` dalam bentuk hexadesimal adalah `c548`. Jika dicek pada praktek sebelumnya, kode hexadesimal yang sama kita gunakan juga dalam penulisan karakter unicode menggunakan notasi `\uXXXX` (yaitu `\uc548`).
@@ -113,11 +113,11 @@ Pada contoh dibawah ini fungsi `chr()` digunakan untuk memunculkan karakter deng
 ```python
 codePoint = chr(50504)
 print(codePoint)
-# output → 안
+# output ➜ 안
 
 codePoint = chr(0xC548)
 print(codePoint)
-# output → 안
+# output ➜ 안
 ```
 
 ---
@@ -133,6 +133,10 @@ print(codePoint)
         github.com/novalagung/dasarpemrogramanpython-example/../unicode
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [String](/basic/string)
 
 ### ◉ Referensi
 

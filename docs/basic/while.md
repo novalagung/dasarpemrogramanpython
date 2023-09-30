@@ -1,14 +1,14 @@
 ---
 sidebar_position: 10
-title: A.10. Perulangan Python → while
-sidebar_label: A.10. Perulangan → while
+title: A.10. Perulangan Python ➜ while
+sidebar_label: A.10. Perulangan ➜ while
 description: Tutorial perulangan while di python
 keywords: [while, perulangan, python while, looping]
 faqs:
   - question: Perulangan di Python
     answer: Perulangan di Python bisa dilakukan menggunakan while, for range, dan juga kombinasi for dengan tipe data sequence seperti list, tuple, dan lainnya.
   - question: While di Python
-    answer: 'Contoh perulanga di Python menggunakan keyword while → while i < n: print("index:", i)'
+    answer: 'Contoh perulanga di Python menggunakan keyword while ➜ while i < n: print("index:", i)'
 ---
 
 Di Pyhon, selain keyword `for` ada juga keyword `while` yang fungsinya kurang lebih sama yaitu untuk perulangan. Bedanya, perulangan menggunakan `while` terkontrol via operasi logika atau nilai `bool`.

@@ -8,7 +8,7 @@ faqs:
   - question: Tuple vs List di Python
     answer: Tuple adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolektif yang isinya tidak akan berubah (immutable), berbeda dengan list yang lebih cocok untuk data yang bisa berubah nilai elemen-nya (mutable).
   - question: Deklarasi tuple di Python
-    answer: Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut → tuple_1 = (2, 3, 4, "hello python", False)
+    answer: Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut ➜ tuple_1 = (2, 3, 4, "hello python", False)
   - question: Tuple kosong () di Python
     answer: Tuple kosong () digunakan untuk merepresentasikan data kolektif yang isinya adalah kosong.
 ---
@@ -104,10 +104,10 @@ Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Cont
 tuple_1 = (2, 3, 4, "hello python", False)
 
 print("data:", tuple_1)
-# output → data: (2, 3, 4, "hello python", False)
+# output ➜ data: (2, 3, 4, "hello python", False)
 
 print("total elem:", len(tuple_1))
-# output → total elem: 5
+# output ➜ total elem: 5
 ```
 
 - Tuple bisa menampung element yang tipe datanya bisa sejenis bisa tidak, sama seperti list.
@@ -121,10 +121,10 @@ Element tuple bisa diakses menggunakan notasi `tuple[index]`.
 tuple_1 = (2, 3, 4, 5)
 
 print("elem 0:", tuple_1[0])
-# output → elem 0: 2
+# output ➜ elem 0: 2
 
 print("elem 1:", tuple_1[1])
-# output → elem 1: 3
+# output ➜ elem 1: 3
 ```
 
 :::danger
@@ -183,7 +183,7 @@ if n in tuple_1:
 else:
     print(n, "is NOT exists")
 
-# output → 70 is exists
+# output ➜ 70 is exists
 ```
 
 ## A.14.6. Nested tuple
@@ -253,7 +253,7 @@ Fungsi `tuple()` bisa digunakan untuk konversi data string ke tuple. Hasilnya ad
 ```python
 alphabets = tuple('abcdefgh')
 print(alphabets)
-# output → ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+# output ➜ ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
 ```
 
 ### ◉ Konversi list ke tuple
@@ -263,7 +263,7 @@ Konversi list ke tuple bisa dilakukan dengan mudah menggunakan fungsi `tuple()`.
 ```python
 numbers = tuple([2, 3, 4, 5])
 print(numbers)
-# output → (2, 3, 4, 5)
+# output ➜ (2, 3, 4, 5)
 ```
 
 ### ◉ Konversi range ke tuple
@@ -274,7 +274,7 @@ Range juga bisa dikonversi ke tuple menggunakan fungsi `tuple()`.
 r = range(0, 3)
 rtuple = tuple(r)
 print(rtuple)
-# output → (0, 1, 2)
+# output ➜ (0, 1, 2)
 ```
 
 ## A.14.9. Tuple *packing* dan *unpacking*
@@ -291,7 +291,7 @@ win = False
 row_data = (first_name, rank, win)
 
 print(row_data)
-# output → ('aerith gainsborough', 11, False)
+# output ➜ ('aerith gainsborough', 11, False)
 ```
 
 Bisa dilihat penerapan metode *packing* cukup mudah. Tulis saja data atau variabel yang ingin di-*pack* dalam notasi tuple, kemudian gunakan sebagai nilai pada operasi *assignment*.
@@ -329,7 +329,7 @@ row_data = ('aerith gainsborough', 11, False)
 first_name, rank, win = row_data
 
 print(first_name, rank, win)
-# output → aerith gainsborough 11 False
+# output ➜ aerith gainsborough 11 False
 ```
 
 ## A.14.10. Tuple kosong `()`
@@ -339,7 +339,7 @@ Tuple bisa saja tidak berisi apapun, contohnya data `()`, yang cukup umum diguna
 ```python
 empty_tuple = ()
 print(empty_tuple)
-# output → ()
+# output ➜ ()
 ```
 
 Berikut adalah contoh penerapannya, dimisalkan ada data kolektif yang didapat dari database berbentuk array object. Data tersebut perlu disimpan oleh variabel list yang element-nya adalah tuple dengan spesifikasi:
@@ -381,6 +381,7 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 
 ### ◉ TBA
 
+- Slicing tuple
 - Pack & Unpack with `*` & `**`
 - Zip
 

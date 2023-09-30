@@ -8,7 +8,7 @@ faqs:
   - question: Set vs List di Python
     answer: Set adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolektif unik, berbeda dengan list yang lebih cocok untuk data yang bisa berubah nilai elemen-nya (mutable).
   - question: Deklarasi set di Python
-    answer: Deklarasi set menggunakan literal `{}` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut → set_1 = {2, 3, 4, "hello python", False}
+    answer: Deklarasi set menggunakan literal `{}` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut ➜ set_1 = {2, 3, 4, "hello python", False}
   - question: Set kosong di Python
     answer: Set kosong dideklarasikan menggunakan set() bukan {} karena literal {} digunakan untuk deklarasi dictionary kosong.
 ---
@@ -121,10 +121,10 @@ Implementasi tipe data set cukup mudah, langsung tulis saja nilai elemen dengan 
 data_1 = {1, 'abc', False, ('banana', 'spaghetti')}
 
 print("data:", data_1)
-# output → data: {1, 'abc', False, ('banana', 'spaghetti')}
+# output ➜ data: {1, 'abc', False, ('banana', 'spaghetti')}
 
 print("len:", len(data_1))
-# output → len: 3
+# output ➜ len: 3
 ```
 
 - Set bisa menampung element yang tipe datanya bisa sejenis bisa tidak, sama seperti tuple dan list.
@@ -138,10 +138,10 @@ Untuk deklarasi set kosong (tanpa isi), gunakan fungsi `set()`, bukan `{}` karen
 data_2 = set()
 
 print("data:", data_2)
-# output → data: set()
+# output ➜ data: set()
 
 print("len:", len(data_2))
-# output → len: 0
+# output ➜ len: 0
 ```
 
 Hanya gunakan kurung kurawal buka dan tutup untuk deklarasi set yang ada elemennya (tidak kosong).
@@ -170,7 +170,7 @@ Tipe data set memang didesain untuk menyimpan data unik, duplikasi elemen tidak 
 ```python
 data = {1, 2, 3, 2, 1, 4, 5, 2, 3, 5}
 print(data)
-# output → {1, 2, 3, 4, 5}
+# output ➜ {1, 2, 3, 4, 5}
 ```
 
 Variabel `data` yang diisi dengan data set dengan banyak elemen duplikasi, sewaktu di-print elemennya adalah unik.
@@ -180,15 +180,15 @@ Ok, selanjutnya, pada contoh kedua berikut kita akan coba gunakan set untuk meng
 ```python
 data = [1, 2, 3, 2, 1, 4, 5, 2, 3, 5]
 print(data)
-# output → [1, 2, 3, 2, 1, 4, 5, 2, 3, 5]
+# output ➜ [1, 2, 3, 2, 1, 4, 5, 2, 3, 5]
 
 data_unique_set = set(data)
 print(data_unique_set)
-# output → {1, 2, 3, 4, 5}
+# output ➜ {1, 2, 3, 4, 5}
 
 data_unique = list(data_unique_set)
 print(data_unique)
-# output → [1, 2, 3, 4, 5]
+# output ➜ [1, 2, 3, 4, 5]
 ```
 
 Penjelasan untuk kode di atas:
@@ -222,15 +222,15 @@ fellowship = set()
 
 fellowship.add('aragorn')
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 1 data: {'aragorn'}
+# output ➜ len: 1 data: {'aragorn'}
 
 fellowship.add('gimli')
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 2 data: {'gimli', 'aragorn'}
+# output ➜ len: 2 data: {'gimli', 'aragorn'}
 
 fellowship.add('legolas')
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 3 data: {'gimli', 'legolas', 'aragorn'}
+# output ➜ len: 3 data: {'gimli', 'legolas', 'aragorn'}
 ```
 
 ### ◉ Menghapus element secara acak
@@ -242,15 +242,15 @@ fellowship = {'narya', 'nenya', 'nilya'}
 
 fellowship.pop()
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 2 data: {'narya', 'nilya'}
+# output ➜ len: 2 data: {'narya', 'nilya'}
 
 fellowship.pop()
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 1 data: {'nilya'}
+# output ➜ len: 1 data: {'nilya'}
 
 fellowship.pop()
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 0 data: set()
+# output ➜ len: 0 data: set()
 ```
 
 ### ◉ Menghapus spesifik elemen
@@ -262,15 +262,15 @@ Pada contoh berikut, elemen `boromir` dihapus dari set menggunakan method `disca
 ```python
 fellowship = {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam', 'merry', 'pippin'}
 print("fellowship:", fellowship)
-# output → fellowship: {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam', 'merry', 'pippin'}
+# output ➜ fellowship: {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam', 'merry', 'pippin'}
 
 fellowship.discard('boromir')
 print("fellowship:", fellowship)
-# output → fellowship: {'legolas', 'pippin', 'sam', 'aragorn', 'gimli', 'frodo', 'gandalf', 'merry'}
+# output ➜ fellowship: {'legolas', 'pippin', 'sam', 'aragorn', 'gimli', 'frodo', 'gandalf', 'merry'}
 
 fellowship.remove('gandalf')
 print("fellowship:", fellowship)
-# output → fellowship: {'legolas', 'pippin', 'sam', 'aragorn', 'gimli', 'frodo', 'merry'}
+# output ➜ fellowship: {'legolas', 'pippin', 'sam', 'aragorn', 'gimli', 'frodo', 'merry'}
 ```
 
 Perbedaan dua method di atas: jika elemen yang ingin dihapus tidak ada, method `discard()` tidak memunculkan error, sedangkan method `remove()` memunculkan error. Contoh:
@@ -297,7 +297,7 @@ fellowship = {'aragorn', 'gimli', 'legolas'}
 fellowship.clear()
 
 print("len:", len(fellowship), "data:", fellowship)
-# output → len: 0 data: set()
+# output ➜ len: 0 data: set()
 ```
 
 ### ◉ *Copy* set
@@ -307,11 +307,11 @@ Method `copy()` digunakan untuk meng-*copy* set, menghasilkan adalah data set ba
 ```python
 data1 = {'aragorn', 'gimli', 'legolas'}
 print("len:", len(data1), "data1:", data1)
-# output → len: 3 data1: {'gimli', 'legolas', 'aragorn'}
+# output ➜ len: 3 data1: {'gimli', 'legolas', 'aragorn'}
 
 data2 = data1.copy()
 print("len:", len(data2), "data2:", data2)
-# output → len: 3 data2: {'gimli', 'legolas', 'aragorn'}
+# output ➜ len: 3 data2: {'gimli', 'legolas', 'aragorn'}
 ```
 
 Pada contoh di atas, statement `data1.copy()` menghasilkan data baru dengan isi sama seperti isi `data1` ditampung oleh variabel bernama `data2`.
@@ -331,7 +331,7 @@ hobbits = {'frodo', 'sam', 'merry', 'pippin', 'bilbo'}
 
 diff = fellowship.difference(hobbits)
 print("diff:", diff)
-# output → diff: {'boromir', 'legolas', 'aragorn', 'gimli', 'gandalf'}
+# output ➜ diff: {'boromir', 'legolas', 'aragorn', 'gimli', 'gandalf'}
 ```
 
 Selain method di atas, adalagi method `difference_update()` yang kegunaannya adalah mengubah nilai data (dimana method dipanggil) dengan nilai baru yang didapat dari perbedaan elemen antara data tersebut vs. data pada argument pemanggilan method.
@@ -339,7 +339,7 @@ Selain method di atas, adalagi method `difference_update()` yang kegunaannya ada
 ```python
 fellowship.difference_update(hobbits)
 print("fellowship:", fellowship)
-# output → fellowship: {'boromir', 'legolas', 'aragorn', 'gimli', 'gandalf'}
+# output ➜ fellowship: {'boromir', 'legolas', 'aragorn', 'gimli', 'gandalf'}
 ```
 
 ### ◉ Pengecekan *intersection* antar set
@@ -354,7 +354,7 @@ hobbits = {'frodo', 'sam', 'merry', 'pippin', 'bilbo'}
 
 diff = fellowship.intersection(hobbits)
 print("diff:", diff)
-# output → duplicates: {'frodo', 'pippin', 'sam', 'merry'}
+# output ➜ duplicates: {'frodo', 'pippin', 'sam', 'merry'}
 ```
 
 Tersedia juga method `intersection_update()` yang berguna untuk mengubah nilai data (dimana method dipanggil) dengan nilai baru yang didapat dari kesamaan elemen antara data tersebut vs. data pada argument pemanggilan method.
@@ -362,7 +362,7 @@ Tersedia juga method `intersection_update()` yang berguna untuk mengubah nilai d
 ```python
 fellowship.intersection_update(hobbits)
 print("fellowship:", fellowship)
-# output → fellowship: {'frodo', 'pippin', 'sam', 'merry'}
+# output ➜ fellowship: {'frodo', 'pippin', 'sam', 'merry'}
 ```
 
 ### ◉ Pengecekan keanggotaan *subset*
@@ -377,12 +377,12 @@ fellowship = {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam
 hobbits_1 = {'frodo', 'sam', 'merry', 'pippin', 'bilbo'}
 res_1 = hobbits_1.issubset(fellowship)
 print("res_1:", res_1)
-# output → res_1: False
+# output ➜ res_1: False
 
 hobbits_2 = {'frodo', 'sam', 'merry', 'pippin'}
 res_2 = hobbits_2.issubset(fellowship)
 print("res_2:", res_2)
-# output → res_2: True
+# output ➜ res_2: True
 ```
 
 - Nilai `res_1` adalah `False` karena set `hobbits_1` memiliki setidaknya satu elemen yang bukan anggota dari `fellowship`, yaitu `bilbo`.
@@ -400,12 +400,12 @@ fellowship = {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam
 hobbits_1 = {'frodo', 'sam', 'merry', 'pippin', 'bilbo'}
 res_1 = fellowship.issuperset(hobbits_1)
 print("res_1:", res_1)
-# output → res_1: False
+# output ➜ res_1: False
 
 hobbits_2 = {'frodo', 'sam', 'merry', 'pippin'}
 res_2 = fellowship.issuperset(hobbits_2)
 print("res_2:", res_2)
-# output → res_2: True
+# output ➜ res_2: True
 ```
 
 - Nilai `res_1` adalah `False` karena set `hobbits_1` memiliki setidaknya satu elemen yang bukan anggota dari `fellowship`, yaitu `bilbo`.
@@ -448,7 +448,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
 
     fellowship_1 = hobbits.union(dunedain).union(dunedain).union(elf).union(dwarf).union(human).union(maiar)
     print("fellowship_1:", fellowship_1)
-    # output → fellowship_1: {'boromir', 'gimly', 'legolas', 'pippin', 'sam', 'aragorn', 'frodo', 'gandalf', 'merry'}
+    # output ➜ fellowship_1: {'boromir', 'gimly', 'legolas', 'pippin', 'sam', 'aragorn', 'frodo', 'gandalf', 'merry'}
     ```
 
 - via method `update()`:
@@ -470,7 +470,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     fellowship_2.update(human)
     fellowship_2.update(maiar)
     print("fellowship_2:", fellowship_2)
-    # output → fellowship_2: {'boromir', 'gimly', 'legolas', 'pippin', 'sam', 'aragorn', 'frodo', 'gandalf', 'merry'}
+    # output ➜ fellowship_2: {'boromir', 'gimly', 'legolas', 'pippin', 'sam', 'aragorn', 'frodo', 'gandalf', 'merry'}
     ```
 
 Bisa dilihat perbedaannya ada di-bagaimana nilai balik method disimpan.
@@ -487,7 +487,8 @@ Bisa dilihat perbedaannya ada di-bagaimana nilai balik method disimpan.
     b = set('alacazam')    # {'c', 'z', 'a', 'm', 'l'}
 
     res = a | b
-    print(res) # output → {'c', 'z', 'a', 'r', 'd', 'b', 'm', 'l'}
+    print(res)
+    # output ➜ {'c', 'z', 'a', 'r', 'd', 'b', 'm', 'l'}
     ```
 
     Nilai `res` berisi elemen set unik kombinasi set `a` dan set `b`.
@@ -499,7 +500,8 @@ Bisa dilihat perbedaannya ada di-bagaimana nilai balik method disimpan.
     b = set('alacazam')    # {'c', 'z', 'a', 'm', 'l'}
 
     res = a & b
-    print(res) # output → {'c', 'a'}
+    print(res)
+    # output ➜ {'c', 'a'}
     ```
 
     Nilai `res` berisi elemen set yang merupakan anggota set `a` dan set `b`. Operasi seperti ini biasa disebut dengan operasi *and*.
@@ -511,7 +513,8 @@ Bisa dilihat perbedaannya ada di-bagaimana nilai balik method disimpan.
     b = set('alacazam')    # {'c', 'z', 'a', 'm', 'l'}
 
     res = a ^ b
-    print(res) # output → {'z', 'r', 'b', 'd', 'm', 'l'}
+    print(res)
+    # output ➜ {'z', 'r', 'b', 'd', 'm', 'l'}
     ```
 
     Nilai `res` berisi elemen set yang ada di set `a` atau set `b` tetapi tidak ada di-keduanya.
@@ -525,7 +528,8 @@ a = set('abracadabra') # {'c', 'a', 'r', 'd', 'b'}
 b = set('alacazam')    # {'c', 'z', 'a', 'm', 'l'}
 
 res = a - b
-print(res) # output → {'b', 'd', 'r'}
+print(res)
+# output ➜ {'b', 'd', 'r'}
 ```
 
 Nilai `res` berisi elemen set unik yang merupakan anggota set `a` tapi bukan anggota set `b`
@@ -534,12 +538,12 @@ Nilai `res` berisi elemen set unik yang merupakan anggota set `a` tapi bukan ang
 
 ### ◉ Konversi string ke set
 
-String dibungkus menggunakan method `set()` menghasilkan data sets berisi karakter string yang unik.
+String dibungkus menggunakan method `set()` menghasilkan data set berisi karakter string yang unik.
 
 ```python
 data = set('abcda')
 print('data', data)
-# output → data {'c', 'b', 'a', 'd'}
+# output ➜ data {'c', 'b', 'a', 'd'}
 ```
 
 ### ◉ Konversi list ke set
@@ -549,7 +553,7 @@ Data list bisa diubah menjadi set dengan mudah dengan cara membungkusnya menggun
 ```python
 data = set(['a', 'b', 'c', 'd', 'a'])
 print('data', data)
-# output → data {'c', 'b', 'a', 'd'}
+# output ➜ data {'c', 'b', 'a', 'd'}
 ```
 
 ### ◉ Konversi tuple ke set
@@ -559,7 +563,7 @@ Data tuple juga bisa diubah menjadi set via fungsi `set()`. Isi dari set adalah 
 ```python
 data = set(('a', 'b', 'c', 'd', 'a'))
 print('data', data)
-# output → data {'c', 'b', 'a', 'd'}
+# output ➜ data {'c', 'b', 'a', 'd'}
 ```
 
 ### ◉ Konversi range ke set
@@ -569,7 +573,7 @@ Data range (hasil dari pemanggilan fungsi `range()`) bisa dikonversi ke bentuk s
 ```python
 data = set(range(1, 5))
 print('data', data)
-# output → data {1, 2, 3, 4}
+# output ➜ data {1, 2, 3, 4}
 ```
 
 ## A.15.6. Set comprehension
@@ -579,7 +583,7 @@ Metode [comprehension](/basic/list-comprehension) juga bisa diterapkan pada set.
 ```python
 res = {x for x in set('abracadabra') if x not in set('abc')}
 print(res)
-# output → {'d', 'r'}
+# output ➜ {'d', 'r'}
 ```
 
 ## A.15.7. `frozenset`
@@ -591,11 +595,11 @@ Cara penggunaannya seperti set, perbedaannya pada deklarasi frozenset, fungsi `f
 ```python
 a = frozenset('abracadabra')
 print(a)
-# output → frozenset({'c', 'a', 'r', 'd', 'b'})
+# output ➜ frozenset({'c', 'a', 'r', 'd', 'b'})
 
 b = frozenset('alacazam')
 print(b)
-# output → frozenset({'c', 'z', 'a', 'm', 'l'})
+# output ➜ frozenset({'c', 'z', 'a', 'm', 'l'})
 ```
 
 Semua operasi set, method milik set bisa digunakan pada frozenset, kecuali beberapa operasi yang sifatnya *mutable* atau mengubah elemen. Contohnya seperti method `add()`, `pop()`, `remove()` dan lainnya tidak bisa digunakan di frozenset.

@@ -17,15 +17,15 @@ Pada chapter ini kita akan mempelajari macam-macam operator yang ada di Python.
 
 | Operator | Keterangan | Contoh |
 | :-: | :- | :- |
-| `+` | operasi tambah | `num = 2 + 2` → hasilnya `num` nilainya `4` |
-| unary `+` | penanda nilai positif | `num = +2` → hasilnya `num` nilainya `2` |
-| `-` | operasi pengurangan | `num = 3 - 2` → hasilnya `num` nilainya `1` |
-| unary `-` | penanda nilai negatif | `num = -2` → hasilnya `num` nilainya `-2` |
-| `*` | operasi perkalian | `num = 3 * 3` → hasilnya `num` nilainya `9` |
-| `/` | operasi pembagian | `num = 8 / 2` → hasilnya `num` nilainya `4` |
-| `//` | operasi bagi dengan hasil dibulatkan ke bawah | `num = 10 // 3` → hasilnya `num` nilainya `3` |
-| `%` | operasi modulo (pencarian sisa hasil bagi) | `num = 7 % 4` → hasilnya `num` nilainya `3` |
-| `**` | operasi pangkat | `num = 3 ** 2` → hasilnya `num` nilainya `9` |
+| `+` | operasi tambah | `num = 2 + 2` ➜ hasilnya `num` nilainya `4` |
+| unary `+` | penanda nilai positif | `num = +2` ➜ hasilnya `num` nilainya `2` |
+| `-` | operasi pengurangan | `num = 3 - 2` ➜ hasilnya `num` nilainya `1` |
+| unary `-` | penanda nilai negatif | `num = -2` ➜ hasilnya `num` nilainya `-2` |
+| `*` | operasi perkalian | `num = 3 * 3` ➜ hasilnya `num` nilainya `9` |
+| `/` | operasi pembagian | `num = 8 / 2` ➜ hasilnya `num` nilainya `4` |
+| `//` | operasi bagi dengan hasil dibulatkan ke bawah | `num = 10 // 3` ➜ hasilnya `num` nilainya `3` |
+| `%` | operasi modulo (pencarian sisa hasil bagi) | `num = 7 % 4` ➜ hasilnya `num` nilainya `3` |
+| `**` | operasi pangkat | `num = 3 ** 2` ➜ hasilnya `num` nilainya `9` |
 
 ## A.7.2. Operator *assignment*
 
@@ -45,7 +45,7 @@ num_2 = 12
 num_3 = num_1 + num_2
 
 print(num_3)
-# output → 24
+# output ➜ 24
 ```
 
 ## A.7.3. Operator perbandingan
@@ -56,20 +56,20 @@ Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa
 
 | Operator | Keterangan | Contoh |
 | :-: | :- | :- |
-| `==` | apakah kiri sama dengan kanan | `res = 4 == 5` → hasilnya `res` nilainya `False` |
-| `!=` | apakah kiri tidak sama dengan kanan | `res = 4 != 5` → hasilnya `res` nilainya `True` |
-| `>` | apakah kiri lebih besar dibanding kanan | `res = 4 > 5` → hasilnya `res` nilainya `False` |
-| `<` | apakah kiri lebih kecil dibanding kanan | `res = 4 < 5` → hasilnya `res` nilainya `True` |
-| `>=` | apakah kiri lebih besar atau sama dengan kanan | `res = 5 >= 5` → hasilnya `res` nilainya `True` |
-| `<=` | apakah kiri lebih kecil atau sama dengan kanan | `res = 4 <= 5` → hasilnya `res` nilainya `False` |
+| `==` | apakah kiri sama dengan kanan | `res = 4 == 5` ➜ hasilnya `res` nilainya `False` |
+| `!=` | apakah kiri tidak sama dengan kanan | `res = 4 != 5` ➜ hasilnya `res` nilainya `True` |
+| `>` | apakah kiri lebih besar dibanding kanan | `res = 4 > 5` ➜ hasilnya `res` nilainya `False` |
+| `<` | apakah kiri lebih kecil dibanding kanan | `res = 4 < 5` ➜ hasilnya `res` nilainya `True` |
+| `>=` | apakah kiri lebih besar atau sama dengan kanan | `res = 5 >= 5` ➜ hasilnya `res` nilainya `True` |
+| `<=` | apakah kiri lebih kecil atau sama dengan kanan | `res = 4 <= 5` ➜ hasilnya `res` nilainya `False` |
 
 ## A.7.4. Operator logika
 
 | Operator | Keterangan | Contoh |
 | :-: | :- | :- |
-| `and` | operasi logika **AND** | `res = (4 == 5) and (2 != 3)` → hasilnya `res` nilainya `False` |
-| `or` | operasi logika **OR** | `res = (4 == 5) or (2 != 3)` → hasilnya `res` nilainya `True` |
-| `not` atau `!` | operasi logika **negasi** (atau **NOT**) | `res = not (2 == 3)` → hasilnya `res` nilainya `True`<br />`res = !(2 == 3)` → hasilnya `res` nilainya `True` |
+| `and` | operasi logika **AND** | `res = (4 == 5) and (2 != 3)` ➜ hasilnya `res` nilainya `False` |
+| `or` | operasi logika **OR** | `res = (4 == 5) or (2 != 3)` ➜ hasilnya `res` nilainya `True` |
+| `not` atau `!` | operasi logika **negasi** (atau **NOT**) | `res = not (2 == 3)` ➜ hasilnya `res` nilainya `True`<br />`res = !(2 == 3)` ➜ hasilnya `res` nilainya `True` |
 
 ## A.7.5. Operator bitwise
 
@@ -99,15 +99,13 @@ print("id(num_1): %s, id(num_2): %s" % (id(num_1), id(num_2)))
 
 ![operator is dan not di python](img/operator-1.png)
 
-:::danger
+> Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik.
+>
+> Pembahasannya ada di chapter terpisah, yaitu [Object ID & Reference](/basic/object-id-reference).
 
-Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik. Silakan cek https://stackoverflow.com/a/15172182/1467988 untuk lebih jelasnya.
+### ◉ Fungsi `print()` tanpa string formatting
 
-:::
-
-### ◉ Fungsi `print()` tanpa output formatting
-
-Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan output formatting (seperti `%s`).
+Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan string formatting (seperti `%s`).
 
 Yang terjadi pada statement tersebut adalah, semua nilai argument pemanggilan fungsi `print()` akan digabung dengan delimiter karakter spasi (` `) kemudian ditampilkan ke layar console.
 
@@ -128,43 +126,48 @@ Digunakan untuk mengambil nilai identitas atau ID suatu data. Contoh penerapanny
 data_1 = "hello world"
 id_data_1 = id(data_1)
 
-print("data_1:", data_1)        # hello world
-print("id_data_1:", id_data_1)  # 19441xxxxxxxx
+print("data_1:", data_1)
+# output ➜ data_1: hello world
+
+print("id_data_1:", id_data_1)
+# output ➜ id_data_1: 19441xxxxxxxx
 ```
 
 Nilai kembalian fungsi `id()` bertipe numerik.
+
+> Pembahasan versi detail mengenai fungsi `id()` ada di chapter [Object ID & Reference](/basic/object-id-reference)
 
 ## A.7.7. Operator *membership* (`in`)
 
 Operator `in` digunakan untuk mengecek apakah suatu nilai merupakan bagian dari data kolektif atau tidak.
 
-Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary, sets, tuple, dan list. Selain itu, operator `in` juga bisa digunakan pada `str` untuk pengecekan substring
+Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary, set, tuple, dan list. Selain itu, operator `in` juga bisa digunakan pada `str` untuk pengecekan substring
 
 ```python
 sample_list = [2, 3, 4]
 is_3_exists = 3 in sample_list
 print(is_3_exists)
-# False
+# output ➜ False
 
 sample_tuple = ("hello", "python")
 is_hello_exists = "hello" in sample_tuple
 print(is_hello_exists)
-# True
+# output ➜ True
 
 sample_dict = { "nama": "noval", "age": 12 }
 is_key_nama_exists = "nama" in sample_dict
 print(is_key_nama_exists)
-# True
+# output ➜ True
 
 sample_set = { "sesuk", "preiiii" }
 is_prei = "preiiii" in sample_set
 print(is_prei)
-# True
+# output ➜ True
 
 sample_str = 'Hello world'
 is_substring_exists = 'orl' in sample_str
 print(is_substring_exists)
-# True
+# output ➜ True
 ```
 
 > Operator `in` jika diterapkan pada tipe dictionary, yang di-check adalah key-nya bukan value-nya.
@@ -187,7 +190,7 @@ print(is_substring_exists)
 
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
-- [Output Formatting](#)
+- [String: formatting](/basic/string#a173-string-formatting)
 
 ### ◉ Referensi
 
