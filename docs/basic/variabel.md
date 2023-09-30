@@ -44,7 +44,7 @@ print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
 
 Penjelasan mengenai program di atas bisa dilihat di bawah ini:
 
-### ◉ *Output formatting* `print`
+### ◉ *String formatting* `print`
 
 Di program yang sudah ditulis, ada statement berikut:
 
@@ -54,11 +54,11 @@ print("==== biodata ====")
 
 Statement tersebut adalah contoh cara memunculkan string ke layar output (`stdout`):
 
-Lalu di bawahnya ada statement ini, yang merupakan contoh penerapan teknik *output formatting* untuk mem-format string ke layar output:
+Lalu di bawahnya ada statement ini, yang merupakan contoh penerapan teknik *string formatting* atau *output formatting* untuk mem-format string ke layar output:
 
 ```python
 print("nama: %s" % (nama))
-# output => "nama: noval"
+# output → "nama: noval"
 ```
 
 Karakter `%s` disitu akan di-replace dengan nilai variabel `nama` sebelum dimunculkan. Dan `%s` disini menandakan bahwa data yang akan me-replace-nya bertipe data `string`.
@@ -67,10 +67,10 @@ Selain `%s`, ada juga `%d` untuk data bertipe numerik integer, dan `%r` untuk da
 
 ```python
 print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
-# output => "hobi: makan, umur: 18, laki: True"
+# output → "hobi: makan, umur: 18, laki: True"
 ```
 
-> Lebih detailnya mengenai output formatting dibahas terpisah pada chapter [Output formatting](#)
+> Lebih detailnya mengenai string formatting dibahas terpisah pada chapter [String: formatting](/basic/string#a173-string-formatting)
 
 ## A.4.2. *Naming convention* variabel
 
@@ -140,7 +140,8 @@ Output program di atas:
 ### ◉ Chapter relevan lainnya
 
 - [Tipe Data](/basic/tipe-data)
-- [Output Formatting](#)
+- [String: formatting](/basic/string#a173-string-formatting)
+- [Number](#)
 
 ### ◉ Referensi
 

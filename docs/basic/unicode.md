@@ -134,6 +134,10 @@ print(codePoint)
     </a>
 </pre>
 
+### ◉ Chapter relevan lainnya
+
+- [String](/basic/string)
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/howto/unicode.html#:~:text=Python's%20string%20type%20uses%20the,character%20its%20own%20unique%20code.

@@ -11,7 +11,7 @@ faqs:
     answer: Contoh list di python → list_1 = [10, 70, 20]
 ---
 
-List adalah tipe data kolektif yang disimpan secara urut dan bisa diubah nilainya.
+List adalah tipe data kolektif yang disimpan secara urut dan bisa diubah nilainya (istilah lainnya adalah tipe data *sequence*).
 
 Pada bahasa pemrograman umumnya ada tipe data **array**. List di Python ini memiliki banyak kemiripan dengan array, bedanya list bisa berisi data dengan berbagai macam tipe data, jadi tidak harus sejenis tipe datanya.
 
@@ -218,7 +218,7 @@ print('slice_1:', slice_1)
 # output → slice_1: ['cd', 'hi']
 ```
 
-> Lebih detailnya mengenai slice dibahas pada chapter [Slice](#)
+> Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
 
 ### ◉ Mengubah nilai element
 
@@ -551,9 +551,9 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 
 ### ◉ Chapter relevan lainnya
 
-- [List Comprehension](/basic/list-comprehension)
 - [Perulangan → for, range](/basic/for-range)
-- [Slice](#)
+- [List Comprehension](/basic/list-comprehension)
+- [Slicing](/basic/slice)
 - [Closure/lambda](#)
 
 ### ◉ TBA

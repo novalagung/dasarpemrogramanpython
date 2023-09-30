@@ -63,7 +63,7 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 """ini adalah komentar"""
 ```
 
-> - Lebih detailnya mengenai string dibahas pada chapter [String & Operasi String](#)
+> - Lebih detailnya mengenai string dibahas pada chapter [String](/basic/string)
 
 ---
 
@@ -81,7 +81,7 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 
 ### ◉ Chapter relevan lainnya
 
-- [String & Operasi String](#)
+- [String](/basic/string)
 
 ### ◉ Referensi
 

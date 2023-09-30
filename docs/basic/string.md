@@ -98,7 +98,7 @@ Program di atas menghasilkan output berikut:
 ![special char python](img/string-1.png)
 
 
-> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Numeric](#).
+> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Number](#).
 
 ## A.17.3. String formatting
 
@@ -258,7 +258,7 @@ print(str[:4])
 # output → hell
 ```
 
-> Lebih detailnya mengenai slice dibahas pada chapter [Slice](#)
+> Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
 
 ## A.17.6. Operasi *character & case*
 
@@ -655,6 +655,11 @@ print(res)
         github.com/novalagung/dasarpemrogramanpython-example/../string
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [Unicode](/basic/unicode)
+- [Slicing](/basic/slice)
 
 ### ◉ TBA
 

@@ -105,9 +105,9 @@ Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator 
 
 :::
 
-### ◉ Fungsi `print()` tanpa output formatting
+### ◉ Fungsi `print()` tanpa string formatting
 
-Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan output formatting (seperti `%s`).
+Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan string formatting (seperti `%s`).
 
 Yang terjadi pada statement tersebut adalah, semua nilai argument pemanggilan fungsi `print()` akan digabung dengan delimiter karakter spasi (` `) kemudian ditampilkan ke layar console.
 
@@ -128,8 +128,11 @@ Digunakan untuk mengambil nilai identitas atau ID suatu data. Contoh penerapanny
 data_1 = "hello world"
 id_data_1 = id(data_1)
 
-print("data_1:", data_1)        # hello world
-print("id_data_1:", id_data_1)  # 19441xxxxxxxx
+print("data_1:", data_1)
+# output → data_1: hello world
+
+print("id_data_1:", id_data_1)
+# output → id_data_1: 19441xxxxxxxx
 ```
 
 Nilai kembalian fungsi `id()` bertipe numerik.
@@ -144,27 +147,27 @@ Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary,
 sample_list = [2, 3, 4]
 is_3_exists = 3 in sample_list
 print(is_3_exists)
-# False
+# output → False
 
 sample_tuple = ("hello", "python")
 is_hello_exists = "hello" in sample_tuple
 print(is_hello_exists)
-# True
+# output → True
 
 sample_dict = { "nama": "noval", "age": 12 }
 is_key_nama_exists = "nama" in sample_dict
 print(is_key_nama_exists)
-# True
+# output → True
 
 sample_set = { "sesuk", "preiiii" }
 is_prei = "preiiii" in sample_set
 print(is_prei)
-# True
+# output → True
 
 sample_str = 'Hello world'
 is_substring_exists = 'orl' in sample_str
 print(is_substring_exists)
-# True
+# output → True
 ```
 
 > Operator `in` jika diterapkan pada tipe dictionary, yang di-check adalah key-nya bukan value-nya.
@@ -187,7 +190,7 @@ print(is_substring_exists)
 
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
-- [Output Formatting](#)
+- [String: formatting](/basic/string#a173-string-formatting)
 
 ### ◉ Referensi
 

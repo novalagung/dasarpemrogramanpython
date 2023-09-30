@@ -420,6 +420,10 @@ print("len:", len(profile), "data:", profile)
     </a>
 </pre>
 
+### ◉ Chapter relevan lainnya
+
+- [Classes & object](#)
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/stdtypes.html#mapping-types-dict

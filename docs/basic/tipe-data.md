@@ -6,7 +6,7 @@ sidebar_label: A.6. Tipe Data
 keywords: [tipe data python]
 faqs:
   - question: Tipe data di Python
-    answer: Python mengenal cukup banyak tipe data, mulai dari yang built-in maupun custom type. Contohnya int, float, complex, str, bool, list, tuple, sets, dict
+    answer: Python mengenal cukup banyak tipe data, mulai dari yang built-in maupun custom type. Contohnya int, float, complex, str, bool, list, tuple, set, dict
 ---
 
 Python mengenal cukup banyak tipe data, mulai dari yang *built-in* (atau bawaan) maupun custom type. Pada chapter ini kita akan mempelajari *high-level overview* tipe-tipe tersebut.
@@ -21,7 +21,7 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 | `float` | menampung bilangan desimal atau *floating point* | ` number_2 = 3.14 ` |
 | `complex` | menampung nilai berisi kombinasi bilangan real dan imajiner | ` number_3 = 120+3j ` |
 
-> Lebih detailnya mengenai string dibahas pada chapter [Numeric](#)
+> Lebih detailnya mengenai string dibahas pada chapter [Number](#)
 
 ## A.6.2. Tipe data `str`
 
@@ -142,7 +142,10 @@ Pengaksesan property dictionary menggunakan notasi `dict[property_name]`. Contoh
 
 ```python
 print("name: %s" % (profile_1["name"]))
+# output → name: Noval
+
 print("hobbies: %s" % (profile_1["hobbies"]))
+# output → name: ["gaming", "learning"]
 ```
 
 Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti berikut:
@@ -151,28 +154,29 @@ Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti ber
 profile_1 = { "name": "Noval", "hobbies": ["gaming", "learning"] }
 ```
 
-> Lebih detailnya mengenai dictionary dibahas pada chapter [Dictionary](#)
+> Lebih detailnya mengenai dictionary dibahas pada chapter [Dictionary](/basic/dictionary)
 
-## A.6.7. Tipe data sets
+## A.6.7. Tipe data set
 
-Tipe data sets adalah cara lain untuk menyimpan data kolektif. Tipe data ini memiliki beberapa kelemahan:
+Tipe data set adalah cara lain untuk menyimpan data kolektif. Tipe data ini memiliki beberapa kelemahan:
 
 - Tidak bisa menyimpan informasi urutan data
 - Elemen data yang sudah didefinisikan tidak bisa diubah nilainya (tapi bisa dihapus)
 - Tidak bisa diakses menggunakan index (tetapi bisa menggunakan perulangan)
 
-Contoh penerapan sets:
+Contoh penerapan set:
 
 ```python
 set_1 = {"pineapple", "spaghetti"}
 print(set_1)
+# output → {"pineapple", "spaghetti"}
 ```
 
-> Lebih detailnya mengenai sets dibahas pada chapter [Sets](#)
+> Lebih detailnya mengenai set dibahas pada chapter [Set]/basic/set)
 
 ## A.6.8. Tipe data lainnya
 
-Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset, bytes, memoryview, range; dan kesemuanya akan dibahas satu per satu di chapter terpisah.
+Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti [frozenset](/basic/set#a157-frozenset), bytes, memoryview, [range](/basic/for-range#a92-penerapan-fungsi-range); dan kesemuanya akan dibahas satu per satu di chapter terpisah.
 
 ---
 
@@ -190,11 +194,11 @@ Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset,
 
 ### ◉ Chapter relevan lainnya
 
-- [String & Operasi String](#)
+- [String](/basic/string)
 - [List](/basic/list)
 - [Tuple](/basic/tuple)
-- [Dictionary](#)
-- [Sets](#)
+- [Dictionary](/basic/dictionary)
+- [Set](/basic/set)
 
 ### ◉ Referensi
 

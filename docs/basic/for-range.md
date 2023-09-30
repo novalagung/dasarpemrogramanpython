@@ -50,7 +50,7 @@ print("r:", list(r))
 
 ![perulangan for range](img/for-range-2.png)
 
-> - Lebih detailnya mengenai list dibahas pada chapter [List](#)
+> - Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
 > - Lebih detailnya mengenai mengenai *type conversion* dibahas pada chapter [Konversi Tipe Data](#)
 
 ## A.9.2. Penerapan fungsi `range()`
@@ -252,7 +252,7 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 ### ◉ Chapter relevan lainnya
 
 - [List](/basic/list)
-- [String](#)
+- [String](/basic/string)
 - [Fungsi](#)
 
 ### ◉ Referensi
