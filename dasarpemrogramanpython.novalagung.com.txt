@@ -21,3 +21,5 @@ https://dasarpemrogramanpython.novalagung.com/basic/set
 https://dasarpemrogramanpython.novalagung.com/basic/dictionary
 https://dasarpemrogramanpython.novalagung.com/basic/string
 https://dasarpemrogramanpython.novalagung.com/basic/unicode
+https://dasarpemrogramanpython.novalagung.com/basic/slice
+https://dasarpemrogramanpython.novalagung.com/basic/object-id-reference
