@@ -92,7 +92,7 @@ Pengaksesan element list menggunakan notasi `list[index_number]`. Contoh:
 ```python
 list_1 = [2, 4, 8, 16]
 print(list_1[2])
-# output → 8
+# output ➜ 8
 ```
 
 > Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
@@ -120,7 +120,7 @@ Pengaksesan element tuple menggunakan notasi `tuple[index_number]`. Contoh:
 ```python
 tuple_1 = (2, 3, 4)
 print(tuple_1[2])
-# output → 4
+# output ➜ 4
 ```
 
 > Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
@@ -142,10 +142,10 @@ Pengaksesan property dictionary menggunakan notasi `dict[property_name]`. Contoh
 
 ```python
 print("name: %s" % (profile_1["name"]))
-# output → name: Noval
+# output ➜ name: Noval
 
 print("hobbies: %s" % (profile_1["hobbies"]))
-# output → name: ["gaming", "learning"]
+# output ➜ name: ["gaming", "learning"]
 ```
 
 Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti berikut:
@@ -169,7 +169,7 @@ Contoh penerapan set:
 ```python
 set_1 = {"pineapple", "spaghetti"}
 print(set_1)
-# output → {"pineapple", "spaghetti"}
+# output ➜ {"pineapple", "spaghetti"}
 ```
 
 > Lebih detailnya mengenai set dibahas pada chapter [Set]/basic/set)

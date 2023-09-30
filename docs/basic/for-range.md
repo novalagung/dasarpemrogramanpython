@@ -1,14 +1,14 @@
 ---
 sidebar_position: 9
-title: A.9. Perulangan Python → for, range
-sidebar_label: A.9. Perulangan → for, range
+title: A.9. Perulangan Python ➜ for, range
+sidebar_label: A.9. Perulangan ➜ for, range
 description: Tutorial belajar perulangan/iterasi di Python menggunakan for dan range. 
 keywords: [perulangan, loop, for, range, looping]
 faqs:
   - question: Perulangan di Python
     answer: Perulangan di Python bisa dilakukan menggunakan while, for range, dan juga kombinasi for dengan tipe data sequence seperti list, tuple, dan lainnya.
   - question: For di Python
-    answer: 'Contoh perulanga di Python menggunakan keyword for → for i in range(5): print("index:", i)'
+    answer: 'Contoh perulanga di Python menggunakan keyword for ➜ for i in range(5): print("index:", i)'
 ---
 
 Perulangan atau *loop* merupakan teknik untuk mengulang-ulang eksekusi suatu blok kode, atau mengiterasi elemen milik tipe data kolektif (contohnya: list). Chapter ini membahas tentang penerapannya di Python.

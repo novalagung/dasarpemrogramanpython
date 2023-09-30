@@ -8,7 +8,7 @@ faqs:
   - question: Perbedaan list vs array di Python
     answer: List mirip dengan array, perbedaannya list bisa menampung data yang tidak sejenis, sedangkan data element array harus sejenis
   - question: List di Python
-    answer: Contoh list di python → list_1 = [10, 70, 20]
+    answer: Contoh list di python ➜ list_1 = [10, 70, 20]
 ---
 
 List adalah tipe data kolektif yang disimpan secara urut dan bisa diubah nilainya (istilah lainnya adalah tipe data *sequence*).
@@ -115,7 +115,7 @@ Data range (hasil pemanggilan fungsi `range()`) bisa dikonversi ke bentuk list m
     range_1 = range(0, 10)
     list_1 = list(range_1)
     print(list_1)
-    # output → [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    # output ➜ [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     ```
 
 - List dimulai angka `1` hingga `21` dengan penambahan `3`:
@@ -124,7 +124,7 @@ Data range (hasil pemanggilan fungsi `range()`) bisa dikonversi ke bentuk list m
     range_2 = range(0, 22, 3)
     list_2 = list(range_2)
     print(list_2)
-    # output → [0, 3, 6, 9, 12, 15, 18, 21]
+    # output ➜ [0, 3, 6, 9, 12, 15, 18, 21]
     ```
 
 - List dimulai angka `100` hingga `0` dengan pengurangan `-10`:
@@ -133,7 +133,7 @@ Data range (hasil pemanggilan fungsi `range()`) bisa dikonversi ke bentuk list m
     range_3 = range(100, 0, -10)
     list_3 = list(range_3)
     print(list_3)
-    # output → [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
+    # output ➜ [100, 90, 80, 70, 60, 50, 40, 30, 20, 10]
     ```
 
 > Selain metode ini, ada juga cara lainnya untuk membuat list, yaitu menggunakan metode *list comprehension*, yang akan dibahas pada chapter berikutnya, yaitu [List Comprehension](/basic/list-comprehension)
@@ -145,7 +145,7 @@ Selain untuk konversi data range ke list, fungsi `list()` bisa digunakan untuk k
 ```python
 alphabets = list('abcdefgh')
 print(alphabets)
-# output → ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+# output ➜ ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 ```
 
 ### ◉ Konversi tuple ke list
@@ -156,7 +156,7 @@ Tipe data tuple bisa diubah bentuknya menjadi list dengan menggunakan fungsi `li
 tuple_1 = (1, 2, 3, 4)
 numbers = list(tuple_1)
 print(numbers)
-# output → [1, 2, 3, 4]
+# output ➜ [1, 2, 3, 4]
 ```
 
 > Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
@@ -175,7 +175,7 @@ elem_2nd = list_1[1]
 elem_3rd = list_1[2]
 
 print(elem_1st, elem_2nd, elem_3rd)
-# output → [10, 70, 20]
+# output ➜ [10, 70, 20]
 ```
 
 :::danger
@@ -199,7 +199,7 @@ if n in list_1:
 else:
     print(n, "is NOT exists")
 
-# output → 70 is exists
+# output ➜ 70 is exists
 ```
 
 ### ◉ *Slicing* list
@@ -211,11 +211,11 @@ Contoh pengaplikasian metode slicing bisa dilihat pada kode berikut. Variabel `l
 ```python
 list_2 = ['ab', 'cd', 'hi', 'ca']
 print('list_2:', list_2)
-# output → list2: ['ab', 'cd', 'hi', 'ca']
+# output ➜ list2: ['ab', 'cd', 'hi', 'ca']
 
 slice_1 = list_2[1:3]
 print('slice_1:', slice_1)
-# output → slice_1: ['cd', 'hi']
+# output ➜ slice_1: ['cd', 'hi']
 ```
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
@@ -227,12 +227,12 @@ Cara mengubah nilai element list dengan cara mengakses nilai element menggunakan
 ```python
 list_2 = ['ab', 'cd', 'hi', 'ca']
 print('before:', list_2)
-# output → before: ['ab', 'cd', 'hi', 'ca']
+# output ➜ before: ['ab', 'cd', 'hi', 'ca']
 
 list_2[1] = 'zk'
 list_2[2] = 'sa'
 print('after: ', list_2)
-# output → after: ['ab', 'zk', 'sa', 'ca']
+# output ➜ after: ['ab', 'zk', 'sa', 'ca']
 ```
 
 ### ◉ Append element
@@ -244,12 +244,12 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     ```python
     list_1 = [10, 70, 20]
     print('before: ', list_1)
-    # output → before: [10, 70, 20]
+    # output ➜ before: [10, 70, 20]
 
     list_1.append(88)
     list_1.append(87)
     print('after: ', list_1)
-    # output → after : [10, 70, 20, 88, 87]
+    # output ➜ after : [10, 70, 20, 88, 87]
     ```
 
 - via slicing:
@@ -257,11 +257,11 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     ```python
     list_1 = [10, 70, 20]
     print('before: ', list_1)
-    # output → before: [10, 70, 20]
+    # output ➜ before: [10, 70, 20]
 
     list_1[len(list_1):] = [88, 87]
     print('after: ', list_1)
-    # output → after : [10, 70, 20, 88, 87]
+    # output ➜ after : [10, 70, 20, 88, 87]
     ```
 
 > - Lebih detailnya mengenai method dibahas pada chapter [Method](#)
@@ -277,7 +277,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     list_2 = [88, 77]
     list_1.extend(list_2)
     print(list_1)
-    # output → [10, 70, 20, 88, 87]
+    # output ➜ [10, 70, 20, 88, 87]
     ```
 
 - via slicing:
@@ -287,7 +287,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     list_2 = [88, 77]
     list_1[len(list_1):] = list_2
     print(list_1)
-    # output → [10, 70, 20, 88, 87]
+    # output ➜ [10, 70, 20, 88, 87]
     ```
 
 - via operator `+`:
@@ -297,7 +297,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     list_2 = [88, 77]
     list_3 = list_1 + list_2
     print(list_3)
-    # output → [10, 70, 20, 88, 87]
+    # output ➜ [10, 70, 20, 88, 87]
     ```
 
     Metode extend menggunakan operator `+` mengharuskan hasil operasi untuk ditampung ke variabel.
@@ -313,11 +313,11 @@ list_3 = [10, 70, 20, 70]
 
 list_3.insert(0, 15)
 print(list_3)
-# output → [15, 10, 70, 20, 70]
+# output ➜ [15, 10, 70, 20, 70]
 
 list_3.insert(2, 25)
 print(list_3)
-# output → [15, 10, 25, 70, 20, 70]
+# output ➜ [15, 10, 25, 70, 20, 70]
 ```
 
 - Variabel `list_3` awalnya berisi `[10, 70, 20, 70]`
@@ -335,11 +335,11 @@ list_3 = [10, 70, 20, 70]
 
 list_3.remove(70)
 print(list_3)
-# output → [10, 20, 70]
+# output ➜ [10, 20, 70]
 
 list_3.remove(70)
 print(list_3)
-# output → [10, 20]
+# output ➜ [10, 20]
 ```
 
 ### ◉ Menghapus element pada index `i`
@@ -353,15 +353,15 @@ list_3 = [10, 70, 20, 70]
 
 x = list_3.pop(2)
 print('list_3:', list_3)
-# output → list_3: [10, 70, 70]
+# output ➜ list_3: [10, 70, 70]
 print('removed element:', x)
-# output → removed element: 20
+# output ➜ removed element: 20
 
 x = list_3.pop()
 print('list_3:', list_3)
-# output → list_3: [10, 70]
+# output ➜ list_3: [10, 70]
 print('removed element:', x)
-# output → removed element: 70
+# output ➜ removed element: 70
 ```
 
 Jika index `i` yang ingin dihapus tidak diketemukan, maka error `IndexError` muncul.
@@ -396,7 +396,7 @@ list_3 = [10, 70, 20, 70]
 
 del list_3[1:3]
 print(list_3)
-# output → [10, 70]
+# output ➜ [10, 70]
 ```
 
 ### ◉ Menghitung jumlah element
@@ -407,7 +407,7 @@ Fungsi `len()` digunakan untuk menghitung jumlah element.
 list_3 = [10, 70, 20, 70]
 total = len(list_3)
 print(total)
-# output → 4
+# output ➜ 4
 ```
 
 Selain fungsi `len()`, ada juga method `count()` milik method slice yang kegunaannya memiliki kemiripan. Perbedaannya, method `count()` melakukan operasi pencarian sekaligus menghitung jumlah element yang ditemukan.
@@ -418,7 +418,7 @@ Agar lebih jelas, silakan lihat kode berikut:
 list_3 = [10, 70, 20, 70]
 count = list_3.count(70)
 print('jumlah element dengan data `70`:', count)
-# output → jumlah element dengan data `70`: 2
+# output ➜ jumlah element dengan data `70`: 2
 ```
 
 ### ◉ Mencari index element list
@@ -430,7 +430,7 @@ list_2 = ['ab', 'cd', 'hi', 'ca']
 
 idx_1st = list_2.index('cd')
 print('idx_1st: ', idx_1st)
-# output → idx_1st: 1
+# output ➜ idx_1st: 1
 ```
 
 Jika data element yang dicari tidak ada, maka akan muncul error `ValueError`:
@@ -452,7 +452,7 @@ Ada dua cara untuk mengosongkan list:
     list_1 = [10, 70, 20]
     list_1.clear()
     print(list_1)
-    # output → []
+    # output ➜ []
     ```
 
 - Menimpanya dengan `[]`:
@@ -461,7 +461,7 @@ Ada dua cara untuk mengosongkan list:
     list_1 = [10, 70, 20]
     list_1 = []
     print(list_1)
-    # output → []
+    # output ➜ []
     ```
 
 - Menggunakan keyword `del` dan slicing:
@@ -470,7 +470,7 @@ Ada dua cara untuk mengosongkan list:
     list_1 = [10, 70, 20]
     del list_1[:]
     print(list_1)
-    # output → []
+    # output ➜ []
     ```
 
 ### ◉ Membalik urutan element list
@@ -481,7 +481,7 @@ Method `reverse()` digunakan untuk membalik posisi element pada list.
 list_1 = [10, 70, 20]
 list_1.reverse()
 print(list_1)
-# output → [20, 70, 10]
+# output ➜ [20, 70, 10]
 ```
 
 ### ◉ *Copy* list
@@ -494,9 +494,9 @@ Ada 2 cara untuk menduplikasi list, menggunakan method `copy()` dan teknik slici
     list_1 = [10, 70, 20]
     list_2 = list_1.copy()
     print(list_1)
-    # output → [10, 70, 20]
+    # output ➜ [10, 70, 20]
     print(list_2)
-    # output → [10, 70, 20]
+    # output ➜ [10, 70, 20]
     ```
 
 - Kombinasi operasi assignment dan slicing:
@@ -505,9 +505,9 @@ Ada 2 cara untuk menduplikasi list, menggunakan method `copy()` dan teknik slici
     list_1 = [10, 70, 20]
     list_2 = list_1[:]
     print(list_1)
-    # output → [10, 70, 20]
+    # output ➜ [10, 70, 20]
     print(list_2)
-    # output → [10, 70, 20]
+    # output ➜ [10, 70, 20]
     ```
 
 > Operasi copy disini jenisnya adalah shallow copy.<br />
@@ -521,12 +521,12 @@ Mengurutkan data list bisa dilakukan menggunakan *default sorter* milik Python, 
 list_1 = [10, 70, 20]
 list_1.sort()
 print(list_1)
-# output → [10, 20, 70]
+# output ➜ [10, 20, 70]
 
 list_2 = ['z', 'h', 'c']
 list_2.sort()
 print(list_2)
-# output → ['c', 'h', 'z']
+# output ➜ ['c', 'h', 'z']
 ```
 
 ![list python](img/list-3.png)
@@ -551,7 +551,7 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 
 ### ◉ Chapter relevan lainnya
 
-- [Perulangan → for, range](/basic/for-range)
+- [Perulangan ➜ for, range](/basic/for-range)
 - [List Comprehension](/basic/list-comprehension)
 - [Slicing](/basic/slice)
 - [Closure/lambda](#)

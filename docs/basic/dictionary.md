@@ -8,7 +8,7 @@ sidebar_label: A.16. Dictionary
 #   - question: Tuple vs List di Python
 #     answer: Tuple adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolektif yang isinya tidak akan berubah (immutable), berbeda dengan list yang lebih cocok untuk data yang bisa berubah nilai elemen-nya (mutable).
 #   - question: Deklarasi tuple di Python
-#     answer: Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut → tuple_1 = (2, 3, 4, "hello python", False)
+#     answer: Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut ➜ tuple_1 = (2, 3, 4, "hello python", False)
 #   - question: Tuple kosong () di Python
 #     answer: Tuple kosong () digunakan untuk merepresentasikan data kolektif yang isinya adalah kosong.
 ---
@@ -43,10 +43,10 @@ Sedangkan untuk memunculkan nilai item tertentu berdasarkan key-nya, bisa dilaku
 
 ```python
 print("name:", profile["name"])
-# output → name: john wick
+# output ➜ name: john wick
 
 print("hobbies:", profile["hobbies"])
-# output → ['playing with pencil']
+# output ➜ ['playing with pencil']
 ```
 
 :::danger
@@ -131,11 +131,11 @@ Sedangkan untuk membuat dictionary tanpa item atau kosong, bisa cukup menggunaka
 ```python
 profile = dict()
 print(profile)
-# output → {}
+# output ➜ {}
 
 profile = {}
 print(profile)
-# output → {}
+# output ➜ {}
 ```
 
 ## A.16.3. Perulangan item dictionary
@@ -189,15 +189,15 @@ print("hobbies:", profile["hobbies"])
 print("affliations:")
 
 for item in profile["affliations"]:
-    print("  → %s (%s)" % (item["name"], item["affliation"]))
+    print("  ➜ %s (%s)" % (item["name"], item["affliation"]))
 
 # output ↓
 #
 # name: mario
 # hobbies: ('playing with luigi', 'saving the mushroom kingdom')
 # affliations:
-#   → luigi (brother)
-#   → mushroom kingdom (protector)
+#   ➜ luigi (brother)
+#   ➜ mushroom kingdom (protector)
 ```
 
 Pada kode di atas, key `affliations` berisi array object dictionary.
@@ -206,12 +206,12 @@ Contoh cara mengakses value nested item dictionary:
 
 ```python
 value = profile["affliations"][0]["name"], profile["affliations"][0]["affliation"]
-print("  → %s (%s)" % (value))
-# output → luigi (brother)
+print("  ➜ %s (%s)" % (value))
+# output ➜ luigi (brother)
 
 value = profile["affliations"][1]["name"], profile["affliations"][1]["affliation"]
-print("  → %s (%s)" % (value))
-# output → mushroom kingdom (protector)
+print("  ➜ %s (%s)" % (value))
+# output ➜ mushroom kingdom (protector)
 ```
 
 ## A.15.5. Dictionary mutability
@@ -227,12 +227,12 @@ profile = {
 }
 
 print(profile["affliations"][0]["name"])
-# output → luigi
+# output ➜ luigi
 
 profile["affliations"][0]["name"] = "luigi steven"
 
 print(profile["affliations"][0]["name"])
-# output → luigi steven
+# output ➜ luigi steven
 ```
 
 ## A.15.6. Operasi data dictionary
@@ -250,10 +250,10 @@ profile = {
 }
 
 print("id:", profile["id"])
-# output → id: 2
+# output ➜ id: 2
 
 print("name:", profile.get("name"))
-# output → name: mario
+# output ➜ name: mario
 ```
 
 ### ◉ Mengubah isi dictionary
@@ -268,11 +268,11 @@ profile = {
     "is_female": False,
 }
 print("name:", profile["name"])
-# output → name: mario
+# output ➜ name: mario
 
 profile["name"] = "mario mario"
 print("name:", profile["name"])
-# output → name: mario mario
+# output ➜ name: mario mario
 ```
 
 ### ◉ Menambah item dictionary
@@ -284,11 +284,11 @@ profile = {
     "name": "mario",
 }
 print("len:", len(profile), "data:", profile)
-# output → len: 1 data: {'name': 'mario'}
+# output ➜ len: 1 data: {'name': 'mario'}
 
 profile["favourite_color"] = "red"
 print("len:", len(profile), "data:", profile)
-# output → len: 2 data: {'name': 'mario', 'favourite_color': 'red'}
+# output ➜ len: 2 data: {'name': 'mario', 'favourite_color': 'red'}
 ```
 
 Selain cara tersebut, bisa juga dengan menggunakan method `update()`. Tulis key dan value baru yang ingin ditambahkan sebagai argument method `update()` dalam bentuk dictionary.
@@ -296,7 +296,7 @@ Selain cara tersebut, bisa juga dengan menggunakan method `update()`. Tulis key 
 ```python
 profile.update({"race": "italian"})
 print("len:", len(profile), "data:", profile)
-# output → len: 3 data: {'name': 'mario', 'favourite_color': 'red', 'race': 'italian'}
+# output ➜ len: 3 data: {'name': 'mario', 'favourite_color': 'red', 'race': 'italian'}
 ```
 
 ### ◉ Menghapus item dictionary
@@ -328,7 +328,7 @@ profile = {
 }
 
 print(list(profile.keys()))
-# output → ['id', 'name', 'is_female']
+# output ➜ ['id', 'name', 'is_female']
 ```
 
 ### ◉ Pengaksesan dictionary
@@ -344,7 +344,7 @@ profile = {
 }
 
 print(list(profile.values()))
-# output → [2, 'mario', False]
+# output ➜ [2, 'mario', False]
 ```
 
 ### ◉ Method `items()` dictionary
@@ -362,7 +362,7 @@ profile = {
 }
 
 print(list(profile.items()))
-# output → [('id', 2), ('name', 'mario'), ('is_female', False)]
+# output ➜ [('id', 2), ('name', 'mario'), ('is_female', False)]
 ```
 
 ### ◉ Copy dictionary
@@ -376,11 +376,11 @@ p1 = {
     "is_female": False,
 }
 print(p1)
-# output → {'id': 2, 'name': 'mario', 'is_female': False}
+# output ➜ {'id': 2, 'name': 'mario', 'is_female': False}
 
 p2 = p1.copy()
 print(p2)
-# output → {'id': 2, 'name': 'mario', 'is_female': False}
+# output ➜ {'id': 2, 'name': 'mario', 'is_female': False}
 ```
 
 Pada contoh di atas, statement `p1.copy()` menghasilkan data baru dengan isi sama seperti isi `p1`, data tersebut kemudian ditampung oleh variabel `p2`.
@@ -399,11 +399,11 @@ profile = {
     "is_female": False,
 }
 print("len:", len(profile), "data:", profile)
-# output → len: 3 data: {'id': 2, 'name': 'mario', 'is_female': False}
+# output ➜ len: 3 data: {'id': 2, 'name': 'mario', 'is_female': False}
 
 profile.clear()
 print("len:", len(profile), "data:", profile)
-# output → len: 0 data: {}
+# output ➜ len: 0 data: {}
 ```
 
 ---

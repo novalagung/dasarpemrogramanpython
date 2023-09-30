@@ -1,14 +1,14 @@
 ---
 sidebar_position: 8
-title: A.8. Seleksi kondisi Python → if, elif, else
-sidebar_label: A.8. Seleksi kondisi → if, elif, else
+title: A.8. Seleksi kondisi Python ➜ if, elif, else
+sidebar_label: A.8. Seleksi kondisi ➜ if, elif, else
 description: Belajar seleksi kondisi di python menggunakan if, elif, dan else. Juga belajar tentang operasi ternary dan pass dalam seleksi kondisi.
 keywords: [python if else, if elif else]
 faqs:
   - question: Seleksi kondisi di Python
     answer: Seleksi kondisi di python dilakukan menggunakan if, elif (untuk else if), dan else
   - question: Ternary di Python
-    answer: Contoh ternary di python → "passed the exam" if grade >= 65 else "below the passing grade"
+    answer: Contoh ternary di python ➜ "passed the exam" if grade >= 65 else "below the passing grade"
 ---
 
 Seleksi kondisi adalah suatu blok kode yang dieksekusi hanya ketika kriteria yang ditentukan terpenuhi. Teknik seleksi kondisi banyak digunakan untuk kontrol alur program.

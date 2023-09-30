@@ -23,7 +23,7 @@ Lanjut praktek. Pada contoh berikut disiapkan variabel `data_str` berisi string 
 ```python
 data_str = "hello world"
 print(data_str)
-# output → hello world
+# output ➜ hello world
 ```
 
 Variabel `data_str` visualisasinya dalam bentuk *sequence* kurang lebih seperti ini. Lebar element data adalah `11` dengan index awal `0` dan index akhir `10`.
@@ -39,7 +39,7 @@ Ok, sekarang kita coba slice `data_str`:
 
     slice1 = data_str[0:3]
     print(slice1)
-    # output → hel
+    # output ➜ hel
     ```
 
     ![Slicing python](img/slice-2.png)
@@ -49,7 +49,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice2 = data_str[2:8]
     print(slice2)
-    # output → llo wo
+    # output ➜ llo wo
     ```
 
     ![Slicing python](img/slice-3.png)
@@ -59,7 +59,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice3 = data_str[:5]
     print(slice3)
-    # output → hello
+    # output ➜ hello
     ```
 
     ![Slicing python](img/slice-4.png)
@@ -69,7 +69,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice4 = data_str[4:]
     print(slice4)
-    # output → o world
+    # output ➜ o world
     ```
 
     ![Slicing python](img/slice-5.png)
@@ -79,7 +79,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice5 = data_str[3:7:1]
     print(slice5)
-    # output → lo w
+    # output ➜ lo w
     ```
 
     ![Slicing python](img/slice-6.png)
@@ -89,7 +89,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice6 = data_str[2:9:2]
     print(slice6)
-    # output → lowr
+    # output ➜ lowr
     ```
 
     ![Slicing python](img/slice-7.png)
@@ -99,7 +99,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice7 = data_str[:]
     print(slice7)
-    # output → hello world
+    # output ➜ hello world
     ```
 
     ![Slicing python](img/slice-1.png)
@@ -109,7 +109,7 @@ Ok, sekarang kita coba slice `data_str`:
     ```python
     slice8 = data_str[::2]
     print(slice8)
-    # output → hlowrd
+    # output ➜ hlowrd
     ```
 
     ![Slicing python](img/slice-8.png)
@@ -121,15 +121,15 @@ Slicing seluruh element bisa dilakukan dengan notasi `data[0:len(data)]` atau `d
 ```python
 data_tuple = (1, 3, 5, 7, 9, 11, 13, 14)
 print(data_tuple)
-# output → (1, 3, 5, 7, 9, 11, 13, 14)
+# output ➜ (1, 3, 5, 7, 9, 11, 13, 14)
 
 tuple1 = data_tuple[0:len(data_tuple)]
 print(tuple1)
-# output → (1, 3, 5, 7, 9, 11, 13, 14)
+# output ➜ (1, 3, 5, 7, 9, 11, 13, 14)
 
 tuple2 = data_tuple[0:len(data_tuple):1]
 print(tuple2)
-# output → (1, 3, 5, 7, 9, 11, 13, 14)
+# output ➜ (1, 3, 5, 7, 9, 11, 13, 14)
 ```
 
 Ok, lalu kenapa harus menggunakan teknik ini? padahal operasi assignment data tuple ke variabel baru jauh lebih mudah, misalnya:
@@ -137,7 +137,7 @@ Ok, lalu kenapa harus menggunakan teknik ini? padahal operasi assignment data tu
 ```python
 tuple3 = data_tuple
 print(tuple3)
-# output → (1, 3, 5, 7, 9, 11, 13, 14)
+# output ➜ (1, 3, 5, 7, 9, 11, 13, 14)
 ```
 
 Statement assignment `tuple3` di atas isinya adalah sama dengan data hasil operasi slicing `tuple1` dan `tuple2`, namun *reference*-nya adalah berbeda.
@@ -153,20 +153,20 @@ Pada contoh berikut, perhatikan bagaimana perbedaan slicing pada `list1`, `list2
 ```python
 data_list = [2, 4, 6, 7, 9, 11, 13]
 print(data_list)
-# output → [2, 4, 6, 7, 9, 11, 13]
+# output ➜ [2, 4, 6, 7, 9, 11, 13]
 
 list1 = data_list[2:6:1]
 print(list1)
-# output → [6, 7, 9, 11]
+# output ➜ [6, 7, 9, 11]
 
 list2 = data_list[slice(2, 6, 1)]
 print(list2)
-# output → [6, 7, 9, 11]
+# output ➜ [6, 7, 9, 11]
 
 sl = slice(2, 6)
 list3 = data_list[sl]
 print(list3)
-# output → [6, 7, 9, 11]
+# output ➜ [6, 7, 9, 11]
 ```
 
 ---

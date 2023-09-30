@@ -13,11 +13,11 @@ Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah d
 ```python
 str = "hello python"
 print(str)
-# output → hello python
+# output ➜ hello python
 
 str = 'hello python'
 print(str)
-# output → hello python
+# output ➜ hello python
 ```
 
 ### ◉ Multiline string
@@ -56,11 +56,11 @@ Sebagai contoh, dua statement berikut adalah ekuivalen:
 ```python
 str = 'this is a "string" in python'
 print(str)
-# output → this is a "string" in python
+# output ➜ this is a "string" in python
 
 str = "this is a \"string\" in python"
 print(str)
-# output → this is a "string" in python
+# output ➜ this is a "string" in python
 ```
 
 ## A.17.2. String *special characters*
@@ -114,7 +114,7 @@ occupation = "IT support"
 
 str = f"hello, my name is {name}, I'm an {occupation}"
 print(str)
-# output → hello, my name is Aiden Pearce, I'm an IT support
+# output ➜ hello, my name is Aiden Pearce, I'm an IT support
 ```
 
 Penjelasan:
@@ -131,15 +131,15 @@ Selain menggunakan metode di atas, ada beberapa alternatif cara lain yang bisa d
 ```python
 str = "hello, my name is {name}, I'm an {occupation}".format(name = name, occupation = occupation)
 print(str)
-# output → hello, my name is Aiden Pearce, I'm an IT support
+# output ➜ hello, my name is Aiden Pearce, I'm an IT support
 
 str = "hello, my name is {0}, I'm an {1}".format(name, occupation)
 print(str)
-# output → hello, my name is Aiden Pearce, I'm an IT support
+# output ➜ hello, my name is Aiden Pearce, I'm an IT support
 
 str = "hello, my name is {}, I'm an {}".format(name, occupation)
 print(str)
-# output → hello, my name is Aiden Pearce, I'm an IT support
+# output ➜ hello, my name is Aiden Pearce, I'm an IT support
 ```
 
 Semua metode string formatting yang telah dipelajari menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Mana yang lebih baik? Silakan pilih saja metode yang sesuai selera.
@@ -155,7 +155,7 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     ```python
     str = "hello " "python"
     print(str)
-    # output → hello python
+    # output ➜ hello python
     ```
 
 - Menggunakan operator `+`.
@@ -168,7 +168,7 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     str = str_one + " " + str_two
 
     print(str)
-    # output → hello python
+    # output ➜ hello python
     ```
 
 - Menggunakan method `join()` milik string.
@@ -178,7 +178,7 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     ````python
     str = " ".join(["hello", "python"])
     print(str)
-    # output → hello python
+    # output ➜ hello python
     ```
 
 ## A.17.5. Operasi sequence pada string
@@ -193,10 +193,10 @@ Fungsi `len()` ketika digunakan pada tipe data string mengembalikan informasi ju
 str = "hello python"
 
 print("text:", str)
-# output → hello python
+# output ➜ hello python
 
 print("length:", len(str))
-# output → 12
+# output ➜ 12
 ```
 
 ### ◉ Mengakses element string
@@ -206,13 +206,13 @@ Setiap elemen string bisa diakses menggunakan index. Penulisan notasi pengaksesa
 ```python
 str = "hello python"
 print(str[0])
-# output → h
+# output ➜ h
 
 print(str[1])
-# output → e
+# output ➜ e
 
 print(str[2])
-# output → l
+# output ➜ l
 ```
 
 Selain via index, keyword perulangan `for` bisa dimanfaatkan untuk mengiterasi elemen string. Contoh:
@@ -249,13 +249,13 @@ Teknik slicing bisa diterapkan pada data string. Contoh:
 str = "hello python"
 
 print(str[1:5])
-# output → ello
+# output ➜ ello
 
 print(str[7:])
-# output → ython
+# output ➜ ython
 
 print(str[:4])
-# output → hell
+# output ➜ hell
 ```
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
@@ -270,104 +270,104 @@ Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi st
 
     ```python
     print("abcdef".isalpha())
-    # output → True, karena abcdef adalah alfabet
+    # output ➜ True, karena abcdef adalah alfabet
 
     print("abc123".isalpha())
-    # output → False, karena ada karakter 123 yang bukan merupakan alfabet
+    # output ➜ False, karena ada karakter 123 yang bukan merupakan alfabet
 
     print("موز".isalpha())
-    # output → True, karena موز adalah abjad arabic 
+    # output ➜ True, karena موز adalah abjad arabic 
 
     print("バナナ".isalpha())
-    # output → True, karena バナナ adalah karakter jepang
+    # output ➜ True, karena バナナ adalah karakter jepang
     ```
 
 - Method `isdigit()` digunakan untuk mengecek apakah string berisi karakter digit atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik (termasuk pangkat).
 
     ```python
     print("123456".isdigit())
-    # output → True, karena 123456 adalah digit
+    # output ➜ True, karena 123456 adalah digit
 
     print("123abc".isdigit())
-    # output → False, karena ada karakter abc yang bukan merupakan digit
+    # output ➜ False, karena ada karakter abc yang bukan merupakan digit
 
     print('2⅓'.isdigit())
-    # output → False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori digit
+    # output ➜ False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori digit
 
     print('4²'.isdigit())
-    # output → True, karena 4² adalah bilangan pangkat
+    # output ➜ True, karena 4² adalah bilangan pangkat
 
     print('٢٨'.isdigit())
-    # output → True, karena ٢٨ adalah digit arabic
+    # output ➜ True, karena ٢٨ adalah digit arabic
 
     print('𝟜'.isdigit())
-    # output → True, karena 𝟜 adalah digit
+    # output ➜ True, karena 𝟜 adalah digit
     ```
 
 - Method `isdecimal()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik desimal.
 
     ```python
     print("123456".isdecimal())
-    # output → True, karena 123456 adalah angka desimal
+    # output ➜ True, karena 123456 adalah angka desimal
 
     print("123abc".isdecimal())
-    # output → False, karena ada karakter abc yang bukan merupakan angka desimal
+    # output ➜ False, karena ada karakter abc yang bukan merupakan angka desimal
 
     print('2⅓'.isdecimal())
-    # output → False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori angka desimal
+    # output ➜ False, karena bilangan pecahan memiliki karakter `/` yang tidak termasuk dalam kategori angka desimal
 
     print('4²'.isdecimal())
-    # output → False, karena bilangan pangkat yang tidak termasuk dalam kategori angka desimal
+    # output ➜ False, karena bilangan pangkat yang tidak termasuk dalam kategori angka desimal
 
     print('٢٨'.isdecimal())
-    # output → True, karena ٢٨ adalah angka desimal arabic
+    # output ➜ True, karena ٢٨ adalah angka desimal arabic
 
     print('𝟜'.isdecimal())
-    # output → True, karena 𝟜 adalah angka desimal
+    # output ➜ True, karena 𝟜 adalah angka desimal
     ```
 
 - Method `isnumeric()` digunakan untuk mengecek apakah string berisi karakter desimal atau tidak. Nilai kembaliannya `True` jika semua karakter dalam string adalah angka numerik (termasuk pecahan, pangkat, dan angka numerik lainnya).
 
     ```python
     print("123456".isnumeric())
-    # output → True, karena 123456 adalah angka numerik
+    # output ➜ True, karena 123456 adalah angka numerik
 
     print("123abc".isnumeric())
-    # output → False, karena ada karakter abc yang bukan merupakan numerik
+    # output ➜ False, karena ada karakter abc yang bukan merupakan numerik
 
     print('2⅓'.isnumeric())
-    # output → True, karena bilangan pecahan termasuk dalam kategori numerik
+    # output ➜ True, karena bilangan pecahan termasuk dalam kategori numerik
 
     print('4²'.isnumeric())
-    # output → True, karena bilangan pangkat termasuk dalam kategori numerik
+    # output ➜ True, karena bilangan pangkat termasuk dalam kategori numerik
 
     print('٢٨'.isnumeric())
-    # output → True, karena ٢٨ adalah angka numerik arabic
+    # output ➜ True, karena ٢٨ adalah angka numerik arabic
 
     print('𝟜'.isnumeric())
-    # output → True, karena 𝟜 adalah angka numerik
+    # output ➜ True, karena 𝟜 adalah angka numerik
     ```
 
 - Method `isalnum()` digunakan untuk mengecek apakah string berisi setidaknya karakter alfabet atau digit, atau tidak keduanya. Nilai kembaliannya `True` jika semua karakter dalam string adalah alfabet atau angka numerik.
 
     ```python
     print("123abc".isalnum())
-    # output → True, karena 123 adalah digit dan abc adalah alfabet 
+    # output ➜ True, karena 123 adalah digit dan abc adalah alfabet 
 
     print("12345⅓".isalnum())
-    # output → True, karena 12345⅓ adalah digit
+    # output ➜ True, karena 12345⅓ adalah digit
 
     print("abcdef".isalnum())
-    # output → True, karena abcdef adalah alfabet
+    # output ➜ True, karena abcdef adalah alfabet
 
     print("abc 12".isalnum())
-    # output → False, karena ada karakter spasi yang bukan merupakan karakter digit ataupun alfabet
+    # output ➜ False, karena ada karakter spasi yang bukan merupakan karakter digit ataupun alfabet
 
     print("موز".isalnum())
-    # output → True, karena موز adalah abjad arabic 
+    # output ➜ True, karena موز adalah abjad arabic 
 
     print("バナナ".isalnum())
-    # output → True, karena バナナ adalah karakter jepang
+    # output ➜ True, karena バナナ adalah karakter jepang
     ```
 
 ### ◉ Pengecekan karakter *whitespace*
@@ -376,16 +376,16 @@ Method `isspace()` digunakan untuk mengecek apakah string berisi karakter *white
 
 ```python
 print(" ".isspace())
-# output → True, karena string berisi karakter spasi
+# output ➜ True, karena string berisi karakter spasi
 
 print("\n".isspace())
-# output → True, karena string berisi karakter newline
+# output ➜ True, karena string berisi karakter newline
 
 print("\n\r".isspace())
-# output → True, karena string berisi karakter newline 
+# output ➜ True, karena string berisi karakter newline 
 
 print("hello\n\r".isspace())
-# output → False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
+# output ➜ False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
 ```
 
 ### ◉ Pengecekan karakter *case*
@@ -394,39 +394,39 @@ print("hello\n\r".isspace())
 
     ```python
     print("hello python".islower())
-    # output → True
+    # output ➜ True
 
     print("Hello Python".islower())
-    # output → False
+    # output ➜ False
 
     print("HELLO PYTHON".islower())
-    # output → False
+    # output ➜ False
     ```
 
 - Method `istitle()` digunakan untuk mengecek apakah kata dalam string adalah ditulis dengan awalan huruf besar (*title case*), jika kondisi tersebut terpenuhi maka nilai kembaliannya adalah `True`.
 
     ```python
     print("hello python".istitle())
-    # output → False
+    # output ➜ False
 
     print("Hello Python".istitle())
-    # output → True
+    # output ➜ True
 
     print("HELLO PYTHON".istitle())
-    # output → False
+    # output ➜ False
     ```
 
 - Method `isupper()` digunakan untuk mengecek apakah semua karakter string adalah ditulis dalam huruf besar (*upper case*), jika kondisi tersebut terpenuhi maka nilai kembaliannya adalah `True`.
 
     ```python
     print("hello python".isupper())
-    # output → False
+    # output ➜ False
 
     print("Hello Python".isupper())
-    # output → False
+    # output ➜ False
 
     print("HELLO PYTHON".isupper())
-    # output → True
+    # output ➜ True
     ```
 
 ### ◉ Mengubah karakter *case*
@@ -441,19 +441,19 @@ Beberapa method yang bisa digunakan untuk mengubah *case* suatu string:
 
 ```python
 print("hello python".capitalize())
-# output → Hello python
+# output ➜ Hello python
 
 print("hello python".title())
-# output → Hello Python
+# output ➜ Hello Python
 
 print("hello python".upper())
-# output → HELLO PYTHON
+# output ➜ HELLO PYTHON
 
 print("Hello Python".lower())
-# output → hello python
+# output ➜ hello python
 
 print("Hello Python".swapcase())
-# output → hELLO pYTHON
+# output ➜ hELLO pYTHON
 ```
 
 ## A.17.7. Operasi pencarian string & substring
@@ -465,7 +465,7 @@ Keyword `in` bisa digunakan untuk mengecek apakah suatu string merupakan bagian 
 ```python
 str = "hello world"
 print("ello" in str)
-# output → True
+# output ➜ True
 ```
 
 Teknik tersebut bisa dikombinasikan dengan seleksi kondisi `if`:
@@ -474,7 +474,7 @@ Teknik tersebut bisa dikombinasikan dengan seleksi kondisi `if`:
 str = "hello world"
 if "ello" in str:
     print(f"py is in {str}")
-# output → py is in hello world
+# output ➜ py is in hello world
 ```
 
 ### ◉ Pengecekan substring
@@ -485,34 +485,34 @@ Ada beberapa Method yang bisa digunakan untuk keperluan pengecekan substring, ap
 
     ```python
     print("hello world".startswith("hell"))
-    # output → True
+    # output ➜ True
 
     print("hello world".startswith("ello"))
-    # output → False
+    # output ➜ False
     ```
 
 - Menggunakan method `endswith()` untuk mengecek apakah suatu string diakhiri dengan huruf/kata tertentu.
 
     ```python
     print("hello world".endswith("orld"))
-    # output → True
+    # output ➜ True
 
     print("hello world".endswith("worl"))
-    # output → False
+    # output ➜ False
     ```
 
 - Menggunakan method `count()` untuk mengecek apakah suatu string merupakan bagian dari string lain.
 
     ```python
     print("hello world".count("ello"))
-    # output → 1
+    # output ➜ 1
     ```
 
     Method ini mengembalikan jumlah huruf/kata yang ditemukan. Jika kebutuhannya adalah mencari tau apakah suatu substring ada atau tidak, maka gunakan operasi logika lebih dari 0 (atau `n > 0`).
 
     ```python
     print("hello world".count("ello") > 0)
-    # output → True
+    # output ➜ True
     ```
 
 ### ◉ Pencarian index substring
@@ -524,7 +524,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     ```python
     str = "hello world hello world"
     print(str.count("ello"))
-    # output → 2
+    # output ➜ 2
     ```
 
 - Method `index()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan error.
@@ -532,7 +532,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     ```python
     str = "hello world hello world"
     print(str.index("worl"))
-    # output → 6
+    # output ➜ 6
     ```
 
 - Method `rindex()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan error.
@@ -540,7 +540,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     ```python
     str = "hello world hello world"
     print(str.rindex("worl"))
-    # output → 18
+    # output ➜ 18
     ```
 
 - Method `find()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
@@ -548,7 +548,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     ```python
     str = "hello world hello world"
     print(str.find("worl"))
-    # output → 6
+    # output ➜ 6
     ```
 
 - Method `rfind()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
@@ -556,7 +556,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     ```python
     str = "hello world hello world"
     print(str.rfind("worl"))
-    # output → 18
+    # output ➜ 18
     ```
 
 ## A.17.8. Operasi string lainnya
@@ -569,7 +569,7 @@ Method `replace()` digunakan untuk me-replace suatu substring dengan string lain
 str_old = "hello world"
 str_new = str_old.replace("world", "python")
 print(str_new)
-# output → hello python
+# output ➜ hello python
 ```
 
 ### ◉ Trim / strip
@@ -628,7 +628,7 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
     """
 
     print(f"--{str.strip()}--")
-    # output → --hello python--
+    # output ➜ --hello python--
     ```
 
 ### ◉ Join string
@@ -639,7 +639,7 @@ Method `join()` berguna untuk menggabungkan list berisi element string. String y
 data = ["hello", "world", "abcdef"]
 res = "-".join(data)
 print(res)
-# output → hello-world-abcdef
+# output ➜ hello-world-abcdef
 ```
 
 ---
