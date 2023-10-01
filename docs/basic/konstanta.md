@@ -6,12 +6,12 @@ description: Tutorial belajar konstanta di Python
 keywords: [konstanta python]
 faqs:
   - question: Apa itu konstanta di Python?
-    answer: Konstanta adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah
+    answer: Konstanta adalah sebuah variabel yang nilainya dideklarasikan di awal dan tidak bisa diubah
   - question: Cara membuat konstanta di Python
     answer: Konstanta di Python versi 3 bisa dibuat menggunakan bantuan module typing.Final.
 ---
 
-Konstanta (atau nilai konstan) adalah sebuah variabel yang nilainya didefinisikan di awal dan tidak bisa diubah setelahnya.
+Konstanta (atau nilai konstan) adalah sebuah variabel yang nilainya dideklarasikan di awal dan tidak bisa diubah setelahnya.
 
 Pada chapter ini kita akan mempelajari tentang penerapan Konstanta di Python.
 

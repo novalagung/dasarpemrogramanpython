@@ -30,7 +30,7 @@ laki = True
 
 Karakter `=` adalah **operator assignment**, digunakan untuk operasi penugasan. Nilai yang ada di sebelah kanan `=` ditugaskan untuk ditampung oleh variabel yang berada di sebelah kiri `=`. Contoh pada statement `nama = "noval"`, nilai `"nama"` ditugaskan untuk ditampung oleh variabel `nama`.
 
-> Nilai string (`str`) bisa dituliskan dengan menggunakan literal `"` ataupun `'`
+> Nilai string bisa dituliskan dengan menggunakan literal `"` ataupun `'`
 
 Ok. Selanjutnya, coba kita munculkan nilai ke-empat variabel di atas ke layar menggunakan fungsi `print()`. Caranya:
 
@@ -141,7 +141,7 @@ Output program di atas:
 
 - [Tipe Data](/basic/tipe-data)
 - [String: formatting](/basic/string#a173-string-formatting)
-- [Number](#)
+- [Number/Bilangan](/basic/number-bilangan)
 
 ### ◉ Referensi
 

@@ -141,7 +141,7 @@ Nilai kembalian fungsi `id()` bertipe numerik.
 
 Operator `in` digunakan untuk mengecek apakah suatu nilai merupakan bagian dari data kolektif atau tidak.
 
-Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary, set, tuple, dan list. Selain itu, operator `in` juga bisa digunakan pada `str` untuk pengecekan substring
+Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary, set, tuple, dan list. Selain itu, operator `in` juga bisa digunakan pada string untuk pengecekan substring
 
 ```python
 sample_list = [2, 3, 4]
@@ -164,8 +164,8 @@ is_prei = "preiiii" in sample_set
 print(is_prei)
 # output ➜ True
 
-sample_str = 'Hello world'
-is_substring_exists = 'orl' in sample_str
+text = 'Hello world'
+is_substring_exists = 'orl' in text
 print(is_substring_exists)
 # output ➜ True
 ```
