@@ -141,7 +141,7 @@ Output program di atas:
 
 - [Tipe Data](/basic/tipe-data)
 - [String: formatting](/basic/string#a173-string-formatting)
-- [Number](#)
+- [Number/Bilangan](/basic/number-bilangan)
 
 ### ◉ Referensi
 
