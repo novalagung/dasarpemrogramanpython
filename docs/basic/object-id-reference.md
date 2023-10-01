@@ -42,7 +42,7 @@ Perlu diketahui bahwa Identifier merupakan metadata informasi yang menempel pada
 
 > *Reference* pada konteks programming artinya adalah referensi suatu data ke alamat memori.
 
-Coba pelajari kode berikut. Variabel `message1` berisi string `hello world`. String tersebut kemudian di-assign ke `message2`. Selain itu ada juga variabel `message3` berisi string yang sama persis tapi dari definisi literal berbeda.
+Coba pelajari kode berikut. Variabel `message1` berisi string `hello world`. String tersebut kemudian di-assign ke `message2`. Selain itu ada juga variabel `message3` berisi string yang sama persis tapi dari deklarasi literal berbeda.
 
 ```python
 message1 = "hello world"

@@ -23,7 +23,7 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 
 > Lebih detailnya mengenai string dibahas pada chapter [Number](#)
 
-## A.6.2. Tipe data `str`
+## A.6.2. Tipe data string / `str`
 
 Tipe string direpresentasikan oleh `str`, pembuatannya bisa menggunakan literal string yang ditandai dengan tanda awalan dan akhiran tanda `"` atau `'`.
 
@@ -161,7 +161,7 @@ profile_1 = { "name": "Noval", "hobbies": ["gaming", "learning"] }
 Tipe data set adalah cara lain untuk menyimpan data kolektif. Tipe data ini memiliki beberapa kelemahan:
 
 - Tidak bisa menyimpan informasi urutan data
-- Elemen data yang sudah didefinisikan tidak bisa diubah nilainya (tapi bisa dihapus)
+- Elemen data yang sudah dideklarasikan tidak bisa diubah nilainya (tapi bisa dihapus)
 - Tidak bisa diakses menggunakan index (tetapi bisa menggunakan perulangan)
 
 Contoh penerapan set:

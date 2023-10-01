@@ -102,7 +102,7 @@ Fungsi `type()` digunakan untuk melihat informasi tipe data dari suatu nilai ata
 
 ### ◉ *Type conversion* / konversi tipe data
 
-Konversi tipe data `str` ke `int` dilakukan menggunakan fungsi `int()`. Dengan menggunakan fungsi tersebut, data string yang disisipkan pada parameter, tipe datanya berubah menjadi `int`.
+Konversi tipe data string ke `int` dilakukan menggunakan fungsi `int()`. Dengan menggunakan fungsi tersebut, data string yang disisipkan pada parameter, tipe datanya berubah menjadi `int`.
 
 Sebagai contoh, bisa dilihat pada program berikut ini, hasil statement `type(grade)` adalah `<class 'int'>` yang menunjukan bahwa tipe datanya adalah `int`.
 

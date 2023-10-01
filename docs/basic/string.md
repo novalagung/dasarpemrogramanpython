@@ -277,7 +277,7 @@ print(text[:4])
 
 ## A.18.6. Operasi *character & case*
 
-Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
+Tipe data string memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
 
 ### ◉ Pengecekan karakter alfabet dan angka
 
@@ -591,7 +591,7 @@ print(str_new)
 
 Metode trimming/stripping digunakan untuk menghapus *whitespace* yang diantaranya adalah baris baru dan juga spasi.
 
-Sebelum kita mulai, coba perhatikan kode berikut. String `str` dideklarasikan menggunakan `""" """` yang dalam penerapannya tidak akan meng-*escape* whitespace.
+Sebelum kita mulai, coba perhatikan kode berikut. String `text` dideklarasikan menggunakan `""" """` yang dalam penerapannya tidak akan meng-*escape* whitespace.
 
 ```python
 text = """

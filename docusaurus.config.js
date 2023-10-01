@@ -56,19 +56,19 @@ const config = {
     ],
   ],
 
-  scripts: [
-    {
-      src: 'https://pyscript.net/latest/pyscript.js',
-      defer: true
-    }
-  ],
+  // scripts: [
+  //   {
+  //     src: 'https://pyscript.net/latest/pyscript.js',
+  //     defer: true
+  //   }
+  // ],
 
-  stylesheets: [
-    {
-      href: 'https://pyscript.net/latest/pyscript.css'
-    }
-  ],
-  
+  // stylesheets: [
+  //   {
+  //     href: 'https://pyscript.net/latest/pyscript.css'
+  //   }
+  // ],
+
   plugins: [
     '@stackql/docusaurus-plugin-structured-data',
   ],

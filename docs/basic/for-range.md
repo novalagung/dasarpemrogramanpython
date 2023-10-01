@@ -173,7 +173,7 @@ for n in numbers:
 
 ### ◉ Iterasi data string
 
-Penggunaan keyword `for` pada tipe data `str` (atau string) akan mengiterasi setiap karakter yang ada di string.
+Penggunaan keyword `for` pada tipe data string akan mengiterasi setiap karakter yang ada di string.
 
 ```python
 for char in "hello python":
