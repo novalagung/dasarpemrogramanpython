@@ -164,8 +164,8 @@ is_prei = "preiiii" in sample_set
 print(is_prei)
 # output ➜ True
 
-sample_str = 'Hello world'
-is_substring_exists = 'orl' in sample_str
+text = 'Hello world'
+is_substring_exists = 'orl' in text
 print(is_substring_exists)
 # output ➜ True
 ```

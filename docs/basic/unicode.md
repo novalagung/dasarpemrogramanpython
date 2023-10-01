@@ -1,7 +1,7 @@
 ---
-sidebar_position: 18
-title: A.18. Python Unicode
-sidebar_label: A.18. Unicode
+sidebar_position: 19
+title: A.19. Python Unicode
+sidebar_label: A.19. Unicode
 ---
 
 Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam pengelolahan karakter dalam string. Benefitnya Python mendukung dan mengenali berbagai macam jenis karakter, termasuk diantaranya adalah huruf Arab, Jepang, emoji, symbol, dan banyak jenis karakter lainnya.
@@ -10,7 +10,7 @@ Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam penge
 
 Pada chapter ini kita akan membahas tentang bagaimana implementasi Unicode di Python.
 
-## A.18.1. Penerapan *Unicode*
+## A.19.1. Penerapan *Unicode*
 
 Dalam dunia per-Unicode-an, ada yang disebut dengan **code point** yaitu suatu angka numerik (bisa desimal maupun hexadecimal) yang merepresentasikan karakter tertentu. Jadi bisa diibaratkan *identifier* dari suatu karakter. Semua karakter ada *code point*-nya, termasuk huruf A, B, C, maupun karakter lainnya (angka, tulisan romawi, symbol, dll).
 
@@ -71,34 +71,34 @@ Cara penulisan karakter unicode sendiri bisa dengan langsung menuliskan karakter
 
 > Salah satu website yang berguna untuk mencari informasi nama dan *code point* karakter Unicode: https://www.compart.com/en/unicode/
 
-## A.18.2. Fungsi utilitas pada *Unicode*
+## A.19.2. Fungsi utilitas pada *Unicode*
 
 ### ◉ Fungsi `ord()`
 
 Fungsi `ord()` digunakan untuk mengambil nilai code point dari suatu karakter. Nilai baliknya adalah numerik berbasis desimal.
 
 ```python
-str = "N"
-codePoint = ord(str)
-print(f'code point of {str} in decimal: {codePoint}')
+text = "N"
+codePoint = ord(text)
+print(f'code point of {text} in decimal: {codePoint}')
 # output ➜ code point of N in decimal: 78
 
-str = "안"
-codePoint = ord(str)
-print(f'code point of {str} in decimal: {codePoint}')
+text = "안"
+codePoint = ord(text)
+print(f'code point of {text} in decimal: {codePoint}')
 # output ➜ code point of 안 in decimal: 50504
 ```
 
 Untuk menampilkan code point dalam notasi hexadesimal, cukup bungkus menggunakan fungsi `hex()`.
 
 ```python
-str = "안"
-codePoint = ord(str)
+text = "안"
+codePoint = ord(text)
 
-print(f'code point of {str} in decimal: {codePoint}')
+print(f'code point of {text} in decimal: {codePoint}')
 # output ➜ code point of 안 in decimal: 50504
 
-print(f'code point of {str} in hex: {hex(codePoint)}')
+print(f'code point of {text} in hex: {hex(codePoint)}')
 # output ➜ code point of 안 in hex: 0xc548
 ```
 

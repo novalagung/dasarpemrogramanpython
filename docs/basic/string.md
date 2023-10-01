@@ -1,22 +1,22 @@
 ---
-sidebar_position: 17
-title: A.17. Python String
-sidebar_label: A.17. String
+sidebar_position: 18
+title: A.18. Python String
+sidebar_label: A.18. String
 ---
 
 String (atau `str`) merupakan kumpulan data `char` atau karakter yang tersimpan secara urut (*text sequence*). String di Python mengadopsi standar Unicode dengan *default encoding* adalah `UTF-8`.
 
-## A.17.1. Penerapan string
+## A.18.1. Penerapan string
 
 Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah digunakan. Untuk membuat string cukup tulis saja text yang diinginkan dengan diapit tanda petik satu atau petik dua. Contoh:
 
 ```python
-str = "hello python"
-print(str)
+text = "hello python"
+print(text)
 # output ➜ hello python
 
-str = 'hello python'
-print(str)
+text = 'hello python'
+print(text)
 # output ➜ hello python
 ```
 
@@ -27,9 +27,9 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
 - Menggunakan karakter spesial `\n`:
 
     ```python
-    str = "a multiline string\nin python"
+    text = "a multiline string\nin python"
 
-    print(str)
+    print(text)
     # output ↓ 
     # a multiline string
     # in python
@@ -38,10 +38,10 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
 - Atau menggunakan tanda `"""` untuk mengapit text. Contoh:
 
     ```python
-    str = """a multiline string
+    text = """a multiline string
     in python"""
 
-    print(str)
+    print(text)
     # output ↓ 
     # a multiline string
     # in python
@@ -54,16 +54,16 @@ Python mengenal *escape character* umum yang ada di banyak bahasa pemrograman, c
 Sebagai contoh, dua statement berikut adalah ekuivalen:
 
 ```python
-str = 'this is a "string" in python'
-print(str)
+text = 'this is a "string" in python'
+print(text)
 # output ➜ this is a "string" in python
 
-str = "this is a \"string\" in python"
-print(str)
+text = "this is a \"string\" in python"
+print(text)
 # output ➜ this is a "string" in python
 ```
 
-## A.17.2. String *special characters*
+## A.18.2. String *special characters*
 
 Di atas telah dicontohkan bagaimana cara menulis karakter *newline* atau baris baru menggunakan `\n`, dan karakter petik dua menggunakan `\"`. Dua karakter tersebut adalah contoh dari *special characters*.
 
@@ -100,7 +100,7 @@ Program di atas menghasilkan output berikut:
 
 > Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Number](#).
 
-## A.17.3. String formatting
+## A.18.3. String formatting
 
 String formatting adalah teknik untuk mem-format string agar menghasilkan text sesuai dengan format yang diinginkan.
 
@@ -112,8 +112,8 @@ Pada contoh berikut, sebuah string dibuat dimana dua bagian string didalamnya da
 name = "Aiden Pearce"
 occupation = "IT support"
 
-str = f"hello, my name is {name}, I'm an {occupation}"
-print(str)
+text = f"hello, my name is {name}, I'm an {occupation}"
+print(text)
 # output ➜ hello, my name is Aiden Pearce, I'm an IT support
 ```
 
@@ -129,22 +129,22 @@ Penjelasan:
 Selain menggunakan metode di atas, ada beberapa alternatif cara lain yang bisa digunakan, diantaranya:
 
 ```python
-str = "hello, my name is {name}, I'm an {occupation}".format(name = name, occupation = occupation)
-print(str)
+text = "hello, my name is {name}, I'm an {occupation}".format(name = name, occupation = occupation)
+print(text)
 # output ➜ hello, my name is Aiden Pearce, I'm an IT support
 
-str = "hello, my name is {0}, I'm an {1}".format(name, occupation)
-print(str)
+text = "hello, my name is {0}, I'm an {1}".format(name, occupation)
+print(text)
 # output ➜ hello, my name is Aiden Pearce, I'm an IT support
 
-str = "hello, my name is {}, I'm an {}".format(name, occupation)
-print(str)
+text = "hello, my name is {}, I'm an {}".format(name, occupation)
+print(text)
 # output ➜ hello, my name is Aiden Pearce, I'm an IT support
 ```
 
 Semua metode string formatting yang telah dipelajari menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Mana yang lebih baik? Silakan pilih saja metode yang sesuai selera.
 
-## A.17.4. Penggabungan string (*concatenation*)
+## A.18.4. Penggabungan string (*concatenation*)
 
 Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operasi penggabungan string.
 
@@ -153,8 +153,8 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     Caranya dengan langsung tulis saja semua string-nya menggunakan separator karakter spasi.
 
     ```python
-    str = "hello " "python"
-    print(str)
+    text = "hello " "python"
+    print(text)
     # output ➜ hello python
     ```
 
@@ -163,25 +163,40 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     Operator `+` jika diterapkan pada string menghasilkan penggabungan string.
 
     ```python
-    str_one = "hello"
-    str_two = "python"
-    str = str_one + " " + str_two
+    text_one = "hello"
+    text_two = "python"
+    text = text_one + " " + text_two
 
-    print(str)
+    print(text)
     # output ➜ hello python
     ```
+
+    Untuk data non-string jika ingin digabung harus dibungkus dengan fungsi `str()` terlebih dahulu. Fungsi `str()` digunakan untuk mengkonversi segala jenis data ke bentuk string.
+
+    ```python
+    text = "hello"
+    number = 123
+    yes = True
+
+    message = text + " " + str(number) + " " + str(yes)
+
+    print(message)
+    # output ➜ hello 123 True
+    ```
+
+    > Lebih detailnya mengenai fungsi `str()` dibahas setelah ini pada bagian [Konversi data ke string](/basic/string#-konversi-data-ke-string)
 
 - Menggunakan method `join()` milik string.
 
     Pada penerapannya, karakter pembatas atau *separator* ditulis terlebih dahulu, kemudian di-*chain* dengan method join dengan isi argument adalah list yang ingin digabung.
 
     ````python
-    str = " ".join(["hello", "python"])
-    print(str)
+    text = " ".join(["hello", "python"])
+    print(text)
     # output ➜ hello python
     ```
 
-## A.17.5. Operasi sequence pada string
+## A.18.5. Operasi sequence pada string
 
 String masih termasuk kategori tipe data sequence, yang artinya bisa digunakan pada operasi standar sequence, contoh seperti perulangan, pengaksesan elemen, dan slicing.
 
@@ -190,43 +205,43 @@ String masih termasuk kategori tipe data sequence, yang artinya bisa digunakan p
 Fungsi `len()` ketika digunakan pada tipe data string mengembalikan informasi jumlah karakter string.
 
 ```python
-str = "hello python"
+text = "hello python"
 
-print("text:", str)
+print("text:", text)
 # output ➜ hello python
 
-print("length:", len(str))
+print("length:", len(text))
 # output ➜ 12
 ```
 
 ### ◉ Mengakses element string
 
-Setiap elemen string bisa diakses menggunakan index. Penulisan notasi pengaksesannya sama seperti pada tipe data sequence lainnya, yaitu menggunakan `str[index]`.
+Setiap elemen string bisa diakses menggunakan index. Penulisan notasi pengaksesannya sama seperti pada tipe data sequence lainnya, yaitu menggunakan `string[index]`.
 
 ```python
-str = "hello python"
-print(str[0])
+text = "hello python"
+print(text[0])
 # output ➜ h
 
-print(str[1])
+print(text[1])
 # output ➜ e
 
-print(str[2])
+print(text[2])
 # output ➜ l
 ```
 
 Selain via index, keyword perulangan `for` bisa dimanfaatkan untuk mengiterasi elemen string. Contoh:
 
 ```python
-for c in str:
+for c in text:
     print(c)
 ```
 
 Contoh lain menggunakan `range()`:
 
 ```python
-for i in range(0, len(str)):
-    print(str[i])
+for i in range(0, len(text)):
+    print(text[i])
 ```
 
 Output:
@@ -237,7 +252,7 @@ Output:
 
 Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan error.
 
-Sebagai contoh, string `str = "hello"`, jika diakses index ke-5-nya misalnya (`str[5]`) hasilnya adalah error. 
+Sebagai contoh, string `text = "hello"`, jika diakses index ke-5-nya misalnya (`text[5]`) hasilnya adalah error. 
 
 :::
 
@@ -246,21 +261,21 @@ Sebagai contoh, string `str = "hello"`, jika diakses index ke-5-nya misalnya (`s
 Teknik slicing bisa diterapkan pada data string. Contoh:
 
 ```python
-str = "hello python"
+text = "hello python"
 
-print(str[1:5])
+print(text[1:5])
 # output ➜ ello
 
-print(str[7:])
+print(text[7:])
 # output ➜ ython
 
-print(str[:4])
+print(text[:4])
 # output ➜ hell
 ```
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
 
-## A.17.6. Operasi *character & case*
+## A.18.6. Operasi *character & case*
 
 Tipe data `str` memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
 
@@ -456,24 +471,24 @@ print("Hello Python".swapcase())
 # output ➜ hELLO pYTHON
 ```
 
-## A.17.7. Operasi pencarian string & substring
+## A.18.7. Operasi pencarian string & substring
 
 ### ◉ Pengecekan string menggunakan keyword `in`
 
 Keyword `in` bisa digunakan untuk mengecek apakah suatu string merupakan bagian dari string lain. Nilai balik statement adalah boolean. Contoh:
 
 ```python
-str = "hello world"
-print("ello" in str)
+text = "hello world"
+print("ello" in text)
 # output ➜ True
 ```
 
 Teknik tersebut bisa dikombinasikan dengan seleksi kondisi `if`:
 
 ```python
-str = "hello world"
-if "ello" in str:
-    print(f"py is in {str}")
+text = "hello world"
+if "ello" in text:
+    print(f"py is in {text}")
 # output ➜ py is in hello world
 ```
 
@@ -522,44 +537,44 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
 - Method `count()` mengembalikan jumlah substring yang ditemukan sesuai kata kunci yang dicari.
 
     ```python
-    str = "hello world hello world"
-    print(str.count("ello"))
+    text = "hello world hello world"
+    print(text.count("ello"))
     # output ➜ 2
     ```
 
 - Method `index()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan error.
 
     ```python
-    str = "hello world hello world"
-    print(str.index("worl"))
+    text = "hello world hello world"
+    print(text.index("worl"))
     # output ➜ 6
     ```
 
 - Method `rindex()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan error.
 
     ```python
-    str = "hello world hello world"
-    print(str.rindex("worl"))
+    text = "hello world hello world"
+    print(text.rindex("worl"))
     # output ➜ 18
     ```
 
 - Method `find()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
 
     ```python
-    str = "hello world hello world"
-    print(str.find("worl"))
+    text = "hello world hello world"
+    print(text.find("worl"))
     # output ➜ 6
     ```
 
 - Method `rfind()` mengembalikan index substring pertama yang ditemukan sesuai kata kunci yang dicari dengan urutan pencarian adalah dari kanan. Jika substring tidak ditemukan, method ini menghasilkan nilai `-1`.
 
     ```python
-    str = "hello world hello world"
-    print(str.rfind("worl"))
+    text = "hello world hello world"
+    print(text.rfind("worl"))
     # output ➜ 18
     ```
 
-## A.17.8. Operasi string lainnya
+## A.18.8. Operasi string lainnya
 
 ### ◉ Replace substring
 
@@ -579,11 +594,11 @@ Metode trimming/stripping digunakan untuk menghapus *whitespace* yang diantarany
 Sebelum kita mulai, coba perhatikan kode berikut. String `str` dideklarasikan menggunakan `""" """` yang dalam penerapannya tidak akan meng-*escape* whitespace.
 
 ```python
-str = """
+text = """
 hello python
 """
 
-print(f"--{str}--")
+print(f"--{text}--")
 # output ↓
 # --
 # hello python
@@ -597,11 +612,11 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
 - Method `lstrip()` untuk trim *whitespace* karakter di awal atau sebelah kiri string.
 
     ```python
-    str = """
+    text = """
     hello python
     """
 
-    print(f"--{str.lstrip()}--")
+    print(f"--{text.lstrip()}--")
     # output ↓
     # --hello python
     # --
@@ -610,11 +625,11 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
 - Method `rstrip()` untuk trim *whitespace* karakter di akhir atau sebelah kanan string.
 
     ```python
-    str = """
+    text = """
     hello python
     """
 
-    print(f"--{str.rstrip()}--")
+    print(f"--{text.rstrip()}--")
     # output ↓
     # --
     # hello python--
@@ -623,11 +638,11 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
 - Method `strip()` untuk trim *whitespace* karakter di awal dan akhir string.
 
     ```python
-    str = """
+    text = """
     hello python
     """
 
-    print(f"--{str.strip()}--")
+    print(f"--{text.strip()}--")
     # output ➜ --hello python--
     ```
 
@@ -641,6 +656,60 @@ res = "-".join(data)
 print(res)
 # output ➜ hello-world-abcdef
 ```
+
+### ◉ Konversi data ke string
+
+Ada beberapa metode konversi tipe data ke string, diantaranya:
+
+- Menggunakan fungsi `str()`.
+
+    Fungsi ini bisa digunakan untuk mengkonversi data bertipe apapun ke bentuk string. Contoh penerapan:
+
+    ```python
+    number = 24
+    string1 = str(number)
+    print(string1)
+    # output ➜ 24
+
+    items = [1, 2, 3, 4]
+    string2 = str(items)
+    print(string2)
+    # output ➜ [1, 2, 3, 4]
+
+    obj = {
+        "name": "AMD Ryzen 5600g",
+        "type": "processor",
+        "igpu": True,
+    }
+    string3 = str(obj)
+    print(string3)
+    # output ➜ {'name': 'AMD Ryzen 5600g', 'type': 'processor', 'igpu': True}
+    ```
+
+- Menggunakan teknik string formatting. Contoh:
+
+    ```python
+    number = 24
+    string1 = f"{number}"
+    print(string1)
+    # output ➜ 24
+
+    items = [1, 2, 3, 4]
+    string2 = f"{items}"
+    print(string2)
+    # output ➜ [1, 2, 3, 4]
+
+    obj = {
+        "name": "AMD Ryzen 5600g",
+        "type": "processor",
+        "igpu": True,
+    }
+    string3 = f"{obj}"
+    print(string3)
+    # output ➜ {'name': 'AMD Ryzen 5600g', 'type': 'processor', 'igpu': True}
+    ```
+
+> Lebih detailnya mengenai konversi tipe data dibahas pada chapter [Konversi Tipe Data](#)
 
 ---
 
@@ -664,6 +733,7 @@ print(res)
 ### ◉ TBA
 
 - Bytes
+- Konversi tipe data ke string
 
 ### ◉ Referensi
 
