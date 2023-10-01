@@ -504,6 +504,18 @@ print(f"angka imajiner: {i}")
 # output ➜ angka imajiner: 3.0
 ```
 
+### ◉ Fungsi `complex()`
+
+Fungsi `complex()` adalah digunakan sebagai alternatif cara membuat bilangan kompleks.
+
+Sebagai contoh, bilangan `120+3j` jika dituliskan menggunakan fungsi `complex()` maka penulisannya seperti berikut:
+
+```python
+angka_complex = complex(120, 3)
+print(f"angka complex: {angka_complex}")
+# output ➜ angka complex: (120+3j)
+```
+
 ### ◉ Operasi aritmatika bilangan *complex*
 
 Seperti wajarnya suatu bilangan, nilai *complex* bisa dimasukan dalam operasi matematika standar, misalnya:
@@ -560,6 +572,8 @@ Penjelasan:
 ### ◉ Referensi
 
 - https://pythondev.readthedocs.io/numbers.html
+- https://note.nkmk.me/en/python-nan-usage/
+- https://note.nkmk.me/en/python-inf-usage/
 
 </div>
 
