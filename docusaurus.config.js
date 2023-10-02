@@ -43,7 +43,7 @@ const config = {
         theme: {
           customCss: [
             require.resolve('./src/css/global.css'),
-            require.resolve('./src/css/custom.css'),
+            require.resolve('./src-local/css/custom.css'),
           ],
         },
         gtag: {
