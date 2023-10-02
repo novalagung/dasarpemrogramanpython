@@ -1,0 +1,15 @@
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #e16021;
+  --ifm-color-primary-dark: #d65618;
+  --ifm-color-primary-darker: #c4490e;
+  --ifm-color-primary-darkest: #ac3a04;
+  --ifm-color-primary-light: #ec6e30;
+  --ifm-color-primary-lighter: #f77b3e;
+  --ifm-color-primary-lightest: #f7834a;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --doc-sidebar-width: 330px !important;
+  --ifm-blockquote-border-left-width: 4px;
+  --ifm-blockquote-border-color: #e16021;
+}
