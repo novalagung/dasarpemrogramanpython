@@ -1,7 +1,7 @@
 ---
 sidebar_position: 20
-title: A.20. Python Data Sequence Slicing
-sidebar_label: A.20. Slicing
+title: A.20. Python Slice / Data Sequence Slicing
+sidebar_label: A.20. Slice
 ---
 
 Pada chapter ini kita akan belajar tentang penerapan teknik slice pada data sequence.
@@ -188,6 +188,7 @@ print(list3)
 - [List](/basic/list)
 - [Tuple](/basic/tuple)
 - [String](/basic/string)
+- [Object ID & Reference](/basic/object-id-reference)
 
 ### ◉ TBA
 

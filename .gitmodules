@@ -2,4 +2,7 @@
 	path = examples
 	url = https://github.com/novalagung/dasarpemrogramanpython-example.git
 	branch = master
-
+[submodule "src"]
+	path = src
+	url = https://github.com/novalagung/my-docusaurus-global-src.git
+	branch = master
