@@ -13,3 +13,9 @@
   --ifm-blockquote-border-left-width: 4px;
   --ifm-blockquote-border-color: #e16021;
 }
+
+/* custom css */
+
+.theme-code-block[class*="language-"] {
+  background: #FF874B !important;
+}
