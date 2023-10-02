@@ -24,3 +24,4 @@ https://dasarpemrogramanpython.novalagung.com/basic/string
 https://dasarpemrogramanpython.novalagung.com/basic/unicode
 https://dasarpemrogramanpython.novalagung.com/basic/slice
 https://dasarpemrogramanpython.novalagung.com/basic/object-id-reference
+https://dasarpemrogramanpython.novalagung.com/basic/function
