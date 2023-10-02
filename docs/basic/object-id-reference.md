@@ -322,6 +322,10 @@ print(f"n1 is n2: {n1 is n2}")
 
 - [Slicing](/basic/slice)
 
+### ◉ TBA
+
+- Hashable
+
 ### ◉ Referensi
 
 - https://stackoverflow.com/questions/45335809/python-pass-by-reference-and-slice-assignment
