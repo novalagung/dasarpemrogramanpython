@@ -1,7 +1,7 @@
 ---
 sidebar_position: 18
-title: A.18. Python Unicode
-sidebar_label: A.18. Unicode
+title: A.18. Python Unicode String
+sidebar_label: A.18. String ➜ Unicode
 ---
 
 Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam pengelolahan karakter dalam string. Benefitnya Python mendukung dan mengenali berbagai macam jenis karakter, termasuk diantaranya adalah huruf Arab, Jepang, emoji, symbol, dan banyak jenis karakter lainnya.
