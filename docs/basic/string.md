@@ -1,12 +1,12 @@
 ---
-sidebar_position: 18
-title: A.18. Python String
-sidebar_label: A.18. String
+sidebar_position: 17
+title: A.17. Python String
+sidebar_label: A.17. String
 ---
 
 String (atau `str`) merupakan kumpulan data `char` atau karakter yang tersimpan secara urut (*text sequence*). String di Python mengadopsi standar Unicode dengan *default encoding* adalah `UTF-8`.
 
-## A.18.1. Penerapan string
+## A.17.1. Penerapan string
 
 Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah digunakan. Untuk membuat string cukup tulis saja text yang diinginkan dengan diapit tanda petik satu atau petik dua. Contoh:
 
@@ -63,7 +63,7 @@ print(text)
 # output ➜ this is a "string" in python
 ```
 
-## A.18.2. String *special characters*
+## A.17.2. String *special characters*
 
 Di atas telah dicontohkan bagaimana cara menulis karakter *newline* atau baris baru menggunakan `\n`, dan karakter petik dua menggunakan `\"`. Dua karakter tersebut adalah contoh dari *special characters*.
 
@@ -100,7 +100,7 @@ Program di atas menghasilkan output berikut:
 
 > Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Number/Bilangan](/basic/number-bilangan).
 
-## A.18.3. String formatting
+## A.17.3. String formatting
 
 String formatting adalah teknik untuk mem-format string agar menghasilkan text sesuai dengan format yang diinginkan.
 
@@ -144,7 +144,9 @@ print(text)
 
 Semua metode string formatting yang telah dipelajari menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Mana yang lebih baik? Silakan pilih saja metode yang sesuai selera.
 
-## A.18.4. Penggabungan string (*concatenation*)
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
+
+## A.17.4. Penggabungan string (*concatenation*)
 
 Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operasi penggabungan string.
 
@@ -196,7 +198,7 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     # output ➜ hello python
     ```
 
-## A.18.5. Operasi sequence pada string
+## A.17.5. Operasi sequence pada string
 
 String masih termasuk kategori tipe data sequence, yang artinya bisa digunakan pada operasi standar sequence, contoh seperti perulangan, pengaksesan elemen, dan slicing.
 
@@ -275,7 +277,7 @@ print(text[:4])
 
 > Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
 
-## A.18.6. Operasi *character & case*
+## A.17.6. Operasi *character & case*
 
 Tipe data string memiliki beberapa method yang berguna untuk keperluan operasi string yang berhubungan dengan *character & case*
 
@@ -471,7 +473,7 @@ print("Hello Python".swapcase())
 # output ➜ hELLO pYTHON
 ```
 
-## A.18.7. Operasi pencarian string & substring
+## A.17.7. Operasi pencarian string & substring
 
 ### ◉ Pengecekan string menggunakan keyword `in`
 
@@ -574,7 +576,7 @@ Method-method berikut sebenarnya kegunaannya mirip seperti method untuk pengecek
     # output ➜ 18
     ```
 
-## A.18.8. Operasi string lainnya
+## A.17.8. Operasi string lainnya
 
 ### ◉ Replace substring
 

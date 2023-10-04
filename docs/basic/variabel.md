@@ -10,7 +10,7 @@ faqs:
   - question: Cara deklarasi variabel di Python
     answer: Deklarasi variabel di Python cukup sederhana, caranya tinggal tulis saja nama variabel kemudian diikuti operator *assignment* beserta nilai yang ingin dimasukan ke variabel tersebut. Contoh ➜ nama = "noval"
   - question: Naming convention atau aturan penamaan variabel di Python
-    answer: Mengacu ke dokumentasi https://peps.python.org/pep-0008/, nama variabel dianjurkan untuk menggunakan snake_case. Contoh ➜ pesan = 'halo, selamat pagi'
+    answer: Mengacu ke dokumentasi https://peps.python.org/pep-0008/, nama variabel dianjurkan untuk ditulis menggunakan snake_case. Contoh ➜ pesan = 'halo, selamat pagi'
 ---
 
 Dalam konsep programming, variabel adalah suatu nama yang dikenali komputer sebagai penampung nilai/data yang disimpan di memory. Sebagai contoh nilai `3.14` disimpan di variabel bernama `PI`.
@@ -74,7 +74,7 @@ print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
 
 ## A.4.2. *Naming convention* variabel
 
-Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama variabel dianjurkan untuk menggunakan [`snake_case`](https://en.wikipedia.org/wiki/Snake_case).
+Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama variabel dianjurkan untuk ditulis menggunakan [`snake_case`](https://en.wikipedia.org/wiki/Snake_case).
 
 ```python
 pesan = 'halo, selamat pagi'

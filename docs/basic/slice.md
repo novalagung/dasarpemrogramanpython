@@ -1,6 +1,6 @@
 ---
 sidebar_position: 20
-title: A.20. Python Slice / Data Sequence Slicing
+title: A.20. Python Slice (Data Sequence Slicing)
 sidebar_label: A.20. Slice
 ---
 
