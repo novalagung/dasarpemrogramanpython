@@ -175,8 +175,8 @@ Python secara cerdas mengidentifikasi argument mana yang akan disimpan pada posi
 
 - [Function](/basic/function)
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Closure](#)
+- [Lambda](#)
 
 ### ◉ Referensi
 

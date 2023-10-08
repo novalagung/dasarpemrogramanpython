@@ -234,8 +234,8 @@ Argument pemanggilan fungsi yang ditulis menggunakan metode *keyword argument* h
 
 - [Function](/basic/function)
 - [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Closure](#)
+- [Lambda](#)
 
 ### ◉ Referensi
 

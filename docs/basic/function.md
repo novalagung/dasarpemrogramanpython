@@ -215,8 +215,8 @@ Dari blok kode di atas, nantinya engineer akan tau bahwa fungsi tersebut akan di
 
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
 - [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Closure](#)
+- [Lambda](#)
 
 ### ◉ Referensi
 

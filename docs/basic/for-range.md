@@ -229,7 +229,7 @@ Fungsi `print()` memiliki parameter opsional bernama `end`, kegunaannya untuk me
 
 Statement `print("*", end=" ")` akan menghasilkan pesan `* ` yang di-akhiri dengan karakter spasi karena nilai parameter `end` di-set dengan nilai karakter spasi (atau ` `).
 
-> Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Fungsi](#)
+> Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Fungsi](/basic/function)
 
 ### ◉ Fungsi `print()` tanpa parameter
 
@@ -253,7 +253,7 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 
 - [List](/basic/list)
 - [String](/basic/string)
-- [Fungsi](#)
+- [Fungsi](/basic/function)
 
 ### ◉ Referensi
 
