@@ -1,14 +1,14 @@
 ---
-sidebar_position: 17
-title: A.17. Number/Bilangan di Python
-sidebar_label: A.17. Number / Bilangan
+sidebar_position: 19
+title: A.19. Number/Bilangan di Python
+sidebar_label: A.19. Number
 ---
 
 Sedikit mengulang tentang pembahasan chapter [Tipe Data: numerik](/basic/tipe-data#a61-tipe-data-numerik), telah dijelaskan bahwa Python mengenal 3 jenis tipe data numerik, yaitu `int`, `float`, dan `complex`.
 
 Pada chapter ini kita akan belajar lebih dalam tentang ketiganya.
 
-## A.17.1. Integer
+## A.19.1. Integer
 
 Bilangan bulat direpresentasikan oleh tipe data `int` (kependekan dari *integer*). Cara deklarasi nilai bertipa data ini adalah menggunakan literal integer dimana angka ditulis langsung. Contoh:
 
@@ -37,7 +37,7 @@ Variabel `angka3` di atas nilainya adalah sama dengan literal `1002345123`.
 
 Literal integer *default*-nya adalah berbasis 10, contohnya seperti `24` dan `13` di atas keduanya adalah berbasis 10. Dan umumnya bahasa pemrograman lain juga sama.
 
-## A.17.2. Hexadecimal, Octal, Binary
+## A.19.2. Hexadecimal, Octal, Binary
 
 Selain basis 10, bilangan bulat bisa dituliskan menggunakan basis lain, misalnya heksadesimal/oktal/biner, caranya dengan memanfaatkan *prefix* atau suatu awalan saat penulisan literalnya.
 
@@ -204,6 +204,8 @@ print(f"bin2: {bin2:b}")
     </tbody>
 </table>
 
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
+
 ### ◉ Operasi perbandingan antar basis
 
 Nilai bilangan integer meskipun dideklarasikan dengan basis biner, heksadesimal, atau oktal, nilai tersebut disimpan di variabel oleh Python dalam satu tipe data, yaitu `int`. Dari sifat tersebut, maka operasi logika perbandingan bisa dilakukan tanpa melihat basis numerik-nya, karena kesemuanya pasti bertipe `int`.
@@ -311,7 +313,7 @@ print(f"int2: {int2}")
 # output ➜ int2: 140
 ```
 
-## A.17.3. Floating point (*float*)
+## A.19.3. Floating point (*float*)
 
 Bilangan *float* adalah bilangan yang memiliki angka dibelakang koma (atau titik untuk sistem angka luar negeri), misalnya angka `3.14` (yang di negara kita biasa ditulis dengan `3,14`).
 
@@ -430,6 +432,8 @@ print(f"3.14 + 2.8: {n:.2f}")
 # output ➜ 3.14 + 2.8: 5.94
 ```
 
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
+
 ### ◉ Konversi tipe data via fungsi `float()`
 
 Fungsi `float()` digunakan untuk mengkonversi suatu nilai menjadi float.
@@ -484,7 +488,7 @@ print(f"float4: {float4}")
 # output ➜ float4: 0.006
 ```
 
-## A.17.4. Bilangan *complex*
+## A.19.4. Bilangan *complex*
 
 Bilangan *complex* adalah bilangan yang isinya merupakan kombinasi bilangan real dan bilangan imajiner, contohnya seperti `120+3j`.
 
