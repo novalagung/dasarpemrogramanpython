@@ -159,9 +159,11 @@ def calculate_circle_circumference(r: int):
 
 area = calculate_circle_area(788)
 print(f"area: {area:.2f}")
+# output ➜ area: 1949764.16
 
 circumference = calculate_circle_circumference(788)
 print(f"circumference: {circumference:.2f}")
+# output ➜ circumference: 4948.64
 ```
 
 Penjelasan:
@@ -211,7 +213,7 @@ Dari blok kode di atas, nantinya engineer akan tau bahwa fungsi tersebut akan di
 
 ### ◉ Chapter relevan lainnya
 
-- [Optional, Positional, Keyword-only Argument](/basic/optional-positional-keyword-only-argument)
+- [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
 - [Args & Kwargs](/basic/args-kwargs)
 - [Closure](/basic/closure)
 - [Lambda](/basic/lambda)

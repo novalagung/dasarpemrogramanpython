@@ -157,6 +157,7 @@ print(f"matrix * scalar {1}:")
 res1 = matrix_multiply_scalar(matrix)
 print_matrix(res1)
 # output ↓
+#
 # matrix * scalar 1:
 # [1, 2, 3, 4]
 # [5, 6, 7, 8]
@@ -166,6 +167,7 @@ print(f"matrix * scalar {3}:")
 res2 = matrix_multiply_scalar(matrix, 3)
 print_matrix(res2)
 # output ↓
+#
 # matrix * scalar 3:
 # [3, 6, 9, 12]
 # [15, 18, 21, 24]
@@ -175,6 +177,7 @@ print(f"matrix * scalar {2}:")
 res3 = matrix_multiply_scalar(matrix, scalar=2)
 print_matrix(res3)
 # output ↓
+#
 # matrix * scalar 2:
 # [2, 4, 6, 8]
 # [10, 12, 14, 16]
@@ -184,6 +187,7 @@ print(f"matrix * scalar {4}:")
 res4 = matrix_multiply_scalar(matrix=matrix, scalar=4)
 print_matrix(res4)
 # output ↓
+#
 # matrix * scalar 4:
 # [2, 4, 6, 8]
 # [10, 12, 14, 16]
@@ -192,6 +196,7 @@ print_matrix(res4)
 print(f"matrix * scalar {7}:")
 res5 = matrix_multiply_scalar(scalar=7, matrix=matrix)
 # output ↓
+#
 # print_matrix(res5)
 # matrix * scalar 7:
 # [2, 4, 6, 8]

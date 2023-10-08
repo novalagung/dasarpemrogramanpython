@@ -31,6 +31,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
 
     print(text)
     # output ↓ 
+    #
     # a multiline string
     # in python
     ```
@@ -43,6 +44,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
 
     print(text)
     # output ↓ 
+    #
     # a multiline string
     # in python
     ```
@@ -602,6 +604,7 @@ hello python
 
 print(f"--{text}--")
 # output ↓
+#
 # --
 # hello python
 # --
@@ -620,6 +623,7 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
 
     print(f"--{text.lstrip()}--")
     # output ↓
+    #
     # --hello python
     # --
     ```
@@ -633,6 +637,7 @@ Dengan menggunakan teknik trimming, whitespace bisa dihilangkan. Ada beberapa me
 
     print(f"--{text.rstrip()}--")
     # output ↓
+    #
     # --
     # hello python--
     ```
