@@ -15,9 +15,9 @@ git clone https://github.com/novalagung/dasarpemrogramanpython.git
 git submodule update --init --recursive --remote
 ```
 
-## Original Author
+## Maintainer
 
-E-book ini di-inisialisasi oleh Noval Agung Prayogo.
+E-book ini di-inisialisasi dan di-maintain oleh Noval Agung Prayogo.
 
 ## Contributors
 
