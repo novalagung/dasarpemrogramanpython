@@ -8,6 +8,13 @@ Ebook Dasar Pemrograman Python adalah project open source. Siapapun bebas untuk 
 
 Bagi teman-teman yang berminat untuk berkontribusi, silakan fork [github.com/novalagung/dasarpemrogramanpython](https://github.com/novalagung/dasarpemrogramanpython), kemudian langsung saja cek/buat issue kemudian submit relevan pull request untuk issue tersebut 😊.
 
+## Checkout project
+
+```
+git clone https://github.com/novalagung/dasarpemrogramanpython.git
+git submodule update --init --recursive --remote
+```
+
 ## Original Author
 
 E-book ini di-inisialisasi oleh Noval Agung Prayogo.
