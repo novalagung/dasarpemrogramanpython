@@ -27,3 +27,5 @@ https://dasarpemrogramanpython.novalagung.com/basic/object-id-reference
 https://dasarpemrogramanpython.novalagung.com/basic/function
 https://dasarpemrogramanpython.novalagung.com/basic/positional-optional-keyword-argument
 https://dasarpemrogramanpython.novalagung.com/basic/args-kwargs
+https://dasarpemrogramanpython.novalagung.com/basic/closure
+https://dasarpemrogramanpython.novalagung.com/basic/lambda
