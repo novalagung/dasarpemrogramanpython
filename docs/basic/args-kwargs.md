@@ -79,6 +79,21 @@ Bisa dilihat, pada kode di atas parameter `message` menampung argument ke-1 yait
 
 Perlu diketahu dalam penerapan kombinasi positional argument dan args, positional argument harus selalu ditulis sebelum parameter **\*args**.
 
+### ◉ Kombinasi positional argument, args, dan keyword argument
+
+Keyword argument bisa digunakan bebarengan dengan positional argument dan **\*args**, dengan syarat harus dituliskan di akhir setelah **\*args**.
+
+```python
+def sum_then_print(message, *numbers, suffix_message):
+    total = 0
+    for n in numbers:
+        total = total + n
+    print(f"{message} {total} {suffix_message}")
+
+sum_then_print("total nilai:", 2, 3, 4, 5, 4, suffix_message="selesai!")
+# output ➜ total nilai: 18 selesai!
+```
+
 ## A.24.2. Kwargs
 
 **Kwargs** (atau yang umumnya ditulis sebagai **\*\*kwargs** atau **keyword arguments**) merupakan notasi penulisan parameter spesial dengan kapabilitas bisa menampung banyak *keyword argument* pemanggilan fungsi dalam 1 parameter saja.
@@ -138,24 +153,44 @@ Kombinasi antara positional argument, **\*args**, dan **\*\*kwargs** juga bisa d
 Contoh penerapannya:
 
 ```python
-def print_all(message, *numbers, **others):
+def print_all(message, *params, **others):
     print(f"message: {message}")
-    print(f"numbers: {numbers}")
+    print(f"params: {params}")
     print(f"others: {others}")
 
 print_all("hello world", 1, True, ("yesn't", "nope"), name="nokia 3310", discontinued=True, year_released=2000)
 # output ↓
 #
 # message: hello world
-# numbers: (1, True, ("yesn't", 'nope'))
+# params: (1, True, ("yesn't", 'nope'))
 # others: {'name': 'nokia 3310', 'discontinued': True, 'year_released': 2000}
 ```
 
 Python secara cerdas mengidentifikasi argument mana yang akan disimpan pada positional parameter, **\*args**, dan **\*\*kwargs**. Pada kode di atas, mapping antara arguments dengan parameter adalah seperti ini:
 
 - Argument `hello world` ditampung parameter `message`.
-- Argument `1`, `True`,dan  `("yesn't", "nope")` ditampung parameter `numbers`.
+- Argument `1`, `True`,dan  `("yesn't", "nope")` ditampung parameter `params`.
 - Keyword argument `name="nokia 3310"`, `discontinued=True`, fan `year_released=2000` ditampung parameter `others`.
+
+### ◉ Kombinasi positional argument, args, keyword argument, dan kwargs 
+
+Keyword argument bisa dituliskan diantara **\*args**, dan **\*\*kwargs**, diluar itu menghasilkan error.
+
+```python
+def print_all(message, *params, say_something, **others):
+    print(f"message: {message}")
+    print(f"params: {params}")
+    print(f"say_something: {say_something}")
+    print(f"others: {others}")
+
+print_all("hello world", 1, True, ("yesn't", "nope"), say_something="how are you", name="nokia 3310", discontinued=True, year_released=2000)
+# output ↓
+#
+# message: hello world
+# params: (1, True, ("yesn't", 'nope'))
+# say_something: how are you
+# others: {'name': 'nokia 3310', 'discontinued': True, 'year_released': 2000}
+```
 
 ---
 
@@ -175,12 +210,11 @@ Python secara cerdas mengidentifikasi argument mana yang akan disimpan pada posi
 
 - [Function](/basic/function)
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Closure](#)
+- [Closure](/basic/closure)
 - [Lambda](#)
 
 ### ◉ Referensi
 
-- https://docs.python.org/3/tutorial/controlflow.html#defining-functions
-- https://peps.python.org/pep-3102/
+- https://docs.python.org/3/tutorial/controlflow.html#arbitrary-argument-lists
 
 </div>

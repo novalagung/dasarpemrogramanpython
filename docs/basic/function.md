@@ -127,6 +127,25 @@ Fungsi bisa tidak memiliki parameter, satu parameter, atau bisa lebih dari satu,
 
 > Python memiliki **args** dan **kwargs**, nantinya kita akan mempelajarinya pada chapter [Args & Kwargs](/basic/args-kwargs)
 
+O iya, argument fungsi bisa dituliskan secara horizontal maupun vertikal. Misalnya:
+
+- Penulisan argument secara horizontal
+
+    ```python
+    calculate_circle_area("area of circle:", 788)
+    ```
+
+- Penulisan argument secara vertikal
+
+    ```python
+    calculate_circle_area(
+        "area of circle:",
+        788
+    )
+    ```
+
+Penulisan argument secara vertikal umumnya cukup berguna pada situasi dimana fungsi yang dipanggil memiliki cukup banyak parameter yang harus diisi.
+
 ## A.22.3. Naming convention fungsi & parameter
 
 Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama fungsi dianjurkan untuk ditulis menggunakan [`snake_case`](https://en.wikipedia.org/wiki/Snake_case).
@@ -183,6 +202,10 @@ Penjelasan:
 
 - Nilai balik kedua pemanggilan fungsi di atas masing-masing di-print.
 
+O iya, fungsi yang didalamnya tidak memiliki statement `return` sebenarnya juga mengembalikan nilai balik, yaitu `None`.
+
+> Lebih detailnya mengenai tipe data `None` dibahas pada chapter [None](#)
+
 ## A.22.5. Keyword `pass`
 
 Keyword `pass` secara fungsional umumnya tidak terlalu berguna, kecuali untuk beberapa situasi. Misalnya untuk dipergunakan sebagai isi pada fungsi yang masih belum selesai dikerjakan. Daripada fungsi isinya kosong dan akan menghasilkan error kalau di-run, lebih baik diisi `pass`.
@@ -215,7 +238,7 @@ Dari blok kode di atas, nantinya engineer akan tau bahwa fungsi tersebut akan di
 
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
 - [Args & Kwargs](/basic/args-kwargs)
-- [Closure](#)
+- [Closure](/basic/closure)
 - [Lambda](#)
 
 ### ◉ Referensi
