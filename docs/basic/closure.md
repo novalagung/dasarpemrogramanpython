@@ -169,7 +169,7 @@ Di dalam fungsi `aggregate()`, closure `f` diharapkan untuk memiliki parameter y
 - [Function](/basic/function)
 - [Args & Kwargs](/basic/args-kwargs)
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Lambda](#)
+- [Lambda](/basic/lambda)
 
 ### ◉ Referensi
 

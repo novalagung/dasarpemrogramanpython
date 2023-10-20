@@ -533,7 +533,7 @@ print(list_2)
 
 Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya dengan cara menambahkan closure/lambda pada argument method ini.
 
-> Lebih detailnya mengenai closure/lambda dibahas pada chapter [Closure/Lambda](#)
+> Lebih detailnya mengenai closure/lambda dibahas pada chapter [Closure](/basic/closure) & [Lambda](/basic/lambda)
 
 ---
 
@@ -554,7 +554,8 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 - [Perulangan ➜ for, range](/basic/for-range)
 - [List Comprehension](/basic/list-comprehension)
 - [Slicing](/basic/slice)
-- [Closure/lambda](#)
+- [Closure](/basic/closure)
+- [Lambda](/basic/lambda)
 
 ### ◉ TBA
 

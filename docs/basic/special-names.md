@@ -200,7 +200,7 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantin
 
 - [Modules](/basic/modules)
 - [Packages](/basic/packages)
-- [Class & Object](/basic/class-object)
+- [Class & Object](#)
 
 ### ◉ Referensi
 

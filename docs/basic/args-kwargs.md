@@ -211,7 +211,7 @@ print_all("hello world", 1, True, ("yesn't", "nope"), say_something="how are you
 - [Function](/basic/function)
 - [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
 - [Closure](/basic/closure)
-- [Lambda](#)
+- [Lambda](/basic/lambda)
 
 ### ◉ Referensi
 
