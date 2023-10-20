@@ -26,7 +26,7 @@ Buat program baru dengan isi kode di bawah ini. File `my_program.py` kita fungsi
 <div style={{ width: '250px' }}>
 
 ```bash title="Project structure"
-belajar-module
+belajar-module/
 │─── calculate.py
 └─── my_program.py
 ```
@@ -95,7 +95,11 @@ Keyword `import` digunakan untuk meng-import suatu module atau class. Pada conto
 - Pengaksesan variabel/konstanta dari suatu module menggunakan notasi `<module>.<variable/constant>`, contohnya `calcualte.note`.
 - Sedangkan pengaksesan fungsi menggunakan notasi `<module>.<function>()`, contohnya seperti `calculate.calc_hypotenuse()`, `calculate.sqrt()`, dan `calculate.pow()`.
 
-## A.27.2. Keyword `from` dan `import`
+## A.27.2. *Naming convention* module
+
+Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama module dianjurkan untuk ditulis dalam huruf kecil (lowercase) dengan underscode sebagai pembatas antar kata.
+
+## A.27.3. Keyword `from` dan `import`
 
 Ada dua bentuk penerapan keyword import, yang pertama adalah untuk meng-import module, contohya seperti pada praktek di atas (`import calculate`); Atau bisa juga dikombinasikan dengan keyword `from` untuk meng-import langsung fungsi yang ingin digunakan, contoh:
 
@@ -143,7 +147,7 @@ Penggunaannya sangat mudah, langsung tulis saja `pow(a, b)` dimana hasilnya adal
 
 Pada kode di atas, fungsi `pow()` milik module `calculate` tidak di-import agar tidak meng-override atau menimpa fungsi `pow()` bawaan Python.
 
-## A.27.3. Statement `from <module> import *`
+## A.27.4. Statement `from <module> import *`
 
 Statement `from <module> import *` digunakan untuk meng-import semua unit yang ada dalam module `<module>`. Contoh penerapannya:
 
@@ -165,7 +169,7 @@ res = sqrt(pow(a, 2) + pow(b, 2))
 print("hypotenuse:", res)
 ```
 
-## A.27.4. Keyword `as`
+## A.27.5. Keyword `as`
 
 Module maupun fungsi bisa di-import dengan diberi nama alias. Biasanya teknik ini digunakan pada situasi dimana module yang di-import namanya cukup panjang, maka digunakan alias agar lebih pendek. Pembuatan alias sendiri dilakukan via keyword `as`.
 
@@ -199,7 +203,7 @@ Penjelasan:
     - Fungsi `calc_hypotenuse()` dari module `calculate` dengan alias `hptns()`.
     - Fungsi `sqrt()` dari module `calculate`.
 
-## A.27.4. Urutan pencarian module
+## A.27.6. Urutan pencarian module
 
 Ketika suatu module di-import, Python akan melakukan pencarian file module di beberapa tempat secara berurutan:
 
@@ -208,7 +212,7 @@ Ketika suatu module di-import, Python akan melakukan pencarian file module di be
 3. Jika pencarian kedua juga tidak menemukan hasil, Python melanjutkan pencarian di folder dimana Python di-install.
 4. Jika pencarian ketiga juga tidak sukses (file module tidak ditemukan), maka eksekusi program menghasilkan error.
 
-## A.27.5. File module dalam folder
+## A.27.7. File module dalam folder
 
 Bagaiaman jika suatu file module (misalnya `calculate.py`) berada di dalam suatu folder (subfolder), apakah cara import-nya sama? Sebenarnya sama namun ada sedikit. Kita akan bahas pada chapter selanjutnya, yaitu [Packages](/basic/packages).
 
