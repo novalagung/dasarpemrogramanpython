@@ -30,3 +30,6 @@ https://dasarpemrogramanpython.novalagung.com/basic/positional-optional-keyword-
 https://dasarpemrogramanpython.novalagung.com/basic/args-kwargs
 https://dasarpemrogramanpython.novalagung.com/basic/closure
 https://dasarpemrogramanpython.novalagung.com/basic/lambda
+https://dasarpemrogramanpython.novalagung.com/basic/modules
+https://dasarpemrogramanpython.novalagung.com/basic/packages
+https://dasarpemrogramanpython.novalagung.com/basic/special-names
