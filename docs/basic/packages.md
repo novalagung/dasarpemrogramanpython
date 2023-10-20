@@ -1,7 +1,7 @@
 ---
 sidebar_position: 28
 title: A.28. Packages
-sidebar_label: A.28. Packages
+sidebar_label: A.28. Python Packages
 ---
 
 Package adalah cara Python mengelola module agar bisa diakses menggunakan notasi pengaksesan module (contoh seperti `calculate.calc_hypotenuse()`). Pada chapter ini kita akan mempelajarinya.

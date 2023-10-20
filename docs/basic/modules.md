@@ -1,7 +1,7 @@
 ---
 sidebar_position: 27
 title: A.27. Modules
-sidebar_label: A.27. Modules
+sidebar_label: A.27. Python Modules
 ---
 
 Pada chapter ini kita akan belajar tentang konsep module beserta penerapannya di Python.
