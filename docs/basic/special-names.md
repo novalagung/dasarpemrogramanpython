@@ -14,13 +14,17 @@ Variabel `__name__` merupakan salah satu special names yang ada di Python, isiny
 
 Agar lebih jelas, mari kita langsung praktekan. Silakan siapkan folder project baru dengan struktur file seperti ini:
 
-```bash title="Project structure belajar-special-names-1"
-belajar-special-names-1/
+<div style={{ width: '250px' }}>
+
+```bash title="Project structure example-1"
+example-1/
 │─── calculate.py
 └─── my_program.py
 ```
 
-Source code program yang dipraktekan disimpan pada folder `belajar-special-names-1`. Folder ini isinya hanya 2 file yaitu `calculate.py` dan `my_program.py`.
+</div>
+
+Source code program yang dipraktekan disimpan pada folder `example-1`. Folder ini isinya hanya 2 file yaitu `calculate.py` dan `my_program.py`.
 
 Selanjutnya, buka `calculate.py` lalu tulis kode untuk pencarian bilangan prima berikut:
 
@@ -80,11 +84,15 @@ Dari penjelasan di atas, variabel `__name__` biasa dimanfaatkan sebagai kontrol 
 
 Contoh pengaplikasian skenario yang disebutkan ada pada contoh program ke-2 berikut:
 
-```bash title="Project structure belajar-special-names-2"
-belajar-special-names-2/
+<div style={{ width: '250px' }}>
+
+```bash title="Project structure example-2"
+example-2/
 │─── calculate.py
 └─── main.py
 ```
+
+</div>
 
 ```python title="File: calculate.py"
 def is_prime(num):
@@ -132,11 +140,15 @@ Variabel special name `__file__` berisi informasi path file dimana variabel ters
 
 Contohnya penerapannya bisa dilihat pada program berikut:
 
-```bash title="Project structure belajar-special-names-3"
-belajar-special-names-3/
+<div style={{ width: '250px' }}>
+
+```bash title="Project structure example-3"
+example-3/
 │─── calculate.py
 └─── main.py
 ```
+
+</div>
 
 ```python title="File: calculate.py"
 def is_prime(num):
@@ -178,7 +190,25 @@ Variabel `__all__` digunakan untuk menentukan module apa saja yang ter-import pa
 
 Penjelasan lebih detailnya ada pada chapter sebelumnya, yaitu [Packages](/basic/packages).
 
-## A.29.4. Fungsi `__init__()`
+## A.29.4. Package `__future__`
+
+Package `__future__` berisikan modules yang hanya tersedia di Python versi terbaru. Package ini biasa di-import pada program dengan Python versi lama (misalnya 2.5) yang didalam program tersebut berisi penerapan kode yang hanya ada di versi Python terbaru.
+
+Salah satu contohnya adalah operator `//` untuk operasi **floor division** atau pembagian dengan hasil dibulatkan. Operator tersebut hanya tersedia di Python 3.0+.
+
+Untuk bisa menggunakan operator tersebut pastikan meng-import module `division` dari package `__future__`. Letakkan statement import tersebut di baris atas.
+
+```python
+from __future__ import division
+
+print(8 / 7)
+# output ➜ 1.1428571428571428
+
+print(8 // 7)
+# output ➜ 1
+```
+
+## A.29.5. Fungsi `__init__()`
 
 Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantinya akan dibahas lebih detail di chapter terpisah yaitu [Class & Object](#).
 
@@ -206,5 +236,6 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantin
 
 - https://docs.python.org/3/tutorial/modules.html
 - https://docs.python.org/3/tutorial/special-names.html
+- https://stackoverflow.com/questions/7075082/what-is-future-in-python-used-for-and-how-when-to-use-it-and-how-it-works
 
 </div>

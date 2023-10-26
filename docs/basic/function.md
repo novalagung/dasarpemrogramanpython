@@ -8,7 +8,7 @@ Penerapan fungsi di Python cukup mudah dan pada chapter ini kita akan memulai un
 
 O iya, chapter ini merupakan chapter pembuka pembahasan topik fungsi. Ada banyak hal yang perlu dipelajari, oleh karena itu penulis memutuskan untuk memecah chapter menjadi beberapa bagian.
 
-## A.22.1. Penerapan fungsi
+## A.22.1. Pengenalan Fungsi
 
 Function atau fungsi adalah kode program yang terisolasi dalam satu blok kode, yang bisa dipanggil sewaktu-waktu. Fungsi memiliki beberapa atribut seperti nama fungsi, isi fungsi, parameter/argument, dan nilai balik.
 

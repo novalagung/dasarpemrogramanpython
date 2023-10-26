@@ -6,7 +6,7 @@ sidebar_label: A.28. Packages
 
 Package adalah cara Python mengelola module agar bisa diakses menggunakan notasi pengaksesan module (contoh seperti `calculate.calc_hypotenuse()`). Pada chapter ini kita akan mempelajarinya.
 
-## A.28.1. Penerapan Packages
+## A.28.1. Pengenalan Packages
 
 Mari kita mulai dengan sedikit mengulang pembahasan chapter sebelumnya. Module di Python direpresentasikan oleh file (nama file adalah nama module). Cara mengakses isi module adalah dengan meng-import nya terlebih dahulu.
 

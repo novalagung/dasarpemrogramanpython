@@ -6,7 +6,7 @@ sidebar_label: A.26. Function ➜ Lambda
 
 Pada chapter ini kita akan belajar tentang *anonymous function* atau fungsi tanpa nama yang biasa disebut dengan **lambda**. 
 
-## A.26.1. Penerapan lambda
+## A.26.1. Pengenalan Lambda
 
 Lambda adalah fungsi yang tidak memiliki nama. Lambda umumnya disimpan ke suatu variabel atau dieksekusi langsung. Lambda bisa memiliki parameter dan mengembalikan nilai balik, seperti fungsi pada umumnya.
 

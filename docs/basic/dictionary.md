@@ -15,7 +15,7 @@ sidebar_label: A.16. Dictionary
 
 Pada chapter ini kita akan belajar salah satu tipe data *mapping* di Python, yaitu Dictionary.
 
-## A.16.1. Penerapan Dictionary
+## A.16.1. Pengenalan Dictionary
 
 Dictionary atau `dict` adalah tipe data kolektif berbentuk **key-value**. Contoh penulisannya:
 

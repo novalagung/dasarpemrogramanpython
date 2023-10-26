@@ -13,7 +13,7 @@ Module di Python merupakan istilah untuk file yang berisi kode-kode python seper
 
 Dengan adanya module kode menjadi lebih modular, rapi, dan mudah dikelola.
 
-## A.27.1. Penerapan module
+## A.27.1. Pengenalan Modules
 
 Pembuatan module di Python sangat mudah karena cukup dilakukan dengan membuat file, dan nama file yang dipilih akan menjadi nama module. Misalnya, file `calculate.py` adalah module dengan nama `calculate`.
 

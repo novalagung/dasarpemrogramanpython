@@ -6,7 +6,7 @@ sidebar_label: A.17. String
 
 String (atau `str`) merupakan kumpulan data `char` atau karakter yang tersimpan secara urut (*text sequence*). String di Python mengadopsi standar Unicode dengan *default encoding* adalah `UTF-8`.
 
-## A.17.1. Penerapan string
+## A.17.1. Pengenalan String
 
 Python mendesain tipe data string dalam bentuk yang sangat sederhana dan mudah digunakan. Untuk membuat string cukup tulis saja text yang diinginkan dengan diapit tanda petik satu atau petik dua. Contoh:
 
