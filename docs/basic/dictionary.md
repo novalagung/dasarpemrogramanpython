@@ -422,7 +422,7 @@ print("len:", len(profile), "data:", profile)
 
 ### ◉ Chapter relevan lainnya
 
-- [Classes & object](#)
+- [Class & object](/basic/class-object)
 
 ### ◉ Referensi
 

@@ -210,7 +210,7 @@ print(8 // 7)
 
 ## A.29.5. Fungsi `__init__()`
 
-Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantinya akan dibahas lebih detail di chapter terpisah yaitu [Class & Object](#).
+Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantinya akan dibahas lebih detail di chapter terpisah yaitu [Class & object](/basic/class-object).
 
 ---
 
@@ -230,7 +230,7 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Nantin
 
 - [Modules](/basic/modules)
 - [Packages](/basic/packages)
-- [Class & Object](#)
+- [Class & object](/basic/class-object)
 
 ### ◉ Referensi
 
