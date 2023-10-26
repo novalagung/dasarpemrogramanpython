@@ -1,7 +1,7 @@
 ---
 sidebar_position: 30
-title: A.30. Python Class & Object
-sidebar_label: A.30. Class & Object
+title: A.30. Python OOP ➜ Class & Object
+sidebar_label: A.30. OOP ➜ Class & Object
 ---
 
 Python mendukung paradigma pemrograman berbasis object (OOP) via implementasi Class dan Object API. Pada chapter ini kita akan mempalajari konsep dasar beserta penerapannya.
@@ -26,7 +26,7 @@ class Car:
 
 Pada kode di atas, class `Car` dibuat memiki 3 buah attribute, yaitu `name`, `manufacturer`, dan `year`. Nantinya, variabel object yang dibuat dari class tersebut memiliki 3 attribute sesuai dengan yang dideklarasikan.
 
-> Fungsi `__init__(self)` disebut dengan method konstruktor. Kita akan kupas lebih detail mengenai konstruktor di chapter [Property ➜ Method](/basic/class-method)
+> Fungsi `__init__(self)` disebut dengan method konstruktor. Kita akan kupas lebih detail mengenai konstruktor di chapter [Class ➜ Constructor](#)
 
 ### ◉ Deklarasi class tanpa attribute
 
@@ -47,7 +47,11 @@ class Car:
 
 > Lebih detailnya mengenai keyword `pass` dibahas pada chapter terpisah, yaitu [Function ➜ Keyword pass](/basic/function#a225-keyword-pass).
 
-## A.30.2. Pembuatan Instance object
+## A.30.2. Naming convention class
+
+Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama class dianjurkan untuk ditulis dalam bentuk TitleCase (contoh: `FavoriteFood`).
+
+## A.30.3. Pembuatan Instance object
 
 Object atau instance object merupakan variabel yang dibuat dari class. Cara pembuatannya adalah dengan memanggil nama class diikuti kurung fungsi `()` (seperti pemanggilan fungsi) kemudian menampung nilai baliknya.
 
@@ -91,9 +95,9 @@ car2 = Car()
 car3 = Car()
 ```
 
-## A.30.3. Property ➜ Attribute
+## A.30.4. Instance Attribute
 
-Class memiliki property salah satunya adalah attribute. Attribute sendiri merupakan variabel yang terasosiasi dengan class, jadi pengaksesannya harus lewat class dan/atau instance object.
+Salah satu property class adalah attribute. Attribute sendiri merupakan variabel yang terasosiasi dengan class, jadi pengaksesannya harus lewat class dan/atau instance object.
 
 Sebelumnya kita telah membuat class bernama `Car` yang memiliki 3 attribute berikut:
 
@@ -101,9 +105,14 @@ Sebelumnya kita telah membuat class bernama `Car` yang memiliki 3 attribute beri
 - `manufacturer` untuk menyimpan informasi manufaktur atau pembuat mobil
 - `year` untuk menyimpan informasi tahun rilis mobil
 
-Cara deklarasi attribute mirip seperti deklarasi variabel, hanya saja dalam penulisannya diawali statement `self.` yang penulisannya harus ada di dalam body fungsi `__init__(self)`.
 
-Untuk pengaksesan attribute sendiri bisa dilakukan lewat instane object yang dibuat dari class dengan notasi pengaksesan: `<variabel>.<attribute>`.
+Attribute sendiri sebenarnya ada 2 jenis, yaitu instance attribute dan class attribute. Yang sedang kita pelajari sekarang adalah instance attribute.
+
+> Perbedaan antara instance attribute vs class attribute nantinya dibahas secara mendetail pada chapter terpisah, yaitu chapter [Class ➜ Class Attribute & Method](#).
+
+Cara deklarasi instance attribute mirip seperti deklarasi variabel, hanya saja dalam penulisannya diawali statement `self.` yang penulisannya harus ada di dalam body fungsi `__init__(self)`.
+
+Untuk pengaksesan instance attribute sendiri bisa dilakukan lewat instane object yang dibuat dari class dengan notasi pengaksesan: `<object>.<attribute>`.
 
 Contoh:
 
@@ -122,9 +131,9 @@ print(f"car1 year: {car1.year}")
 
 ![Python Class & object](img/class-object-3.png)
 
-Terlihat ketiga attribute class `Car` untuk variabel `car1` adalah sesuai dengan nilai default, yaitu string kosong `""` untuk attribute `name` & `manufacturer`, dan `0` untuk attribute `year`.
+Saat di-print bisa dilihat bahwa semua nilai instance attribute milik class `Car` adalah sesuai dengan nilai default yang ditentukan dalam fungsi `__init__(self)`, yaitu: string kosong `""` untuk attribute `name` & `manufacturer`, dan `0` untuk attribute `year`.
 
-Lanjut ke praktek berikutnya, sekarang buat 3 buah variabel object dari class `Car` kemudian isi attribute-nya. Variabel yang dibuat adalah `bmw_m3_gtr`, `mazda_rx8`, dan `audi_le_mans`.
+Lanjut ke praktek berikutnya, sekarang buat 3 buah variabel object dari class `Car` lalu isi instance attribute-nya dengan suatu nilai. Tiga variabel yang perlu dibuat adalah `bmw_m3_gtr`, `mazda_rx8`, dan `audi_le_mans`.
 
 ![Python Class & object](img/class-object-4.png)
 
@@ -158,12 +167,6 @@ Run program untuk melihat outpunya:
 >
 > Perbedaan keduanya: dictionary key-nya bisa dikelola secara dinamis; sedangkan pada class, nama attribute-nya adalah fixed.
 
-## A.30.4. Macam-macam attribute
-
-Sampai sini kita telah belajar tentang attribute. Sebenarnya Python mengenal 2 jenis attribute yaitu instance attribute dan class attribute. Yang telah kita pelajari adalah instance attribute.
-
-Perbedaan antara instance attribute vs class attribute nantinya dibahas pada chapter terpisah, yaitu [Class ➜ Attribute](/basic/class-attribute).
-
 ---
 
 <div class="section-footnote">
@@ -180,8 +183,10 @@ Perbedaan antara instance attribute vs class attribute nantinya dibahas pada cha
 
 ### ◉ Chapter relevan lainnya
 
-- [Class ➜ Method](/basic/class-method)
-- [Class ➜ Attribute](/basic/class-object)
+- [OOP ➜ Instance Method](/basic/instance-method)
+- [OOP ➜ Constructor](#)
+- [OOP ➜ Class Attribute & Method](#)
+- [OOP ➜ Inheritance](#)
 
 ### ◉ Referensi
 
