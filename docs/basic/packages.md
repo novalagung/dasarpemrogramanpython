@@ -4,15 +4,15 @@ title: A.28. Python Packages
 sidebar_label: A.28. Packages
 ---
 
-Package adalah cara Python mengelola module agar bisa diakses menggunakan notasi pengaksesan module (contoh seperti `calculate.calc_hypotenuse()`). Pada chapter ini kita akan mempelajarinya.
+Pada chapter ini, kita akan membahas cara Python mengelola module melalui packages. Dengan package, module bisa diakses menggunakan notasi pengaksesan module, contohnya seperti `calculate.calc_hypotenuse()`.
 
 ## A.28.1. Pengenalan Packages
 
-Mari kita mulai dengan sedikit mengulang pembahasan chapter sebelumnya. Module di Python direpresentasikan oleh file (nama file adalah nama module). Cara mengakses isi module adalah dengan meng-import nya terlebih dahulu.
+Mari kita mulai dengan sedikit mengulang pembahasan yang ada di chapter sebelumnya. Di Python, module direpresentasikan oleh file, dan agar bisa mengakses item yang ada dalam module tersebut kita perlu meng-import-nya terlebih dahulu.
 
-Package adalah cara mengolah module dengan menempatkannya dalam suatu folder. Sederhananya: **module adalah file, dan package adalah folder**.
+Package adalah cara mengelola module dengan menempatkannya dalam suatu folder. Sederhananya: **module adalah file, dan package adalah folder**.
 
-Agar lebih jelas, mari kita praktekan. Buat project baru dengan struktur seperti berikut:
+Untuk mendemonstrasikan konsep ini, mari kita praktekan. Buat project baru dengan struktur seperti berikut:
 
 <div style={{ width: '250px' }}>
 
@@ -28,7 +28,7 @@ belajar-package/
 
 </div>
 
-Program yang dibuat masih sama seperti pada praktek sebelumnya. Perbedaannya, fungsi `sqrt()` dan `pow()` ditempatkan dalam path `libs/common/number.py` dan ada fungsi baru yang akan dibuat di `libs/common/message.py`.
+Program yang dibuat masih sama seperti yang ada di praktek sebelumnya. Perbedaannya, kali ini fungsi `sqrt()` dan `pow()` ditempatkan dalam path `libs/common/number.py`, dan ada juga satu fungsi baru dibuat di `libs/common/message.py`.
 
 ```python title="File: libs/common/number.py"
 note = "module libs.common.number contains numerical functions"
@@ -50,7 +50,7 @@ def print_hypotenuse(v):
     print("hypotenuse:", v)
 ```
 
-Setelah itu, isi file `calculate.py` dengan deklarasi variabel `note` dan fungsi `calc_hypotenuse()`.
+Selanjutnya, isi file `calculate.py` dengan deklarasi variabel `note` dan fungsi `calc_hypotenuse()`.
 
 ```python title="File: libs/calculate.py"
 import libs.common.number
@@ -61,7 +61,7 @@ def calc_hypotenuse(a, b):
     return libs.common.number.sqrt(libs.common.number.pow(a) + libs.common.number.pow(b))
 ```
 
-Terakhir, pada file `my_program.py` yang merupakan entrypoint eksekusi program, import module `libs/common/number.py`, `libs/common/message.py`, dan `libs/calculate.py` di sana lalu gunakan fungsi yang telah dideklarasikan di masing-masing module. Contoh:
+Terakhir, di file `my_program.py` (file entrypoint eksekusi program), import module `libs/common/number.py`, `libs/common/message.py`, dan `libs/calculate.py` lalu panggil fungsi yang ada di masing-masing module. Contoh:
 
 ```python title="File: my_program.py"
 a = 10
@@ -107,15 +107,15 @@ Ok, selanjutnya coba jalankan program dan lihat hasilnya:
 
 ## A.28.2. *Naming convention* package
 
-Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama package dianjurkan untuk ditulis dalam huruf kecil (lowercase). Penggunaan karakter underscode kurang dianjurkan.
+Berdasarkan dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), disarankan untuk menulis nama package dengan huruf kecil (lowercase) dan dianjurkan untuk menghindari penggunaan underscore.
 
 ## A.28.3. Metode import module package
 
-Seperti halnya module biasa, module dalam package bisa di-import lewat beberapa cara, diantaranya:
+Seperti halnya module biasa, module dalam package bisa di-import dengan beberapa cara:
 
 ### ◉ Alias module via keyword `as`
 
-Ada baiknya module diberi nama alias yang lebih pendek agar tidak merepotkan penulisan pengaksesan unit didalamnya. Gunakan keyword `as` untuk memberi nama alias module. Contoh:
+Alias cukup berguna untuk mempersingkat penulisan module saat memanggil item didalamnya. Keyword `as` digunakan untuk pemberian nama alias module.
 
 ```python title="File: libs/calculate.py"
 import libs.common.number as num
@@ -148,7 +148,7 @@ res = num.sqrt(num.pow(a) + num.pow(b))
 msg.print_hypotenuse(res)
 ```
 
-Dengan pemberian alias, tidak perlu lagi menulis namespace secara penuh. Package tidak perlu dituliskan saat pengaksesan unit didalam module.
+Dengan menggunakan alias, namespace tidak perlu lagi dituliskan secara penuh, contohnya `libs.common.number.note` cukup ditulis dengan `num.note`.
 
 ```python
 import libs.common.number
@@ -162,7 +162,7 @@ print(num.note)
 
 ### ◉ Import package via `from` & `import`
 
-Kombinasi keyword `from` dan `import` bisa digunakan dengan ketentuan setelah keyword `from` yang ditulis adalah namespace package, lalu diikuti oleh keyword `import` dan nama module. Contoh:
+Kombinasi keyword `from` dan `import` dapat digunakan dengan ketentuan: setelah keyword `from` yang ditulis adalah namespace package, lalu diikuti oleh keyword `import` dan nama module. Contoh:
 
 ```python title="File: libs/calculate.py"
 from libs.common import number
@@ -196,7 +196,7 @@ message.print_hypotenuse(res)
 
 ### ◉ Penggunaan `import *`
 
-Ada beberapa hal yang perlu diketahui dalam penggunaan `import *` untuk import module dalam package. Sebelum masuk ke pembahasan, silakan coba terlebih dahulu kode berikut. Buka `my_program.py` lalu ubah statement import menjadi seperti ini:
+Ada beberapa hal yang perlu diketahui dalam penggunaan `import *`, namun sebelum membahasnya, silakan coba terlebih dahulu kode berikut. Silakan buka `my_program.py` lalu ubah statement import menjadi seperti ini:
 
 ```python
 from libs import calculate as calc
@@ -209,9 +209,9 @@ Hasilnya adalah error:
 
 ## A.28.4. File `__init__.py`
 
-Melanjutkan pembahasan sebelumnya dimana `import *` menghasilkan error, hal ini terjadi karena di Python, package tidak bisa secara cerdas mendeteksi module apa saja yang bisa direpresentasikan dengan `*` saat import.
+Melanjutkan pembahasan sebelumnya dimana `import *` menghasilkan error, hal tersebut terjadi karena Python tidak bisa mendeteksi module apa saja yang bisa direpresentasikan dengan `*` saat meng-import suatu package.
 
-Untuk mengatasi error di atas, tambahkan file bernama `___init___.py` di setiap package atau folder. Dengan ini maka struktur file program menjadi seperti ini:
+Untuk mengatasi error, tambahkan file bernama `___init___.py` di setiap package/folder. Dengan ini maka struktur file program menjadi seperti ini:
 
 <div style={{ width: '250px' }}>
 
@@ -229,7 +229,7 @@ belajar-package/
 
 </div>
 
-Lalu pada setiap file `__init__.py` tambahkan variabel `__all__` dengan nilai adalah nama module yang ada di dalam folder tersebut.
+Isi file `__init__.py` dengan sebuah statement deklarasi variabel bernama `__all__`, dengan nilai adalah list nama module yang ada di dalam folder tersebut.
 
 ```python title="File: libs/common/__init__.py"
 __all__ = ["message", "number"]
@@ -239,7 +239,9 @@ __all__ = ["message", "number"]
 __all__ = ["calculate"]
 ```
 
-Setelah itu, modules di atas bisa digunakan pada `import *`. Coba test dengan mengaplikasikannya:
+Setelah penambahan di atas dilakukan, maka module yang berada dalam package bisa di-import menggunakan `import *`.
+
+Coba sekarang test dengan mengaplikasikannya di program:
 
 ```python title="File: my_program.py"
 a = 10
@@ -264,13 +266,13 @@ message.print_hypotenuse(res)
 
 ### ◉ Best practice file `__init__.py`
 
-Sesuai penjelasan di [dokumentasi Package](https://docs.python.org/3/tutorial/modules.html#standard-modules), dianjurkan untuk selalu membuat file `__init__.py` di setiap package untuk menghindari masalah saat pencarian module.
+Sesuai penjelasan di [dokumentasi Package](https://docs.python.org/3/tutorial/modules.html#standard-modules), dianjurkan untuk selalu membuat file `__init__.py` di setiap package/folder untuk menghindari masalah saat pencarian module.
 
-Meskipun tidak ada statement `import *`, tetap dianjurkan membuat file tersebut. Isinya biarkan kosong saja tidak apa-apa.
+Meskipun module dalam package tidak digunakan via statement `import *`, dianjurkan untuk tetap membuat file tersebut. Isinya biarkan kosong saja tidak apa-apa.
 
 ### ◉ Special name `__all__`
 
-Variabel yang diawali dan diakhir karakter double underscore seperti `__all__` disebut dengan variabel **special name**. Kita akan bahas pada chapter berikutnya, yaitu [Special Names](/basic/special-names).
+Variabel yang diawali dan diakhir dengan karakter double underscore seperti `__all__` disebut sebagai variabel **special name**. Pembahasan lebih lanjut tentangnya ada di chapter [Special Names](/basic/special-names).
 
 ---
 
