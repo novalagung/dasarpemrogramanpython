@@ -4,21 +4,21 @@ title: A.31. Python OOP ➜ Instance Method
 sidebar_label: A.31. OOP ➜ Instance Method
 ---
 
-Jika attribute adalah variabel yang berasosiasi dengan class, maka method adalah fungsi yang berasosiasi dengan class. Pada chapter ini kita akan membahas tentang method.
+Jika attribute adalah variabel yang berasosiasi dengan class, maka method adalah fungsi yang berasosiasi dengan class. Pada chapter ini kita akan membahas tentang method dan penggunaannya.
 
-> Method sebenarnya ada 2 jenis: yaitu instance method dan class method
+> Python mengenal 2 jenis method yaitu instance method dan class method
 
 ## A.31.1. Penerapan Method
 
-Method memiliki beberapa karakteristik, yaitu:
+Method memiliki beberapa karakteristik:
 
 1. Deklarasinya di dalam block class
-1. Parameter pertama adalah `self`
+1. Parameter pertamanya adalah `self`
 1. Method diakses menggunakan notasi `<object>.<method>()`
 
-Pada praktek kali ini, kita akan melanjutkan class yang telah dibuat di chapter sebelumnya, yaitu `Car`.
+Dalam praktik kali ini, kita akan melanjutkan praktek class `Car` yang telah dibuat di chapter sebelumnya.
 
-Pertama-tama siapkan deklarasi class `Car` dengan 4 buah property yaitu `name`, `manufacturer`, `year`, dan `description`. Kemudian dari class `Car` buat 3 buah instance object, lalu print datanya (nilai attribute-nya).
+Ok, pertama-tama siapkan deklarasi class `Car` dengan 4 buah property yaitu `name`, `manufacturer`, `year`, dan `description`. Kemudian dari class tersebut, buat 3 buah instance object baru, lalu print data attribute tiap variabel.
 
 ```python
 class Car:
@@ -62,7 +62,7 @@ Output program:
 
 ![Python Class Method](img/instance-method-1.png)
 
-Setelah itu, modifikasi class `Car` dengan menambahkan method baru bernama `info()`. Lewat method ini value attribute di-print.
+Setelah itu, modifikasi class `Car` dengan menambahkan method baru bernama `info()`. Melalui method ini, value attribute di-print.
 
 ```python
 class Car:
@@ -78,7 +78,7 @@ class Car:
         print(f"Year released: {self.year}")
 ```
 
-Pada bagian blok kode perulangan, ganti 3 baris statement print dengan pemanggilan method `info()`.
+Pada bagian blok kode perulangan, ganti tiga baris statement print dengan pemanggilan method `info()`.
 
 - Before:
 
@@ -98,11 +98,11 @@ Pada bagian blok kode perulangan, ganti 3 baris statement print dengan pemanggil
         print()
     ```
 
-Jalankan program dan lihat outpunya, pasti sama persis dengan program sebelumnya.
+Jalankan program dan lihat outputnya, pasti sama persis dengan program sebelumnya.
 
 ## A.31.2. Variabel `self`
 
-Salah satu aturan pada method adalah fungsi harus memiliki parameter pertama bernama `self`. Parameter tersebut wajib ada saat deklarasi, dan tidak boleh diisi argument saat pemanggilan. Jika dipaksa diisi dengan argument, maka error:
+Salah satu aturan pada method adalah fungsi harus memiliki parameter pertama bernama `self`. Parameter tersebut wajib ada saat deklarasi, dan tidak boleh diisi argument saat pemanggilan. Jika dipaksa diisi dengan argument, maka pasti muncul error.
 
 ![Python Class Method](img/instance-method-2.png)
 
@@ -110,9 +110,9 @@ Dimisalkan lagi, parameter `self` tidak ditulis saat deklarasi method, hasilnya 
 
 ![Python Class Method](img/instance-method-3.png)
 
-Parameter `self` merupakan variabel yang merepresentasikan suatu object atau instance. Lewat variabel ini kita bisa mengakses attribute maupun method selama property tersebut masih dalam satu class.
+Parameter `self` merupakan variabel yang merepresentasikan suatu object atau instance. Melalui variabel ini, kita dapat mengakses attribute maupun method (selama property tersebut masih dalam satu class).
 
-Pada contoh sebelumnya terlihat bagaimana aplikasi dari variabel `self` untuk mengakses attribute:
+Pada contoh sebelumnya, terlihat bagaimana aplikasi dari variabel `self` untuk mengakses attribute:
 
 ```python
 class Car:
@@ -128,9 +128,9 @@ class Car:
         print(f"Year released: {self.year}")
 ```
 
-Selain untuk mengakses nilainya, dari variabel `self` suatu attribute juga bisa diubah nilainya, sebagaimana pada contoh berikut nilai attribute `year` dan `description` diubah lewat method baru bernama `set_details()`.
+Selain untuk mengakses nilainya, dari variabel `self` suatu attribute juga dapat diubah nilainya, sebagaimana pada contoh berikut nilai attribute `year` dan `description` diubah melalui pemanggilan method `set_details()`.
 
-Karena method wajib mengisi parameter pertama dengan `self`, maka parameter untuk menampung data `year` dan `description` ditulis setelahnya.
+Karena method wajib dideklarasikan dengan parameter pertama `self`, maka parameter untuk menampung data `year` dan `description` ditulis sebagai parameter setelahnya.
 
 ```python
 class Car:
@@ -185,7 +185,7 @@ Pada pemanggilan method `set_details()` object `car1`:
 
 ## A.31.3. Naming convention method & param
 
-Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama method dianjurkan untuk ditulis menggunakan snake_case (seperti fungsi). Contohnya bisa dilihat pada method `get_name()` berikut:
+Mengacu pada dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama method dianjurkan untuk ditulis menggunakan snake_case (seperti fungsi). Contohnya bisa dilihat pada method `get_name()` berikut:
 
 ```python
 class FavoriteFood:
@@ -212,9 +212,9 @@ class FavoriteFood:
 
 ## A.31.4. Pengaksesan method dari method lain
 
-Lewat variabel `self` tidak hanya attribute yang bisa diakses, melainkan semua property-nya termasuk method. Pada contoh berikut, di dalam method `info()` ada statement pemanggilan method lain yaitu `get_name()`.
+Lewat variabel `self` tidak hanya attribute yang dapat diakses, melainkan juga semua propertinya (termasuk method). Pada contoh berikut, di dalam method `info()` terdapat statement pemanggilan method yaitu `get_name()`.
 
-Method `get_name()` sendiri bertugas mengembalikan data string berisi kombinasi attribute `manufacturer` dan `name`.
+Method `get_name()` mengembalikan data string berisi kombinasi attribute `manufacturer` dan `name`.
 
 ```python
 class Car:
@@ -282,9 +282,9 @@ Aturan-aturan dalam deklarasi parameter dan pengisian argument fungsi juga berla
     car3.set_details(description="Best car in NFS Carbon", year=2003)
     ```
 
-## A.31.6. Argument method: **args** & **kwargs**
+## A.31.6. Argument method: args & kwargs
 
-Selayaknya seperti fungsi, method juga bisa berisi parameter args maupun kwargs.
+Sama seperti fungsi, method juga bisa berisi parameter **args** maupun **kwargs**.
 
 Contoh penerapan **kwargs** pada method bisa dilihat di program berikut. Modifikasi program di atas, pada method `set_details()` ubah isinya menjadi seperti ini:
 
@@ -307,7 +307,7 @@ class Car:
     # ...
 ```
 
-Via parameter **\*\*param** kita bisa menentukan attribute mana yang akan diisi nilainya secara dinamis. Sekarang panggil methodnya lalu isi sesuai kebutuhan, misalnya: 
+Melalui parameter **\*\*param**, kita dapat menentukan attribute mana yang akan diisi nilainya secara dinamis. Sekarang panggil methodnya lalu isi sesuai kebutuhan, misalnya: 
 
 ```python
 car4 = Car()
