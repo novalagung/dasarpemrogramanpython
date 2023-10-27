@@ -183,7 +183,7 @@ Jalankan program untuk melihat outputnya:
 ### ◉ Chapter relevan lainnya
 
 - [OOP ➜ Instance Method](/basic/instance-method)
-- [OOP ➜ Constructor](#)
+- [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Class Attribute & Method](#)
 - [OOP ➜ Inheritance](#)
 

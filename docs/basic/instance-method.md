@@ -338,7 +338,7 @@ Output program:
 ### ◉ Chapter relevan lainnya
 
 - [OOP ➜ Class & Object](/basic/class-object)
-- [OOP ➜ Constructor](#)
+- [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Class Attribute & Method](#)
 - [OOP ➜ Inheritance](#)
 
