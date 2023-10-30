@@ -184,6 +184,7 @@ Jalankan program untuk melihat outputnya:
 
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
+- [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Attribute & Method](#)
 - [OOP ➜ Inheritance](#)
 

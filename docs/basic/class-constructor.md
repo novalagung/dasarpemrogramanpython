@@ -175,6 +175,7 @@ Silakan coba explore dengan mempraktekan penggunaan \*args / \*\*kwargs pada kon
 
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Instance Method](/basic/instance-method)
+- [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Attribute & Method](#)
 - [OOP ➜ Inheritance](#)
 

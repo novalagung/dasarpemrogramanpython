@@ -339,6 +339,7 @@ Output program:
 
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Constructor](/basic/class-constructor)
+- [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Attribute & Method](#)
 - [OOP ➜ Inheritance](#)
 
