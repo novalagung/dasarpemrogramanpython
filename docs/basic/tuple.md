@@ -96,7 +96,7 @@ x = [1, True, "h", 2, 1]
     </tbody>
 </table>
 
-## A.14.2. Penerapan tuple
+## A.14.2. Pengenalan Tuple
 
 Deklarasi tuple menggunakan literal `()` dengan delimiter tanda koma (`,`). Contoh syntax-nya bisa dilihat pada kode berikut:
 

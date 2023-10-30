@@ -4,20 +4,22 @@ title: A.27. Python Modules
 sidebar_label: A.27. Modules
 ---
 
-Pada chapter ini kita akan belajar tentang konsep module beserta penerapannya di Python.
+Pada chapter ini, kita akan menjelajahi konsep module beserta implementasinya di Python.
 
-Module di Python merupakan istilah untuk file yang berisi kode-kode python seperti deklarasi variabel, fungsi, class, dan lainnya yang kode tersebut terisolasi sesuai dengan tugasnya, misalnya:
+## A.27.1. Pengenalan Modules
+
+Module di Python merupakan istilah untuk file yang berisi kode-kode python (seperti deklarasi variabel, fungsi, class, dan lainnya). Kode-kode tersebut diisolasi sesuai dengan tugasnya. Contoh:
 
 - Module `numbers` berisi fungsi-fungsi untuk keperluan operasi angka
 - Module `random` yang isinya kode untuk generate data random
 
 Dengan adanya module kode menjadi lebih modular, rapi, dan mudah dikelola.
 
-## A.27.1. Penerapan module
+Pembuatan module di Python sangat mudah karena dilakukan dengan cukup membuat file. Nama file yang digunakan adalah menjadi nama module. Misalnya, file `calculate.py`, maka nama module adalah `calculate`.
 
-Pembuatan module di Python sangat mudah karena cukup dilakukan dengan membuat file, dan nama file yang dipilih akan menjadi nama module. Misalnya, file `calculate.py` adalah module dengan nama `calculate`.
+Pembuatan module di Python sangat mudah. Cukup buat file, dan nama file tersebut menjadi nama module. Misalnya, file calculate.py menjadi module dengan nama calculate.
 
-Module bisa di-import di module lain, atau digunakan sebagai entrypoint eksekusi program. Misalnya pada banyak praktek di chapter sebelumnya, command `python.exe main.py` sering digunakan. Command tersebut menjadikan module `main` (file `main.py`) sebagai entrypoint eksekusi program.
+Module dapat di-import di module lain, atau digunakan sebagai entry point eksekusi program (sebutannya main module). Misalnya di praktek-praktek pada chapter sebelumnya kita sering menggunakan command `python.exe main.py` untuk menjalankan program Python. Command tersebut menjadikan module `main` (file `main.py`) sebagai entrypoint eksekusi program.
 
 Ok, sekarang mari kita coba praktekan penerapan module sebagai dependency (module yang di-import di module lain).
 
@@ -88,22 +90,21 @@ Output:
 
 ![Python module](img/modules-1.png)
 
-Bisa dilihat pada kode yang sudah dipraktekan bagaimana mudahnya implementasi module di Python. 
+Implementasi module di Python cukup mudah bukan?
 
-Keyword `import` digunakan untuk meng-import suatu module atau class. Pada contoh di atas module `calculate` di-import ke `my_program.py` untuk kemudian digunakan fungsi-fungsinya.
+Keyword `import` digunakan untuk meng-import suatu module atau class. Pada contoh di atas module `calculate` di-import ke `my_program.py` untuk kemudian digunakan fungsi-fungsi didalamnya.
 
-- Pengaksesan variabel/konstanta dari suatu module menggunakan notasi `<module>.<variable/constant>`, contohnya `calcualte.note`.
-- Sedangkan pengaksesan fungsi menggunakan notasi `<module>.<function>()`, contohnya seperti `calculate.calc_hypotenuse()`, `calculate.sqrt()`, dan `calculate.pow()`.
+Pengaksesan variabel/konstanta dari suatu module menggunakan notasi `<module>.<variable/constant>`, contohnya `calcualte.note`.
+
+Sedangkan pengaksesan fungsi menggunakan notasi `<module>.<function>()`, contohnya seperti `calculate.calc_hypotenuse()`, `calculate.sqrt()`, dan `calculate.pow()`.
 
 ## A.27.2. Behaviour import module
 
-Ketika suatu module di-import, maka semua unit yang berada didalamnya bisa diakses dari file yang pengimport.
+Ketika suatu module di-import, semua unit di dalamnya dapat diakses dari file peng-import. Contohnya bisa dilihat pada kode yang sudah ditulis, variabel `note` dan fungsi `calc_hypotenuse()` yang berada di module `calculate`, keduanya bisa langsung digunakan.
 
-Misalnya seperti variabel `note` dan fungsi `calc_hypotenuse()` yang berada di module `calculate`, keduanya bisa diakses.
+Jika dalam module ada statement yang sifatnya bukan deklarasi variabel atau fungsi, misalnya seperti statement print, maka statement tersebut akan langsung dieksekusi saat module ter-import.
 
-Jika dalam module ada statement yang sifatnya bukan deklarasi variabel atau fungsi, misalnya seperti statement print, maka statement tersebut akan langsung dieksekusi. Silakan coba praktekan agar lebih jelas.
-
-Tambahkan saja statement berikut di file `calculate.py`
+Mari coba praktekan. Tambahkan statement berikut di file `calculate.py`:
 
 ```python title="File calculate.py"
 print("hello from calculate")
@@ -123,6 +124,8 @@ def sqrt(x):
     return n
 ```
 
+Jalankan program, lihat hasilnya:
+
 ![Python module](img/modules-2.png)
 
 ## A.27.3. *Naming convention* module
@@ -131,7 +134,7 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
 
 ## A.27.4. Keyword `from` dan `import`
 
-Ada dua bentuk penerapan keyword import, yang pertama adalah untuk meng-import module, contohya seperti pada praktek di atas (`import calculate`); Atau bisa juga dikombinasikan dengan keyword `from` untuk meng-import langsung fungsi yang ingin digunakan, contoh:
+Ada dua bentuk penerapan keyword `import`. Pertama, yaitu untuk meng-import module, contohya seperti pada praktek di atas (`import calculate`). Kedua, adalah mengkombinasikan keyword tersebut dengan keyword `from` untuk meng-import langsung fungsi atau item lainnya dari suatu module. Contoh:
 
 ```python title="File my_program.py"
 a = 10
@@ -155,9 +158,9 @@ print("hypotenuse:", res)
 
 Dua versi berbeda `my_program.py` di atas adalah ekuivalen, keduanya melakukan operasi yang sama persis dan menghasilkan output yang sama pula.
 
-Perbedaannya pada contoh ke-2, variabel `note`, fungsi `calc_hypotenuse()` dan `sqrt()` di-import secara langsung menggunakan statement `from calculate import <function>`.
+Pada contoh ke-2 (program yang baru saja ditulis), variabel `note`, fungsi `calc_hypotenuse()` dan `sqrt()` di-import secara langsung via statement `from calculate import <function>`.
 
-Untuk penulisannya bisa dituliskan satu per satu statement import-nya, atau bisa cukup sebaris saja (ini berlaku untuk import fungsi-fungsi yang bersumber dari module yang sama).
+Untuk penulisannya bisa dituliskan satu per satu statement import-nya, atau bisa cukup sebaris saja (cara ini hanya berlaku untuk import item yang bersumber dari module yang sama).
 
 ```python
 from calculate import note
@@ -171,11 +174,11 @@ from calculate import note, calc_hypotenuse, sqrt
 
 ### ◉ Fungsi `pow()`
 
-Fungsi `pow()` merupakan salah satu fungsi bawaan Python Standard Library, jadi bisa digunakan secara langsung tanpa harus meng-import apapun.
+Fungsi `pow()` merupakan fungsi bawaan Python Standard Library yang bisa langsung digunakan tanpa perlu meng-import apapun.
 
-Penggunaannya sangat mudah, langsung tulis saja `pow(a, b)` dimana hasilnya adalah operasi matematika `a pangkat b`.
+Cara penggunaan fungsi `pow()` adalah dengan langsung menulisnya dalam skema `pow(a, b)`. Fungsi ini menghasilkan operasi matematika `a pangkat b`.
 
-Pada kode di atas, fungsi `pow()` milik module `calculate` tidak di-import agar tidak meng-override atau menimpa fungsi `pow()` bawaan Python.
+Pada kode di atas, fungsi `pow()` milik module `calculate` sengaja tidak di-import agar tidak meng-override atau menimpa fungsi `pow()` bawaan Python.
 
 ## A.27.5. Statement `from <module> import *`
 
@@ -235,7 +238,7 @@ Penjelasan:
 
 ## A.27.7. Urutan pencarian module
 
-Ketika suatu module di-import, Python akan melakukan pencarian file module di beberapa tempat secara berurutan:
+Ketika suatu module di-import, Python akan melakukan pencarian file module di beberapa berikut tempat secara berurutan:
 
 1. Pertama, Python akan mencari module di folder yang sama dimana statement `import` digunakan.
 2. Jika pencarian pertama tidak menemukan hasil, maka Python lanjut mencari file module ke folder dimana environment variable `PYTHONPATH` di-set.
@@ -244,7 +247,7 @@ Ketika suatu module di-import, Python akan melakukan pencarian file module di be
 
 ## A.27.8. File module dalam folder
 
-Bagaiaman jika suatu file module (misalnya `calculate.py`) berada di dalam suatu folder (subfolder), apakah cara import-nya sama? Sebenarnya sama namun ada sedikit. Kita akan bahas pada chapter selanjutnya, yaitu [Packages](/basic/packages).
+Bagaimana jika suatu file module (misalnya `calculate.py`) berada di dalam suatu sub-folder dalam folder program, apakah cara import-nya sama? Sebenarnya sama namun ada sedikit perbedaan yang harus diketahui. Selengkapnya akan kita bahas pada chapter selanjutnya, yaitu [Packages](/basic/packages).
 
 ---
 

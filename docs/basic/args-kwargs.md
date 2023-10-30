@@ -6,7 +6,7 @@ sidebar_label: A.24. Function ➜ Args & Kwargs
 
 Pada chapter ini kita akan belajar tentang penerapan args dan kwargs pada fungsi di Python.
 
-## A.24.1. Args
+## A.24.1. Pengenalan Args
 
 **Args** (atau yang umumnya ditulis sebagai **\*args**) merupakan notasi penulisan parameter spesial dengan kapabilitas bisa menampung banyak *positional argument* untuk ditampung dalam 1 parameter saja.
 
@@ -94,7 +94,7 @@ sum_then_print("total nilai:", 2, 3, 4, 5, 4, suffix_message="selesai!")
 # output ➜ total nilai: 18 selesai!
 ```
 
-## A.24.2. Kwargs
+## A.24.2. Pengenalan Kwargs
 
 **Kwargs** (atau yang umumnya ditulis sebagai **\*\*kwargs** atau **keyword arguments**) merupakan notasi penulisan parameter spesial dengan kapabilitas bisa menampung banyak *keyword argument* pemanggilan fungsi dalam 1 parameter saja.
 

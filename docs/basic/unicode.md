@@ -10,7 +10,7 @@ Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam penge
 
 Pada chapter ini kita akan membahas tentang bagaimana implementasi Unicode di Python.
 
-## A.18.1. Penerapan *Unicode*
+## A.18.1. Pengenalan Unicode String
 
 Dalam dunia per-Unicode-an, ada yang disebut dengan **code point** yaitu suatu angka numerik (bisa desimal maupun hexadecimal) yang merepresentasikan karakter tertentu. Jadi bisa diibaratkan *identifier* dari suatu karakter. Semua karakter ada *code point*-nya, termasuk huruf A, B, C, maupun karakter lainnya (angka, tulisan romawi, symbol, dll).
 

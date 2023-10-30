@@ -113,7 +113,7 @@ x = [1, True, "h", 2, 1]
     </tbody>
 </table>
 
-## A.15.2. Penerapan set
+## A.15.2. Pengenalan Set
 
 Implementasi tipe data set cukup mudah, langsung tulis saja nilai elemen dengan separator `,` dan diapit menggunakan tanda kurung kurawal `{ }`. Contoh:
 

@@ -6,7 +6,7 @@ sidebar_label: A.25. Function ➜ Closure
 
 Closure adalah istilah umum dalam programming untuk deklarasi fungsi yang berada di dalam fungsi (*nested function*). Pada chapter ini kita akan mempelajari cara implementasinya.
 
-## A.25.1. Penerapan closure / *nested function*
+## A.25.1. Pengenalan Closure
 
 Di Python, fungsi bisa dideklarasikan di-dalam suatu fungsi. Penerapannya cukup berguna pada kasus dimana ada blok kode yang perlu di-eksekusi lebih dari satu kali tetapi eksekusinya hanya di dalam fungsi tertentu, atau eksekusinya setelah pemanggilan fungsi tertentu.
 
