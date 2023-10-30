@@ -33,3 +33,7 @@ https://dasarpemrogramanpython.novalagung.com/basic/lambda
 https://dasarpemrogramanpython.novalagung.com/basic/modules
 https://dasarpemrogramanpython.novalagung.com/basic/packages
 https://dasarpemrogramanpython.novalagung.com/basic/special-names
+https://dasarpemrogramanpython.novalagung.com/basic/class-object
+https://dasarpemrogramanpython.novalagung.com/basic/instance-method
+https://dasarpemrogramanpython.novalagung.com/basic/class-constructor
+https://dasarpemrogramanpython.novalagung.com/basic/property-visibility
