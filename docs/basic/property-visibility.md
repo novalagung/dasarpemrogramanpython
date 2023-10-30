@@ -112,6 +112,8 @@ Output program:
 
 Sebelumnya telah disebutkan bahwa prefix `__` dalam penerapannya tidak benar-benar membuat property menjadi private. Silakan test dengan autocompletion editor, property private masih muncul, menandakan bahwa property tersebut tidak benar-benar private.
 
+![Property visibility Python](img/property-visibility-2.png)
+
 Meskipun demikian, solusi ini cukup efektif untuk memberi petunjuk kepada programmer bahwa property tersebut tidak didesain untuk konsumsi publik.
 
 ---
