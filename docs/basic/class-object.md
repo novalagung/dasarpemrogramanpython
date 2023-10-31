@@ -185,7 +185,8 @@ Jalankan program untuk melihat outputnya:
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Class Attribute & Method](#)
+- [OOP ➜ Instance Property vs Class Property](/basic/instance-property-vs-class-property)
+- [OOP ➜ Instance Method vs Class Method](/basic/instance-method-vs-class-method)
 - [OOP ➜ Inheritance](#)
 
 ### ◉ Referensi

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 37
-title: A.37. Python Error & Exception
-sidebar_label: A.37. Error & Exception (WIP)
+sidebar_position: 38
+title: A.38. Python Error & Exception
+sidebar_label: A.38. Error & Exception (WIP)
 ---
