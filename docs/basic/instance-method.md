@@ -192,8 +192,11 @@ class FavoriteFood:
     def __init__(self):
         self.name = ""
 
-    def get_name(self):
+    def print_name(self):
         print(self.name)
+
+    def get_name(self) -> str:
+        return self.name
 ```
 
 Sedangkan aturan penulisan nama parameter/argument adalah sama seperti nama variabel, yaitu menggunakan snake_case juga. Misalnya:
@@ -203,8 +206,11 @@ class FavoriteFood:
     def __init__(self):
         self.name = ""
 
-    def get_name(self):
+    def print_name(self):
         print(self.name)
+
+    def get_name(self) -> str:
+        return self.name
 
     def set_name(self, name):
         self.name = name

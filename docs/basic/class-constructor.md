@@ -29,7 +29,7 @@ print(mount_kilimanjaro)
 # output ➜ <__main__.Mountain object at 0x0000019118A11390>
 ```
 
-Class `Mountain` dideklarasikan tanpa berisi apapun. Kelas tersebut bisa digunakan untuk membuat variabel object `mount_everest` dan `mount_kilimanjaro` dengan cara memanggil konstruktornya, yaitu `Mountain()`.
+Class `Mountain` dideklarasikan tanpa berisi apapun (oleh karena itu keyword `pass` digunakan). Kelas tersebut bisa digunakan untuk membuat variabel object `mount_everest` dan `mount_kilimanjaro` dengan cara memanggil konstruktornya, yaitu `Mountain()`.
 
 Dalam deklarasi class yang memiliki attribute, constructor wajib di-*replace* (atau istilah OOP-nya adalah di-*override*) dengan custom constructor yang didalamnya berisi deklarasi instance attribute.
 
@@ -119,7 +119,7 @@ Contoh constructor overloading menggunakan opsional parameter:
 
 ```python
 class Mountain:
-    def __init__(self, name = "", region = "", elevation = ""):
+    def __init__(self, name = "", region = "", elevation = 0):
         self.name = name
         self.region = region
         self.elevation = elevation
@@ -156,6 +156,33 @@ Penjelasan:
 - Variabel object `mount_kosciuszko` dibuat dengan tanpda diikuti dengan argument parameter. 
 
 Silakan coba explore dengan mempraktekan penggunaan \*args / \*\*kwargs pada konstruktor.
+
+## A.32.4. Constructor dengan return type `None`
+
+Constructor dipanggil saat inisialisasi object, maka bisa dibilang bahwa tersebut selalu mengembalikan tipe data bertipe class dimana constructor tersebut dideklarasikan.
+
+Dalam pembuatan konstruktor, tidak perlu menuliskan return type maupun return statement.
+
+Meski demikian, sebenarnya sebenarnya ada 1 lagi bentuk penulisan konstruktor, yaitu dengan ditambahkan tipe data `None` dibelakangnya, dan ini diperbolehkan. Contohnya:
+
+```python
+class Mountain:
+    def __init__(self, name = "", region = "", elevation = 0) -> None:
+        self.name = name
+        self.region = region
+        self.elevation = elevation
+```
+
+Kode di atas adalah ekuivalen dengan kode berikut:
+
+```python
+class Mountain:
+    def __init__(self, name = "", region = "", elevation = 0):
+        self.name = name
+        self.region = region
+        self.elevation = elevation
+```
+
 
 ---
 
