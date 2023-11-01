@@ -251,9 +251,11 @@ FavoriteFood.print_name(food1)
 print(food1.get_name())
 ```
 
-Pada kode di atas, `food1` merupakan instance object dari class `FavoriteFood`. Lewat object tersebut beberapa method dipanggil (`set_name()`, `print_name()`, dan `get_name()`).
+Pada kode di atas, `food1` merupakan instance object dari class `FavoriteFood`. Lewat object tersebut 3 buah method ini dipanggil: `set_name()`, `print_name()`, dan `get_name()`.
 
-Kemudian dibawahnya, method `set_name()` dan `print_name()` dipanggil lagi, dengan argument parameter parameter pertama diisi instance object `food1`. Penulisan seperti ini diperbolehkan dan ekuivalen dengan penulisan normal pemanggilan method.
+Kemudian dibawahnya lagi, method `set_name()` dan `print_name()` dipanggil ulang namun dengan syntax yang berbeda. Method dipanggil dari class dan argument parameter parameter pertamanya diisi instance object `food1`.
+
+Penulisan pemanggilan method dari class seperti itu adalah diperbolehkan dan ekuivalen dengan pemanggilan instance method via instance object. Perbedaannya:
 
 - Pada pengaksesan instance method via instance object, parameter `self` tidak perlu diisi.
 - Pada pengaksesan instance method via class, parameter `self` harus selalu diisi dengan instance object.
