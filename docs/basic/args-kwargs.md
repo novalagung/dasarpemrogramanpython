@@ -209,9 +209,9 @@ print_all("hello world", 1, True, ("yesn't", "nope"), say_something="how are you
 ### ◉ Chapter relevan lainnya
 
 - [Function](/basic/function)
-- [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
+- [Function ➜ Closure](/basic/closure)
+- [Function ➜ Lambda](/basic/lambda)
 
 ### ◉ Referensi
 

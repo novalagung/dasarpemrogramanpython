@@ -320,7 +320,7 @@ print(f"n1 is n2: {n1 is n2}")
 
 ### ◉ Chapter relevan lainnya
 
-- [Slicing](/basic/slice)
+- [Slice](/basic/slice)
 
 ### ◉ TBA
 

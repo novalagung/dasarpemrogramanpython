@@ -125,7 +125,7 @@ calculate_circle_area("area of circle:", 788)
 
 Fungsi bisa tidak memiliki parameter, satu parameter, atau bisa lebih dari satu, tidak ada batasan.
 
-> Python memiliki **args** dan **kwargs**, nantinya kita akan mempelajarinya pada chapter [Args & Kwargs](/basic/args-kwargs)
+> Python memiliki **args** dan **kwargs**, pembahasan detailnya ada di chapter [Function ➜ Args & Kwargs](/basic/args-kwargs)
 
 O iya, argument fungsi bisa dituliskan secara horizontal maupun vertikal. Misalnya:
 
@@ -294,10 +294,10 @@ Dari blok kode di atas, nantinya engineer akan tau bahwa fungsi tersebut akan di
 
 ### ◉ Chapter relevan lainnya
 
-- [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
+- [Function ➜ Args & Kwargs](/basic/args-kwargs)
+- [Function ➜ Closure](/basic/closure)
+- [Function ➜ Lambda](/basic/lambda)
 
 ### ◉ Referensi
 

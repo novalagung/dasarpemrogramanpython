@@ -233,9 +233,9 @@ Argument pemanggilan fungsi yang ditulis menggunakan metode *keyword argument* h
 ### ◉ Chapter relevan lainnya
 
 - [Function](/basic/function)
-- [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Function ➜ Args & Kwargs](/basic/args-kwargs)
+- [Function ➜ Closure](/basic/closure)
+- [Function ➜ Lambda](/basic/lambda)
 
 ### ◉ Referensi
 

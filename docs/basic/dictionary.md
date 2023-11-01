@@ -28,7 +28,9 @@ profile = {
 }
 ```
 
-Literal dictionary ditulis dengan menggunakan `{ }`, mirip seperti [Set](/basic/set), hanya saja bedanya pada tipe dictionary isinya berbentuk **key-value**.
+Literal dictionary ditulis dengan menggunakan `{ }`, mirip seperti tipe data set, hanya saja bedanya pada tipe dictionary isinya berbentuk **key-value**.
+
+> Pembahasan detail mengenai tipe data set ada di chapter [Set](/basic/set)
 
 Ok, sekarang dari kode di atas, coba tambahkan kode berikut untuk melihat bagaimana data dictionary dimunculkan di layar console.
 
@@ -422,7 +424,7 @@ print("len:", len(profile), "data:", profile)
 
 ### ◉ Chapter relevan lainnya
 
-- [Class & object](/basic/class-object)
+- [OOP ➜ Class & Object](/basic/class-object)
 
 ### ◉ Referensi
 

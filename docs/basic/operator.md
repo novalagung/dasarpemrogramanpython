@@ -99,9 +99,7 @@ print("id(num_1): %s, id(num_2): %s" % (id(num_1), id(num_2)))
 
 ![operator is dan not di python](img/operator-1.png)
 
-> Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik.
->
-> Pembahasannya ada di chapter terpisah, yaitu [Object ID & Reference](/basic/object-id-reference).
+> Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik. Pembahasan detailnya ada di chapter [Object ID & Reference](/basic/object-id-reference).
 
 ### ◉ Fungsi `print()` tanpa string formatting
 
@@ -135,7 +133,7 @@ print("id_data_1:", id_data_1)
 
 Nilai kembalian fungsi `id()` bertipe numerik.
 
-> Pembahasan versi detail mengenai fungsi `id()` ada di chapter [Object ID & Reference](/basic/object-id-reference)
+> Pembahasan detail mengenai fungsi `id()` ada pada chapter [Object ID & Reference](/basic/object-id-reference)
 
 ## A.7.7. Operator *membership* (`in`)
 
@@ -190,7 +188,7 @@ print(is_substring_exists)
 
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
-- [String: formatting](/basic/string#a173-string-formatting)
+- [String ➜ formatting](/basic/string#a173-string-formatting)
 
 ### ◉ Referensi
 

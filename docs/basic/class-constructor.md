@@ -113,7 +113,10 @@ Seperti halnya method, parameter pertama konstruktor harus `self`. Dari sini bis
 
 Overloading merupakan istilah OOP untuk pembuatan banyak konstruktor dengan jumlah dan tipe parameter berbeda.
 
-Python tidak menyediakan API untuk penerapan constructor overloading, namun pada praktiknya bisa dicapai dengan *hack*, misalnya menggunakan [opsional / keyword parameter](/basic/positional-optional-keyword-argument) atau menggunakan [\*args / \*\*kwargs](/basic/args-kwargs).
+Python tidak menyediakan API untuk penerapan constructor overloading, namun pada praktiknya bisa dicapai dengan *hack*, misalnya menggunakan opsional/keyword parameter, atau menggunakan \*args/\*\*kwargs.
+
+> - Pembahasan detail mengenai opsional / keyword parameter ada di chapter [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
+> - Pembahasan detail mengenai args dan kwargs ada di chapter [Function ➜ Args & Kwargs](/basic/args-kwargs)
 
 Contoh constructor overloading menggunakan opsional parameter:
 
@@ -203,9 +206,9 @@ class Mountain:
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Property vs Class Property](/basic/instance-property-vs-class-property)
-- [OOP ➜ Instance Method vs Class Method](/basic/instance-method-vs-class-method)
-- [OOP ➜ Inheritance](#)
+- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
+- [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
+- [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi
 

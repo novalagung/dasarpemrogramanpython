@@ -266,7 +266,7 @@ Bagaimana jika suatu file module (misalnya `calculate.py`) berada di dalam suatu
 ### ◉ Chapter relevan lainnya
 
 - [Packages](/basic/packages)
-- [Special names](/basic/special-names)
+- [Special Names](/basic/special-names)
 
 ### ◉ Referensi
 

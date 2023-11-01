@@ -272,7 +272,7 @@ Meskipun module dalam package tidak digunakan via statement `import *`, dianjurk
 
 ### ◉ Special name `__all__`
 
-Variabel yang diawali dan diakhir dengan karakter double underscore seperti `__all__` disebut sebagai variabel **special name**. Pembahasan lebih lanjut tentangnya ada di chapter [Special Names](/basic/special-names).
+Variabel yang diawali dan diakhir dengan karakter double underscore seperti `__all__` disebut sebagai variabel **special name**. Pembahasan lebih lanjut tentang special names ada di chapter [Special Names](/basic/special-names).
 
 ---
 

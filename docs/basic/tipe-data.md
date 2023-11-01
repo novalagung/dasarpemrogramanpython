@@ -21,7 +21,7 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 | `float` | menampung bilangan desimal atau *floating point* | ` number_2 = 3.14 ` |
 | `complex` | menampung nilai berisi kombinasi bilangan real dan imajiner | ` number_3 = 120+3j ` |
 
-> Lebih detailnya mengenai string dibahas pada chapter [Number/Bilangan](/basic/number-bilangan)
+> Penjelasan detail mengenai string ada pada chapter [Number](/basic/number-bilangan)
 
 ## A.6.2. Tipe data string / `str`
 
@@ -61,7 +61,7 @@ Preiiii
 '''
 ```
 
-> Lebih detailnya mengenai string dibahas pada chapter [String](/basic/string)
+> Penjelasan detail mengenai string ada pada chapter [String](/basic/string)
 
 ## A.6.3. Tipe data `bool`
 
@@ -95,7 +95,7 @@ print(list_1[2])
 # output ➜ 8
 ```
 
-> Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
+> Penjelasan detail mengenai list ada pada chapter [List](/basic/list)
 
 ## A.6.5. Tipe data tuple
 
@@ -123,7 +123,7 @@ print(tuple_1[2])
 # output ➜ 4
 ```
 
-> Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
+> Penjelasan detail mengenai tuple ada pada chapter [Tuple](/basic/tuple)
 
 ## A.6.6. Tipe data dictionary
 
@@ -154,7 +154,7 @@ Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti ber
 profile_1 = { "name": "Noval", "hobbies": ["gaming", "learning"] }
 ```
 
-> Lebih detailnya mengenai dictionary dibahas pada chapter [Dictionary](/basic/dictionary)
+> Penjelasan detail mengenai dictionary ada pada chapter [Dictionary](/basic/dictionary)
 
 ## A.6.7. Tipe data set
 
@@ -172,11 +172,14 @@ print(set_1)
 # output ➜ {"pineapple", "spaghetti"}
 ```
 
-> Lebih detailnya mengenai set dibahas pada chapter [Set]/basic/set)
+> Penjelasan detail mengenai set ada pada chapter [Set](/basic/set)
 
 ## A.6.8. Tipe data lainnya
 
-Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti [frozenset](/basic/set#a157-frozenset), bytes, memoryview, [range](/basic/for-range#a92-penerapan-fungsi-range); dan kesemuanya akan dibahas satu per satu di chapter terpisah.
+Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset, bytes, memoryview, range; yang kesemuanya akan dibahas satu per satu di chapter terpisah.
+
+> - Penjelasan detail mengenai frozenset ada pada chapter [Set ➜ frozenset](/basic/set#a157-frozenset)
+> - Penjelasan detail mengenai range ada pada chapter [Perulangan ➜ for & range](/basic/for-range#a92-penerapan-fungsi-range)
 
 ---
 
@@ -197,8 +200,8 @@ Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti [frozenset
 - [String](/basic/string)
 - [List](/basic/list)
 - [Tuple](/basic/tuple)
-- [Dictionary](/basic/dictionary)
 - [Set](/basic/set)
+- [Dictionary](/basic/dictionary)
 
 ### ◉ Referensi
 

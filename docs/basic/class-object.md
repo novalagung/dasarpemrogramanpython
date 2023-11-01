@@ -26,7 +26,7 @@ class Car:
 
 Pada contoh di atas, class `Car` memiliki tiga attribute: `name`, `manufacturer`, dan `year`. Nantinya, variabel objek yang dibuat dari class tersebut akan memiliki tiga atribut sesuai dengan yang dideklarasikan.
 
-> Fungsi `__init__(self)` disebut dengan method konstruktor. Pembahasan mengenai konstruktor ada di chapter [Class ➜ Constructor](#)
+> Fungsi `__init__(self)` disebut dengan method konstruktor. Pembahasan detail mengenai konstruktor ada di chapter [Class ➜ Constructor](#)
 
 ### ◉ Deklarasi class tanpa attribute
 
@@ -45,7 +45,7 @@ class Car:
     pass
 ```
 
-> Pembahasan versi detail tentang keyword `pass` ada pada chapter [Function ➜ Keyword pass](/basic/function#a225-keyword-pass)
+> Pembahasan detail mengenai keyword `pass` ada di chapter [Function section Keyword pass](/basic/function#a225-keyword-pass)
 
 ## A.30.2. Naming convention class
 
@@ -185,9 +185,9 @@ Jalankan program untuk melihat outputnya:
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Property vs Class Property](/basic/instance-property-vs-class-property)
-- [OOP ➜ Instance Method vs Class Method](/basic/instance-method-vs-class-method)
-- [OOP ➜ Inheritance](#)
+- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
+- [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
+- [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi
 

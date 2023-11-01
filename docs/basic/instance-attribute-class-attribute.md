@@ -1,12 +1,12 @@
 ---
 sidebar_position: 34
-title: A.34. Python OOP ➜ Instance Attribute vs. Class Attribute
-sidebar_label: A.34. OOP ➜ Instance vs. Class Attribute
+title: A.34. Python OOP ➜ Instance Attribute & Class Attribute
+sidebar_label: A.34. OOP ➜ Instance Attribute & Class Attribute
 ---
 
-Pada chapter ini, kita akan belajar tentang class attribute beserta perbedaannya dibanding dengan instance attribute.
+Pada chapter ini, kita akan belajar lebih dalam tentang attribute suatu class, jenis-jenisnya, dan penerapannya.
 
-## A.34.1. Instance attribute vs. class attribute
+## A.34.1. Attributes
 
 Attribute merupakan salah satu property class selain method. Python mengenal dua jenis attribute yaitu instance attribute (yang sudah kita bahas di beberapa chapter sebelumnya) dan class attribute.
 
@@ -98,7 +98,7 @@ for s in songs:
 
 Output program:
 
-![Class attribute & classs method](img/instance-attribute-vs-class-attribute-1.png)
+![Class attribute & classs method](img/instance-attribute-class-attribute-1.png)
 
 Class attribute biasanya diterapkan untuk menyimpan data yang sifatnya global dan tidak terpaut ke object, contohnya seperti attribute `note` dan `version` pada class `Song` di atas.
 
@@ -221,8 +221,8 @@ print(f"Object book2 note: {book2.note}")
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/instance-attribute-vs-class-attribute">
-        github.com/novalagung/dasarpemrogramanpython-example/../instance-attribute-vs-class-attribute
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/instance-attribute-class-attribute">
+        github.com/novalagung/dasarpemrogramanpython-example/../instance-attribute-class-attribute
     </a>
 </pre>
 
