@@ -21,7 +21,7 @@ Pada chapter ini kita akan belajar tentang topik ini.
 
 Tipe data tuple sekilas memiliki beberapa kemiripan dan juga perbedaan jika dibandingkan dengan list.
 
-<table class="no-content-background content-align-center">
+<table class="no-content-background">
     <thead>
         <tr>
             <th>&nbsp;</th>

@@ -218,7 +218,108 @@ class FavoriteFood:
         self.name = name
 ```
 
-## A.31.4. Pengaksesan method dari method lain
+## A.31.4. Pengaksesan instance method dari class
+
+Sebenarnya ada dua cara untuk mengakses instance method:
+
+1. Lewat instance object, contohnya seperti kode `car1.set_details()` yang telah dipraktekan.
+2. Lewat class dengan ketentuan dalam pemanggilan methodnya, parameter pertama harus diisi dengan instance object.
+
+Silakan perhatikan kode berikut agar lebih jelas mengenai cara ke-2.
+
+```python
+class FavoriteFood:
+    def __init__(self):
+        self.name = ""
+
+    def print_name(self):
+        print(self.name)
+
+    def get_name(self) -> str:
+        return self.name
+
+    def set_name(self, name):
+        self.name = name
+
+food1 = FavoriteFood()
+food1.set_name("Pizza")
+food1.print_name()
+print(food1.get_name())
+
+FavoriteFood.set_name(food1, "Burger")
+FavoriteFood.print_name(food1)
+print(food1.get_name())
+```
+
+Pada kode di atas, `food1` merupakan instance object dari class `FavoriteFood`. Lewat object tersebut beberapa method dipanggil (`set_name()`, `print_name()`, dan `get_name()`).
+
+Kemudian dibawahnya, method `set_name()` dan `print_name()` dipanggil lagi, dengan argument parameter parameter pertama diisi instance object `food1`. Penulisan seperti ini diperbolehkan dan ekuivalen dengan penulisan normal pemanggilan method.
+
+- Pada pengaksesan instance method via instance object, parameter `self` tidak perlu diisi.
+- Pada pengaksesan instance method via class, parameter `self` harus selalu diisi dengan instance object.
+
+Agar makin jelas, silakan lihat tabel berikut. Contoh di kolom pertama adalah ekuivalen dengan contoh di kolom ke 2.
+
+<table class="no-content-background">
+    <thead>
+        <tr>
+            <th class="aligh-left">Via instance object</th>
+            <th class="aligh-left">Via class</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+<td>
+
+```python
+food1.set_name("Pizza")
+```
+
+</td>
+<td>
+
+```python
+FavoriteFood.set_name(food1, "Pizza")
+```
+
+</td>
+        </tr>
+        <tr>
+<td>
+
+```python
+food1.print_name()
+```
+
+</td>
+<td>
+
+```python
+FavoriteFood.print_name(food1)
+```
+
+</td>
+        </tr>
+        <tr>
+<td>
+
+```python
+food1.get_name()
+```
+
+</td>
+<td>
+
+```python
+FavoriteFood.get_name(food1)
+```
+
+</td>
+        </tr>
+    </tbody>
+</table>
+
+## A.31.5. Pengaksesan method dari method lain
 
 Lewat variabel `self` tidak hanya instance attribute yang dapat diakses, melainkan semua jenis property (termasuk instance method). Pada contoh berikut, di dalam method `info()` terdapat statement pemanggilan method yaitu `get_name()`.
 
@@ -245,7 +346,7 @@ class Car:
         print(f"Year released: {self.year}")
 ```
 
-## A.31.5. Argument method: positional, optional, keyword arg
+## A.31.6. Argument method: positional, optional, keyword arg
 
 Aturan-aturan dalam deklarasi parameter dan pengisian argument fungsi juga berlaku pada method, diantaranya:
 
@@ -290,7 +391,7 @@ Aturan-aturan dalam deklarasi parameter dan pengisian argument fungsi juga berla
     car3.set_details(description="Best car in NFS Carbon", year=2003)
     ```
 
-## A.31.6. Argument method: args & kwargs
+## A.31.7. Argument method: args & kwargs
 
 Sama seperti fungsi, method juga bisa berisi parameter **args** maupun **kwargs**.
 

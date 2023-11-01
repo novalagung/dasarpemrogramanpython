@@ -21,7 +21,7 @@ Pada chapter ini, selain mempelajari tentang `set` kita akan bahas juga satu var
 
 Tipe data set sekilas memiliki kemiripan jika dibandingkan dengan tuple dan list, namun sebenarnya lebih banyak perbedaannya. Silakan lihat tabel berikut untuk lebih jelasnya.
 
-<table class="no-content-background content-align-center">
+<table class="no-content-background">
     <thead>
         <tr>
             <th>&nbsp;</th>

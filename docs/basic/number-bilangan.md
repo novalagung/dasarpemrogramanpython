@@ -97,7 +97,7 @@ Output program:
 
 Perbedaan lengkap tentang prefix dan suffix tiap basis bilangan bisa dicek pada tabel berikut:
 
-<table class="no-content-background content-align-center">
+<table class="no-content-background">
     <thead>
         <tr>
             <th rowspan="2">Nama</th>
