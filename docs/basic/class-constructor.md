@@ -207,7 +207,9 @@ class Mountain:
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
-- [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
+- [OOP ➜ Class Method](/basic/class-method)
+- [OOP ➜ Static Method](#)
+- [OOP ➜ Random Remarks](#)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi

@@ -232,8 +232,10 @@ print(f"Object book2 note: {book2.note}")
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
-- [OOP ➜ Inheritance](#)
+- [OOP ➜ Class Method](/basic/class-method)
+- [OOP ➜ Static Method](#)
+- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Class Inheritance](#)
 
 ### ◉ TBA
 
