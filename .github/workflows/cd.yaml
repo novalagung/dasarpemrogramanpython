@@ -50,10 +50,9 @@ jobs:
     - name: install pdftk
       run: sudo apt install pdftk
     - name: join cover and pdf
-      # run: |
-      #   pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanpython.novalagung.com.pdf cat output pdf/dasarpemrogramanpython.pdf
-      #   rm -f pdf/dasarpemrogramanpython.novalagung.*
-      run: mv pdf/dasarpemrogramanpython.novalagung.com.pdf pdf/dasarpemrogramanpython.pdf
+      run: |
+        pdftk "etc/cover ebook.pdf" pdf/dasarpemrogramanpython.novalagung.com.pdf cat output pdf/dasarpemrogramanpython.pdf
+        rm -f pdf/dasarpemrogramanpython.novalagung.*
     - name: publish ebook
       uses: peaceiris/actions-gh-pages@v3
       with:
