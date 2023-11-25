@@ -100,7 +100,7 @@ Program di atas menghasilkan output berikut:
 ![special char python](img/string-1.png)
 
 
-> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Lebih jelasnya dibahas pada chapter [Number/Bilangan](/basic/number-bilangan).
+> Syntax `0xC548` adalah salah satu penulisan numerik berbasis hexadecimal. Pembahasan detailnya ada di chapter [Number](/basic/number-bilangan).
 
 ## A.17.3. String formatting
 
@@ -734,8 +734,8 @@ Ada beberapa metode konversi tipe data ke string, diantaranya:
 
 ### ◉ Chapter relevan lainnya
 
-- [Unicode](/basic/unicode)
-- [Slicing](/basic/slice)
+- [String ➜ Unicode](/basic/unicode)
+- [Slice](/basic/slice)
 
 ### ◉ TBA
 

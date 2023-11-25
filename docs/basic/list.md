@@ -159,7 +159,7 @@ print(numbers)
 # output ➜ [1, 2, 3, 4]
 ```
 
-> Lebih detailnya mengenai tuple dibahas pada chapter [Tuple](/basic/tuple)
+> Pembahasan detail mengenai tuple ada di chapter [Tuple](/basic/tuple)
 
 ## A.12.5. Operasi pada list
 
@@ -218,7 +218,7 @@ print('slice_1:', slice_1)
 # output ➜ slice_1: ['cd', 'hi']
 ```
 
-> Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
+> Pembahasan detail mengenai slice ada di chapter [Slice](/basic/slice)
 
 ### ◉ Mengubah nilai element
 
@@ -264,7 +264,11 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     # output ➜ after : [10, 70, 20, 88, 87]
     ```
 
-> - Lebih detailnya mengenai method dibahas pada chapter [Method](#)
+> Pembahasan detail mengenai method nantinya ada 3 chapter terpisah:
+>
+> - [OOP ➜ Instance Method](/basic/instance-method)
+> - [OOP ➜ Class Method](/basic/class-method)
+> - [OOP ➜ Static Method](#)
 
 ### ◉ *Extend/concat/union* element
 
@@ -533,7 +537,8 @@ print(list_2)
 
 Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya dengan cara menambahkan closure/lambda pada argument method ini.
 
-> Lebih detailnya mengenai closure/lambda dibahas pada chapter [Closure](/basic/closure) & [Lambda](/basic/lambda)
+> Pembahasan detail mengenai tuple ada di chapter [Function ➜ Closure](/basic/closure)
+> Pembahasan detail mengenai lambda ada di chapter [Function ➜ Lambda](/basic/lambda)
 
 ---
 
@@ -551,11 +556,11 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 
 ### ◉ Chapter relevan lainnya
 
-- [Perulangan ➜ for, range](/basic/for-range)
+- [Perulangan ➜ for & range](/basic/for-range)
 - [List Comprehension](/basic/list-comprehension)
-- [Slicing](/basic/slice)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Slice](/basic/slice)
+- [Function ➜ Closure](/basic/closure)
+- [Function ➜ Lambda](/basic/lambda)
 
 ### ◉ TBA
 

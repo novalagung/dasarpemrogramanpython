@@ -1,7 +1,7 @@
 ---
 sidebar_position: 9
-title: A.9. Perulangan Python ➜ for, range
-sidebar_label: A.9. Perulangan ➜ for, range
+title: A.9. Perulangan Python ➜ for & range
+sidebar_label: A.9. Perulangan ➜ for & range
 description: Tutorial belajar perulangan/iterasi di Python menggunakan for dan range. 
 keywords: [perulangan, loop, for, range, looping]
 faqs:
@@ -50,8 +50,8 @@ print("r:", list(r))
 
 ![perulangan for range](img/for-range-2.png)
 
-> - Lebih detailnya mengenai list dibahas pada chapter [List](/basic/list)
-> - Lebih detailnya mengenai mengenai *type conversion* dibahas pada chapter [Konversi Tipe Data](#)
+> - Pembahasan detail mengenai list ada di chapter [List](/basic/list)
+> - Pembahasan detail mengenai *type conversion* ada di chapter [Konversi Tipe Data](#)
 
 ## A.9.2. Penerapan fungsi `range()`
 
@@ -229,7 +229,7 @@ Fungsi `print()` memiliki parameter opsional bernama `end`, kegunaannya untuk me
 
 Statement `print("*", end=" ")` akan menghasilkan pesan `* ` yang di-akhiri dengan karakter spasi karena nilai parameter `end` di-set dengan nilai karakter spasi (atau ` `).
 
-> Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Fungsi](/basic/function)
+> Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Function](/basic/function)
 
 ### ◉ Fungsi `print()` tanpa parameter
 
@@ -253,7 +253,7 @@ Pemanggilan fungsi `print()` argument/parameter menghasilkan baris baru.
 
 - [List](/basic/list)
 - [String](/basic/string)
-- [Fungsi](/basic/function)
+- [Function](/basic/function)
 
 ### ◉ Referensi
 

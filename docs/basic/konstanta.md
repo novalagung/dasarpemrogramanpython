@@ -34,11 +34,11 @@ print("pi: %f" % (PI))
 
 Keyword `import` digunakan untuk meng-import sesuatu, sedangkan keyword `from` digunakan untuk menentukan dari module mana sesuatu tersebut akan di-import.
 
-> Lebih detailnya mengenai `import` dan `from` dibahas terpisah pada chapter [Modules](/basic/modules)
+> Pembahasan detail mengenai `import` dan `from` ada di chapter [Modules](/basic/modules)
 
 Statement `from typing import Final` artinya adalah meng-import tipe `Final` dari module `typing` yang dimana module ini merupakan bagian dari Python standard library (stdlib).
 
-> Lebih detailnya mengenai Python standard library (stdlib) dibahas terpisah pada chapter [Python standard library (stdlib)](#)
+> Pembahasan detail mengenai Python standard library (stdlib) ada di chapter [Python standard library (stdlib)](#)
 
 ## A.5.2. Tipe *class* `typing.Final`
 
@@ -53,7 +53,7 @@ PI: Final = 3.14
 TOTAL_MONTH: Final[int] = 12
 ```
 
-> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](/basic/tipe-data)
+> Pembahasan detail mengenai tipe data ada di chapter [Tipe Data](/basic/tipe-data)
 
 ## A.5.3. *Naming convention* konstanta
 
@@ -76,6 +76,7 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
 ### ◉ Chapter relevan lainnya
 
 - [Variabel](/basic/variabel)
+- [Tipe Data](/basic/tipe-data)
 - [Modules](/basic/modules)
 - [Python standard library (stdlib)](#)
 

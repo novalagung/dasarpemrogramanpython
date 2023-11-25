@@ -63,7 +63,7 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 """ini adalah komentar"""
 ```
 
-> - Lebih detailnya mengenai string dibahas pada chapter [String](/basic/string)
+> - Pembahasan detail mengenai string ada di chapter [String](/basic/string)
 
 ---
 

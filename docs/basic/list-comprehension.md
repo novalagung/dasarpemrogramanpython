@@ -196,7 +196,7 @@ print(transposed)
 
 ### ◉ Chapter relevan lainnya
 
-- [Perulangan ➜ for, range](/basic/for-range)
+- [Perulangan ➜ for & range](/basic/for-range)
 - [List](/basic/list)
 
 ### ◉ TBA

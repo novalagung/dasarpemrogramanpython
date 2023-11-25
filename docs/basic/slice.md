@@ -142,7 +142,7 @@ print(tuple3)
 
 Statement assignment `tuple3` di atas isinya adalah sama dengan data hasil operasi slicing `tuple1` dan `tuple2`, namun *reference*-nya adalah berbeda.
 
-> Kita akan bahas lebih detail topik *reference* pada chapter berikutnya, yaitu [Call by Assignment](#).
+> Pembahasan detail mengenai *reference* ada di chapter [Object ID & Reference](/basic/object-id-reference)
 
 ## A.20.2. Fungsi `slice()`
 

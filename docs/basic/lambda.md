@@ -174,7 +174,7 @@ print(res)
 # output ➜ [[1, 3, 5], [2, 4, 6]]
 ```
 
-> Lebih detailnya mengenai list comprehensian dibahas pada chapter [List Comprehension](/basic/list-comprehension)
+> Pembahasan detail mengenai list comprehensian ada di chapter [List Comprehension](/basic/list-comprehension)
 
 ## A.26.6. Lambda dengan parameter fungsi/lambda
 
@@ -220,9 +220,9 @@ Lambda `aggregate()` dipanggil 3x yang pada pemanggilan ke-2 dan ke-3-nya, argum
 ### ◉ Chapter relevan lainnya
 
 - [Function](/basic/function)
-- [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
+- [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
+- [Function ➜ Args & Kwargs](/basic/args-kwargs)
+- [Function ➜ Closure](/basic/closure)
 
 ### ◉ Referensi
 

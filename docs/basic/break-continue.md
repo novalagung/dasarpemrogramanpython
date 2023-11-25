@@ -102,8 +102,8 @@ Penjelasan:
 
 ### ◉ Chapter relevan lainnya
 
-- [Perulangan ➜ For](/basic/for-range)
-- [Perulangan ➜ While](/basic/while)
+- [Perulangan ➜ for & range](/basic/for-range)
+- [Perulangan ➜ while](/basic/while)
 
 ### ◉ Referensi
 

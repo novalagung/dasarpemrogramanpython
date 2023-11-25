@@ -194,7 +194,7 @@ Penggunaan `__file__` akan menampilkan path file dimana variabel tersebut dituli
 
 Variabel `__all__` digunakan untuk menentukan module apa saja yang ter-import ketika statement `import *` digunakan. Variabel `__all__` wajib ditulis di file `__init__.py` yang ditempatkan dalam package.
 
-Penjelasan detail mengenai `import *` ada pada chapter [Packages](/basic/packages).
+> Penjelasan detail mengenai `import *` ada pada chapter [Packages](/basic/packages).
 
 ## A.29.4. Package `__future__`
 
@@ -236,7 +236,7 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjel
 
 - [Modules](/basic/modules)
 - [Packages](/basic/packages)
-- [Class & object](/basic/class-object)
+- [OOP ➜ Class & Object](/basic/class-object)
 
 ### ◉ Referensi
 

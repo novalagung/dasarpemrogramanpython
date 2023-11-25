@@ -70,7 +70,7 @@ print("hobi: %s, umur: %d, laki: %r" % (hobi, umur, laki))
 # output ➜ "hobi: makan, umur: 18, laki: True"
 ```
 
-> Lebih detailnya mengenai string formatting dibahas terpisah pada chapter [String: formatting](/basic/string#a173-string-formatting)
+> Pembahasan detail mengenai string formatting ada di chapter [String ➜ formatting](/basic/string#a173-string-formatting)
 
 ## A.4.2. *Naming convention* variabel
 
@@ -104,7 +104,7 @@ laki: bool = True
 nilai_ujian: float = 99.2
 ```
 
-> Lebih detailnya mengenai tipe data dibahas terpisah pada chapter [Tipe Data](/basic/tipe-data)
+> Pembahasan detail mengenai tipe data ada di chapter [Tipe Data](/basic/tipe-data)
 
 ## A.4.5. Deklarasi banyak variabel sebaris
 
@@ -140,8 +140,8 @@ Output program di atas:
 ### ◉ Chapter relevan lainnya
 
 - [Tipe Data](/basic/tipe-data)
-- [String: formatting](/basic/string#a173-string-formatting)
-- [Number/Bilangan](/basic/number-bilangan)
+- [String](/basic/string)
+- [Number](/basic/number-bilangan)
 
 ### ◉ Referensi
 

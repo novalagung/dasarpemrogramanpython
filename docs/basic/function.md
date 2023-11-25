@@ -125,7 +125,7 @@ calculate_circle_area("area of circle:", 788)
 
 Fungsi bisa tidak memiliki parameter, satu parameter, atau bisa lebih dari satu, tidak ada batasan.
 
-> Python memiliki **args** dan **kwargs**, nantinya kita akan mempelajarinya pada chapter [Args & Kwargs](/basic/args-kwargs)
+> Python memiliki **args** dan **kwargs**, pembahasan detailnya ada di chapter [Function ➜ Args & Kwargs](/basic/args-kwargs)
 
 O iya, argument fungsi bisa dituliskan secara horizontal maupun vertikal. Misalnya:
 
@@ -206,7 +206,65 @@ O iya, fungsi yang didalamnya tidak memiliki statement `return` sebenarnya juga 
 
 > Lebih detailnya mengenai tipe data `None` dibahas pada chapter [None](#)
 
-## A.22.5. Keyword `pass`
+## A.22.5. Tipe data nilai balik fungsi (*return type*)
+
+Python mendukung *type hinting* yaitu penentuan tipe data nilai balik fungsi yang ditulis secara eksplisit. Penerapannya bisa dilihat pada kode berikut dimana fungsi `calculate_circle_area()` dan `calculate_circle_circumference()` tipe data nilai baliknya ditulis secara jelas.
+
+```python
+def calculate_circle_area(r: int) -> float:
+    area = 3.14 * (r ** 2)
+    return area
+
+def calculate_circle_circumference(r: int) -> float:
+    return 2 * 3.14 * r
+
+area = calculate_circle_area(788)
+print(f"area: {area:.2f}")
+# output ➜ area: 1949764.16
+
+circumference = calculate_circle_circumference(788)
+print(f"circumference: {circumference:.2f}")
+# output ➜ circumference: 4948.64
+```
+
+Notasi penulisan *type hinting* adalah dengan menuliskan tanda `->` setelah deklarasi fungsi diikuti dengan tipe datanya.
+
+```python
+def <function_name>() -> <data_type>:
+    return <data>
+```
+
+Penerapan *type hinting* mewajibkan fungsi untuk selalu memiliki nilai balik berupa data bertipe sesuai.
+
+Jika nilai balik tipe datanya berbeda dengan yang ditulis di deklarasi fungsi, warning akan muncul.
+
+![Python function](img/function-4.png)
+
+Khusus untuk tipe data nilai balik `None` tidak wajib diikuti statement `return`. Contoh:
+
+- Fungsi dengan return type `None` diikuti statement `return`:
+
+    ```python
+    def say_hello() -> None:
+        print("hello world")
+        return None
+    ```
+
+- Fungsi dengan return type `None` tanpa diikuti statement `return`:
+
+    ```python
+    def say_hello() -> None:
+        print("hello world")
+    ```
+
+- Fungsi dengan tanpa return type maupun return statement:
+
+    ```python
+    def say_hello():
+        print("hello world")
+    ```
+
+## A.22.6. Keyword `pass`
 
 Keyword `pass` secara fungsional umumnya tidak terlalu berguna, kecuali untuk beberapa situasi. Misalnya untuk dipergunakan sebagai isi pada fungsi yang masih belum selesai dikerjakan. Daripada fungsi isinya kosong dan akan menghasilkan error kalau di-run, lebih baik diisi `pass`.
 
@@ -236,14 +294,15 @@ Dari blok kode di atas, nantinya engineer akan tau bahwa fungsi tersebut akan di
 
 ### ◉ Chapter relevan lainnya
 
-- [Optional, Positional, Keyword Argument](/basic/positional-optional-keyword-argument)
-- [Args & Kwargs](/basic/args-kwargs)
-- [Closure](/basic/closure)
-- [Lambda](/basic/lambda)
+- [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
+- [Function ➜ Args & Kwargs](/basic/args-kwargs)
+- [Function ➜ Closure](/basic/closure)
+- [Function ➜ Lambda](/basic/lambda)
 
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/controlflow.html#defining-functions
 - https://peps.python.org/pep-3102/
+- https://peps.python.org/pep-0484/
 
 </div>

@@ -4,7 +4,7 @@ title: A.19. Number/Bilangan di Python
 sidebar_label: A.19. Number
 ---
 
-Sedikit mengulang tentang pembahasan chapter [Tipe Data: numerik](/basic/tipe-data#a61-tipe-data-numerik), telah dijelaskan bahwa Python mengenal 3 jenis tipe data numerik, yaitu `int`, `float`, dan `complex`.
+Sedikit mengulang tentang pembahasan chapter [Tipe Data ➜ numerik](/basic/tipe-data#a61-tipe-data-numerik), telah dijelaskan bahwa Python mengenal 3 jenis tipe data numerik, yaitu `int`, `float`, dan `complex`.
 
 Pada chapter ini kita akan belajar lebih dalam tentang ketiganya.
 
@@ -97,7 +97,7 @@ Output program:
 
 Perbedaan lengkap tentang prefix dan suffix tiap basis bilangan bisa dicek pada tabel berikut:
 
-<table class="no-content-background content-align-center">
+<table class="no-content-background">
     <thead>
         <tr>
             <th rowspan="2">Nama</th>
@@ -566,7 +566,7 @@ Penjelasan:
 
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
-- [String: formatting](/basic/string#a173-string-formatting)
+- [String ➜ formatting](/basic/string#a173-string-formatting)
 
 ### ◉ TBA
 
