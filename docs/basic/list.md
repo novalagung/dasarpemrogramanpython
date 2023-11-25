@@ -264,7 +264,11 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     # output ➜ after : [10, 70, 20, 88, 87]
     ```
 
-> - Lebih detailnya mengenai method dibahas pada chapter [OOP ➜ Instance Method](/basic/instance-method) dan  [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
+> Pembahasan detail mengenai method nantinya ada 3 chapter terpisah:
+>
+> - [OOP ➜ Instance Method](/basic/instance-method)
+> - [OOP ➜ Class Method](/basic/class-method)
+> - [OOP ➜ Static Method](#)
 
 ### ◉ *Extend/concat/union* element
 

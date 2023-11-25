@@ -136,8 +136,10 @@ Meskipun demikian, solusi ini cukup efektif untuk memberi petunjuk kepada progra
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
-- [OOP ➜ Class Method & Static Method](/basic/class-method-static-method)
-- [OOP ➜ Inheritance](#)
+- [OOP ➜ Class Method](/basic/class-method)
+- [OOP ➜ Static Method](#)
+- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi
 

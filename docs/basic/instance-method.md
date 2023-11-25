@@ -8,7 +8,8 @@ Jika attribute adalah variabel yang berasosiasi dengan class, maka method adalah
 
 Python mengenal 3 jenis method yaitu instance method, class method, dan static method. Chapter ini fokus ke pembahasan tentang instance method saja.
 
-> Pembahasan detail mengenai class method dan static method ada di chapter [Class Method & Static Method](/basic/class-method-static-method)
+> - Pembahasan detail mengenai class method di chapter [OOP ➜ Class Method](/basic/class-method)
+> - Pembahasan detail mengenai static method ada di chapter [OOP ➜ Static Method](#)
 
 ## A.31.1. Penerapan Instance Method
 
