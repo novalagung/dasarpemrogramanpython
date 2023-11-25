@@ -22,7 +22,7 @@ Ebook ini bisa di-download dalam bentuk file, silakan gunakan link berikut:
 
 ## Source Code Praktik
 
-Source code contoh program bisa diunduh di [github.com/novalagung/dasarpemrogramanpython-example](https://github.com/novalagung/dasarpemrogramanpython-example). Dianjurkan untuk sekedar tidak copy-paste dari source code dalam proses belajar, usahakan tulis sendiri kode program agar cepat terbiasa dengan bahasa Rust.
+Source code contoh program bisa diunduh di [github.com/novalagung/dasarpemrogramanpython-example](https://github.com/novalagung/dasarpemrogramanpython-example). Dianjurkan untuk sekedar tidak copy-paste dari source code dalam proses belajar, usahakan tulis sendiri kode program agar cepat terbiasa dengan bahasa Python.
 
 ## Kontribusi
 
@@ -30,7 +30,7 @@ Ebook ini merupakan project open source, teruntuk siapapun yang ingin berkontrib
 
 ## Lisensi dan Status FOSSA
 
-Ebook Dasar Pemrograman Rust gratis untuk disebarluaskan secara bebas, baik untuk komersil maupun tidak, dengan catatan harus disertakan credit sumber aslinya (yaitu Dasar Pemrograman Rust atau novalagung) dan tidak mengubah lisensi aslinya (yaitu CC BY-SA 4.0). Lebih jelasnya silakan cek halaman [lisensi dan distribusi konten](/LICENSE).
+Ebook Dasar Pemrograman Python gratis untuk disebarluaskan secara bebas, baik untuk komersil maupun tidak, dengan catatan harus disertakan credit sumber aslinya (yaitu Dasar Pemrograman Python atau novalagung) dan tidak mengubah lisensi aslinya (yaitu CC BY-SA 4.0). Lebih jelasnya silakan cek halaman [lisensi dan distribusi konten](/LICENSE).
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fnovalagung%2Fdasarpemrogramanpython.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fnovalagung%2Fdasarpemrogramanpython?ref=badge_large)
 
