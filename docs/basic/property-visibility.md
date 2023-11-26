@@ -8,7 +8,7 @@ Visibility atau privacy dalam konteks OOP merujuk pada penentuan apakah property
 
 Di bab ini, kita akan membahas implementasinya di Python.
 
-## A.33.1. Penerapan visibility/privacy
+## A.33.1. Pengenalan visibility/privacy
 
 Python, dari segi API kode yang tersedia, sebenarnya tidak secara eksplisit mendukung implementasi visibility property instance class. Semua attribute dan method secara default bersifat public di Python.
 
@@ -137,8 +137,7 @@ Meskipun demikian, solusi ini cukup efektif untuk memberi petunjuk kepada progra
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](#)
-- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi

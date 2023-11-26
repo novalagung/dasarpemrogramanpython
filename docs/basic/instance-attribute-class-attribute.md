@@ -1,7 +1,7 @@
 ---
 sidebar_position: 34
 title: A.34. Python OOP ➜ Instance Attribute & Class Attribute
-sidebar_label: A.34. OOP ➜ Instance Attribute & Class Attribute
+sidebar_label: A.34. OOP ➜ Instance & Class Attribute
 ---
 
 Pada chapter ini, kita akan belajar lebih dalam tentang attribute suatu class, jenis-jenisnya, dan penerapannya.
@@ -26,6 +26,8 @@ print(f"Object pencil1 note: {pencil1.note}")
 ```
 
 Pada contoh di atas, variabel `note` merupakan instance attribute milik class `Pencil`. Ciri khas attribute bisa dilihat dari tempat deklarasinya, yaitu di dalam konstruktor dan menempel pada variabel `self`.
+
+> Instance attribute terkadang disebut dengan **data attribute** atau **instance variable**. Ketiga istilah tersebut merepresentasikan maksud yang sama.
 
 ### ◉ Class attribute
 
@@ -54,6 +56,8 @@ book1 = Book()
 print(f"Object book1 note: {book1.note}")
 # output ➜ Object book1 note: A class type to represent a book
 ```
+
+> Class attribute terkadang disebut dengan **class variable**. Kedua istilah tersebut merepresentasikan maksud yang sama.
 
 ### ◉ Kombinasi instance attribute & class attribute
 
@@ -233,8 +237,7 @@ print(f"Object book2 note: {book2.note}")
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](#)
-- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ TBA

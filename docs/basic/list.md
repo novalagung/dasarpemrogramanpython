@@ -17,7 +17,7 @@ Pada bahasa pemrograman umumnya ada tipe data **array**. List di Python ini memi
 
 Pada chapter ini kita akan belajar lebih detail mengenai list dan pengoperasiannya.
 
-## A.12.1. Penerapan list
+## A.12.1. Pengenalan list
 
 Deklarasi variabel dan data list adalah menggunakan *literal* list dengan notasi penulisan seperti berikut:
 

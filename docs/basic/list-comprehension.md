@@ -13,7 +13,7 @@ faqs:
 
 Pada chapter ini kita akan mempelajarinya.
 
-## A.13.1. Penerapan list comprehension
+## A.13.1. Pengenalan list comprehension
 
 Metode penulisan list comprehension membuat kode menjadi sangat ringkas, dengan konsekuensi agak sedikit membingungkan untuk yang belum terbiasa. Jadi penulis sarankan gunakan sesuai kebutuhan.
 
