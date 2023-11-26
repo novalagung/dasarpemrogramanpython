@@ -190,3 +190,34 @@ Perbedaan antara constructor, instance method, class method, dan instance method
 - Pengaksesan class method:
   - Via class, contoh: `Person.say_hello()`
   - Via instance object, contoh: `p1.say_hello()`
+
+---
+
+<div class="section-footnote">
+
+## Catatan chapter 📑
+
+### ◉ Source code praktik
+
+<pre>
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/static-method">
+        github.com/novalagung/dasarpemrogramanpython-example/../static-method
+    </a>
+</pre>
+
+### ◉ Chapter relevan lainnya
+
+- [OOP ➜ Class & Object](/basic/class-object)
+- [OOP ➜ Instance Method](/basic/instance-method)
+- [OOP ➜ Constructor](/basic/class-constructor)
+- [OOP ➜ Property Visibility](/basic/property-visibility)
+- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
+- [OOP ➜ Class Method](/basic/class-method)
+- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Class Inheritance](#)
+
+### ◉ Referensi
+
+- https://docs.python.org/3/tutorial/classes.html
+
+</div>
