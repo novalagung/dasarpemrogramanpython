@@ -6,7 +6,7 @@ sidebar_label: A.36. OOP ➜ Static Method
 
 Chapter ini membahas tentang static method beserta penggunaan dan perbedaannya dibanding jenis method lainnya.
 
-## A.36.1. Static Method
+## A.36.1. Pengenalan static method
 
 Telah kita pelajari bahwa suatu fungsi agar dikenali sebagai method harus dideklarasikan di dalam block `class` dan memiliki parameter implicit `self` (untuk instance method) dan `cls` (untuk class method).
 
@@ -213,7 +213,7 @@ Perbedaan antara constructor, instance method, class method, dan instance method
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Random Remarks](#)
+- [Function ➜ Decorator](/basic/decorator)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi

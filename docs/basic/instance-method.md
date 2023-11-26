@@ -11,7 +11,7 @@ Python mengenal 3 jenis method yaitu instance method, class method, dan static m
 > - Pembahasan detail mengenai class method di chapter [OOP ➜ Class Method](/basic/class-method)
 > - Pembahasan detail mengenai static method ada di chapter [OOP ➜ Static Method](#)
 
-## A.31.1. Penerapan Instance Method
+## A.31.1. Pengenalan Instance Method
 
 Instance method memiliki beberapa karakteristik jika dilihat dari syntax-nya:
 
@@ -456,8 +456,7 @@ Output program:
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](#)
-- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ TBA

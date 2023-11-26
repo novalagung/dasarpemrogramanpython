@@ -6,7 +6,7 @@ sidebar_label: A.30. OOP ➜ Class & Object
 
 Python mendukung paradigma pemrograman berbasis objek (OOP) melalui implementasi Class dan Object API. Pada bab ini, kita akan mempelajari konsep dasar beserta penerapannya.
 
-## A.30.1. Penerapan Class
+## A.30.1. Pengenalan Class
 
 Class adalah *blueprint* untuk membuat variabel object. Python memudahkan pembuatan class dengan adanya keyword `class`.
 
@@ -187,8 +187,7 @@ Jalankan program untuk melihat outputnya:
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](#)
-- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ Referensi

@@ -6,7 +6,7 @@ sidebar_label: A.35. OOP ➜ Class Method
 
 Pada chapter ini kita akan belajar tentang jenis method lain yang tersedia di Python, yaitu class method, serta perbedaannya dibanding instance method dan constructor.
 
-## A.35.1. Class method
+## A.35.1. Pengenalan Class method
 
 Class method adalah method yang pemiliknya adalah class dengan pengaksesan adalah via class, berbeda dibanding instance method yang diperuntukan untuk instance object. Jika instance method memiliki parameter `self` yang isinya adalah instance object, maka class method memiliki parameter `cls` yang isinya adalah tipe data class.
 
@@ -291,8 +291,8 @@ Dari banyak hal yang telah dipelajari di chapter ini, secara garis besar perbeda
 - [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
-- [OOP ➜ Static Method](#)
-- [OOP ➜ Random Remarks](#)
+- [OOP ➜ Static Method](/basic/static-method)
+- [Function ➜ Decorator](/basic/decorator)
 - [OOP ➜ Class Inheritance](#)
 
 ### ◉ TBA
