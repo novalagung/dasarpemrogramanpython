@@ -109,6 +109,8 @@ Salah satu aturan pada instance method adalah fungsi harus memiliki parameter pe
 
 ![Python Instance Method](img/instance-method-2.png)
 
+> Parameter `self` bisa disebut dengan parameter *implicit* atau implisit karena kita tidak berinteraksi secara langsung saat pengisian nilai. Nilai `self` otomatis terisi saat pemanggilan instance method via instance object.
+
 Dimisalkan lagi, parameter `self` tidak ditulis saat deklarasi instance method, hasilnya juga error.
 
 ![Python Instance Method](img/instance-method-3.png)

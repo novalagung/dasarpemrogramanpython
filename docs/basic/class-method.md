@@ -68,6 +68,8 @@ p3.info()
 # output ➜ Baron Vladimir Harkonnen of House of Harkonnen
 ```
 
+> Parameter `cls` bisa disebut dengan parameter *implicit* atau implisit karena kita tidak berinteraksi secara langsung saat pengisian nilai. Nilai `cls` otomatis terisi saat class method diakses.
+
 ## A.35.2. Class method parameter
 
 Class method juga bisa memiliki parameter seperti umumnya fungsi. Jika pada instance method dan constructor parameter adalah ditulis setelah `self`, pada class method parameter ditulis setelah `cls`. Contoh:
@@ -262,6 +264,7 @@ Dari banyak hal yang telah dipelajari di chapter ini, secara garis besar perbeda
 ### ◉ Class method
 
 - Fungsi dideklarasikan di dalam block `class`
+- Fungsi memiliki decorator `@classmethod`
 - Parameter pertama harus `cls`, berisi tipe data class
 - Pengaksesan class method:
   - Via class, contoh: `ClanHouse.create()`
