@@ -194,9 +194,9 @@ if isinstance(car1, Car):
 
 Setiap class yang ada di Python baik itu class bawaan Python Standard Library ataupun custom class, secara otomatis adalah turunan dari class bernama `object`.
 
-Jadi, class `str`, `float`, custom class `Car` yang telah dibuat, class-nya adalah turunan dari class `object`.
+Jadi, class `str`, `float`, custom class `Car` yang telah dibuat, dan lainnya, kesemua class-nya adalah turunan dari class `object`.
 
-Silakan gunakan fungsi `isinstance()` untuk membuktikannya:
+Silakan cek menggunakan fungsi `isinstance()` untuk membuktikannya:
 
 ```python
 data1 = Car()
