@@ -108,10 +108,10 @@ Perulangan berikut:
 list_x = ['a', 'b', 'c']
 list_y = ['1', '2', '3']
 
-comb = []
+seq = []
 for x in list_x:
     for y in list_y:
-        comb.append(x + y)
+        seq.append(x + y)
 
 print(seq)
 # output ➜ ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']
@@ -120,7 +120,7 @@ print(seq)
 ... bisa dituliskan lebih ringkas menjadi seperti berikut:
 
 ```python
-comb = [x + y for x in list_x for y in list_y]
+seq = [x + y for x in list_x for y in list_y]
 
 print(seq)
 # output ➜ ['a1', 'a2', 'a3', 'b1', 'b2', 'b3', 'c1', 'c2', 'c3']

@@ -196,7 +196,23 @@ Variabel `__all__` digunakan untuk menentukan module apa saja yang ter-import ke
 
 > Penjelasan detail mengenai `import *` ada pada chapter [Packages](/basic/packages).
 
-## A.29.4. Package `__future__`
+## A.29.4. Attribute `__name__` milik class `type`
+
+Kita telah menggunakan fungsi `type()` beberapa kali pada chapter sebelum ini. Fungsi tersebut mengembalikan data bertipe class `type`.
+
+Class `type` memiliki attribute bernama `__name__` yang pengaksesannya mengembalikan informasi nama class. Contoh:
+
+```python
+data1 = "Noval Agung"
+print(f"var: data1, data: {data1}, type: {type(data1).__name__}")
+# output ➜ var: data1, data: Noval Agung, type: str
+
+data2 = 24 * 7
+print(f"var: data2, data: {data2}, type: {type(data2).__name__}")
+# output ➜ var: data2, data: 168, type: int
+```
+
+## A.29.5. Package `__future__`
 
 Package `__future__` berisi modules yang hanya tersedia di Python versi terbaru. Package ini biasa di-import pada program yang dijalankan menggunakan Python versi lama (misalnya 2.5), yang didalamnya ada penerapan kode yang hanya ada di versi Python terbaru.
 
@@ -214,7 +230,7 @@ print(8 // 7)
 # output ➜ 1
 ```
 
-## A.29.5. Fungsi `__init__()`
+## A.29.6. Fungsi `__init__()`
 
 Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjelasan lebih lanjut mengenai `__init__()` ada di chapter [Class & object](/basic/class-object).
 
