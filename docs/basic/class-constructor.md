@@ -1,14 +1,14 @@
 ---
-sidebar_position: 32
-title: A.32. Python OOP ➜ Constructor
-sidebar_label: A.32. OOP ➜ Constructor
+sidebar_position: 33
+title: A.33. Python OOP ➜ Constructor
+sidebar_label: A.33. OOP ➜ Constructor
 ---
 
 Constructor/konstruktor adalah salah satu topik penting dalam pemrograman berbasis object (OOP). Konstruktor sendiri adalah fungsi khusus yang dipanggil saat pembuatan object dilakukan dari suatu class.
 
 Pada chapter ini kita akan belajar tentang konstruktor dan apa saja yang bisa dilakukan didalamnya.
 
-## A.32.1. Pengenalan constructor
+## A.33.1. Pengenalan constructor
 
 Di bahasa yang mengadopsi konsep OOP, setiap class memiliki *default constructor*. Sebagai contoh pada statement pembuatan object bertipe class `Car`, syntax `Car()` digunakan dan syntax tersebut merupakan contoh penerapan pengaksesan konstruktor.
 
@@ -72,7 +72,7 @@ mount_kilimanjaro.info()
 
 Pada contoh di atas, konstruktor `__init__(self)` meng-override default constructor milik class `Mountain` dan digunakan untuk deklarasi instance attribute.
 
-## A.32.2. Constructor dengan custom param
+## A.33.2. Constructor dengan custom param
 
 Konstruktor dapat didesain untuk memiliki parameter, dan metode ini sangat umum diterapkan.
 
@@ -109,7 +109,7 @@ mount_kilimanjaro.info()
 
 Seperti halnya method, parameter pertama konstruktor harus `self`. Dari sini bisa disimpulkan berarti penambahan parameter harus dituliskan setelah `self`. Bisa dilihat di deklarasi konstruktor class `Mountain`, disitu ada tiga buah parameter dideklarasikan setelah `self`.
 
-## A.32.3. Constructor overloading
+## A.33.3. Constructor overloading
 
 Overloading merupakan istilah OOP untuk pembuatan banyak konstruktor dengan jumlah dan tipe parameter berbeda.
 
@@ -160,7 +160,7 @@ Penjelasan:
 
 Silakan coba explore dengan mempraktekan penggunaan \*args / \*\*kwargs pada konstruktor.
 
-## A.32.4. Constructor dengan return type `None`
+## A.33.4. Constructor dengan return type `None`
 
 Constructor dipanggil saat inisialisasi object, maka bisa dibilang bahwa tersebut selalu mengembalikan tipe data bertipe class dimana constructor tersebut dideklarasikan.
 
@@ -186,7 +186,6 @@ class Mountain:
         self.elevation = elevation
 ```
 
-
 ---
 
 <div class="section-footnote">
@@ -209,7 +208,7 @@ class Mountain:
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ Referensi
 

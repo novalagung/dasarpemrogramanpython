@@ -1,12 +1,12 @@
 ---
-sidebar_position: 34
-title: A.34. Python OOP ➜ Instance Attribute & Class Attribute
-sidebar_label: A.34. OOP ➜ Instance & Class Attribute
+sidebar_position: 35
+title: A.35. Python OOP ➜ Instance Attribute & Class Attribute
+sidebar_label: A.35. OOP ➜ Instance & Class Attribute
 ---
 
 Pada chapter ini, kita akan belajar lebih dalam tentang attribute suatu class, jenis-jenisnya, dan penerapannya.
 
-## A.34.1. Attributes
+## A.35.1. Attributes
 
 Attribute merupakan salah satu property class selain method. Python mengenal dua jenis attribute yaitu instance attribute (yang sudah kita bahas di beberapa chapter sebelumnya) dan class attribute.
 
@@ -108,7 +108,7 @@ Class attribute biasanya diterapkan untuk menyimpan data yang sifatnya global da
 
 Berbeda dengan instance attribute yang digunakan untuk menyimpan data spesifik per object. Bisa dilihat di contoh ada list berisi 2 element yang dibuat dari class `Song`. Masing-masing instance object tersebut data attribute-nya berbeda satu sama lain.
 
-## A.34.2. Attribute lookup
+## A.35.2. Attribute lookup
 
 Saat suatu instance attribtue diakses dari instance object, yang terjadi di balik layar adalah Python melakukan *lookup* (atau pengecekan) terhadap attribute dengan urutan sebagai berikut:
 
@@ -139,7 +139,7 @@ print(f"Class Person name: {Person.name}")
 
 Variabel `person1` ketika diakses attribute `name`-nya, yang dikembalikan adalah nilai instance attribute, meskipun sebenarnya class `Person` juga memiliki class attribute dengan nama yang sama.
 
-## A.34.3. Attribute mutability
+## A.35.3. Attribute mutability
 
 ### ◉ Perubahan nilai instance attribute
 
@@ -238,7 +238,7 @@ print(f"Object book2 note: {book2.note}")
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ TBA
 

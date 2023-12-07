@@ -1,12 +1,12 @@
 ---
-sidebar_position: 37
-title: A.37. Python Decorator
-sidebar_label: A.37. Function ➜ Decorator
+sidebar_position: 38
+title: A.38. Python Decorator
+sidebar_label: A.38. Function ➜ Decorator
 ---
 
 Chapter ini membahas tentang decorator, yaitu syntax yang penulisannya diawali dengan huruf `@` dituliskan tepat sebelum deklarasi fungsi atau method.
 
-## A.37.1. Pengenalan decorator
+## A.38.1. Pengenalan decorator
 
 Pada dua chapter sebelumnya ([OOP ➜ Class Method](/basic/class-method) dan [OOP ➜ Static Method](/basic/static-method)) kita telah mempelajari 2 buah decorator, yaitu `@classmethod` dan `@staticmethod`.
 
@@ -21,7 +21,7 @@ Selain dua decorator tersebut, ada juga beberapa lainnya yang nantinya akan diba
 
 Selain menggunakan decorator bawaan Python, kita juga bisa membuat custom decorator sendiri yang bisa kita desain sesuai kebutuhan. Pada chapter ini kita akan mempelajari caranya.
 
-## A.37.2. Custom decorator
+## A.38.2. Custom decorator
 
 Decorator sebenarnya adalah sebuah fungsi, yang menerima parameter berupa fungsi, yang isinya juga mengembalikan fungsi/closure.
 
@@ -100,7 +100,7 @@ print("fungsi telah selesai dieksekusi, nilai baliknya:", res)
 
 Sampai sini semoga cukup jelas. Selanjutnya kita akan praktek penerapan decorator untuk case yang tidak sesederhana contoh di atas, dengan harapan pemahaman pembaca mengenai topik decorator ini makin mantab.
 
-## A.37.3. Contoh penerapan custom decorator
+## A.38.3. Contoh penerapan custom decorator
 
 Pada praktek selanjutnya ini, kita akan membuat program yang memunculkan list berisi angka random. Kemudian dari list tersebut dibentuk sebuah list baru berisi elemen unik, lalu darinya dibuat list baru lagi yang isi elemen uniknya diurutkan secara *descending*.
 
@@ -224,7 +224,7 @@ Selanjutnya, dua buah fungsi baru dibuat yang masing-masing menggunakan decorato
     print(res)
     ```
 
-## A.37.4. Chaining decorator
+## A.38.4. Chaining decorator
 
 Chaining decorator adalah istilah untuk penerapan lebih dari satu decorator pada sebuah fungsi. Pada contoh di atas, fungsi ditempeli hanya satu decorator saja. Pada praktiknya, fungsi bisa saja menggunakan lebih dari 1 decorator.
 
@@ -282,7 +282,7 @@ data3 = decorator_reverse_list(data2)
 print(data3)
 ```
 
-## A.37.5. **\*args** & **\*\*kwargs** pada decorator
+## A.38.5. **\*args** & **\*\*kwargs** pada decorator
 
 Idealnya, sebuah decorator dibuat dengan desain parameter se-fleksibel mungkin, karena bisa saja decorator diterapkan pada fungsi dengan berbagai macam skema parameter.
 
@@ -357,7 +357,7 @@ print(generate_random_unique_reverse_sorted_list(15))
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ Referensi
 

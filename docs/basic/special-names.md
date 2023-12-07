@@ -196,7 +196,43 @@ Variabel `__all__` digunakan untuk menentukan module apa saja yang ter-import ke
 
 > Penjelasan detail mengenai `import *` ada pada chapter [Packages](/basic/packages).
 
-## A.29.4. Package `__future__`
+## A.29.4. Attribute `__name__` milik class `type`
+
+Kita telah menggunakan fungsi `type()` beberapa kali pada banyak chapter sebelum ini. Fungsi `type()` adalah fungsi yang mengembalikan data dengan tipe yaitu class `type`.
+
+Class `type` memiliki attribute bernama `__name__` isinya informasi nama class. Contoh penerapan pengaksesan attribute ini:
+
+```python
+data1 = "Noval Agung"
+print(f"var: data1, data: {data1}, type: {type(data1).__name__}")
+# output ➜ var: data1, data: Noval Agung, type: str
+
+data2 = 24 * 7
+print(f"var: data2, data: {data2}, type: {type(data2).__name__}")
+# output ➜ var: data2, data: 168, type: int
+```
+
+## A.29.5. Attribute `__class__` milik semua class / tipe data
+
+Setiap tipe data memiliki akses ke attribute bernama `__class__`. Isi dari attribute ini adalah data yang sama hasil pemanggilan fungsi `type()` yaitu informasi tipe data atau class.
+
+Pada kode sebelumnya, statement `type(data1)` menghasilkan nilai balik yang sama dengan statement `data1.__class__`. Dari nilai balik (yang bertipe `type`) tersebut bisa langsung dilakukan pengaksesan attribute `__name__`.
+
+```python
+data1 = "Noval Agung"
+print(f"var: data1, data: {data1}, type: {data1.__class__.__name__}")
+# output ➜ var: data1, data: Noval Agung, type: str
+
+data2 = 24 * 7
+print(f"var: data2, data: {data2}, type: {data2.__class__.__name__}")
+# output ➜ var: data2, data: 168, type: int
+```
+
+## A.29.6. Attribute `__mro__` milik semua class / tipe data
+
+Class attribute `__mro__` berisi informasi hirarki class dalam tipe data tuple. Penjelasan lebih lanjut mengenai `__mro__` ada di chapter [OOP ➜ Class Inheritance](/basic/class-inheritance).
+
+## A.29.7. Package `__future__`
 
 Package `__future__` berisi modules yang hanya tersedia di Python versi terbaru. Package ini biasa di-import pada program yang dijalankan menggunakan Python versi lama (misalnya 2.5), yang didalamnya ada penerapan kode yang hanya ada di versi Python terbaru.
 
@@ -214,9 +250,9 @@ print(8 // 7)
 # output ➜ 1
 ```
 
-## A.29.5. Fungsi `__init__()`
+## A.29.8. Fungsi `__init__()`
 
-Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjelasan lebih lanjut mengenai `__init__()` ada di chapter [Class & object](/basic/class-object).
+Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjelasan lebih lanjut mengenai `__init__()` ada di chapter [OOP ➜ Class & Object](/basic/class-object).
 
 ---
 
@@ -237,6 +273,7 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjel
 - [Modules](/basic/modules)
 - [Packages](/basic/packages)
 - [OOP ➜ Class & Object](/basic/class-object)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ Referensi
 

@@ -1,7 +1,7 @@
 ---
-sidebar_position: 31
-title: A.31. Python OOP ➜ Instance Method
-sidebar_label: A.31. OOP ➜ Instance Method
+sidebar_position: 32
+title: A.32. Python OOP ➜ Instance Method
+sidebar_label: A.32. OOP ➜ Instance Method
 ---
 
 Jika attribute adalah variabel yang berasosiasi dengan class, maka method adalah fungsi yang berasosiasi dengan class.
@@ -11,7 +11,7 @@ Python mengenal 3 jenis method yaitu instance method, class method, dan static m
 > - Pembahasan detail mengenai class method di chapter [OOP ➜ Class Method](/basic/class-method)
 > - Pembahasan detail mengenai static method ada di chapter [OOP ➜ Static Method](#)
 
-## A.31.1. Pengenalan Instance Method
+## A.32.1. Pengenalan Instance Method
 
 Instance method memiliki beberapa karakteristik jika dilihat dari syntax-nya:
 
@@ -103,7 +103,7 @@ Pada bagian blok kode perulangan, ganti tiga baris statement print dengan pemang
 
 Jalankan program dan lihat outputnya, pasti sama persis dengan program sebelumnya.
 
-## A.31.2. Variabel `self`
+## A.32.2. Variabel `self`
 
 Salah satu aturan pada instance method adalah fungsi harus memiliki parameter pertama bernama `self`. Parameter tersebut wajib ada saat deklarasi, dan tidak boleh diisi argument saat pemanggilan. Jika dipaksa diisi dengan argument, maka pasti muncul error.
 
@@ -188,7 +188,7 @@ Pada pemanggilan method `set_details()` object `car1`:
 - Argument `2001` ditampung oleh parameter `year`
 - Argument `Best car in NFS Most Wanted` ditampung oleh parameter `description`.
 
-## A.31.3. Naming convention method & param
+## A.32.3. Naming convention method & param
 
 Mengacu pada dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), nama method dianjurkan untuk ditulis menggunakan snake_case (seperti fungsi). Contohnya bisa dilihat pada method `get_name()` berikut:
 
@@ -221,7 +221,7 @@ class FavoriteFood:
         self.name = name
 ```
 
-## A.31.4. Pengaksesan instance method dari class
+## A.32.4. Pengaksesan instance method dari class
 
 Sebenarnya ada dua cara untuk mengakses instance method:
 
@@ -324,7 +324,7 @@ FavoriteFood.get_name(food1)
     </tbody>
 </table>
 
-## A.31.5. Pengaksesan method dari method lain
+## A.32.5. Pengaksesan method dari method lain
 
 Lewat variabel `self` tidak hanya instance attribute yang dapat diakses, melainkan semua jenis property (termasuk instance method). Pada contoh berikut, di dalam method `info()` terdapat statement pemanggilan method yaitu `get_name()`.
 
@@ -351,7 +351,7 @@ class Car:
         print(f"Year released: {self.year}")
 ```
 
-## A.31.6. Argument method: positional, optional, keyword arg
+## A.32.6. Argument method: positional, optional, keyword arg
 
 Aturan-aturan dalam deklarasi parameter dan pengisian argument fungsi juga berlaku pada method, diantaranya:
 
@@ -396,7 +396,7 @@ Aturan-aturan dalam deklarasi parameter dan pengisian argument fungsi juga berla
     car3.set_details(description="Best car in NFS Carbon", year=2003)
     ```
 
-## A.31.7. Argument method: args & kwargs
+## A.32.7. Argument method: args & kwargs
 
 Sama seperti fungsi, method juga bisa berisi parameter **args** maupun **kwargs**.
 
@@ -457,7 +457,7 @@ Output program:
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ TBA
 
