@@ -41,16 +41,16 @@ Ok, sekarang mari kita terapkan skenario di atas di Python. Definisikan class `V
 class Vehicle:
     note = "class to represent a car"
     
-    def __init__(self, name = "common vehicle", number_of_wheels = 4):
-        self.name = name
-        self.number_of_wheels = number_of_wheels
+    def __init__(self):
+        self.name = "common vehicle"
+        self.number_of_wheels = 4
     
     def drive_sound(self):
         return "vroom vroooommmm"
 
 class ElectricCar(Vehicle):
     def info(self):
-        print(v2.name, "has", v2.number_of_wheels, "wheels. engine sound:", v2.drive_sound())
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
 ```
 
 Pada deklarasi class `ElectricCar` penulisannya ada yang unik. Nama class ditulis dengan notasi `ElectricCar(Vehicle)` yang artinya, class `ElectricCar` dideklarasikan dengan super class adalah class `Vehicle`.
@@ -60,10 +60,10 @@ Pada deklarasi class `ElectricCar` penulisannya ada yang unik. Nama class dituli
 Notasi umum penulisan inheritance kurang lebih seperti ini:
 
 ```python
-class Super Class:
+class SuperClass:
     pass
 
-class SubClass(Super Class):
+class SubClass(SuperClass):
     pass
 ```
 
@@ -89,7 +89,54 @@ v3.info()
 
 Bisa dilihat dari contoh, bahwa property milik class `Vehicle` bisa diakses via instance object yang dibuat dari class itu sendiri maupun dari object yang dibuat dari subclass `ElectricCar`.
 
-## A.39.2. Constructor Overriding
+## A.39.2. Class `object` inheritance
+
+Python memiliki class bawaan bernama `object` yang pada praktiknya otomatis menjadi super class dari semua class bawaan Python maupun custom class yang kita buat sendiri.
+
+Contohnya class `Vehicle` dan `ElectricCar` yang telah dibuat, kedua class tersebut otomatis juga menjadi sub class dari class `object` ini.
+
+Untuk membuktikan, silakan test saja menggunakan kombinasi seleksi kondisi dan fungsi `isinstance()`.
+
+```python
+class Vehicle:
+    note = "class to represent a car"
+    
+    def __init__(self):
+        self.name = "common vehicle"
+        self.number_of_wheels = 4
+    
+    def drive_sound(self):
+        return "vroom vroooommmm"
+
+class ElectricCar(Vehicle):
+    def info(self):
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+
+v1 = Vehicle()
+if isinstance(v1, Vehicle):
+    print("v1 class inherit from class Vehicle")
+if isinstance(v1, object):
+    print("v1 class inherit from class object")
+
+v2 = ElectricCar()
+if isinstance(v2, ElectricCar):
+    print("v2 class inherit from class ElectricCar")
+if isinstance(v2, Vehicle):
+    print("v2 class inherit from class Vehicle")
+if isinstance(v2, object):
+    print("v2 class inherit from class object")
+
+# output ↓
+# 
+# v1 class inherit from class Vehicle
+# v1 class inherit from class object
+# 
+# v2 class inherit from class ElectricCar
+# v2 class inherit from class Vehicle
+# v2 class inherit from class object
+```
+
+## A.39.3. Constructor overriding
 
 *Overriding* adalah istilah pemrograman OOP untuk menimpa/mengganti suatu method dengan method baru yang nama dan strukturnya sama tapi isinya berbeda.
 
@@ -111,7 +158,7 @@ class ElectricCar(Vehicle):
         self.name = "electric car"
 
     def info(self):
-        print(v2.name, "has", v2.number_of_wheels, "wheels. engine sound:", v2.drive_sound())
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
 
 v1 = Vehicle()
 print(v1.name, "has", v1.number_of_wheels, "wheels. engine sound:", v1.drive_sound())
@@ -131,13 +178,15 @@ Ok sekarang coba run program, dan lihat hasilnya:
 
 Statement pengaksesan property object `v1` muncul, namun error muncul pada pengaksesan object `v2`, dengan pesan error kurang lebih isinya menginformasikan bahwa class `ElectricCar` tidak memiliki attribute `number_of_wheels`. Aneh, padahal secara teori property tersebut diwariskan oleh super class yaitu `Vehicle`, namun setelah ditambahkan kode constructor baru yang meng-override constructor parent class, programnya malah error.
 
-Perlu diketahui bahwa penerapan operasi override mengakibatkan kode pada super class benar-benar dihapus dan diganti dengan kode baru. Pada contoh yang sudah ditulis, di konstruktor `Vehicle` ada dua buah property didekalrasikan, yaitu `name` dan `number_of_wheels`. Sedangkan pada class `ElectricCar`, hanya property `name` dideklarasikan. 
+Perlu diketahui bahwa penerapan operasi override mengakibatkan kode pada super class benar-benar dihapus dan diganti dengan kode baru. Pada contoh yang sudah ditulis, di konstruktor `Vehicle` ada dua buah property didekalrasikan, yaitu `name` dan `number_of_wheels`. Sedangkan pada class `ElectricCar`, hanya property `name` dideklarasikan.
 
 ```python
 class Vehicle:
     def __init__(self):
         self.name = "common vehicle"
         self.number_of_wheels = 4
+
+# ... vs ...
 
 class ElectricCar(Vehicle):
     def __init__(self):
@@ -152,7 +201,7 @@ AttributeError: 'ElectricCar' object has no attribute 'number_of_wheels'
 
 Solusi permasalahan di atas ada pada penjelasan berikut:
 
-## A.39.3. Fungsi `super()`
+## A.39.4. Fungsi `super()`
 
 Fungsi `super()` adalah salah satu method bawaan python, yang ketika diakses di dalam instance method maka pemanggilannya mengarah ke variabel `self` milik super class (bukan variabel `self` milik class itu sendiri).
 
@@ -179,7 +228,7 @@ class ElectricCar(Vehicle):
         self.name = "electric car"
 
     def info(self):
-        print(v2.name, "has", v2.number_of_wheels, "wheels. engine sound:", v2.drive_sound())
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
 
 v1 = Vehicle()
 print(v1.name, "has", v1.number_of_wheels, "wheels. engine sound:", v1.drive_sound())
@@ -230,7 +279,35 @@ Jika dianalogikan, bisa dibilang kode di atas adalah ekuivalen dengan kode ke-2 
 
 Sampai sini semoga cukup jelas.
 
-## A.39.4. Method Overriding
+## A.39.5. Alternatif cara mengakses super class constructor
+
+Selain menggunakan `super().__init__()` ada cara lain untuk memanggil konstruktor super class, yaitu dengan mengakses method `__init__()` via class secara langsung. Contoh:
+
+```python
+class Vehicle:
+    note = "class to represent a car"
+
+    def __init__(self):
+        self.name = "common vehicle"
+        self.number_of_wheels = 4
+
+    def drive_sound(self):
+        return "vroom vroooommmm"
+
+class ElectricCar(Vehicle):
+    def __init__(self):
+        Vehicle.__init__(self)
+        self.name = "electric car"
+
+    def info(self):
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+```
+
+Pada kode di atas, statement `Vehicle.__init__(self)` adalah ekuivalen dengan kode `super().__init__()` pada program sebelumnya.
+
+Teknik pemanggilan constructor via class ini lebih sering digunakan pada class yang memiliki parent class lebih dari satu. Lebih jelasnya akan kita bahas di bawah.
+
+## A.39.6. Method overriding
 
 Tidak hanya constructor, method superclass juga bisa di-override dengan method baru. Pada kode berikut, method `drive_sound()` di-override dengan isi mengembalikan nilai string berbeda, yang sebelumnya `vroom vroooommmm` kini menjadi `zzzzzzz`.
 
@@ -239,23 +316,22 @@ Coba aplikasikan perubahan berikut lalu run ulang programnya.
 ```python
 class Vehicle:
     note = "class to represent a car"
-    
+
     def __init__(self):
         self.name = "common vehicle"
         self.number_of_wheels = 4
-    
+
     def drive_sound(self):
         return "vroom vroooommmm"
     
 class ElectricCar(Vehicle):
-    
     def __init__(self):
         super().__init__()
         self.name = "electric car"
 
     def info(self):
-        print(v2.name, "has", v2.number_of_wheels, "wheels. engine sound:", v2.drive_sound())
-    
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+
     def drive_sound(self):
         return "zzzzzzz"
  
@@ -271,3 +347,216 @@ v2.info()
 Bisa dilihat pada statement ke-2, sekarang bunyi mesin berubah menjadi `zzzzzzz`.
 
 Pada kasus override kali ini, method `super()` sengaja tidak digunakan, karena memang tidak perlu. Berbeda dengan kasus sebelumnya (constructor overriding) jika constructor super class tidak dipanggil efeknya property `number_of_wheels` menjadi tidak dikenali.
+
+## A.39.7. Aturan overriding
+
+Setiap bahasa pemrograman yang mengadopsi OOP, aturan penerapan method overriding berbeda satu sama lain. Di Python sendiri, method dianggap meng-override suatu method atau constructor super class jika namanya adalah dideklarasikan sama persis. Perihal apakah skema parameter-nya diubah, atau return type-nya diubah, itu tidak menjadi syarat wajib overriding.
+
+Agar lebih jelas silakan lihat dan pelajari kode berikut:
+
+```python
+class Vehicle:
+    note = "class to represent a car"
+
+    def __init__(self):
+        self.name = "common vehicle"
+        self.number_of_wheels = 4
+
+    def drive_sound(self):
+        return "vroom vroooommmm"
+
+class ElectricCar(Vehicle):
+    def __init__(self):
+        super().__init__()
+        self.name = "electric car"
+
+    def info(self):
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+
+    def drive_sound(self, sound = "zzzzzzz"):
+        return ("friendly sound", sound)
+
+v1 = Vehicle()
+print(v1.name, "has", v1.number_of_wheels, "wheels. engine sound:", v1.drive_sound())
+# output ➜ common vehicle has 4 wheels. engine sound: vroom vroooommmm
+
+v2 = ElectricCar()
+v2.info()
+# output ➜ electric car has 4 wheels. engine sound: ('friendly sound', 'zzzzzzz')
+```
+
+Method `drive_sound()` di-override dengan diubah skema parameternya, dari yang tidak memiliki parameter sekarang menjadi memiliki parameter `sound`. Selain itu tipe datanya juga diubah, dari yang sebelumnya string menjadi tuple.
+
+## A.39.8. Nested inheritance
+
+Penerapan inheritanya tidak hanya terbatas pada dua buah class saja, melainkan bisa lebih dari 2. Class bisa diturunkan, kemudian turunannya diturunkan lagi, dan seterusnya.
+
+Contoh pengaplikasiannya bisa dilihat pada kode berikut dimana ada class `Vehicle`, `Car`, dan `ElectricCar`; yang ketiganya menjalin hubungan inheritance dengan hirarki seperti ini:
+
+![Class inheritance](img/class-inheritance-3.png)
+
+Source code implementasi:
+
+```python
+class Vehicle:
+    note = "class to represent a car"
+
+    def __init__(self, name = "common vehicle", number_of_wheels = 4):
+        self.name = name
+        self.number_of_wheels = number_of_wheels
+
+    def drive_sound(self):
+        return "vroom vroooommmm"
+
+class Car(Vehicle):
+    pass
+
+class ElectricCar(Car):
+    def __init__(self):
+        super().__init__(name="electric car")
+
+    def info(self):
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+
+    def drive_sound(self, sound = "zzzzzzz"):
+        return ("friendly sound", sound)
+        
+v1 = Vehicle()
+print(v1.name, "has", v1.number_of_wheels, "wheels. engine sound:", v1.drive_sound())
+# output ➜ common vehicle has 4 wheels. engine sound: vroom vroooommmm
+
+v2 = Car()
+v2.name = "common car"
+print(v2.name, "has", v2.number_of_wheels, "wheels. engine sound:", v2.drive_sound())
+# output ➜ common car has 4 wheels. engine sound: vroom vroooommmm
+
+v3 = ElectricCar()
+v3.info()
+# output ➜ electric car has 4 wheels. engine sound: ('friendly sound', 'zzzzzzz')
+```
+
+## A.39.9. Special name ➜ class attribute `__mro__`
+
+Setiap class memiliki class attribute `__mro__` yang berisi informasi hirarki class itu sendiri. Attribute tersebut bertipe data tuple. Gunakan perulangan untuk mengiterasi seluruh elemennya.
+
+```python
+print("hirarki class ElectricCar:")
+for cls in ElectricCar.__mro__:
+    print(f"➜ {cls.__name__}")
+
+print("hirarki class Car:")
+for cls in Car.__mro__:
+    print(f"➜ {cls.__name__}")
+
+print("hirarki class Vehicle:")
+for cls in Vehicle.__mro__:
+    print(f"➜ {cls.__name__}")
+
+# output ↓
+# 
+# hirarki class ElectricCar:
+# ➜ ElectricCar
+# ➜ Car
+# ➜ Vehicle
+# ➜ object
+# 
+# hirarki class Car:
+# ➜ Car
+# ➜ Vehicle
+# ➜ object
+# 
+# hirarki class Vehicle:
+# ➜ Vehicle
+# ➜ object
+```
+
+Hirarki paling atas semua class selalu class `object`.
+
+> MRO sendiri merupakan kependekan dari istilah **Method Resolution Order**
+
+## A.39.10. Multiple inheritance
+
+Suatu class tidak dibatasi hanya bisa menjadi sub class dari 1 buah class saja. Bisa jadi adalah lebih dari 1 class yang diturunkan dengan level hirarki yang sama.
+
+Sebagai contoh kita buat penerapan inheritance dengan hirarki seperti diagram berikut:
+
+![Class inheritance](img/class-inheritance-4.png)
+
+Source code:
+
+```python
+class Vehicle:
+    note = "class to represent a car"
+    
+    def __init__(self, name = "common vehicle", number_of_wheels = 4):
+        self.name = name
+        self.number_of_wheels = number_of_wheels
+
+from typing import Final
+
+ENGINE_ELECTRIC: Final = "electric engine"
+ENGINE_PETROL: Final = "petrol engine"
+ENGINE_DIESEL: Final = "diesel engine"
+
+class Engine:
+    note = "class to represent engine"
+    
+    def __init__(self, engine_name):
+        self.engine_name = engine_name
+    
+    def drive_sound(self):
+        if self.engine_name == ENGINE_ELECTRIC:
+            return "zzzzzzz"
+        elif self.engine_name == ENGINE_PETROL:
+            return "vroom vroooommmm"
+        elif self.engine_name == ENGINE_DIESEL:
+            return "VROOM VROOM VROOOOMMM"
+
+
+class ElectricCar(Vehicle, Engine):
+    
+    def __init__(self):
+        Vehicle.__init__(self, "electric car", 4)
+        Engine.__init__(self, ENGINE_ELECTRIC)
+
+    def info(self):
+        print(self.name, "has", self.number_of_wheels, "wheels. engine sound:", self.drive_sound())
+
+v1 = ElectricCar()
+v1.info()
+# output ➜ electric car has 4 wheels. engine sound: zzzzzzz
+```
+
+Khusus untuk penerapan inheritance dengan lebih dari 1 super class, dianjurkan untuk tidak menggunakan fungsi `super()` untuk mengakses `self` milik parent class, karena `self` disitu merupakan milik class pertama yang di inherit (yang pada contoh adalah class `Vehicle`). Dianjurkan memanggil constructor super class via `ClassName.__init__()` satu-per-satu sesuai kebutuhan.
+
+---
+
+<div class="section-footnote">
+
+## Catatan chapter 📑
+
+### ◉ Source code praktik
+
+<pre>
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/class-inheritance">
+        github.com/novalagung/dasarpemrogramanpython-example/../class-inheritance
+    </a>
+</pre>
+
+### ◉ Chapter relevan lainnya
+
+- [OOP ➜ Class & Object](/basic/class-object)
+- [OOP ➜ Instance Method](/basic/instance-method)
+- [OOP ➜ Constructor](/basic/class-constructor)
+- [OOP ➜ Property Visibility](/basic/property-visibility)
+- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
+- [OOP ➜ Class Method](/basic/class-method)
+- [OOP ➜ Static Method](/basic/static-method)
+- [Function ➜ Decorator](/basic/decorator)
+
+### ◉ Referensi
+
+- https://docs.python.org/3/tutorial/classes.html#inheritance
+- https://docs.python.org/3/library/stdtypes.html#class.__mro__
+
+</div>
