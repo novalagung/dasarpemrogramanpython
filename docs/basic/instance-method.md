@@ -457,7 +457,7 @@ Output program:
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ TBA
 

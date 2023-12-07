@@ -238,7 +238,7 @@ print(f"Object book2 note: {book2.note}")
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ TBA
 

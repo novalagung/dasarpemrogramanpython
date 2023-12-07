@@ -214,7 +214,7 @@ Perbedaan antara constructor, instance method, class method, dan instance method
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [Function ➜ Decorator](/basic/decorator)
-- [OOP ➜ Class Inheritance](#)
+- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ Referensi
 

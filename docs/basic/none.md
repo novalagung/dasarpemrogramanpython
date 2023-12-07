@@ -8,9 +8,9 @@ Pada chapter ini kita akan belajar tentang object special bernama `None`.
 
 ## A.30.1. Pengenalan `None`
 
-`None` merupakan object bawaan Python yang digunakan untuk merepresentasikan nilai kosong atau *null*.
+`None` merupakan object bawaan Python yang umumnya digunakan untuk merepresentasikan nilai kosong atau *null*.
 
-Penggunaannya cukup sederhana, ketika suatu data nilainya bisa kosong, umumnya sebelum data tersebut diproses dilakukan pengecekan terlebih dahulu menggunakan seleksi kondisi.
+Ketika suatu variabel berisi data yang nilainya bisa kosong, umumnya sebelum variabel tersebut digunakan, dilakukan pengecekan terlebih dahulu menggunakan seleksi kondisi untuk memastikan apakah nilainya benar-benar kosong atau tidak.
 
 Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspect_data()`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
 
@@ -46,12 +46,12 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 
 - Ketika variabel `data` berisi `0` maka variabel tersebut tidak benar-benar kosong, melainkan berisi angka `0`.
 
-- Karakteristik yang sama juga berlaku ketika variabel berisi string kosong `""`, meskipun ketika di-print tidak muncul apa-apa, variabel tersebut sebenarnya berisi tipe data string namun tanpa isi. maka variabel tersebut tidak benar-benar kosong, melainkan berisi angka `""`.
+- Karakteristik yang sama juga berlaku ketika variabel berisi string kosong `""`, meskipun ketika di-print tidak muncul apa-apa, variabel tersebut sebenarnya berisi tipe data string namun tanpa isi. Maka variabel tersebut sebenarnya tidak benar-benar kosong, melainkan berisi angka `""`.
 
-- Ketika variabel isinya data `None` maka variabel tersebut dianggap benar-benar kosong.
+- Barulah ketika variabel isinya data `None` maka dianggap benar-benar kosong.
 
-Kode di atas berisi penerapan salah satu special name, yaitu attribute `__name__` milik class `type`.
-
+> Kode di atas berisi penerapan salah satu special name, yaitu attribute `__name__` milik class `type`.
+>
 > Pembahasan detail mengenai special name ada di chapter [Special Names ➜ Attribute __name__ milik class type](/basic/special-names#a294-attribute-__name__-milik-class-type)
 
 ---
