@@ -219,7 +219,7 @@ if isinstance(data2, object):
 # data2 class inherit from object
 ```
 
-> Lebih detailnya mengenai class inheritance dibahas pada chapter [OOP ➜ Class Inheritance](#)
+> Lebih detailnya mengenai class inheritance dibahas pada chapter [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ---
 
