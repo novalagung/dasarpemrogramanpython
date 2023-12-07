@@ -1,7 +1,7 @@
 ---
 sidebar_position: 39
 title: A.39. Python OOP ➜ Class Inheritance
-sidebar_label: A.39. OOP ➜ Class Inheritance (WIP)
+sidebar_label: A.39. OOP ➜ Class Inheritance
 ---
 
 Chapter ini membahas tentang salah satu aspek penting dalam pemrograman OOP, yaitu inheritance atau pewarisan sifat, dimana sifat yang dimaksud adalah property seperti attribute, method, dan lainnya.
