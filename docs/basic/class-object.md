@@ -6,6 +6,8 @@ sidebar_label: A.31. OOP ➜ Class & Object
 
 Python mendukung paradigma pemrograman berbasis objek (OOP) melalui implementasi Class dan Object API. Pada bab ini, kita akan mempelajari konsep dasar beserta penerapannya.
 
+> Pembahasan OOP pada ebook ini lebih fokus pada pengaplikasiannya di Python. Jadi pembahasan teorinya tidak terlalu banyak.
+
 ## A.31.1. Pengenalan Class
 
 Class adalah *blueprint* untuk membuat variabel, class bisa diartikan juga sebagai tipe data. Di Python, setiap data pasti memiliki tipe data yang tipe tersebut merupakan adalah class. Sebagai contoh:
