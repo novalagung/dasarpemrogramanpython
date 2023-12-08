@@ -101,7 +101,7 @@ Fungsi `do_the_math()` tetap bisa menjalankan tugasnya dengan baik, bahkan untuk
 
 ## A.41.2. Structural typing
 
-Structural typing bisa dibilang kebalikan dari duck typing. Structural typing mengharuskan suatu fungsi atau method untuk memilki spesifikasi yang sama persis sesuai yang dideklarasikan. Misalnya ada suatu object berisi method dengan hanya nama fungsi dan skema parameternya saja yang sama dibanding yang dibutuhkan, maka itu tidak cukup dan error pasti muncul.
+Structural typing bisa diibartkan sebagai duck typing tapi versi yang lebih ketat. Structural typing mengharuskan suatu fungsi atau method untuk memilki spesifikasi yang sama persis sesuai yang dideklarasikan. Misalnya ada suatu object berisi method dengan hanya nama fungsi dan skema parameternya saja yang sama dibanding yang dibutuhkan, maka itu tidak cukup dan error pasti muncul.
 
 Cara penerapan structural typing adalah dengan menentukan tipe data parameter secara *explicit*. Mari coba praktekan via kode berikut agar lebih jelas.
 
@@ -120,9 +120,9 @@ def do_the_math(obj: Object2D):
     print(f"area of {type(obj).__name__}: {area}")
 ```
 
-Dari sini terlihat bahwa untuk bisa menggunakan fungsi `do_the_math()` data argument harus bertipe `Object2D` atau class turunannya.
+Dari sini terlihat bahwa untuk bisa menggunakan fungsi `do_the_math()` data argument harus bertipe `Object2D` atau class turunannya. Inilah bagaimana structural typing diaplikasikan di Python.
 
-Sekarang buat class implementasinya, tak lupa panggil fungsi `do_the_math()` dan isi argument-nya menggunakan instance object. Hasilnya tidak error.
+Selanjutnya, buat class implementasinya, tak lupa panggil fungsi `do_the_math()`, dan isi argument-nya menggunakan instance object. Jalankan program, hasilnya tidak akan error, karena saat pemanggilan fungsi `do_the_math()` argument yang disisipkan tipe datanya sesuai spesifikasi, yaitu bertipe `Object2D` atau class turunannya. 
 
 ```python
 class Triangle(Object2D):
@@ -172,7 +172,7 @@ Silakan cek di editor masing-masing, pada statement `do_the_math()` terlihat ada
 
 ![Duck typing vs structural typing](img/duck-typing-vs-structural-typing-1.png)
 
-> Python merupakan bahasa pemrograman dinamis yang dukungan terhadap structural typing tidak terlalu bagus. Keterangan tidak valid pada gambar di atas hanyalah warning, tidak benar-benar error. Kode program sendiri tetap bisa dijalankan. 
+> Python merupakan bahasa pemrograman dinamis yang dukungan terhadap structural typing tidak terlalu bagus. Keterangan tidak valid pada gambar di atas hanyalah warning, tidak benar-benar error. Kode program sendiri tetap bisa dijalankan.
 
 ---
 
@@ -190,7 +190,8 @@ Silakan cek di editor masing-masing, pada statement `do_the_math()` terlihat ada
 
 ### ◉ Chapter relevan lainnya
 
-- [Slice](/basic/slice)
+- [Tipe Data](/basic/tipe-data)
+- [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ Referensi
 
