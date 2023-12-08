@@ -350,14 +350,9 @@ print(generate_random_unique_reverse_sorted_list(15))
 ### ◉ Chapter relevan lainnya
 
 - [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
-- [OOP ➜ Class & Object](/basic/class-object)
-- [OOP ➜ Instance Method](/basic/instance-method)
-- [OOP ➜ Constructor](/basic/class-constructor)
-- [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](/basic/class-inheritance)
+- [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ Referensi
 

@@ -289,11 +289,9 @@ Dari banyak hal yang telah dipelajari di chapter ini, secara garis besar perbeda
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Instance Method](/basic/instance-method)
 - [OOP ➜ Constructor](/basic/class-constructor)
-- [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Static Method](/basic/static-method)
 - [Function ➜ Decorator](/basic/decorator)
-- [OOP ➜ Class Inheritance](/basic/class-inheritance)
+- [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ TBA
 

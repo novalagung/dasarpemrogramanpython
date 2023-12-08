@@ -453,11 +453,9 @@ Output program:
 
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Constructor](/basic/class-constructor)
-- [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](/basic/class-inheritance)
+- [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ TBA
 
