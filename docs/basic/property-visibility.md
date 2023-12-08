@@ -133,12 +133,7 @@ Meskipun demikian, solusi ini cukup efektif untuk memberi petunjuk kepada progra
 ### ◉ Chapter relevan lainnya
 
 - [OOP ➜ Class & Object](/basic/class-object)
-- [OOP ➜ Instance Method](/basic/instance-method)
-- [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
-- [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ Referensi
 

@@ -494,6 +494,7 @@ class Vehicle:
         self.name = name
         self.number_of_wheels = number_of_wheels
 
+
 from typing import Final
 
 ENGINE_ELECTRIC: Final = "electric engine"
@@ -550,13 +551,7 @@ Dianjurkan untuk memanggil constructor super class secara langsung via `ClassNam
 ### ◉ Chapter relevan lainnya
 
 - [OOP ➜ Class & Object](/basic/class-object)
-- [OOP ➜ Instance Method](/basic/instance-method)
-- [OOP ➜ Constructor](/basic/class-constructor)
-- [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
-- [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](/basic/static-method)
-- [Function ➜ Decorator](/basic/decorator)
+- [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ Referensi
 

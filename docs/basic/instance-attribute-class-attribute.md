@@ -233,12 +233,7 @@ print(f"Object book2 note: {book2.note}")
 ### ◉ Chapter relevan lainnya
 
 - [OOP ➜ Class & Object](/basic/class-object)
-- [OOP ➜ Instance Method](/basic/instance-method)
-- [OOP ➜ Constructor](/basic/class-constructor)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
-- [OOP ➜ Class Method](/basic/class-method)
-- [OOP ➜ Static Method](/basic/static-method)
-- [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ### ◉ TBA
 
