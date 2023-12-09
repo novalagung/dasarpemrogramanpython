@@ -4,7 +4,7 @@ title: A.31. Python Pack Unpack tuple, list, set, dict
 sidebar_label: A.31. Pack Unpack ➜ Tuple, List, Set, Dict
 ---
 
-Python mengenal teknik packing dan unpacking, dimana teknik ini umum diterapkan sesuai kebutuhan pada beberapa jenis tipe data kolektif tuple, list, set, dan dictionary. Pada chapter ini kita akan mempelajarinya.
+Python mengenal teknik packing dan unpacking, dimana teknik ini umum diterapkan sesuai kebutuhan pada beberapa jenis tipe data kolektif tuple, list, set, dan dictionary. Pada chapter ini kita akan mempelajari cara penggunaannya, beserta peran penggunaan tanda `*` dan `**` pada operasi packing dan unpacking.
 
 ## A.31.1. Unpacking element tuple, list, set
 
