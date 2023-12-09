@@ -267,7 +267,7 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
 > - [OOP ➜ Instance Method](/basic/instance-method)
 > - [OOP ➜ Class Method](/basic/class-method)
 > - [OOP ➜ Static Method](/basic/static-method)
-> - [OOP ➜ Abstract Method](/basic/static-method)
+> - [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ *Extend/concat/union* element
 
