@@ -52,7 +52,7 @@ Pada kode di atas lambda `get_hello_message2()` mengembalikan nilai balik bertip
 
 Lalu bagaimana dengan lambda `say_hello2()` yang telah dipraktekan di atas, apakah juga mengembalikan nilai balik? Iya, lambda tersebut juga ada return value-nya. Namun, karena isi lambda `say_hello2()` adalah pemanggilan fungsi `print()` maka nilai balik lambda adalah data `None`.
 
-> Lebih detailnya mengenai tipe data `None` dibahas pada chapter [None](#)
+> Pembahasan detail mengenai tipe data `None` ada di chapter [None](/basic/none)
 
 ## A.26.3. Lambda argument/parameter
 

@@ -133,7 +133,7 @@ print("id_data_1:", id_data_1)
 
 Nilai kembalian fungsi `id()` bertipe numerik.
 
-> Pembahasan detail mengenai fungsi `id()` ada pada chapter [Object ID & Reference](/basic/object-id-reference)
+> Pembahasan detail mengenai fungsi `id()` ada di chapter [Object ID & Reference](/basic/object-id-reference)
 
 ## A.7.7. Operator *membership* (`in`)
 

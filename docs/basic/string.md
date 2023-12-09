@@ -188,8 +188,6 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     # output ➜ hello 123 True
     ```
 
-    > Lebih detailnya mengenai fungsi `str()` dibahas setelah ini pada bagian [Konversi data ke string](/basic/string#-konversi-data-ke-string)
-
 - Menggunakan method `join()` milik string.
 
     Pada penerapannya, karakter pembatas atau *separator* ditulis terlebih dahulu, kemudian di-*chain* dengan method join dengan isi argument adalah list yang ingin digabung.
@@ -277,7 +275,7 @@ print(text[:4])
 # output ➜ hell
 ```
 
-> Lebih detailnya mengenai slice dibahas pada chapter [Slice](/basic/slice)
+> Pembahasan detail mengenai slice ada di chapter [Slice](/basic/slice)
 
 ## A.17.6. Operasi *character & case*
 

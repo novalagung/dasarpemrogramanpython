@@ -70,8 +70,6 @@ for i in range(0, len(list_1)):
 
 Fungsi `len()` digunakan untuk menghitung jumlah element list. Dengan mengkombinasikan nilai balik fungsi ini dan fungsi `range()` bisa terbentuk data range dengan lebar sama dengan lebar list.
 
-> Lebih detailnya mengenai fungsi `len()` dibahas setelah ini
-
 ### ◉ Fungsi `enumerate()`
 
 Fungsi `enumerate()` digunakan untuk membuat data sequence menjadi data enumerasi, yang jika dimasukan ke perulangan di setiap iterasinya bisa kita akses index beserta element-nya.
@@ -264,11 +262,12 @@ Operasi *append* atau menambahkan element baru setelah index terakhir, bisa meng
     # output ➜ after : [10, 70, 20, 88, 87]
     ```
 
-> Pembahasan detail mengenai method nantinya ada 3 chapter terpisah:
+> Pembahasan detail mengenai method ada 4 chapter berikut:
 >
 > - [OOP ➜ Instance Method](/basic/instance-method)
 > - [OOP ➜ Class Method](/basic/class-method)
-> - [OOP ➜ Static Method](#)
+> - [OOP ➜ Static Method](/basic/static-method)
+> - [OOP ➜ Abstract Method](/basic/abstract-method)
 
 ### ◉ *Extend/concat/union* element
 

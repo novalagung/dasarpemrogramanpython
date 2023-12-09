@@ -114,7 +114,7 @@ print("inputan user:", grade, type(grade))
 
 ![if else di python](img/if-elif-else-4.png)
 
-> Lebih detailnya mengenai mengenai *type conversion* dibahas pada chapter [Konversi Tipe Data](#)
+> Pembahasan detail mengenai *type conversion* ada di chapter [Konversi Tipe Data](#)
 
 ## A.8.3. Keyword `else`
 
