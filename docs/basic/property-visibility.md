@@ -1,14 +1,14 @@
 ---
-sidebar_position: 34
-title: A.34. Python OOP ➜ Property Visibility
-sidebar_label: A.34. OOP ➜ Property Visibility
+sidebar_position: 35
+title: A.35. Python OOP ➜ Property Visibility
+sidebar_label: A.35. OOP ➜ Property Visibility
 ---
 
 Visibility atau privacy dalam konteks OOP merujuk pada penentuan apakah property (baik itu attribute atau method) dapat diakses secara public atau hanya bisa diakses dari dalam class (private).
 
 Di bab ini, kita akan membahas implementasinya di Python.
 
-## A.34.1. Pengenalan visibility/privacy
+## A.35.1. Pengenalan visibility/privacy
 
 Python, dari segi API kode yang tersedia, sebenarnya tidak secara eksplisit mendukung implementasi visibility property instance class. Semua attribute dan method secara default bersifat public di Python.
 
@@ -108,7 +108,7 @@ Output program:
 
 ![Property visibility Python](img/property-visibility-1.png)
 
-## A.34.2. Property dengan prefix `__`
+## A.35.2. Property dengan prefix `__`
 
 Sebelumnya telah disebutkan bahwa prefix `__` dalam penerapannya tidak benar-benar membuat property menjadi private. Silakan test dengan autocompletion editor, property private masih muncul, menandakan bahwa property tersebut tidak benar-benar private.
 

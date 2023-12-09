@@ -580,7 +580,3 @@ Penjelasan:
 - https://note.nkmk.me/en/python-inf-usage/
 
 </div>
-
-
-
-

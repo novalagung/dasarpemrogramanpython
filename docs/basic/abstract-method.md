@@ -1,12 +1,12 @@
 ---
-sidebar_position: 40
-title: A.40. Python OOP ➜ Abstract Method
-sidebar_label: A.40. OOP ➜ Abstract Method
+sidebar_position: 41
+title: A.41. Python OOP ➜ Abstract Method
+sidebar_label: A.41. OOP ➜ Abstract Method
 ---
 
 Pada chapter ini kita akan mempelejari tentang apa itu abstract method beserta bagaimana penerapannya pada pemrograman OOP menggunakan Python.
 
-## A.40.1. Pengenalan abstract method
+## A.41.1. Pengenalan abstract method
 
 Abstract method merupakan jenis method yang dideklarasikan dengan isi tidak melakukan apa-apa, hanya statement `pass`. Nantinya ketika class (dimana method tersebut berada) di-inherit ke sub class lain, maka sub-class harus meng-override method milik super class tersebut.
 
@@ -78,7 +78,7 @@ Kode di atas ketika di-run tidak menghasilkan error, berjalan normal, hanya saja
 
 Di *real life*, ukuran source code yang kita maintain bisa saja berisi ratusan atau bahkan puluh ribuan baris dengan jumlah file sangat banyak. Di case yang seperti itu cukup susah mengecek mana class yang implementasinya sudah sesuai spesifikasi dan mana yang belum, karena saat program dijalankan tidak ada error atau warning. Untuk mengatasi masalah tersebut, solusinya adalah dengan mengimplementasikan abstract method.
 
-## A.40.2. Praktek abstract method
+## A.41.2. Praktek abstract method
 
 Di Python versi 3.4+, suatu method menjadi abstract method ketika memenuhi kriteria berikut:
 

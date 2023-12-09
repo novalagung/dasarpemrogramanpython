@@ -1,12 +1,12 @@
 ---
-sidebar_position: 36
-title: A.36. Python OOP ➜ Class Method
-sidebar_label: A.36. OOP ➜ Class Method
+sidebar_position: 37
+title: A.37. Python OOP ➜ Class Method
+sidebar_label: A.37. OOP ➜ Class Method
 ---
 
 Pada chapter ini kita akan belajar tentang jenis method lain yang tersedia di Python, yaitu class method, serta perbedaannya dibanding instance method dan constructor.
 
-## A.36.1. Pengenalan Class method
+## A.37.1. Pengenalan Class method
 
 Class method adalah method yang pemiliknya adalah class dengan pengaksesan adalah via class, berbeda dibanding instance method yang diperuntukan untuk instance object. Jika instance method memiliki parameter `self` yang isinya adalah instance object, maka class method memiliki parameter `cls` yang isinya adalah tipe data class.
 
@@ -16,7 +16,7 @@ Jika dilihat dari segi deklarasinya, class method dan instance method memiliki p
 - Class method memiliki parameter pertama bernama `cls` yang merupakan alias dari class dimana method tersebut dideklarasikan (misalnya class method dideklarasikan dalam class `Car`, maka paramter `cls` berisi tipe data class `Car`).
 - Selain perbedaan di atas, class method dideklariskan dengan menuliskan decorator `@classmethod`
 
-> Lebih detailnya mengenai decorator dibahas pada chapter [Decorator](#)
+> Pembahasan detail mengenai decorator dibahas pada chapter [Decorator](/basic/decorator)
 
 Agar lebih jelas silakan pelajari kode berikut lalu praktekan. Disini sebuah class bernama `ClanHouse` dibuat dengan isi 3 buah fungsi:
 
@@ -70,7 +70,7 @@ p3.info()
 
 > Parameter `cls` bisa disebut dengan parameter *implicit* atau implisit karena kita tidak berinteraksi secara langsung saat pengisian nilai. Nilai `cls` otomatis terisi saat class method diakses.
 
-## A.36.2. Class method parameter
+## A.37.2. Class method parameter
 
 Class method juga bisa memiliki parameter seperti umumnya fungsi. Jika pada instance method dan constructor parameter adalah ditulis setelah `self`, pada class method parameter ditulis setelah `cls`. Contoh:
 
@@ -141,7 +141,7 @@ Sebagai perbandingan, kedua bentuk pemanggilan constructor via `cls()` berikut a
             return obj
     ```
 
-## A.36.3. Pengaksesan class method via instance object
+## A.37.3. Pengaksesan class method via instance object
 
 Sampai sini penulis rasa bisa dipahami perbedaan cara pengaksesan antara instance method dan class method. Instance method diakses via instance object, dan class method diakses via class.
 
@@ -185,7 +185,7 @@ Dari kode di atas bisa dilihat perbedaan dari sisi pembuatan object dan pengakse
 
 Yang menarik untuk dibahas adalah `p5`. Object `p5` dibuat dari pemanggilan class method `create()` namun pengaksesannya adalah via instance object `p2`. Penulisan seperti itu diperbolehkan. Parameter `cls` pada class method `create()` akan terisi dengan nilai tipe data class object `p4` (yaitu `ClanHouse`).
 
-## A.36.4. Pengaksesan instance method via class
+## A.37.4. Pengaksesan instance method via class
 
 Jika class method bisa diakses via instance object, instance method juga bisa diakses via Class. Caranya cukup panggil instance method via class lalu isi parameter `self` dengan instance object. Contoh:
 
@@ -205,7 +205,7 @@ ClanHouse.info(p5)
 
 Pengaksesan instance method via class mengharuskan parameter `self` milik method untuk diisi dengan object. Hal ini berbeda dibanding pengaksesan instance method via instance object dimana parameter `self` otomatis terisi nilai instance object.
 
-## A.36.5. Pengaksesan class attribute via `cls`
+## A.37.5. Pengaksesan class attribute via `cls`
 
 Pada chapter sebelumnya, [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute), kita telah mempelajari tentang perbedaan instance attribute dibanding class attribute.
 
@@ -241,7 +241,7 @@ Output program:
 
 ![class method](img/class-method-1.png)
 
-## A.36.6. Summary
+## A.37.6. Summary
 
 Dari banyak hal yang telah dipelajari di chapter ini, secara garis besar perbedaan antara constructor, instance method, dan class method bisa dilihat di bawah ini:
 

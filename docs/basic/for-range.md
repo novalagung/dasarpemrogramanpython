@@ -229,7 +229,10 @@ Fungsi `print()` memiliki parameter opsional bernama `end`, kegunaannya untuk me
 
 Statement `print("*", end=" ")` akan menghasilkan pesan `* ` yang di-akhiri dengan karakter spasi karena nilai parameter `end` di-set dengan nilai karakter spasi (atau ` `).
 
-> Lebih detailnya tentang fungsi dan parameter opsional dibahas pada chapter [Function](/basic/function)
+> Pembahasan detail mengenai fungsi dan parameter opsional ada di chapter berikut:
+>
+> - [Function](/basic/function)
+> - [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument)
 
 ### ◉ Fungsi `print()` tanpa parameter
 

@@ -204,7 +204,7 @@ Penjelasan:
 
 O iya, fungsi yang didalamnya tidak memiliki statement `return` sebenarnya juga mengembalikan nilai balik, yaitu `None`.
 
-> Lebih detailnya mengenai tipe data `None` dibahas pada chapter [None](#)
+> Pembahasan detail mengenai tipe data `None` ada di chapter [None](/basic/none)
 
 ## A.22.5. Tipe data nilai balik fungsi (*return type*)
 

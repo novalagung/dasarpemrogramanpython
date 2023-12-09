@@ -1,14 +1,14 @@
 ---
-sidebar_position: 31
-title: A.31. Python OOP ➜ Class & Object
-sidebar_label: A.31. OOP ➜ Class & Object
+sidebar_position: 32
+title: A.32. Python OOP ➜ Class & Object
+sidebar_label: A.32. OOP ➜ Class & Object
 ---
 
 Python mendukung paradigma pemrograman berbasis objek (OOP) melalui implementasi Class dan Object API. Pada bab ini, kita akan mempelajari konsep dasar beserta penerapannya.
 
 > Pembahasan OOP pada ebook ini lebih fokus pada pengaplikasiannya di Python. Jadi pembahasan teorinya tidak terlalu banyak.
 
-## A.31.1. Pengenalan Class
+## A.32.1. Pengenalan Class
 
 Class adalah *blueprint* untuk membuat variabel, class bisa diartikan juga sebagai tipe data. Di Python, setiap data pasti memiliki tipe data yang tipe tersebut merupakan adalah class. Sebagai contoh:
 
@@ -56,11 +56,11 @@ class Car:
 
 > Pembahasan detail mengenai keyword `pass` ada di chapter [Function section Keyword pass](/basic/function#a225-keyword-pass)
 
-## A.31.2. Naming convention class
+## A.32.2. Naming convention class
 
 Berdasarkan dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), disarankan untuk menulis nama class dalam bentuk TitleCase, contoh: `FavoriteFood`.
 
-## A.31.3. Pembuatan Instance object
+## A.32.3. Pembuatan Instance object
 
 Object (atau instance object) adalah variabel yang dibuat dari class. Cara pembuatan object adalah dengan memanggil nama class diikuti oleh tanda kurung fungsi `()` (seperti pemanggilan fungsi). Statement tersebut mengembalikan nilai balik berupa object baru yang bertipe data sesuai dengan class yang digunakan.
 
@@ -104,7 +104,7 @@ car2 = Car()
 car3 = Car()
 ```
 
-## A.31.4. Instance Attribute
+## A.32.4. Instance Attribute
 
 Salah satu property class adalah attribute. Attribute adalah variabel yang terasosiasi dengan class, jadi dalam pengaksesannya harus dilakukan melalui class dan/atau instance object.
 
@@ -175,7 +175,7 @@ Jalankan program untuk melihat outputnya:
 >
 > Perbedaan utama dari keduanya adalah pada dictionary key-nya bisa dikelola secara dinamis, sedangkan pada class nama attribute-nya adalah fixed.
 
-## A.31.5. Pengecekan instance object
+## A.32.5. Pengecekan instance object
 
 Fungsi `isinstance()` cukup berguna untuk mengecek apakah suatu instance object tipe datanya adalah class tertentu atau class yang meng-*inherit* class tertentu.
 
@@ -192,7 +192,7 @@ if isinstance(car1, Car):
 # output ➜ car1 class is Car
 ```
 
-## A.31.6. Class turunan `object`
+## A.32.6. Class turunan `object`
 
 Setiap class yang ada di Python baik itu class bawaan Python Standard Library ataupun custom class, secara otomatis adalah turunan dari class bernama `object`.
 
@@ -221,7 +221,7 @@ if isinstance(data2, object):
 # data2 class inherit from object
 ```
 
-> Lebih detailnya mengenai class inheritance dibahas pada chapter [OOP ➜ Class Inheritance](/basic/class-inheritance)
+> Pembahasan detail mengenai class inheritance ada di chapter [OOP ➜ Class Inheritance](/basic/class-inheritance)
 
 ---
 
