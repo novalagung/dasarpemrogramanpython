@@ -337,3 +337,28 @@ Penjelasan alur program di atas:
 1. Jika terjadi exception lainnya, maka dimunculkan pesan error
 1. Jika tidak terjadi exception sama sekali, maka block `else` dijalankan
 1. Setelah program selesai, entah itu ada exception atau tidak, pesan `program completed` di-print
+
+---
+
+<div class="section-footnote">
+
+## Catatan chapter 📑
+
+### ◉ Source code praktik
+
+<pre>
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/exception-handling-try-except-else-finally">
+        github.com/novalagung/dasarpemrogramanpython-example/../exception-handling-try-except-else-finally
+    </a>
+</pre>
+
+### ◉ Chapter relevan lainnya
+
+- [Error & Exception](/basic/error-exception)
+
+### ◉ Referensi
+
+- https://docs.python.org/3/library/exceptions.html
+- https://docs.python.org/3/tutorial/errors.html
+
+</div>
