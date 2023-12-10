@@ -561,10 +561,6 @@ Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya d
 - [Function ➜ Closure](/basic/closure)
 - [Function ➜ Lambda](/basic/lambda)
 
-### ◉ TBA
-
-- Pack & Unpack with `*` & `**`
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/datastructures.html

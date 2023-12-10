@@ -318,6 +318,8 @@ print((first_name, rank, win))
 print(first_name, rank, win)
 ```
 
+> Penjelasan detail mengenai packing ada di chapter [Pack Unpack ➜ Tuple, List, Set, Dict](/basic/pack-unpack-elements)
+
 ### ◉ Tuple *unpacking*
 
 *Unpacking* adalah istilah untuk menyebar isi suatu data kolektif ke beberapa variabel. *Unpacking* merupakan kebalikan dari *packing*.
@@ -331,6 +333,8 @@ first_name, rank, win = row_data
 print(first_name, rank, win)
 # output ➜ aerith gainsborough 11 False
 ```
+
+> Penjelasan detail mengenai packing ada di chapter [Pack Unpack ➜ Tuple, List, Set, Dict](/basic/pack-unpack-elements)
 
 ## A.14.10. Tuple kosong `()`
 
