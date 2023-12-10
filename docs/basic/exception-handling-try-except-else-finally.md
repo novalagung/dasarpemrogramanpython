@@ -356,6 +356,10 @@ Penjelasan alur program di atas:
 
 - [Error & Exception](/basic/error-exception)
 
+### ◉ TBA
+
+- catch custom exception
+
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/exceptions.html
