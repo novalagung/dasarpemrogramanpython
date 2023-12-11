@@ -254,6 +254,10 @@ print(8 // 7)
 
 Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjelasan lebih lanjut mengenai `__init__()` ada di chapter [OOP ➜ Class & Object](/basic/class-object).
 
+## A.29.9. Attribute `__doc__` milik semua class dan fungsi
+
+Attribute `__doc__` digunakan melihat informasi komentar docstring. Penjelasan lebih lanjut mengenai `__doc__` ada di chapter [DocString](/basic/docstring).
+
 ---
 
 <div class="section-footnote">
