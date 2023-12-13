@@ -91,6 +91,8 @@ Ada tips agar data dictionary yang di-print di console muncul dengan tampilan ya
 
     ![Python dictionary pretty print](img/dictionary-3.png)
 
+    > Lebih detailnya mengenai JSON dibahas di chapter [JSON](#)
+
 ## A.16.2. Inisialisasi dictionary
 
 Pembuatan data dictionary bisa dilakukan menggunakan beberapa cara:

@@ -293,10 +293,6 @@ Dari banyak hal yang telah dipelajari di chapter ini, secara garis besar perbeda
 - [Function ➜ Decorator](/basic/decorator)
 - [OOP ➜ Abstract Method](/basic/abstract-method)
 
-### ◉ TBA
-
-- list-type attribute behaviour on class attribute vs instance attribute
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/classes.html

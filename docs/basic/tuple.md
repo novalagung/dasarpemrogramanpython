@@ -386,7 +386,6 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 ### ◉ TBA
 
 - Slicing tuple
-- Pack & Unpack with `*` & `**`
 - Zip
 
 ### ◉ Referensi

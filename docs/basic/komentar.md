@@ -64,6 +64,7 @@ Atau bisa juga ditulis seperti ini untuk komentar satu baris:
 ```
 
 > - Pembahasan detail mengenai string ada di chapter [String](/basic/string)
+> - Pembahasan detail mengenai DocString ada di chapter [DocString](/basic/docstring)
 
 ---
 
