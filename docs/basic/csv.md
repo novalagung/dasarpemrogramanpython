@@ -1,12 +1,12 @@
 ---
 sidebar_position: 48
-title: A.48. Python CSV
-sidebar_label: A.48. CSV
+title: A.48. Python CSV File Format
+sidebar_label: A.48. File Format ➜ CSV
 ---
 
 Pada chapter ini kita akan belajar tentang penggunaan python untuk membaca dan mengelola data CSV.
 
-## A.48.1. Pengenalan CSV
+## A.48.1. Implementasi CSV di Python
 
 Python menyediakan beberapa API untuk berinteraksi dengan data CSV, dua diantaranya adalah `csv.DictWriter()` dan `csv.writer()` untuk operasi tulis data, dan `csv.DictReader()` dan `csv.reader()` untuk operasi baca data.
 
