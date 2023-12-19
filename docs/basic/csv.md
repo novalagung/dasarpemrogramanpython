@@ -1,14 +1,10 @@
 ---
 sidebar_position: 48
-title: A.48. Python CSV File Format
-sidebar_label: A.48. File Format ➜ CSV
+title: A.48. Python CSV File/Data Format
+sidebar_label: A.48. File/Data Format ➜ CSV
 ---
 
-Pada chapter ini kita akan belajar tentang penggunaan python untuk membaca dan mengelola data CSV.
-
-## A.48.1. Implementasi CSV di Python
-
-Python menyediakan beberapa API untuk berinteraksi dengan data CSV, dua diantaranya adalah `csv.DictWriter()` dan `csv.writer()` untuk operasi tulis data, dan `csv.DictReader()` dan `csv.reader()` untuk operasi baca data.
+Pada chapter ini kita akan belajar tentang penggunaan Python untuk membaca dan mengelola data CSV.
 
 :::info
 
@@ -30,6 +26,10 @@ Penjelasan singkat tentang CSV:
 - Bisa saja ada data yang isinya tidak lengkap, misalnya di contoh data ke-2 tidak memiliki data `phone`, dan data ke-3 tidak memiliki data `email`.
 
 :::
+
+## A.48.1. Implementasi CSV di Python
+
+Python menyediakan beberapa API untuk berinteraksi dengan data CSV, ada `csv.DictWriter()` dan `csv.writer()` untuk operasi tulis data, dan `csv.DictReader()` dan `csv.reader()` untuk operasi baca data.
 
 Pembelajaran pada chapter ini dilakukan lewat pembuatan program sederhana yang mengakomodir operasi create, read, dan delete data.
 
@@ -96,8 +96,9 @@ def prepare_csv():
 # ...
 ```
 
-Fungsi `prepare_csv()` bertugas untuk membuat file csv bernama `data.csv` dengan isi kosong. Kemudian object file dimasukan ke fungsi `csv.DictWriter()` lalu header atau kolom data ditulis disitu.
+Fungsi `prepare_csv()` bertugas untuk membuat file csv bernama `data.csv` dengan isi kosong. Di dalam fungsi tersebut proses berikut dilakukan:
 
+- Fungsi `open()` membuka file `data.csv` dengan mode tulis (`w`). Disitu parameter opsional `newline` diisi dengan string kosong agar di akhir file tidak dituliskan baris baru.
 - Fungsi `csv.DictWriter()` parameter pertama diisi object file, dan parameter `fieldnames` diisi informasi header dalam bentuk list.
 - Method `writeheader()` milik object writer digunakan untuk menulis header ke file.
 
@@ -130,8 +131,10 @@ def write_data(name, email, phone):
 
 Untuk menulis data CSV, cara awalnya kurang lebih sama, yaitu object file dibuat dulu menggunakan fungsi `open()` kemudian dimasukan ke `csv.DictWriter()`. Selain itu, ada beberapa perbedaan dibanding kode sebelumnya:
 
-- Disini file dibuka menggunakan mode `a` atau append. Hal ini agar header yang sudah ditulis di file tidak hilang
-- Method `riterow()` milik writer digunakan untuk pengisian data. Data sendiri harus diformat dalam bentuk dictionary.
+- Disini file dibuka menggunakan mode append (`a`). Hal ini agar header yang sudah ditulis di file tidak hilang.
+- Method `writerow()` milik writer digunakan untuk pengisian data. Penggunaannya mengharuskan data untuk diformat dalam bentuk dictionary.
+
+Data yang bisa dituliskan ke CSV adalah `int`, `float`, dan `str`. Jika ada tipe data lain yang perlu disimpan di CSV, harus dikonversi ke format yang kompatibel terlebih dahulu, misalnya `str`.
 
 Selanjutnya, pada fungsi `control_flow()` pada seleksi kondisi `mode == 1` ganti statement `pass` dengan kode baru yang meminta 3 inputan dari user kemudian menggunakannya sebagai argument pemanggilan fungsi `write_data()`.
 
@@ -211,7 +214,7 @@ Bisa dilihat isi data yang muncul via pemanggilan fungsi `read_data()` sesuai de
 
 ## A.48.3. Delete data CSV
 
-Operasi delete data bisa dilakukan dengan menuliskan ulang isi file CSV dengan meng-exclude data yang ingin dihapus. Kurang lebih kodenya seperti ini:
+Operasi delete data bisa dilakukan dengan menuliskan ulang isi file CSV tetapi meng-exclude data yang ingin dihapus. Kurang lebih kodenya seperti ini:
 
 ```python
 def delete_data(row_index):
@@ -359,11 +362,10 @@ if __name__ == '__main__':
 
 ### ◉ Chapter relevan lainnya
 
-- [File I/O](/basic/csv)
+- [File I/O](/basic/file)
 
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/csv.html
 
 </div>
-

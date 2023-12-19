@@ -186,8 +186,6 @@ with open("file.txt", "r", encoding="utf-8") as f:
         print(f"line {i+1}: {line}")
 ```
 
-> Lebih detailnya mengenai fungsi `enumerate()` data iteratable dibahas pada chapter [Iterator](#)
-
 Jika goal dari program adalah hanya membaca isi file secara menyeluruh, sebenarnya lebih praktis lagi menggunakan method `read()`.
 
 ```python
@@ -382,6 +380,11 @@ os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
         github.com/novalagung/dasarpemrogramanpython-example/../file
     </a>
 </pre>
+
+### ◉ Chapter relevan lainnya
+
+- [File/Data Format ➜ CSV](/basic/csv)
+- [File/Data Format ➜ JSON](/basic/json)
 
 ### ◉ TBA
 

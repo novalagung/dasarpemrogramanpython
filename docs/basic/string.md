@@ -36,7 +36,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
     # in python
     ```
 
-- Atau menggunakan tanda `"""` untuk mengapit text. Contoh:
+- Atau menggunakan tanda `"""` atau `'''` untuk mengapit text. Contoh:
 
     ```python
     text = """a multiline string
@@ -48,6 +48,10 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
     # a multiline string
     # in python
     ```
+    
+    > Teknik penulisan string menggunakan tanda `"""` atau `'''` selain digunakan untuk membuat multiline string, juga bisa dimanfaatkan untuk hal lain yaitu pembuatan docstring.
+    >
+    > Lebih detailnya mengenai docstring dibahas di chapter [DocString](/basic/docstring).
 
 ### ◉ Escape character
 
