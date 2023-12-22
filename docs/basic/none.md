@@ -1,12 +1,12 @@
 ---
-sidebar_position: 30
-title: A.30. Python None
-sidebar_label: A.30. None
+sidebar_position: 31
+title: A.31. Python None
+sidebar_label: A.31. None
 ---
 
 Pada chapter ini kita akan belajar tentang object special bernama `None`.
 
-## A.30.1. Pengenalan `None`
+## A.31.1. Pengenalan `None`
 
 `None` merupakan object bawaan Python yang umumnya digunakan untuk merepresentasikan nilai kosong atau *null*.
 

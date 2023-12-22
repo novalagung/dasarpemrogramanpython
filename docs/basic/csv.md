@@ -1,7 +1,7 @@
 ---
-sidebar_position: 48
-title: A.48. Python CSV File/Data Format
-sidebar_label: A.48. File/Data Format ➜ CSV
+sidebar_position: 49
+title: A.49. Python CSV File/Data Format
+sidebar_label: A.49. File/Data Format ➜ CSV
 ---
 
 Pada chapter ini kita akan belajar tentang penggunaan Python untuk membaca dan mengelola data CSV.
@@ -27,7 +27,7 @@ Penjelasan singkat tentang CSV:
 
 :::
 
-## A.48.1. Implementasi CSV di Python
+## A.49.1. Implementasi CSV di Python
 
 Python menyediakan beberapa API untuk berinteraksi dengan data CSV, ada `csv.DictWriter()` dan `csv.writer()` untuk operasi tulis data, dan `csv.DictReader()` dan `csv.reader()` untuk operasi baca data.
 
@@ -72,7 +72,7 @@ Program yang dibuat adalah aplikasi CLI interaktif, dimana user bisa berinteraks
 
 Selanjutnya, program dimodifikasi dengan penambahan implementasi untuk masing-masing mode.
 
-## A.48.2. Insert data CSV
+## A.49.2. Insert data CSV
 
 Sebuah file CSV akan dibuat dan difungsikan sebagai *database* untuk penyimpanan data yang di-insert via program. File CSV berisi 3 buah kolom data point:
 
@@ -167,7 +167,7 @@ Jalankan program lalu coba test fungsionalitasnya dengan insert beberapa data. B
 
 ![Python CSV](img/csv-2.png)
 
-## A.48.3. Read data CSV
+## A.49.3. Read data CSV
 
 Operasi baca data dilakukan via fungsi `csv.DictReader()` dengan argument parameter adalah object file. Lewat object reader, gunakan fungsi `enumerate()` untuk membungkusnya lalu lakukan iterasi menggunakan keyword `for`. Lebih jelasnya silakan lihat kode `read_data()` berikut, dan tak lupa tambahkan ke program.
 
@@ -212,7 +212,7 @@ Sekarang jalankan program untuk pengetesan.
 
 Bisa dilihat isi data yang muncul via pemanggilan fungsi `read_data()` sesuai dengan data yang di-insert.
 
-## A.48.3. Delete data CSV
+## A.49.3. Delete data CSV
 
 Operasi delete data bisa dilakukan dengan menuliskan ulang isi file CSV tetapi meng-exclude data yang ingin dihapus. Kurang lebih kodenya seperti ini:
 
@@ -274,7 +274,7 @@ Jalankan ulang program, test fungsionalitas mode 1, 2, dan 3.
 
 Kurang lebih seperti itu penerapan operasi CSV di Python. Silakan lanjut explore dan praktek dengan pembuatan program sejenis lainnya agar makin paham.
 
-## A.48.4. `csv.writer()` dan `csv.reader()`
+## A.49.4. `csv.writer()` dan `csv.reader()`
 
 Selain menggunakan fungsi `csv.DictWriter()` dan `csv.DictReader()`, operasi baca tulis CSV bisa dilakukan menggunakan fungsi `csv.writer()` dan `csv.reader()`.
 

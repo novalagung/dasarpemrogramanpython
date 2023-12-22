@@ -1,14 +1,14 @@
 ---
-sidebar_position: 43
-title: A.43. Python Error & Exception
-sidebar_label: A.43. Error & Exception
+sidebar_position: 44
+title: A.44. Python Error & Exception
+sidebar_label: A.44. Error & Exception
 ---
 
 Secara teknsi Python interpreter mengenal dua jenis error, yaitu *syntax error* dan *exception*. Sebenarnya ada lagi satu jenis error lainnya, yaitu yang munculnya hanya di level linter (di editor) namun membuat eksekusi program menjadi gagal.
 
 Pada chapter ini kita akan membahas tentang topik tersebut.
 
-## A.43.1. Syntax error
+## A.44.1. Syntax error
 
 Syntax error adalah salah satu error jenis error yang ada di Python, yang jika muncul maka bisa dipastikan eksekusi program adalah gagal atau terhenti. Syntax error disebabkan oleh kesalah penulisan.
 
@@ -24,7 +24,7 @@ Output program:
 
 Satu-satunya solusi untuk mengatasi syntax error adalah dengan memperbaiki kode, memastikan semua penulisannya benar sesuai aturan di Python.
 
-## A.43.2. Exception
+## A.44.2. Exception
 
 Exception adalah jenis error yang muncul saat *runtime* (saat program dijalankan). Berbeda dengan syntax error yang munculnya saat proses eksekusi program (sebelum program benar-benar running).
 
@@ -63,7 +63,7 @@ Output program:
 
 Alternatif solusi lainnya untuk mengatasi exception adalah dengan pengaplikasian kombinasi keyword `try` dan `catch`. Lebih detailnya akan dibahas di chapter berikutnya, di chapter [Exception Handling (try, catch, finally)](#). 
 
-## A.43.3. Throw exception
+## A.44.3. Throw exception
 
 Di atas kita belajar salah satu cara antisipasi exception, yaitu dengan penambahan validasi sesuai kebutuhan, jika kondisi berpotensi menghasilkan exception maka pesan custom error dimunculkan.
 
@@ -90,7 +90,7 @@ Cara membuat exception adalah dengan menggunakan keyword `raise` diikuti dengan 
 
 Pada contoh di atas, exception dimunculkan dengan pesan error `we do not allow 0 or negative number`. 
 
-## A.43.4. Linter error / warning
+## A.44.4. Linter error / warning
 
 Linter adalah suatu program utilisa yang berguna untuk melakukan pengecekan kualitas kode saat pengembangan (penulisan kode). Linter akan memunculkan error atau warning jika ditemukan pada beberapa bagian kode yang ditulis adalah kurang baik.
 
