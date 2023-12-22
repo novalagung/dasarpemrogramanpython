@@ -1,12 +1,12 @@
 ---
-sidebar_position: 31
-title: A.31. Python Pack Unpack tuple, list, set, dict
-sidebar_label: A.31. Pack Unpack ➜ Tuple, List, Set, Dict
+sidebar_position: 32
+title: A.32. Python Pack Unpack tuple, list, set, dict
+sidebar_label: A.32. Pack Unpack ➜ Tuple, List, Set, Dict
 ---
 
 Python mengenal teknik packing dan unpacking, dimana teknik ini umum diterapkan sesuai kebutuhan pada beberapa jenis tipe data kolektif tuple, list, set, dan dictionary. Pada chapter ini kita akan mempelajari cara penggunaannya, beserta peran penggunaan tanda `*` dan `**` pada operasi packing dan unpacking.
 
-## A.31.1. Unpacking element tuple, list, set
+## A.32.1. Unpacking element tuple, list, set
 
 Unpacking (yang dalam Bahasa Indonesia berarti bongkar muatan) adalah teknik pendistribusian elemen tipe data kolektif ke banyak variabel.
 
@@ -140,7 +140,7 @@ print(warrior1)  # output ➜ Reiner Braun
 print(warrior2)  # output ➜ Annie Leonhart
 ```
 
-## A.31.2. Packing element tuple, list, set
+## A.32.2. Packing element tuple, list, set
 
 Packing element adalah operasi pemuatan banyak data ke sebuah data kolektif. Cara penerapannya sangat mudah, cukup tulis saja variabel yang ingin di-pack sebagai element data kolektif. Untuk tipenya bisa berupa tuple, list, maupun set.
 
@@ -332,7 +332,7 @@ print(names)
 >
 > Pembahasan detail mengenai set ada di chapter [Set](/basic/set)
 
-## A.31.3. Pemanfaatan teknik unpacking pada argument parameter
+## A.32.3. Pemanfaatan teknik unpacking pada argument parameter
 
 Tenik unpacking umum dimanfaatkan pada penyisipan data argument parameter pemanggilan fungsi/method. Contoh aplikasinya bisa dilihat pada kode berikut, dimana ada fungsi bernama `show_biography()` yang akan dipanggil beberapa kali dengan cara pemanggilan berbeda satu sama lain.
 
@@ -376,7 +376,7 @@ def show_biography(id, name, occupation, gender):
     show_biography('U0004', *user4_data, 'male')
     ```
 
-## A.31.4. Packing-unpacking item dictionary
+## A.32.4. Packing-unpacking item dictionary
 
 ### ◉ Operasi unpack pada dictionary
 

@@ -1,14 +1,14 @@
 ---
-sidebar_position: 34
-title: A.34. Python OOP ➜ Constructor
-sidebar_label: A.34. OOP ➜ Constructor
+sidebar_position: 35
+title: A.35. Python OOP ➜ Constructor
+sidebar_label: A.35. OOP ➜ Constructor
 ---
 
 Constructor/konstruktor adalah salah satu topik penting dalam pemrograman berbasis object (OOP). Konstruktor sendiri adalah fungsi khusus yang dipanggil saat pembuatan object dilakukan dari suatu class.
 
 Pada chapter ini kita akan belajar tentang konstruktor dan apa saja yang bisa dilakukan didalamnya.
 
-## A.34.1. Pengenalan constructor
+## A.35.1. Pengenalan constructor
 
 Di bahasa yang mengadopsi konsep OOP, setiap class memiliki *default constructor*. Sebagai contoh pada statement pembuatan object bertipe class `Car`, syntax `Car()` digunakan dan syntax tersebut merupakan contoh penerapan pengaksesan konstruktor.
 
@@ -72,7 +72,7 @@ mount_kilimanjaro.info()
 
 Pada contoh di atas, konstruktor `__init__(self)` meng-override default constructor milik class `Mountain` dan digunakan untuk deklarasi instance attribute.
 
-## A.34.2. Constructor dengan custom param
+## A.35.2. Constructor dengan custom param
 
 Konstruktor dapat didesain untuk memiliki parameter, dan metode ini sangat umum diterapkan.
 
@@ -109,7 +109,7 @@ mount_kilimanjaro.info()
 
 Seperti halnya method, parameter pertama konstruktor harus `self`. Dari sini bisa disimpulkan berarti penambahan parameter harus dituliskan setelah `self`. Bisa dilihat di deklarasi konstruktor class `Mountain`, disitu ada tiga buah parameter dideklarasikan setelah `self`.
 
-## A.34.3. Constructor overloading
+## A.35.3. Constructor overloading
 
 Overloading merupakan istilah OOP untuk pembuatan banyak konstruktor dengan jumlah dan tipe parameter berbeda.
 
@@ -160,7 +160,7 @@ Penjelasan:
 
 Silakan coba explore dengan mempraktekan penggunaan \*args / \*\*kwargs pada konstruktor.
 
-## A.34.4. Constructor dengan return type `None`
+## A.35.4. Constructor dengan return type `None`
 
 Constructor dipanggil saat inisialisasi object, maka bisa dibilang bahwa tersebut selalu mengembalikan tipe data bertipe class dimana constructor tersebut dideklarasikan.
 

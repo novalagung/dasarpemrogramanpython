@@ -1,14 +1,14 @@
 ---
-sidebar_position: 47
-title: A.47. Python CLI Arguments & Flags
-sidebar_label: A.47. CLI Arguments & Flags
+sidebar_position: 48
+title: A.48. Python CLI Arguments & Flags
+sidebar_label: A.48. CLI Arguments & Flags
 ---
 
 Chapter ini membahas tentang pengaksean CLI argument eksekusi program Python. Yang dimaksud dengan argument adalah apapun yang ditulis setelah command `python` (atau `python.exe` di Windows). Umumnya program yang dibuat untuk keperluan tooling ataupun utility lainnya banyak memanfaatkan *command line interface* arguments ini.
 
 Python mengenal 2 jenis CLI arguments, yaitu raw arguments (atau cukup arguments) dan flags, keduanya dibahas di sini.
 
-## A.47.1. CLI arguments `sys.argv`
+## A.48.1. CLI arguments `sys.argv`
 
 Data CLI argument eksekusi program bisa diakses via `sys.argv`. Variabel `sys.argv` ini berisi data argument bertipe string tersimpan dalam list. 
 
@@ -87,7 +87,7 @@ Output program:
 
 ![Python CLI Arguments & Flags](img/cli-arguments-flags-2.png)
 
-## A.47.2. CLI flags `argparse`
+## A.48.2. CLI flags `argparse`
 
 Flags adalah istilah untuk argument dengan label. Contohnya seperti `python main.py --name Noval` adalah contoh pengaplikasian flag, dengan label adalah `--name` berisi data string `Noval`.
 

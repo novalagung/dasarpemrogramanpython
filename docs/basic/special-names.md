@@ -1,7 +1,7 @@
 ---
-sidebar_position: 29
-title: A.29. Python Special Names
-sidebar_label: A.29. Special Names
+sidebar_position: 30
+title: A.30. Python Special Names
+sidebar_label: A.30. Special Names
 ---
 
 Chapter ini membahas tentang variabel spesial yang ada di Python (umumnya disebut special names).
@@ -10,7 +10,7 @@ Python memiliki variabel spesial yang bisa diakses secara global. Ciri khas spec
 
 Setiap special names memiliki kegunaan yang unik dan berbeda satu sama lain.
 
-## A.29.1. Variabel `__name__`
+## A.30.1. Variabel `__name__`
 
 Variabel `__name__` adalah salah satu special names di Python. Isinya mencakup informasi nama modul atau string `__main__`, tergantung apakah variabel tersebut di-print dari file entrypoint eksekusi program atau di-import. File entrypoint yang dimaksud disini adalah file yang digunakan pada argument command `python <nama_file_program>`.
 
@@ -137,7 +137,7 @@ Penjelasan:
 
 ![Python special names](img/special-names-2.png)
 
-## A.29.2. Variabel `__file__`
+## A.30.2. Variabel `__file__`
 
 Variabel special name `__file__` berisi informasi path file di mana variabel tersebut ditulis atau digunakan. Ada dua cara untuk menggunakan variabel ini:
 
@@ -190,13 +190,13 @@ Bisa dilihat pada gambar berikut bahwa output program adalah memunculkan nama mo
 
 Penggunaan `__file__` akan menampilkan path file dimana variabel tersebut ditulis, sedangkan penggunaannya sebagai property module (misalnya `calculate.__file__`) menghasilkan informasi path module.
 
-## A.29.3. Variabel `__all__` & file `__init__.py`
+## A.30.3. Variabel `__all__` & file `__init__.py`
 
 Variabel `__all__` digunakan untuk menentukan module apa saja yang ter-import ketika statement `import *` digunakan. Variabel `__all__` wajib ditulis di file `__init__.py` yang ditempatkan dalam package.
 
 > Penjelasan detail mengenai `import *` ada pada chapter [Packages](/basic/packages).
 
-## A.29.4. Attribute `__name__` milik class `type`
+## A.30.4. Attribute `__name__` milik class `type`
 
 Kita telah menggunakan fungsi `type()` beberapa kali pada banyak chapter sebelum ini. Fungsi `type()` adalah fungsi yang mengembalikan data dengan tipe yaitu class `type`.
 
@@ -212,7 +212,7 @@ print(f"var: data2, data: {data2}, type: {type(data2).__name__}")
 # output ➜ var: data2, data: 168, type: int
 ```
 
-## A.29.5. Attribute `__class__` milik semua class / tipe data
+## A.30.5. Attribute `__class__` milik semua class / tipe data
 
 Setiap tipe data memiliki akses ke attribute bernama `__class__`. Isi dari attribute ini adalah data yang sama hasil pemanggilan fungsi `type()` yaitu informasi tipe data atau class.
 
@@ -228,11 +228,11 @@ print(f"var: data2, data: {data2}, type: {data2.__class__.__name__}")
 # output ➜ var: data2, data: 168, type: int
 ```
 
-## A.29.6. Attribute `__mro__` milik semua class / tipe data
+## A.30.6. Attribute `__mro__` milik semua class / tipe data
 
 Class attribute `__mro__` berisi informasi hirarki class dalam tipe data tuple. Penjelasan lebih lanjut mengenai `__mro__` ada di chapter [OOP ➜ Class Inheritance](/basic/class-inheritance).
 
-## A.29.7. Package `__future__`
+## A.30.7. Package `__future__`
 
 Package `__future__` berisi modules yang hanya tersedia di Python versi terbaru. Package ini biasa di-import pada program yang dijalankan menggunakan Python versi lama (misalnya 2.5), yang didalamnya ada penerapan kode yang hanya ada di versi Python terbaru.
 
@@ -250,11 +250,11 @@ print(8 // 7)
 # output ➜ 1
 ```
 
-## A.29.8. Fungsi `__init__()`
+## A.30.8. Fungsi `__init__()`
 
 Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjelasan lebih lanjut mengenai `__init__()` ada di chapter [OOP ➜ Class & Object](/basic/class-object).
 
-## A.29.9. Attribute `__doc__` milik semua class dan fungsi
+## A.30.9. Attribute `__doc__` milik semua class dan fungsi
 
 Attribute `__doc__` digunakan melihat informasi komentar docstring. Penjelasan lebih lanjut mengenai `__doc__` ada di chapter [DocString](/basic/docstring).
 
