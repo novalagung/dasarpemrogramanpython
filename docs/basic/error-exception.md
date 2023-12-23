@@ -120,7 +120,7 @@ Meskipun tidak membuat program terhenti saat running, ada baiknya untuk selalu m
 
 ### ◉ Chapter relevan lainnya
 
-- [Exception Handling ➜ try, except, else, finally](/basic/error-exception)
+- [Exception Handling ➜ try, except, else, finally](/basic/exception-handling-try-except-else-finally)
 
 ### ◉ Referensi
 
