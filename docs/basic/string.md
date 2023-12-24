@@ -152,7 +152,9 @@ Semua metode string formatting yang telah dipelajari menghasilkan nilai balik ya
 
 > Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
 
-## A.17.4. Penggabungan string (*concatenation*)
+## A.17.4. Penggabungan string & split string
+
+### ◉ Penggabungan string (concatenation)
 
 Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operasi penggabungan string.
 
@@ -201,6 +203,23 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
     print(text)
     # output ➜ hello python
     ```
+
+### ◉ Split string
+
+Split string adalah operasi pemisahan karakter string menjadi list dengan element berisi string. Operasi ini merupakan kebalikan dari penggabungan string.
+
+Cara penggunaannya adalah dengan mengakses method `split()` langsung dari data string. Pemanggilan method tersebut perlu disertai argument berisi separator atau karakter pemisah string.
+
+Pada contoh berikut, string `hello python 12345` di split menggunakan karakter spasi (` `).
+
+```python
+text = "hello python 12345"
+res = text.split(" ")
+print(res)
+# output ➜ ['hello', 'python', '12345']
+```
+
+> Parameter method `split()` boleh untuk tidak diisi apapun, dengan efek adalah string menjadi di-split menggunakan separator `\n`, `\r`, `\t`, `\f` atau spasi (` `).
 
 ## A.17.5. Operasi sequence pada string
 

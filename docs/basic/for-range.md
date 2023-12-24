@@ -149,7 +149,11 @@ for i in range(5, -5, -1):
 
 ## A.9.3. Iterasi element data kolektif
 
-Perulangan menggunakan `for` bisa dilakukan pada beberapa jenis tipe data (seperti list, string, tuple, dan lainnya) caranya dengan langsung menuliskan saja variabel atau data tersebut pada statement `for`. Contoh penerapannya bisa dilihat di bawah ini:
+Perulangan menggunakan `for` bisa dilakukan pada beberapa jenis tipe data (seperti list, string, tuple, dan lainnya) caranya dengan langsung menuliskan saja variabel atau data tersebut pada statement `for`. 
+
+> Tipe data yang bisa digunakan pada keyword `for` bisasa disebut dengan tipe iterator. Lebih detailnya dibahas pada chapter [Iterator](#).
+
+Contoh penerapannya bisa dilihat di bawah ini:
 
 ### ◉ Iterasi data list
 

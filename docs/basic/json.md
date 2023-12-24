@@ -1,7 +1,7 @@
 ---
-sidebar_position: 50
-title: A.50. Python JSON File/Data Format
-sidebar_label: A.50. File/Data Format ➜ JSON
+sidebar_position: 51
+title: A.51. Python JSON File/Data Format
+sidebar_label: A.51. File/Data Format ➜ JSON
 ---
 
 Pada chapter ini kita akan belajar tentang penerapan tipe data JSON di Python.
@@ -52,7 +52,7 @@ jstr2 = """
 
 :::
 
-## A.50.1. Implementasi JSON di Python
+## A.51.1. Implementasi JSON di Python
 
 Operasi JSON di Python umumnya dilakukan terhadap data yang tersimpan di variabel/memory atau data yang tersimpan di file, dengan memanfaatkan module `json` (baawan Python Standard Library) untuk proses decode maupun encode data json.
 

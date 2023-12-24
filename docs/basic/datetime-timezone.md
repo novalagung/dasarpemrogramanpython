@@ -1,12 +1,12 @@
 ---
-sidebar_position: 51
-title: A.51. Python Date, Time, DateTime, Timezone
-sidebar_label: A.51. Date, Time, DateTime, Timezone
+sidebar_position: 52
+title: A.52. Python Date, Time, DateTime, Timezone
+sidebar_label: A.52. Date, Time, DateTime, Timezone
 ---
 
 Pada chapter ini kita akan belajar tentang tipe data `date`, `time`, `datetime` untuk penyimpanan informasi tanggal dan waktu di Python, serta peran dari tipe data `timezone` untuk penentuan zona waktu.
 
-## A.51.1. Pengenalan `date`, `time`, dan `datetime`
+## A.52.1. Pengenalan `date`, `time`, dan `datetime`
 
 Python menyediakan package `datetime` berisi banyak sekali API untuk keperluan operasi data yang berhubungan dengan tanggal dan waktu. Tiga diantaranya adalah tipe data berikut:
 
@@ -135,7 +135,7 @@ print("sekarang (date):", data2)
 
 > Kode di atas outputnya adalah sesuai dengan output program di local penulis saat program di run. Di tempat pembaca output pastinya berbeda.
 
-## A.51.2. Pengenalan timezone (`tz`)
+## A.52.2. Pengenalan timezone (`tz`)
 
 Setiap tipe data yang meyimpan informasi waktu (seperti `time` dan `datetime`) didalamnya ada informasi timezone yang bisa diakses ataupun ditentukan saat pembuatan data. Informasi timezone direpresentasikan menggunakan `dateutil.tz`, tipe data `tz` dalam package `dateutil`.
 

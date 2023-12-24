@@ -204,7 +204,7 @@ for item in profile["affliations"]:
 #   ➜ mushroom kingdom (protector)
 ```
 
-Pada kode di atas, key `affliations` berisi array object dictionary.
+Pada kode di atas, key `affliations` berisi list object dictionary.
 
 Contoh cara mengakses value nested item dictionary:
 
