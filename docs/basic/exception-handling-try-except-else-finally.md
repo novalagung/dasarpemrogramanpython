@@ -1,14 +1,14 @@
 ---
-sidebar_position: 45
-title: A.45. Python Exception Handling (try, except, else, finally)
-sidebar_label: A.45. Exception Handling ➜ try, except, else, finally
+sidebar_position: 46
+title: A.46. Python Exception Handling (try, except, else, finally)
+sidebar_label: A.46. Exception Handling ➜ try, except, else, finally
 ---
 
 Chapter ini membahas tentang penanganan exception via keyword `try`, `except`, `else`, dan `finally`. Metode exception handler ini sangat efektif karena tidak membutuhkan validasi error secara manual satu per satu menggunakan seleksi kondisi.
 
 > Pembahasan tentang apa itu exception sendiri ada di chapter [Error & Exception](/basic/error-exception)
 
-## A.45.1. Keyword `try` & `except`
+## A.46.1. Keyword `try` & `except`
 
 Kita mulai pembelajaran dengan sebuah kode sederhana untuk menghitung pembagian pisang ke warga. Hasil operasi pembagian tersebut kemudian di-print.
 
@@ -95,7 +95,7 @@ Output program:
 
 Silakan gunakan block `try` & `catch` sesuai kebutuhan, tempatkan di bagian kode yang memang dirasa paling pas.
 
-## A.45.2. Explicit exception handler
+## A.46.2. Explicit exception handler
 
 Suatu exception bisa ditangkap secara spesifik dengan menuliskan varian exception-nya setelah keyword `except`. Contoh penerapannya bisa di lihat pada kode berikut, dimana exception `ZeroDivisionError` perlu ditangkap ketika muncul.
 
@@ -236,7 +236,7 @@ except Exception as err:
         print(f"oops! something wrong. {err}")
 ```
 
-## A.45.3. Keyword `try`, `except` & `else`
+## A.46.3. Keyword `try`, `except` & `else`
 
 Keyword `else` bisa dikombinasikan dengan `try` dan `except`. Block `else` tersebut hanya akan dieksekusi ketika tidak terjadi exception.
 
@@ -269,7 +269,7 @@ Penjelasan alur program di atas:
 
 Block `else` mengenali semua variabel yang dideklarasikan di block `try`. Oleh karena itu variabel `res` bisa langsung di-print di block tersebut.
 
-## A.45.4. Keyword `try`, `except` & `finally`
+## A.46.4. Keyword `try`, `except` & `finally`
 
 Keyword `finally` adalah keyword yang berguna untuk menandai bahwa eksekusi suatu block `try` & `except` telah selesai. Block `finally` hanya dieksekusi ketika deretan block selesai, tanpa mengecek apakah ada exception atau tidak.
 
@@ -301,7 +301,7 @@ Penjelasan alur program di atas:
 
 ![Python Exception Handling (try, except, finally)](img/exception-handling-try-except-else-finally-7.png)
 
-## A.45.5. Keyword `try`, `except`, `else` & `finally`
+## A.46.5. Keyword `try`, `except`, `else` & `finally`
 
 Bentuk sempurna dari exception handler adalah kombinasi dari 4 keyword yang telah dipelajari (`try`, `except`, `else` & `finally`).
 

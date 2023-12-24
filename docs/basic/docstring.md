@@ -1,12 +1,12 @@
 ---
-sidebar_position: 46
-title: A.46. Python DocString
-sidebar_label: A.46. DocString
+sidebar_position: 47
+title: A.47. Python DocString
+sidebar_label: A.47. DocString
 ---
 
 Pada chapter ini kita akan membahas tentang docstring beserta cara penerapan dan manfaatnya.
 
-## A.46.1. Pengenalan docstring
+## A.47.1. Pengenalan docstring
 
 Di pembelajaran awal yaitu pada chapter [Komentar](/basic/komentar), telah disinggung bahwa salah satu cara menulis komentar adalah menggunakan karakter `"""` dengan penulisan di awal dan akhir komentar. Contoh: `### ini komentar ###`.
 
@@ -19,7 +19,7 @@ Komentar docstring otomatis menempel pada unit dimana komentar ditulis. Misalnya
 
 Perihal unit yang bisa ditempeli docstring bisa berupa fungsi, class, method, atau lainnya.
 
-## A.46.2. Praktek penerapan docstring
+## A.47.2. Praktek penerapan docstring
 
 Mari kita praktekan agar lebih jelas. Siapkan project sederhana dengan struktur seperti ini. Isinya hanya dua file saja:
 
@@ -193,7 +193,7 @@ Output ketika di-hover:
 
 ![Python docstring](img/docstring-5.png)
 
-## A.46.3. Special name ➜ class attribute `__note__`
+## A.47.3. Special name ➜ class attribute `__note__`
 
 Informasi docstring milik fungsi, method, dan class bisa diakses secara excplit menggunakan class attribute `__note__`. Jika mengacu ke kode yang sudah ditulis, maka pengaksesannya seperti ini:
 

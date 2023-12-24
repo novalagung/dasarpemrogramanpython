@@ -226,6 +226,12 @@ print(message)
 
 Metode penulisan ini sebenarnya adalah sama seperti penerapan ternary sebelumnya, perbedaannya: pada metode ini setiap kondisi menghasilkan nilai balik yang umumnya ditampung oleh variabel. Pada contoh di atas, nilai balik ditampung variabel `message`.
 
+## A.8.7. Pattern matching
+
+Selain keyword `if`, Python menyediakan keyword lain yaitu `match` dan `case` yang kegunaannya adalah untuk pattern matching. Pattern matching sendiri merupakan teknik seleksi kondisi yang cukup advance, mendukung banyak variasi pencocokan pola.
+
+Lebih detailnya mengenai pattern matching ada di chapter [Pattern Matching ➜ match](/basic/pattern-matching)
+
 ---
 
 <div class="section-footnote">

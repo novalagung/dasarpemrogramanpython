@@ -2178,7 +2178,7 @@ packages:
       '@mdx-js/react': 1.6.22(react@17.0.2)
       clsx: 1.2.1
       copy-text-to-clipboard: 3.2.0
-      infima: 0.2.0-alpha.43
+      infima: 0.2.0-alphA.44
       lodash: 4.17.21
       nprogress: 0.2.0
       postcss: 8.4.29
@@ -5403,7 +5403,7 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /infima@0.2.0-alpha.43:
+  /infima@0.2.0-alphA.44:
     resolution: {integrity: sha512-2uw57LvUqW0rK/SWYnd/2rRfxNA5DDNOh33jxF7fy46VWoNhGxiUQyVZHbBMjQ33mQem0cjdDVwgWVAmlRfgyQ==}
     engines: {node: '>=12'}
     dev: false

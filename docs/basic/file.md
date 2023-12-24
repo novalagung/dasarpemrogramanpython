@@ -1,12 +1,12 @@
 ---
-sidebar_position: 47
-title: A.47. Python File I/O
-sidebar_label: A.47. File I/O
+sidebar_position: 48
+title: A.48. Python File I/O
+sidebar_label: A.48. File I/O
 ---
 
 Pada chapter ini kita akan belajar tentang pengolahan file dan folder, dan beberapa hal relevan lainnya yang masih berhubungan dengan manajemen file & folder.
 
-## A.47.1. Membuka stream file
+## A.48.1. Membuka stream file
 
 Di Python, hampir semua operasi file diawali dengan pemanggilan fungsi `open()`, dan diakhiri pemanggilan method `close()` (milik object yang dikembalikan oleh fungsi `open()`).
 
@@ -55,7 +55,7 @@ print("file is closed:", f.closed)
 # output ➜ file is closed: True
 ```
 
-## A.47.2. Keyword `with`
+## A.48.2. Keyword `with`
 
 Ada cara yang lebih efisien dalam operasi buka file agar file otomatis ter-close setelah digunakan, yaitu dengan menggunakan keyword `with` diikuti statement `open()` lalu syntax `as nama_variabel`. Kurang lebih seperti ini penulisannya:
 
@@ -69,7 +69,7 @@ print("file is closed:", f.closed)
 # output ➜ file is closed: True
 ```
 
-## A.47.3. Menulis file
+## A.48.3. Menulis file
 
 Operasi penulisan konten ke file dilakukan via method `write()` milik object file. Contoh penerapannya bisa dilihat pada kode berikut, dimana ada method `write()` digunakan 3x untuk menulis karakter string.
 
@@ -86,7 +86,7 @@ Output program:
 
 Program di-run 3x dan isinya tetap sama (tidak menumpuk), ini karena setiap kali statement `open()` dijalankan dengan mode `w`, file akan dikosongkan terlebih dahulu.
 
-## A.47.4. Append konten ke file
+## A.48.4. Append konten ke file
 
 Gunakan mode `a` untuk append konten ke file yang isinya bisa saja tidak kosong (agar isi konten tidak ditimpa).
 
@@ -103,7 +103,7 @@ Output program:
 
 Bisa dilihat, setiap kali program dieksekusi konten `happy monday\n` bertambah terus.
 
-## A.47.5. Membaca file
+## A.48.5. Membaca file
 
 Method `readline()` dan `read()` milik object file, keduanya digunakan untuk membaca isi file.
 
@@ -193,7 +193,7 @@ with open("file.txt", "r", encoding="utf-8") as f:
     print(f.read())
 ```
 
-## A.47.6. Membaca dan menulis dalam 1 sesi
+## A.48.6. Membaca dan menulis dalam 1 sesi
 
 Di awal chapter telah dijelaskan tentang kegunaan mode `w`, `a`, dan `r`. Lalu bagaimana jika ada kebutuhan untuk membaca dan menulis file dalam satu sesi? Jawabannya adalah dengan menambahkan tanda `+` pada mode (jadinya `w+`, `a+`, atau `r+`).
 
@@ -228,7 +228,7 @@ Mode `w+`, `a+`, dan `r+` kesemuanya bisa digunakan untuk baca dan tulis dalam 1
 
 https://stackoverflow.com/questions/1466000/difference-between-modes-a-a-w-w-and-r-in-built-in-open-function/30566011#30566011
 
-## A.47.7. Mengosongkan isi file
+## A.48.7. Mengosongkan isi file
 
 Cara mengosongkan file bisa dilakukan dengan mudah menggunakan mode `w`. Baca file menggunakan mode tersebut kemudian langsung `close()` saja. Boleh menggunakan keyword `with` atau bisa langsung sebaris statement. Contoh penerapannya bisa dilihat di kode berikut. 3 block statement di situ semuanya ekuivalen, membuat isi file menjadi kosong.
 
@@ -249,7 +249,7 @@ with open("file.txt", "w", encoding="utf-8") as f:
     f.truncate()
 ```
 
-## A.47.8. Menghapus file atau folder
+## A.48.8. Menghapus file atau folder
 
 API `os.remove()` digunakan untuk menghapus file, sedangkan `os.rmdir()` untuk menghapus folder. Contoh penerapan:
 
@@ -277,7 +277,7 @@ API `os.remove()` digunakan untuk menghapus file, sedangkan `os.rmdir()` untuk m
     os.rmdir("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
     ```
 
-## A.47.9. Mengecek apakah file atau folder ada
+## A.48.9. Mengecek apakah file atau folder ada
 
 API `os.path.isfile()` digunakan untuk mengecek apakah suatu file ada.
 
@@ -308,7 +308,7 @@ else:
     print("file.txt is not exists")
 ```
 
-## A.47.10. Membuat folder baru
+## A.48.10. Membuat folder baru
 
 API `os.makedirs()` digunakan untuk membuat folder baru.
 
@@ -326,7 +326,7 @@ import os
 os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
 ```
 
-## A.47.11. Menampilkan isi folder
+## A.48.11. Menampilkan isi folder
 
 - Menggunakan `os.listdir()`:
 
