@@ -10,7 +10,7 @@ E-book Dasar Pemrograman Python ini cocok untuk pembaca yang ingin mempelajari p
 
 Selain topik fundamental python programming, nantinya akan disedikan juga pembahasan *advance* lainnya, **stay tuned!**
 
-Versi e-book: **v1.0.0-beta1.20231011**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
+Versi e-book: **v1.0.20231224**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
 
 > E-book ini aktif dalam pengembangan, kami akan tambah terus konten-kontennya. Silakan cek di [Github repo](https://github.com/novalagung/dasarpemrogramanpython) kami mengenai progress development e-book.
 
