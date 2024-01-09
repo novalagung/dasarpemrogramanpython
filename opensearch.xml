@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Dasar Pemrograman Python</ShortName>
+  <Description>Search Dasar Pemrograman Python</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://dasarpemrogramanpython.novalagung.com/img/favicon.png</Image>
+  <Url type="text/html" method="get" template="https://dasarpemrogramanpython.novalagung.com/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://dasarpemrogramanpython.novalagung.com/opensearch.xml" />
+  <moz:SearchForm>https://dasarpemrogramanpython.novalagung.com/</moz:SearchForm>
+</OpenSearchDescription>
