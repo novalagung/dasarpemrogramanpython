@@ -534,9 +534,9 @@ print(list_2)
 
 ![list python](img/list-3.png)
 
-Method ini sebenarnya menyidakan kapasitas sorting yang cukup advance, caranya dengan cara menambahkan closure/lambda pada argument method ini.
+Method ini sebenarnya menyediakan kapasitas sorting yang cukup advance, caranya dengan cara menambahkan closure/lambda pada argument method ini.
 
-> Pembahasan detail mengenai tuple ada di chapter [Function ➜ Closure](/basic/closure)
+> Pembahasan detail mengenai closure ada di chapter [Function ➜ Closure](/basic/closure)
 > Pembahasan detail mengenai lambda ada di chapter [Function ➜ Lambda](/basic/lambda)
 
 ---
