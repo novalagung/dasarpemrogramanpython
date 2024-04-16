@@ -124,7 +124,7 @@ print("data:", data_1)
 # output ➜ data: {1, 'abc', False, ('banana', 'spaghetti')}
 
 print("len:", len(data_1))
-# output ➜ len: 3
+# output ➜ len: 4
 ```
 
 - Set bisa menampung element yang tipe datanya bisa sejenis bisa tidak, sama seperti tuple dan list.
@@ -255,7 +255,7 @@ print("len:", len(fellowship), "data:", fellowship)
 
 ### ◉ Menghapus spesifik elemen
 
-Ada dua method tersedia untuk untuk kebutuhan menghapus elemen tertentu dari suatu set, yaitu `discard()` dan `remove()`. Penggunaan keduanya adalah sama, harus disertai dengan 1 argument pemanggilan method, yaitu elemen yang ingin dihapus.
+Ada dua method tersedia untuk kebutuhan menghapus elemen tertentu dari suatu set, yaitu `discard()` dan `remove()`. Penggunaan keduanya adalah sama, harus disertai dengan 1 argument pemanggilan method, yaitu elemen yang ingin dihapus.
 
 Pada contoh berikut, elemen `boromir` dihapus dari set menggunakan method `discard()`, dan elemen `gandalf` dihapus menggunakan method `remove()`. 
 
@@ -302,7 +302,7 @@ print("len:", len(fellowship), "data:", fellowship)
 
 ### ◉ *Copy* set
 
-Method `copy()` digunakan untuk meng-*copy* set, menghasilkan adalah data set baru.
+Method `copy()` digunakan untuk meng-*copy* set, menghasilkan data set baru.
 
 ```python
 data1 = {'aragorn', 'gimli', 'legolas'}
@@ -506,7 +506,7 @@ Bisa dilihat perbedaannya ada di-bagaimana nilai balik method disimpan.
 
     Nilai `res` berisi elemen set yang merupakan anggota set `a` dan set `b`. Operasi seperti ini biasa disebut dengan operasi *and*.
 
-- Operasi `exclusive or` pada set menggunakan operator `&`
+- Operasi `exclusive or` pada set menggunakan operator `^`
 
     ```python
     a = set('abracadabra') # {'c', 'a', 'r', 'd', 'b'}
