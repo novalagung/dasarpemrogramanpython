@@ -145,7 +145,7 @@ Operator ini bisa dipergunakan pada semua tipe data kolektif seperti dictionary,
 sample_list = [2, 3, 4]
 is_3_exists = 3 in sample_list
 print(is_3_exists)
-# output ➜ False
+# output ➜ True
 
 sample_tuple = ("hello", "python")
 is_hello_exists = "hello" in sample_tuple
