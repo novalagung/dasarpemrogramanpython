@@ -151,6 +151,7 @@ except Exception as err:
 
 ### ◉ Referensi
 
-- https://docs.python.org/3/c-api/del.html
+- https://docs.python.org/3/tutorial/datastructures.html#the-del-statement
+- https://docs.python.org/3/reference/simple_stmts.html#del
 
 </div>
