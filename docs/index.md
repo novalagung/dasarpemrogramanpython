@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Belajar Python (Gratis!)
+title: Tutorial Belajar Python (Gratis!)
 sidebar_label: Dasar Pemrograman Python
 ---
 
