@@ -121,7 +121,7 @@ task_one()
 # output ➜ 12
 ```
 
-## A.29.4. Fungsi `locals()`
+## A.29.5. Fungsi `locals()`
 
 Fungsi `locals()` mengembalikan informasi variabel yang dideklarasikan di block dimana fungsi tersebut dipanggil dengan nilai balik berbentuk dictionary.
 
@@ -173,5 +173,7 @@ Di contoh, ditambahkan block `try except` untuk menangkap error yang muncul saat
 ### ◉ Referensi
 
 - https://docs.python.org/3/faq/programming.html
+- https://docs.python.org/3/library/functions.html#locals
+- https://docs.python.org/3/library/functions.html#globals
 
 </div>
