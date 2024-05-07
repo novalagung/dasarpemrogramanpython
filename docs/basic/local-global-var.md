@@ -4,11 +4,11 @@ title: A.29. Python Variables Scope (Local vs. Global)
 sidebar_label: A.29. Variables Scope (Local vs. Global)
 ---
 
-Pada chapter ini kita akan membahas tentang variable scope, yaitu kapan suatu variabel valid dan bisa digunakan di dalam block serta bagaimana behaviour-nya.
+Pada chapter ini kita akan membahas tentang variable scope, yaitu kapan suatu variabel valid dan bisa digunakan di dalam block serta beberapa fungsi yang masih relevan dengan topik variabel scope.
 
 ## A.29.1. Local vs. global variable
 
-Global variable adalah variabel yang dideklarasikan di root (tidak di dalam suatu blok fungsi). Sedangkan local variable adalah yang dideklarasikan di dalam suatu block dan hanya valid di block tersebut saja.
+Global variable adalah variabel yang dideklarasikan di root (tidak di dalam suatu block fungsi). Sedangkan local variable adalah yang dideklarasikan di dalam suatu block dan hanya valid di block tersebut saja.
 
 Contoh, sebuah file program Python bernama `main.py` di isi dengan kode berikut:
 
@@ -103,6 +103,54 @@ print("greetings", name)
 ```
 
 Cara penggunaan keyword `global` adalah dengan cukup menuliskannya di dalam block kemudian diikuti nama variabel. Dari output terlihat bahwa di luar block fungsi `greet()` nilai variabel `name` berubah.
+
+## A.29.4. Fungsi `globals()`
+
+Fungsi `globals()` mengembalikan informasi semua variabel yang bisa diakses dari tempat dimana fungsi dipanggil. Nilai balik berbentuk dictionary dengan `key` adalah nama variabel dan `value` adalah nilai variabel.
+
+Contoh penerapannya bisa dilihat pada kode berikut. Ada variabel bernama `my_var` yang nilainya diakses via nilai balik pemanggilan fungsi `globals()`
+
+```python
+my_var = 12
+
+def task_one():
+    all_global_vars = globals()
+    print(all_global_vars['my_var'])
+
+task_one()
+# output ➜ 12
+```
+
+## A.29.4. Fungsi `locals()`
+
+Fungsi `locals()` mengembalikan informasi variabel yang dideklarasikan di block dimana fungsi tersebut dipanggil dengan nilai balik berbentuk dictionary.
+
+Pada contoh berikut, variabel `my_var` dideklarasikan di luar block fungsi `task_two()`, sedangkan `another_var` didalamnya.
+
+Di dalam  `task_two()`, variabel `another_var` bisa diakses via nilai balik fungsi `locals()` karena masih satu block. Tidak seperti `my_var`, pengaksesannya via nilai balik fungsi `locals()` akan menghasilkan error karena variabel tersebut tidak dikenali.
+
+```python
+my_var = 12
+
+def task_two():
+    another_var = "Hello Python"
+
+    all_locals_vars = locals()
+    print(all_locals_vars['another_var'])
+
+    try:
+        print(all_locals_vars['my_var'])
+    except Exception as err:
+        print(f'error {err}')
+
+task_two()
+# output ↓
+# 
+# Hello Python
+# error 'my_var'
+```
+
+Di contoh, ditambahkan block `try except` untuk menangkap error yang muncul saat statement `all_locals_vars['my_var']` dieksekusi.
 
 ---
 
