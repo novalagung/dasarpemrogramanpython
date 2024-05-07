@@ -164,7 +164,7 @@ Program di atas ketika di run outputnya:
 
 ![Perulangan dictionary](img/dictionary-4.png)
 
-## A.15.4. Nested dictionary
+## A.16.4. Nested dictionary
 
 Dictionary bercabang atau **nested dictionary** bisa dimanfaatkan untuk menyimpan data dengan struktur yang kompleks, misalnya dictionary yang salah satu value item-nya adalah list.
 
@@ -218,7 +218,7 @@ print("  ➜ %s (%s)" % (value))
 # output ➜ mushroom kingdom (protector)
 ```
 
-## A.15.5. Dictionary mutability
+## A.16.5. Dictionary mutability
 
 Item dictionary adalah mutable, perubahan value item bisa dilakukan langsung menggunakan operator assignment `=`.
 
@@ -227,7 +227,17 @@ profile = {
     "id": 2,
     "name": "mario",
     "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
-    "is_female": False
+    "is_female": False,
+    "affliations": [
+        {
+            "name": "luigi",
+            "affliation": "brother"
+        },
+        {
+            "name": "mushroom kingdom",
+            "affliation": "protector"
+        },
+    ]
 }
 
 print(profile["affliations"][0]["name"])
@@ -239,7 +249,7 @@ print(profile["affliations"][0]["name"])
 # output ➜ luigi steven
 ```
 
-## A.15.6. Operasi data dictionary
+## A.16.6. Operasi data dictionary
 
 ### ◉ Pengaksesan item
 
@@ -281,7 +291,7 @@ print("name:", profile["name"])
 
 ### ◉ Menambah item dictionary
 
-Caranya adalah mirip seperti operasi pengubahan value item, perbedaannya ada pada key-nya. Key yang ditulis adalah key item baru yang.
+Caranya adalah mirip seperti operasi pengubahan value item, perbedaannya ada pada key-nya. Key yang ditulis adalah key item baru yang ingin ditambahkan.
 
 ```python
 profile = {
@@ -335,9 +345,9 @@ print(list(profile.keys()))
 # output ➜ ['id', 'name', 'is_female']
 ```
 
-### ◉ Pengaksesan dictionary
+### ◉ Pengaksesan dictionary values
 
-Method `values()` digunakan untuk mengakses semua keys dictionary, hasilnya adalah tipe data view objects `dict_values`. Gunakan fungsi `list()` untuk mengkonversinya ke bentuk list.
+Method `values()` digunakan untuk mengakses semua value dictionary, hasilnya adalah tipe data view objects `dict_values`. Gunakan fungsi `list()` untuk mengkonversinya ke bentuk list.
 
 ```python
 profile = {
@@ -353,7 +363,7 @@ print(list(profile.values()))
 
 ### ◉ Method `items()` dictionary
 
-Digunakan untuk mengakses semua keys dictionary. Nilai baliknya bertipe view objects `dict_items` yang strukturnya cukup mirip seperti list berisi tuple.
+Digunakan untuk mengakses semua item dictionary. Nilai baliknya bertipe view objects `dict_items` yang strukturnya cukup mirip seperti list berisi tuple.
 
 Untuk mengkonversinya ke bentuk list, gunakan fungsi `list()`.
 
