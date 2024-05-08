@@ -552,6 +552,7 @@ Dianjurkan untuk memanggil constructor super class secara langsung via `ClassNam
 
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Abstract Method](/basic/abstract-method)
+- [OOP ➜ Data Class](/basic/dataclass)
 
 ### ◉ Referensi
 

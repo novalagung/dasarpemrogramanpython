@@ -1,14 +1,14 @@
 ---
-sidebar_position: 55
-title: A.55. Python Enumeration
-sidebar_label: A.55. Enumeration
+sidebar_position: 56
+title: A.56. Python Enumeration
+sidebar_label: A.56. Enumeration
 ---
 
 Enumeration (Enum) adalah nilai konstan, umumnya disiapkan untuk merepresentasikan sekumpulan data konstan yang konteksnya masih sama. Misalnya, **warna** yang isinya bisa merah, biru, kuning, atau warna lain.
 
 Pembuatan enum di Python sangat mudah. Caranya dengan mendeklarasikan class baru yang meng-*inherit* class `enum.Enum`, kemudian menuliskan kumpulan data sebagai class property-nya.
 
-## A.55.1. Enum / Enumeration
+## A.56.1. Enum / Enumeration
 
 Di bawah ini, disiapkan sebuah enum bernama `City` dengan isi ada 4 buah pilihan kota.
 
@@ -45,11 +45,11 @@ print(f"value {city1.value}")
 
 Nama enum property bisa diambil menggunakan property `name` sedangkan value-nya diambil via property `value`.
 
-## A.55.2. Naming convention enum
+## A.56.2. Naming convention enum
 
 Sesuai penjelasan di [halaman dokumentasi Python](https://docs.python.org/3/howto/enum.html), nama class enum dianjurkan ditulis menggunakan **CamelCase**, sedangkan nama class property dituliskan **UPPERCASE**. 
 
-## A.55.3. Notasi penulisan pengaksesan enum property
+## A.56.3. Notasi penulisan pengaksesan enum property
 
 Dalam penggunaannya setidaknya ada 3 notasi pengaksesan enum property yang bisa digunakan.
 
@@ -94,7 +94,7 @@ Dalam penggunaannya setidaknya ada 3 notasi pengaksesan enum property yang bisa 
 
     Metode ini pas digunakan ketika value enum sudah diketahui nilainya.
 
-## A.55.4. Nilai property enum
+## A.56.4. Nilai property enum
 
 Property enum nilainya bisa berisi data numerik, string, atau tipe data lainnya.
 
@@ -165,7 +165,7 @@ print(size1, size2)
 # output ➜ Size.M Size.XL
 ```
 
-## A.55.5. Pengecekan nilai enum
+## A.56.5. Pengecekan nilai enum
 
 Operator identitas `is` dan operator perbandingan `==` dan `!=` bisa digunakan untuk pengecekan nilai enum.
 
@@ -192,7 +192,7 @@ say_anything(city1)
 # output ➜ monggo
 ```
 
-## A.55.6. Perulangan enum
+## A.56.6. Perulangan enum
 
 Enum merupakan tipe yang bisa langsung digunakan pada perulangan. Contoh penggunaannya:
 

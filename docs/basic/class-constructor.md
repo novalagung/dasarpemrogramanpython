@@ -207,6 +207,7 @@ class Mountain:
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Abstract Method](/basic/abstract-method)
+- [OOP ➜ Data Class](/basic/dataclass)
 
 ### ◉ Referensi
 

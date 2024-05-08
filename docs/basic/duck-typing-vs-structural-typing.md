@@ -1,12 +1,12 @@
 ---
-sidebar_position: 43
-title: A.43. Python Duck Typing vs Structural Typing
-sidebar_label: A.43. Duck Typing vs. Structural Typing
+sidebar_position: 44
+title: A.44. Python Duck Typing vs Structural Typing
+sidebar_label: A.44. Duck Typing vs. Structural Typing
 ---
 
 Pada chapter ini kita akan belajar salah satu konsep yang ada di bahasa pemrograman dinamis, yaitu **duck typing**, beserta perbandingannya dengan **structural typing**
 
-## A.43.1. Duck typing
+## A.44.1. Duck typing
 
 Istilah *duck typing* berasal dari kalimat *If it looks like a duck and quacks like a duck, it's a duck*.
 
@@ -99,7 +99,7 @@ Hasilnya: OK ✅
 
 Fungsi `do_the_math()` tetap bisa menjalankan tugasnya dengan baik, bahkan untuk argument yang bukan instance object sekalipun. Selama argument memiliki fungsi `calculate_area()` maka semuanya aman terkendali.
 
-## A.43.2. Structural typing
+## A.44.2. Structural typing
 
 Structural typing bisa diibartkan sebagai duck typing tapi versi yang lebih ketat. Structural typing mengharuskan suatu fungsi atau method untuk memilki spesifikasi yang sama persis sesuai yang dideklarasikan. Misalnya ada suatu object berisi method dengan hanya nama fungsi dan skema parameternya saja yang sama dibanding yang dibutuhkan, maka itu tidak cukup dan error pasti muncul.
 
