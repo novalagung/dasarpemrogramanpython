@@ -1,12 +1,12 @@
 ---
-sidebar_position: 53
-title: A.53. Python DateTime Parsing & Formatting
-sidebar_label: A.53. DateTime ➜ Parsing & Formatting
+sidebar_position: 54
+title: A.54. Python DateTime Parsing & Formatting
+sidebar_label: A.54. DateTime ➜ Parsing & Formatting
 ---
 
 Chapter ini merupakan lanjutan dari chapter sebelumnmya. Di sini kita akan belajar tentang teknik parsing dan formatting pada tipe data `datetime`.
 
-## A.53.1. Parsing `datetime`
+## A.54.1. Parsing `datetime`
 
 Parsing adalah teknik konversi data date time berbentuk string ke tipe data `datetime`. Ada beberapa method yang tersedia untuk kebutuhan operasi ini:
 
@@ -47,7 +47,7 @@ Contoh implementasinya seperti ini:
     # output ➜ datetime: 1985-04-12 23:20:50.520000+07:00
     ```
 
-Selengkapnya silakan cek di bagian [A.53.3. Tabel kode format](/basic/datetime-parsing-formatting#a523-tabel-kode-format).
+Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting#a523-tabel-kode-format).
 
 ### ◉ Via `datetime.fromisoformat()` terhadap data ISO Date Time (ISO 8601)
 
@@ -105,7 +105,7 @@ print("datetime:", data_datetime)
 
 Selengkapnya mengenai format yang didukung oleh parser ini bisa di cek di halaman dokumentasi Python https://dateutil.readthedocs.io/en/stable/parser.html
 
-## A.53.2. Formatting `datetime`
+## A.54.2. Formatting `datetime`
 
 Formatting adalah teknik untuk memformat data `datetime` menjadi bentuk string dengan susunan/format sesuai keinginan. Beberapa method untuk operasi formatting datetime bisa dilihat di bawah ini:
 
@@ -127,7 +127,7 @@ print(data_datetime.strftime('%m/%d/%Y %H:%M:%S %z'))
 # output ➜ 04/12/1985 23:20:50 +0700
 ```
 
-Selengkapnya silakan cek di bagian [A.53.3. Tabel kode format](/basic/datetime-parsing-formatting#a523-tabel-kode-format).
+Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting#a523-tabel-kode-format).
 
 ### ◉ Method `datetime.isoformat()` ➜ ISO Date Time (ISO 8601)
 
@@ -149,7 +149,7 @@ print(data_datetime.timestamp())
 # output ➜ 1703314863.975431
 ```
 
-## A.53.3. Tabel kode format
+## A.54.3. Tabel kode format
 
 Tabel kode format sesuai 1989 C standard:
 

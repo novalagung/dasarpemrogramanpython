@@ -1,12 +1,12 @@
 ---
-sidebar_position: 44
-title: A.44. Python Pattern Matching ➜ match
-sidebar_label: A.44. Pattern Matching ➜ match
+sidebar_position: 45
+title: A.45. Python Pattern Matching ➜ match
+sidebar_label: A.45. Pattern Matching ➜ match
 ---
 
 Pada chapter ini, kita akan membahas tentang teknik seleksi kondisi pencocokan pola di Python yang cukup advance untuk mengenali banyak variasi pola, yaitu structural pattern matching.
 
-## A.44.1. Pengenalan pattern matching
+## A.45.1. Pengenalan pattern matching
 
 Pattern matching merupakan teknik pencocokan pola menggunakan kombinasi keyword `match` dan `case`. Penggunaan dasarnya mirip seperti seleksi kondisi menggunakan keyword `if`.
 
@@ -79,7 +79,7 @@ Pada penerapannya, keyword `match` ditulis diikuti oleh suatu data yang ingin di
 
 Gunakan kondisi `case _:` untuk menangkap kondisi yang tidak terpenuhi (seperti `else` pada seleksi kondisi menggunakan `if`). Kondisi yang selalu terpenuhi ini biasa disebut dengan *wildcard*, yang idealnya ditulis di paling akhir.
 
-## A.44.2. Pencocokan pola data sequence
+## A.45.2. Pencocokan pola data sequence
 
 Kode yang telah dipraktekan kita akan refactor, dimodifikasi agar inputan bisa menerima command sekaligus argument (ditandai dengan karakter spasi).
 
@@ -255,7 +255,7 @@ Output program:
 
 ![Python pattern matchin](img/pattern-matching-5.png)
 
-## A.44.3. Pencocokan pola + seleksi kondisi
+## A.45.3. Pencocokan pola + seleksi kondisi
 
 ### ◉ Pencocokan pola + logika OR
 
@@ -332,7 +332,7 @@ match command.split(' '):
         print(f"command {other} is not recognized")
 ```
 
-## A.44.4. Pencocokan pola tipe data lainnya
+## A.45.4. Pencocokan pola tipe data lainnya
 
 Tidak hanya tipe data string dan list saja yang bisa digunakan pada pattern matching, melainkan banyak sekali tipe data lainnya juga bisa digunakan. Termasuk diantaranya adalah tipe data sequence seperti `tuple` dan `dictionary`, dan juga tipe data dari custom class.
 

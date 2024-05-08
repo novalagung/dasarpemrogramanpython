@@ -247,6 +247,7 @@ if isinstance(data2, object):
 - [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Class Inheritance](/basic/class-inheritance)
 - [OOP ➜ Abstract Method](/basic/abstract-method)
+- [OOP ➜ Data Class](/basic/dataclass)
 
 ### ◉ Referensi
 

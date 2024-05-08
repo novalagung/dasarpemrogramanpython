@@ -353,6 +353,7 @@ print(generate_random_unique_reverse_sorted_list(15))
 - [OOP ➜ Class Method](/basic/class-method)
 - [OOP ➜ Static Method](/basic/static-method)
 - [OOP ➜ Abstract Method](/basic/abstract-method)
+- [OOP ➜ Data Class](/basic/dataclass)
 
 ### ◉ Referensi
 

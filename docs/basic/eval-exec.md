@@ -1,12 +1,12 @@
 ---
-sidebar_position: 56
-title: A.56. Python Eval & Exec
-sidebar_label: A.56. Eval & Exec
+sidebar_position: 57
+title: A.57. Python Eval & Exec
+sidebar_label: A.57. Eval & Exec
 ---
 
 Pada chapter ini kita akan mempelajari fungsi `eval()` untuk eksekusi *expression*, fungsi `exec()` untuk eksekusi syntax Python, dan fungsi `compile()`.
 
-## A.56.1. Fungsi `eval()`
+## A.57.1. Fungsi `eval()`
 
 String berisi ekspresi seperti `PI * r * r` bisa dieksekusi kemudian diambil hasilnya menggunakan fungsi `eval()`. Cara penggunaannya sangat mudah, tulis saja ekspresi sebagai argument pemanggilan fungsi. Misalnya:
 
@@ -55,7 +55,7 @@ By default, variabel dalam ekspresi terisi oleh nilai variabel yang sudah didekl
 
 > Pemanggilan `eval('expr')` tanpa parameter ke-2 dan ke-3 adalah ekuivalen dengan statement `eval('expr', globals(), locals())`
 
-## A.56.2. Fungsi `exec()`
+## A.57.2. Fungsi `exec()`
 
 Fungsi `exec()` berguna untuk eksekusi string berisi kode Python. Cara penggunaannya mirip seperti `eval()`. Contoh:
 
@@ -116,7 +116,7 @@ Fungsi `exec()` berguna untuk eksekusi string berisi kode Python. Cara penggunaa
 
 Selama string berisi kode Python dengan syntax valid, maka bisa dijalankan via fungsi `exec()` ini.
 
-## A.56.3. Fungsi `compile()`
+## A.57.3. Fungsi `compile()`
 
 Fungsi `compile()` digunakan untuk kompilasi expression maupun kode Python, untuk kemudian digunakan pada fungsi `eval()`, `exec()`, ataupun untuk keperluan lainnya (seperti parse AST dan lainnya).
 
