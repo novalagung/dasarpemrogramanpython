@@ -198,6 +198,7 @@ print(transposed)
 
 - [Perulangan ➜ for & range](/basic/for-range)
 - [List](/basic/list)
+- [Generator & Yield](/basic/generator-yield)
 
 ### ◉ TBA
 
