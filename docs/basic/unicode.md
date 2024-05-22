@@ -4,7 +4,7 @@ title: A.18. Python Unicode String
 sidebar_label: A.18. String ➜ Unicode
 ---
 
-Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam pengelolahan karakter dalam string. Benefitnya Python mendukung dan mengenali berbagai macam jenis karakter, termasuk diantaranya adalah huruf Arab, Jepang, emoji, symbol, dan banyak jenis karakter lainnya.
+Python mengadopsi aturan standar [Unicode](https://www.unicode.org/) dalam pengelolaan karakter pada string. Benefitnya Python mendukung dan mengenali berbagai macam jenis karakter, termasuk diantaranya adalah huruf Arab, Jepang, emoji, symbol, dan banyak jenis karakter lainnya.
 
 > Unicode sendiri adalah suatu aturan standar untuk *encoding* text yang di-maintain oleh Unicode Consortium. Standarisasi ini diciptakan untuk mendukung semua jenis penulisan yang ada di bumi.
 
