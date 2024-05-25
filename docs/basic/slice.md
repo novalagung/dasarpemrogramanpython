@@ -104,7 +104,7 @@ Ok, sekarang kita coba slice `data_str`:
 
     ![Slicing python](img/slice-1.png)
 
-- Slicing seluruh element dengan element dengan ketentuan element yang dikembalikan adalah setiap 2 element, ditulis dengan notasi `data_str[::2]`. Notasi tersebut adalah ekuivalen dengan `data_str[0:len(data_str):2]`.
+- Slicing seluruh element dengan ketentuan element yang dikembalikan adalah setiap 2 element, ditulis dengan notasi `data_str[::2]`. Notasi tersebut adalah ekuivalen dengan `data_str[0:len(data_str):2]`.
 
     ```python
     slice8 = data_str[::2]
