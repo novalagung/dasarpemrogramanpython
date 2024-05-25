@@ -10,7 +10,7 @@ Pada chapter ini kita akan belajar lebih dalam tentang ketiganya.
 
 ## A.19.1. Integer
 
-Bilangan bulat direpresentasikan oleh tipe data `int` (kependekan dari *integer*). Cara deklarasi nilai bertipa data ini adalah menggunakan literal integer dimana angka ditulis langsung. Contoh:
+Bilangan bulat direpresentasikan oleh tipe data `int` (kependekan dari *integer*). Cara deklarasi nilai bertipe data ini adalah menggunakan literal integer dimana angka ditulis langsung. Contoh:
 
 ```python
 angka1 = 24
@@ -204,7 +204,7 @@ print(f"bin2: {bin2:b}")
     </tbody>
 </table>
 
-> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](/basic/string)
 
 ### ◉ Operasi perbandingan antar basis
 
@@ -216,6 +216,7 @@ angka_biner = 0b10001100
 
 if angka == angka_biner:
     print(f"angka {angka} sama dengan biner {angka_biner:b}")
+# output ➜ angka 140 sama dengan biner 10001100
 ```
 
 Output program:
@@ -254,7 +255,6 @@ angka_biner = 0b10001100
 
 total = angka + angka_heksadesimal + angka_oktal + angka_biner
 print(f"total: {total} (hex: {total:x}, oct: {total:o}, bin: {total:b})")
-# output ➜ angka 140 sama dengan biner 10001100
 ```
 
 Output program:
@@ -432,7 +432,7 @@ print(f"3.14 + 2.8: {n:.2f}")
 # output ➜ 3.14 + 2.8: 5.94
 ```
 
-> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](/basic/string)
 
 ### ◉ Konversi tipe data via fungsi `float()`
 
