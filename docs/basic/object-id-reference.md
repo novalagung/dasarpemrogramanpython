@@ -4,7 +4,7 @@ title: A.21. Python Object ID & Reference
 sidebar_label: A.21. Object ID & Reference
 ---
 
-Pada chapter ini kita akan belajar tentang apa beberapa hal yang berhubungan dengan object/data dan reference, diantaranya:
+Pada chapter ini kita akan belajar tentang beberapa hal yang berhubungan dengan object/data dan reference, diantaranya:
 
 - Apa itu *identifier* data (object ID)
 - Bagaimana Python mengelola data
@@ -216,7 +216,7 @@ print("numbers2", id(numbers2), numbers2)
 # output ➜ numbers2 2269649131136 [1, 2, 3, 4]
 ```
 
-Perlu diingat bahwa data sequence bukan data *atomic* seperti `int` yang isinya sangat spesifik, yaitu nilai numerik. Data sequence merupakan data kolektif dengan isi banyak element. Data sequence isi isi element-nya bisa dimutasi atau diubah tanpa men-*trigger* alokasi alamat memory baru (identifier-nya adalah tetap).
+Perlu diingat bahwa data sequence bukan data *atomic* seperti `int` yang isinya sangat spesifik, yaitu nilai numerik. Data sequence merupakan data kolektif dengan isi banyak element. Data sequence isi-isi element-nya bisa dimutasi atau diubah tanpa men-*trigger* alokasi alamat memory baru (identifier-nya adalah tetap).
 
 Sebagai contoh, pada program berikut, variabel `numbers1` dan `numbers2` reference-nya adalah sama. Apa yang akan terjadi ketika ada penambahan element baru di salah satu variabel?
 
@@ -302,6 +302,24 @@ print(f"n1 == n2: {n1 == n2}")
 
 print(f"n1 is n2: {n1 is n2}")
 # output ➜ n1 is n2: True
+```
+
+### ◉ Object ID data string
+
+Python meng-*cache* informasi data string `a` hingga `Z`, karena alasan ini terkadang ID suatu data string adalah sama (meskipun tidak selalu).
+
+```python
+str1 = 'Indonesia'
+str2 = "Indonesia"
+
+print(f"id str1: {id(str1)}, id str2: {id(str2)}")
+# output ➜ id str1: 133983722110320, id str2: 133983722110320
+
+print(f"str1 == str2: {str1 == str2}")
+# output ➜ str1 == str2: True
+
+print(f"str1 is str2: {str1 is str2}")
+# output ➜ str1 is str2: True
 ```
 
 ---
