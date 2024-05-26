@@ -212,7 +212,7 @@ Pada kode di atas fungsi `matrix_multiply_scalar()` dipanggil beberapa kali:
 - Pemanggilan ke-4: nilai parameter `matrix` dan `scalar` dituliskan menggunakan metode *keyword argument* diterapkan.
 - Pemanggilan ke-5: nilai parameter `matrix` dan `scalar` dituliskan menggunakan metode *keyword argument* diterapkan dengan posisi penulisan argument diubah.
 
-Argument pemanggilan fungsi yang ditulis menggunakan metode *keyword argument* harus selalu diposisikan di sebelah kanan, sebelum penulisan argument yang menggunakan metode *positional argument*. Jika dipaksa ditulis terbalik, maka menghasilkan error. Contohnya seperti pada gambar berikut:
+Argument pemanggilan fungsi yang ditulis menggunakan metode *keyword argument* harus selalu diposisikan di sebelah kanan, setelah penulisan argument yang menggunakan metode *positional argument*. Jika dipaksa ditulis terbalik, maka menghasilkan error. Contohnya seperti pada gambar berikut:
 
 ![Python optional argument positional argument keyword only argument](img/positional-optional-keyword-argument-2.png)
 
