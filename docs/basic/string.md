@@ -130,7 +130,7 @@ Penjelasan:
 - Text `{occupation}` di dalam string di-replace oleh nilai variable `occupation`, yang pada konteks ini nilainya `IT support`.
 - f-strings di atas menghasilkan text `hello, my name is Aiden Pearce, I'm an IT support`.
 
-> Pada penerapan metode **f-strings**, isi dari `{}` tidak harus data string, tetapi tipe data lainnya juga bisa digunakan salahkan *printable* atau bisa di-print.
+> Pada penerapan metode **f-strings**, isi dari `{}` tidak harus data string, tetapi tipe data lainnya juga bisa digunakan asalkan *printable* atau bisa di-print.
 
 Selain menggunakan metode di atas, ada beberapa alternatif cara lain yang bisa digunakan, diantaranya:
 
@@ -149,8 +149,6 @@ print(text)
 ```
 
 Semua metode string formatting yang telah dipelajari menghasilkan nilai balik yang sama, yaitu `hello, my name is Aiden Pearce, I'm an IT support`. Mana yang lebih baik? Silakan pilih saja metode yang sesuai selera.
-
-> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](#)
 
 ## A.17.4. Penggabungan string & split string
 
@@ -519,7 +517,7 @@ if "ello" in text:
 
 ### ◉ Pengecekan substring
 
-Ada beberapa Method yang bisa digunakan untuk keperluan pengecekan substring, apakah suatu string merupakan dari string lain.
+Ada beberapa Method yang bisa digunakan untuk keperluan pengecekan substring, apakah suatu string merupakan bagian dari string lain.
 
 - Menggunakan method `startswith()` untuk mengecek apakah suatu string diawali dengan huruf/kata tertentu.
 
@@ -736,8 +734,6 @@ Ada beberapa metode konversi tipe data ke string, diantaranya:
     print(string3)
     # output ➜ {'name': 'AMD Ryzen 5600g', 'type': 'processor', 'igpu': True}
     ```
-
-> Lebih detailnya mengenai konversi tipe data dibahas pada chapter [Konversi Tipe Data](#)
 
 ---
 
