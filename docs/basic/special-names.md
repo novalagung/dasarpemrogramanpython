@@ -256,7 +256,7 @@ Fungsi `__init__()` digunakan untuk membuat konstruktor pada suatu class. Penjel
 
 ## A.30.9. Attribute `__doc__` milik semua class dan fungsi
 
-Attribute `__doc__` digunakan melihat informasi komentar docstring. Penjelasan lebih lanjut mengenai `__doc__` ada di chapter [DocString](/basic/docstring).
+Attribute `__doc__` digunakan untuk melihat informasi komentar docstring. Penjelasan lebih lanjut mengenai `__doc__` ada di chapter [DocString](/basic/docstring).
 
 ---
 
