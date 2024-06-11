@@ -106,7 +106,7 @@ Cara penggunaan keyword `global` adalah dengan cukup menuliskannya di dalam bloc
 
 ## A.29.4. Fungsi `globals()`
 
-Fungsi `globals()` mengembalikan informasi semua variabel yang bisa diakses dari tempat dimana fungsi dipanggil. Nilai balik berbentuk dictionary dengan `key` adalah nama variabel dan `value` adalah nilai variabel.
+Fungsi `globals()` mengembalikan informasi semua variabel global yang bisa diakses dari tempat dimana fungsi dipanggil. Nilai balik berbentuk dictionary dengan `key` adalah nama variabel dan `value` adalah nilai variabel.
 
 Contoh penerapannya bisa dilihat pada kode berikut. Ada variabel bernama `my_var` yang nilainya diakses via nilai balik pemanggilan fungsi `globals()`
 
