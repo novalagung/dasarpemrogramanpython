@@ -23,7 +23,7 @@ sum_then_print(2, 3, 4, 5, 4)
 
 Fungsi `sum_then_print()` menerima 5 buah argument numerik yang dari nilai tersebut kemudian dihitung totalnya lalu ditampilkan.
 
-Fungsi tersebut memiliki limitasi yaitu hanya bisa menerima 5 buah data numerik. Untuk membuatnya bisa menampung sejumlah data, solusinya bisa dengan cukup menggunakan 1 parameter saja dengan data argument yang disisipkan harus dalam tipe data sequence seperti list, atau solusi alternatif lainyna bisa dengan menggunakan **\*args** yang di bawah ini dibahas.
+Fungsi tersebut memiliki limitasi yaitu hanya bisa menerima 5 buah data numerik. Untuk membuatnya bisa menampung sejumlah data, solusinya bisa dengan cukup menggunakan 1 parameter saja dengan data argument yang disisipkan harus dalam tipe data sequence seperti list, atau solusi alternatif lainnya bisa dengan menggunakan **\*args** yang di bawah ini dibahas.
 
 Implementasi args cukup mudah, pada deklarasi fungsi tulis saja parameter dengan nama apapun bebas, tetapi pada penulisannya diawali karakter asterisk atau **\***, contohnya seperti parameter `numbers` berikut:
 
@@ -62,7 +62,7 @@ print_data("hello python", 123, [5, True, ("yesn't")], {"iwak", "peyek"})
 
 ### ◉ Kombinasi positional argument dan args
 
-Args sebenarnya tidak benar-benar menangkap semua argument pemanggilan fungsi, melainkan hanya argument yang ditulis sesuai posisi parameter higga posisi setelahnya. Misalnya, sebuah fungsi memiliki 2 parameter dimana parameter pertama menampung string dan parameter dua adalah **\*args**, maka pada contoh ini parameter **\*args** hanya menampung argument ke-2 dan setelahnya. Contoh:
+Args sebenarnya tidak benar-benar menangkap semua argument pemanggilan fungsi, melainkan hanya argument yang ditulis sesuai posisi parameter hingga posisi setelahnya. Misalnya, sebuah fungsi memiliki 2 parameter dimana parameter pertama menampung string dan parameter kedua adalah **\*args**, maka pada contoh ini parameter **\*args** hanya menampung argument ke-2 dan setelahnya. Contoh:
 
 ```python
 def sum_then_print(message, *numbers):
@@ -77,7 +77,7 @@ sum_then_print("total nilai:", 2, 3, 4, 5, 4)
 
 Bisa dilihat, pada kode di atas parameter `message` menampung argument ke-1 yaitu string `total nilai:`, dan parameter `numbers` menampung argument ke-2 hingga seterusnya (yaitu data `2`, `3`, `4`, `5`, `4`).
 
-Perlu diketahu dalam penerapan kombinasi positional argument dan args, positional argument harus selalu ditulis sebelum parameter **\*args**.
+Perlu diketahui dalam penerapan kombinasi positional argument dan args, positional argument harus selalu ditulis sebelum parameter **\*args**.
 
 ### ◉ Kombinasi positional argument, args, dan keyword argument
 
@@ -148,7 +148,7 @@ Dalam penerapannya, positional argument harus selalu ditulis sebelum parameter *
 
 ### ◉ Kombinasi positional argument, args dan kwargs
 
-Kombinasi antara positional argument, **\*args**, dan **\*\*kwargs** juga bisa dilakukan dengan ketentuan positional semua argument ditulis terlebih dahulu, kemudian diikuti **\*args**, lalu **\*\*kwargs**.
+Kombinasi antara positional argument, **\*args**, dan **\*\*kwargs** juga bisa dilakukan dengan ketentuan semua positional argument ditulis terlebih dahulu, kemudian diikuti **\*args**, lalu **\*\*kwargs**.
 
 Contoh penerapannya:
 
@@ -170,7 +170,7 @@ Python secara cerdas mengidentifikasi argument mana yang akan disimpan pada posi
 
 - Argument `hello world` ditampung parameter `message`.
 - Argument `1`, `True`,dan  `("yesn't", "nope")` ditampung parameter `params`.
-- Keyword argument `name="nokia 3310"`, `discontinued=True`, fan `year_released=2000` ditampung parameter `others`.
+- Keyword argument `name="nokia 3310"`, `discontinued=True`, dan `year_released=2000` ditampung parameter `others`.
 
 ### ◉ Kombinasi positional argument, args, keyword argument, dan kwargs 
 

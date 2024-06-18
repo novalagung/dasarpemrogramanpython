@@ -13,7 +13,7 @@ Di Python, fungsi bisa dideklarasikan di-dalam suatu fungsi. Penerapannya cukup 
 Permisalan ada fungsi `inner()` yang dideklarasikan di dalam fungsi `outer()`, maka:
 
 - Fungsi `inner()` bisa diakses dari dalam fungsi `outer()`
-- Fungsi `inner()` juga bisa diakses dari luar fungsi `outer()` asalkan fungsi `inner()` tersebut dijadikan sebagai nilai balik fungsi `outer()` (untuk kemudian ditampung variabel lalu dieksekusi)
+- Fungsi `inner()` juga bisa diakses dari luar fungsi `outer()` asalkan fungsi `inner()` tersebut dijadikan sebagai nilai balik fungsi `outer()` (untuk kemudian ditampung ke dalam variabel lalu dieksekusi)
 
 Program berikut berisi contoh praktis tentang fungsi `inner()` dan `outer()`. Silakan pelajari dan praktekan.
 

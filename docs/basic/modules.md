@@ -17,8 +17,6 @@ Dengan adanya module kode menjadi lebih modular, rapi, dan mudah dikelola.
 
 Pembuatan module di Python sangat mudah karena dilakukan dengan cukup membuat file. Nama file yang digunakan adalah menjadi nama module. Misalnya, file `calculate.py`, maka nama module adalah `calculate`.
 
-Pembuatan module di Python sangat mudah. Cukup buat file, dan nama file tersebut menjadi nama module. Misalnya, file calculate.py menjadi module dengan nama calculate.
-
 Module dapat di-import di module lain, atau digunakan sebagai entry point eksekusi program (sebutannya main module). Misalnya di praktek-praktek pada chapter sebelumnya kita sering menggunakan command `python.exe main.py` untuk menjalankan program Python. Command tersebut menjadikan module `main` (file `main.py`) sebagai entrypoint eksekusi program.
 
 Ok, sekarang mari kita coba praktekan penerapan module sebagai dependency (module yang di-import di module lain).
@@ -238,7 +236,7 @@ Penjelasan:
 
 ## A.27.7. Urutan pencarian module
 
-Ketika suatu module di-import, Python akan melakukan pencarian file module di beberapa berikut tempat secara berurutan:
+Ketika suatu module di-import, Python akan melakukan pencarian file module di beberapa tempat berikut secara berurutan:
 
 1. Pertama, Python akan mencari module di folder yang sama dimana statement `import` digunakan.
 2. Jika pencarian pertama tidak menemukan hasil, maka Python lanjut mencari file module ke folder dimana environment variable `PYTHONPATH` di-set.
