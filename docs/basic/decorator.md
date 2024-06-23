@@ -146,7 +146,7 @@ O iya, karena disini module `random` digunakan untuk generate elemen list, bisa 
 
 ### ◉ Tahap 2: Decorator unique & reverse
 
-Selanjutnya, kita refactor fungsi `unique_list()` dan `reverse_list()` yang sudah di tulis menadi decorator.
+Selanjutnya, kita refactor fungsi `unique_list()` dan `reverse_list()` yang sudah di tulis menjadi decorator.
 
 - Fungsi `unique_list()` diubah menjadi fungsi decorator bernama `decorator_unique_list()`
 
@@ -175,7 +175,7 @@ Selanjutnya, kita refactor fungsi `unique_list()` dan `reverse_list()` yang suda
         return execute
     ```
 
-Bisa dilihat pada kedua decorator yang telah ditulis, kode utama masing-masing decorator dituliskan setelah statement `data = func(length)`. Variabel `data` disitu isinya adalah hasil pemanggilan method dimana decorator ditempelkan nantinya. Variebel tersebut kemudian diolah sesuai dengan kebutuhan.
+Bisa dilihat pada kedua decorator yang telah ditulis, kode utama masing-masing decorator dituliskan setelah statement `data = func(length)`. Variabel `data` disitu isinya adalah hasil pemanggilan method dimana decorator ditempelkan nantinya. Variabel tersebut kemudian diolah sesuai dengan kebutuhan.
 
 - Decorator `decorator_unique_list()` menghasilkan data list berisi elemen unik
 - Decorator `decorator_reverse_list()` menghasilkan data list berisi elemen dengan urutan terbalik
