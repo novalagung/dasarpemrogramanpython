@@ -46,7 +46,7 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 
 - Ketika variabel `data` berisi `0` maka variabel tersebut tidak benar-benar kosong, melainkan berisi angka `0`.
 
-- Karakteristik yang sama juga berlaku ketika variabel berisi string kosong `""`, meskipun ketika di-print tidak muncul apa-apa, variabel tersebut sebenarnya berisi tipe data string namun tanpa isi. Maka variabel tersebut sebenarnya tidak benar-benar kosong, melainkan berisi angka `""`.
+- Karakteristik yang sama juga berlaku ketika variabel berisi string kosong `""`, meskipun ketika di-print tidak muncul apa-apa, variabel tersebut sebenarnya berisi tipe data string namun tanpa isi (string dengan panjang nol). Maka variabel tersebut sebenarnya tidak benar-benar kosong.
 
 - Barulah ketika variabel isinya data `None` maka dianggap benar-benar kosong.
 
