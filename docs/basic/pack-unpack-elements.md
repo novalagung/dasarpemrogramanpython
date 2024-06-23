@@ -4,13 +4,13 @@ title: A.32. Python Pack Unpack tuple, list, set, dict
 sidebar_label: A.32. Pack Unpack ➜ Tuple, List, Set, Dict
 ---
 
-Python mengenal teknik packing dan unpacking, dimana teknik ini umum diterapkan sesuai kebutuhan pada beberapa jenis tipe data kolektif tuple, list, set, dan dictionary. Pada chapter ini kita akan mempelajari cara penggunaannya, beserta peran penggunaan tanda `*` dan `**` pada operasi packing dan unpacking.
+Python mengenal teknik packing dan unpacking, dimana teknik ini umum diterapkan sesuai kebutuhan pada beberapa jenis tipe data kolektif seperti tuple, list, set, dan dictionary. Pada chapter ini kita akan mempelajari cara penggunaannya, beserta peran penggunaan tanda `*` dan `**` pada operasi packing dan unpacking.
 
 ## A.32.1. Unpacking element tuple, list, set
 
 Unpacking (yang dalam Bahasa Indonesia berarti bongkar muatan) adalah teknik pendistribusian elemen tipe data kolektif ke banyak variabel.
 
-Distribusinya sendiri bisa *1 on 1* yang berarti setiap elemen ditampung 1 variabel, atau hanya beberapa elemen saja yang didistribusikan ke variabel baru, sisanya ditampung tetap dalam bentuk data kolektif.
+Distribusinya sendiri bisa *1 on 1* yang berarti setiap elemen ditampung 1 variabel, atau hanya beberapa elemen saja yang didistribusikan ke variabel baru, sisanya tetap ditampung dalam bentuk data kolektif.
 
 ### ◉ Unpack 1 element = 1 variable
 
