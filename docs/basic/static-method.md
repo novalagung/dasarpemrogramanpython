@@ -151,11 +151,11 @@ say_something("nice to meet you")
 # output ➜ nice to meet you
 ```
 
-Fungsi `say_something()` sendiri tetap bisa digunakan secara normal meskipun telah dijadikan sebagai class method milik class `Person`.
+Fungsi `say_something()` sendiri tetap bisa digunakan secara normal meskipun telah dijadikan sebagai static method milik class `Person`.
 
 ## A.39.3. Summary
 
-Perbedaan antara constructor, instance method, class method, dan instance method bisa dilihat di bawah ini:
+Perbedaan antara constructor, instance method, class method, dan static method bisa dilihat di bawah ini:
 
 ### ◉ Constructor
 
@@ -187,7 +187,7 @@ Perbedaan antara constructor, instance method, class method, dan instance method
 - Fungsi dideklarasikan di dalam block `class`
 - Fungsi memiliki decorator `@staticmethod`
 - **Tidak** memiliki implicit parameter `self` maupun `cls`
-- Pengaksesan class method:
+- Pengaksesan static method:
   - Via class, contoh: `Person.say_hello()`
   - Via instance object, contoh: `p1.say_hello()`
 

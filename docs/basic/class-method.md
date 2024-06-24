@@ -183,7 +183,7 @@ Dari kode di atas bisa dilihat perbedaan dari sisi pembuatan object dan pengakse
 - Instance object `p4` dibuat via class method `create()`
 - Dari kedua object, diakses method `info()`
 
-Yang menarik untuk dibahas adalah `p5`. Object `p5` dibuat dari pemanggilan class method `create()` namun pengaksesannya adalah via instance object `p2`. Penulisan seperti itu diperbolehkan. Parameter `cls` pada class method `create()` akan terisi dengan nilai tipe data class object `p4` (yaitu `ClanHouse`).
+Yang menarik untuk dibahas adalah `p5`. Object `p5` dibuat dari pemanggilan class method `create()` namun pengaksesannya adalah via instance object `p2`. Penulisan seperti itu diperbolehkan. Parameter `cls` pada class method `create()` akan terisi dengan nilai tipe data class object `p2` (yaitu `ClanHouse`).
 
 ## A.38.4. Pengaksesan instance method via class
 

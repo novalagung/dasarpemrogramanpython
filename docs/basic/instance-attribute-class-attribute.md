@@ -110,7 +110,7 @@ Berbeda dengan instance attribute yang digunakan untuk menyimpan data spesifik p
 
 ## A.37.2. Attribute lookup
 
-Saat suatu instance attribtue diakses dari instance object, yang terjadi di balik layar adalah Python melakukan *lookup* (atau pengecekan) terhadap attribute dengan urutan sebagai berikut:
+Saat suatu instance attribute diakses dari instance object, yang terjadi di balik layar adalah Python melakukan *lookup* (atau pengecekan) terhadap attribute dengan urutan sebagai berikut:
 
 1. Jika instance attribute ditemukan, maka Python mengembalikan value instance attribute.
 1. Jika instance attribute yang dicari tidak ditemukan, maka Python mengembalikan value class attribute.
@@ -151,7 +151,7 @@ Dimisalkan ada satu variabel object yang nilai attribute-nya diubah, maka efek p
 class Pencil:
 
     def __init__(self):
-        self.note = "A class type to represent a book"
+        self.note = "A class type to represent a pencil"
 
 pencil1 = Pencil()
 pencil1.note = "A pencil"
@@ -161,7 +161,7 @@ print(f"Object pencil1 note: {pencil1.note}")
 # output ➜ Object pencil1 note: A pencil
 
 print(f"Object pencil2 note: {pencil2.note}")
-# output ➜ Object pencil2 note: A class type to represent a book
+# output ➜ Object pencil2 note: A class type to represent a pencil
 ```
 
 ### ◉ Perubahan nilai class attribute dari instance object

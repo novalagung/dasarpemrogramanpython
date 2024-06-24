@@ -156,17 +156,17 @@ Penjelasan:
 - Variabel object `mount_everest` dibuat dengan dengan mengisi kesemua parameter konstruktornya.
 - Variabel object `mount_kilimanjaro` dibuat dengan dengan hanya mengisi dua parameter pertama konstruktor.
 - Variabel object `mount_aconcagua` dibuat dengan dengan mengisi parameter `name` dan `elevation` saja pada pemanggilan konstruktor.
-- Variabel object `mount_kosciuszko` dibuat dengan tanpda diikuti dengan argument parameter. 
+- Variabel object `mount_kosciuszko` dibuat dengan tanpa diikuti dengan argument parameter. 
 
 Silakan coba explore dengan mempraktekan penggunaan \*args / \*\*kwargs pada konstruktor.
 
 ## A.35.4. Constructor dengan return type `None`
 
-Constructor dipanggil saat inisialisasi object, maka bisa dibilang bahwa tersebut selalu mengembalikan tipe data bertipe class dimana constructor tersebut dideklarasikan.
+Constructor dipanggil saat inisialisasi object, maka bisa dibilang bahwa constructor tersebut selalu mengembalikan tipe data bertipe class dimana constructor tersebut dideklarasikan.
 
 Dalam pembuatan konstruktor, tidak perlu menuliskan return type maupun return statement.
 
-Meski demikian, sebenarnya sebenarnya ada 1 lagi bentuk penulisan konstruktor, yaitu dengan ditambahkan tipe data `None` dibelakangnya, dan ini diperbolehkan. Contohnya:
+Meski demikian, sebenarnya ada 1 lagi bentuk penulisan konstruktor, yaitu dengan ditambahkan tipe data `None` dibelakangnya, dan ini diperbolehkan. Contohnya:
 
 ```python
 class Mountain:
