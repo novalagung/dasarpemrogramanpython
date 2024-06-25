@@ -27,7 +27,7 @@ Class `ElectricCar` kita desain tidak memiliki attribute. Namun karena dia merup
 
 Class `ElectricCar` memiliki satu buah method bernama `info()` yang isinya adalah menampilkan data property yang diwarisi oleh class `Vehicle`
 
-Ilustrasi diagram UML nya seperti ini:
+Ilustrasi diagram UML-nya seperti ini:
 
 ![Python Inheritance](img/class-inheritance-1.png)
 
@@ -170,7 +170,7 @@ v3 = ElectricCar()
 v3.info()
 ```
 
-Perbedaan kode ini dibanding sebelumnya ada di bagian konstruktor class `ElectricCar`. Disitu untuk setiap object baru yang dibuat, nilai attribute `name`-nya diisi dengan string `electric car`.
+Perbedaan kode ini dibanding sebelumnya ada di bagian constructor class `ElectricCar`. Disitu untuk setiap object baru yang dibuat, nilai attribute `name`-nya diisi dengan string `electric car`.
 
 Secara teori, idealnya program di atas bisa jalan normal. Maka mari coba run saja dan lihat hasilnya:
 
@@ -180,7 +180,7 @@ Oops! Statement pengaksesan property object `v1` berjalan normal, namun error mu
 
 Pesan errornya kurang lebih menginformasikan bahwa class `ElectricCar` tidak memiliki attribute `number_of_wheels`. Aneh, padahal secara teori property tersebut diwariskan oleh super class yaitu `Vehicle`, namun setelah ditambahkan kode constructor baru yang meng-override constructor parent class, programnya malah error.
 
-Perlu diketahui bahwa penerapan operasi override mengakibatkan kode pada super class benar-benar dihapus dan diganti dengan kode baru. Pada contoh yang sudah ditulis, di konstruktor `Vehicle` ada dua buah property didekalrasikan, yaitu `name` dan `number_of_wheels`. Sedangkan pada class `ElectricCar`, hanya property `name` dideklarasikan.
+Perlu diketahui bahwa penerapan operasi override mengakibatkan kode pada super class benar-benar dihapus dan diganti dengan kode baru. Pada contoh yang sudah ditulis, di constructor `Vehicle` ada dua buah property dideklarasikan, yaitu `name` dan `number_of_wheels`. Sedangkan pada class `ElectricCar`, hanya property `name` dideklarasikan.
 
 ```python
 class Vehicle:
@@ -195,7 +195,7 @@ class ElectricCar(Vehicle):
         self.name = "electric car"
 ```
 
-Constructor baru milik class `ElectricCar` menimpa constructor milik super class-nya. Dan pada constructor baru ini property `number_of_wheels` tidak dieklarasikan. Efeknya, property tersebut menjadi tidak ada, menyebabkan pengaksesannya menyebabkan error berikut:
+Constructor baru milik class `ElectricCar` menimpa constructor milik super class-nya. Dan pada constructor baru ini property `number_of_wheels` tidak dideklarasikan. Efeknya, property tersebut menjadi tidak ada, menyebabkan pesan error seperti berikut:
 
 ```
 AttributeError: 'ElectricCar' object has no attribute 'number_of_wheels'
@@ -207,7 +207,7 @@ Solusi permasalahan di atas ada pada penjelasan section berikut ini.
 
 Fungsi `super()` adalah salah satu fungsi istimewa bawaan python, yang ketika diakses di dalam suatu instance method maka pemanggilannya mengarah ke variabel `self` milik super class (bukan variabel `self` milik class itu sendiri).
 
-Misalnya statement `super()` ditulis pada constructor class `ElectricCar`, maka dari fungsi tersebut kita mendapatkan akses ke object `self` milik super class yaitu class `Vehicle`. Kemudian dari object `self`, property super class bisa diakses dengan mudah. Termasuk konstruktor super class juga bisa diakses.
+Misalnya statement `super()` ditulis pada constructor class `ElectricCar`, maka dari fungsi tersebut kita mendapatkan akses ke object `self` milik super class yaitu class `Vehicle`. Kemudian dari object `self`, property super class bisa diakses dengan mudah. Termasuk constructor super class juga bisa diakses.
 
 Ok, sekarang mari coba tambahkan statement `super()` pada constructor `ElectricCar`, lalu dari nilai balik fungsi, chain lagi dengan mengakses constructor `__init__()` milik super class.
 
@@ -348,7 +348,7 @@ v2.info()
 
 Bisa dilihat pada statement ke-2, sekarang bunyi mesin berubah menjadi `zzzzzzz`.
 
-Pada kasus override kali ini, method `super()` sengaja tidak digunakan, karena memang tidak perlu. Berbeda dengan kasus sebelumnya (constructor overriding) jika constructor super class tidak dipanggil efeknya property `number_of_wheels` menjadi tidak dikenali.
+Pada kasus override kali ini, method `super().drive_sound()` sengaja tidak digunakan, karena memang tidak ada property yang perlu dideklarasikan. Berbeda dengan kasus sebelumnya (constructor overriding) jika constructor super class tidak dipanggil efeknya property `number_of_wheels` menjadi tidak dikenali.
 
 ## A.41.7. Aturan overriding
 
@@ -391,7 +391,7 @@ Method `drive_sound()` di-override dengan diubah skema parameternya, dari yang t
 
 ## A.41.8. Nested inheritance
 
-Penerapan inheritanya tidak hanya terbatas pada dua buah class saja, melainkan bisa lebih dari 2. Class bisa diturunkan, kemudian turunannya diturunkan lagi, dan seterusnya.
+Penerapan inheritance tidak hanya terbatas pada dua buah class saja, melainkan bisa lebih. Class bisa diturunkan, kemudian turunannya diturunkan lagi, dan seterusnya.
 
 Contoh pengaplikasiannya bisa dilihat pada kode berikut dimana ada class `Vehicle`, `Car`, dan `ElectricCar`; yang ketiganya menjalin hubungan inheritance dengan hirarki seperti ini:
 
@@ -478,7 +478,7 @@ Hirarki paling atas semua class selalu class `object`.
 
 ## A.41.10. Multiple inheritance
 
-Suatu class tidak dibatasi hanya bisa menjadi sub class dari 1 buah class saja. Bisa jadi adalah lebih dari 1 class yang diturunkan dengan level hirarki yang sama.
+Suatu class tidak dibatasi hanya bisa menjadi sub class dari 1 buah class saja. Bisa jadi ada lebih dari 1 class yang diturunkan dengan level hirarki yang sama.
 
 Sebagai contoh kita buat penerapan inheritance dengan hirarki seperti diagram berikut:
 
