@@ -55,7 +55,7 @@ Output program:
 
 ![Python Exception Handling (try, except, finally)](img/exception-handling-try-except-else-finally-2.png)
 
-Cara kerja `try` dan `except` adalah Python akan mencoba unguk mengeksekusi statement dalam block `try` terlebih dahulu. Kemudian jika ada exception, maka program dihentikan dan block `except` dijalankan.
+Cara kerja `try` dan `except` adalah Python akan mencoba untuk mengeksekusi statement dalam block `try` terlebih dahulu. Kemudian jika ada exception, maka program dihentikan dan block `except` dijalankan.
 
 Kurang lebih alur eksekusi program di atas adalah seperti ini:
 
@@ -65,9 +65,9 @@ Kurang lebih alur eksekusi program di atas adalah seperti ini:
     1. Kemudian block `except` dieksekusi.
 1. Statement `calculate_banana_distribution()` ke-3 tidak akan dijalankan.
 
-Bisa dilihat di output, pesan `oops! unable to distribute banana because there is no person available` muncul, menandai akhir eksekusi block `try` & `catch`.
+Bisa dilihat di output, pesan `oops! unable to distribute banana because there is no person available` muncul, menandai akhir eksekusi block `try` & `except`.
 
-Terkait penempatan block `try` & `catch` sendiri bisa di bagian dimana fungsi dipanggil, atau di dalam fungsi itu sendiri. Contoh:
+Terkait penempatan block `try` & `except` sendiri bisa di bagian dimana fungsi dipanggil, atau di dalam fungsi itu sendiri. Contoh:
 
 ```python
 def calculate_banana_distribution(total_banana, total_people):
@@ -93,7 +93,7 @@ Output program:
 
 ![Python Exception Handling (try, except, finally)](img/exception-handling-try-except-else-finally-3.png)
 
-Silakan gunakan block `try` & `catch` sesuai kebutuhan, tempatkan di bagian kode yang memang dirasa paling pas.
+Silakan gunakan block `try` & `except` sesuai kebutuhan, tempatkan di bagian kode yang memang dirasa paling pas.
 
 ## A.47.2. Explicit exception handler
 
@@ -111,14 +111,14 @@ except ZeroDivisionError:
 
 Kode akan di-test dengan dijalankan dua kali dengan skenario berikut:
 
-- Eksekusi ke-1: nilai pembagi di-set `0`, efeknya muncul exception `ZeroDivisionError`
+- Eksekusi ke-1: nilai pembagi di-set `6`
 - Eksekusi ke-2: salah satu inputan di-set huruf, efeknya muncul exception `ValueError`
 
 Output program:
 
 ![Python Exception Handling (try, except, finally)](img/exception-handling-try-except-else-finally-4.png)
 
-Bisa dilihat di eksekusi pertama, block exception handler berjalan sesuai ekspektasi. Namun pada eksekusi ke-2 ketika inputan diisi dengan angka, ada exception baru muncul dan tidak tertangkap. Hal ini karena di kode ditentukan secara eksplisit hanya exception `ZeroDivisionError` yang ditangkap.
+Bisa dilihat di eksekusi pertama, block exception handler berjalan sesuai ekspektasi. Namun pada eksekusi ke-2 ketika inputan diisi dengan huruf, ada exception baru muncul dan tidak tertangkap. Hal ini karena di kode ditentukan secara eksplisit hanya exception `ZeroDivisionError` yang ditangkap.
 
 Untuk menangkap exception lain caranya bisa dengan menambahkan block `except` baru. Pada kode berikut ada 2 exception yang akan ditangkap, yang keduanya memunculkan pesan berbeda.
 
