@@ -76,13 +76,13 @@ Output:
 
 Kode di atas ketika di-run tidak menghasilkan error, berjalan normal, hanya saja outputnya tidak sesuai harapan karena class `Square` tidak mempunyai method `calculate_area()`. Tanpa adanya method tersebut, maka pemanggilan `calculate_area()` mengarah ke method super class yang isinya mengembalikan nilai `None`.
 
-Di *real life*, ukuran source code yang kita maintain bisa saja berisi ratusan atau bahkan puluh ribuan baris dengan jumlah file sangat banyak. Di case yang seperti itu cukup susah mengecek mana class yang implementasinya sudah sesuai spesifikasi dan mana yang belum, karena saat program dijalankan tidak ada error atau warning. Untuk mengatasi masalah tersebut, solusinya adalah dengan mengimplementasikan abstract method.
+Di *real life*, ukuran source code yang kita maintain bisa saja berisi ratusan atau bahkan puluhan ribu baris dengan jumlah file sangat banyak. Di case yang seperti itu cukup susah mengecek mana class yang implementasinya sudah sesuai spesifikasi dan mana yang belum, karena saat program dijalankan tidak ada error atau warning. Untuk mengatasi masalah tersebut, solusinya adalah dengan mengimplementasikan abstract method.
 
 ## A.42.2. Praktek abstract method
 
 Di Python versi 3.4+, suatu method menjadi abstract method ketika memenuhi kriteria berikut:
 
-- Super class meng-iherit class bawaan Python bernama `ABC` milik module `abc`.
+- Super class meng-inherit class bawaan Python bernama `ABC` milik module `abc`.
 - Method yang dijadikan acuan (yang nantinya wajib di-override) perlu ditambahi decorator `@abstractmethod` milik module `abc`.
 
 > ABC merupakan kependekan dari Abstract Base Class, sebuah module bawaan Python Standard Library yang berisi banyak property untuk keperluan abstraction.
