@@ -348,7 +348,10 @@ v2.info()
 
 Bisa dilihat pada statement ke-2, sekarang bunyi mesin berubah menjadi `zzzzzzz`.
 
-Pada kasus override kali ini, method `super().drive_sound()` sengaja tidak digunakan, karena memang tidak ada property yang perlu dideklarasikan. Berbeda dengan kasus sebelumnya (constructor overriding) jika constructor super class tidak dipanggil efeknya property `number_of_wheels` menjadi tidak dikenali.
+Dalam konteks inheritance, ketika di sub class terdapat method dengan nama yang sama persis dengan super class, maka pemanggilan method tersebut dari object yang dibuat via sub class adalah mengarah ke method yang ada di sub class. Konsep ini disebut dengan method overriding.
+
+- Object `v1` dibuat via class `Vehicle`, pengaksesan method `drive_sound()` mengarah ke method milik class tersebut
+- Object `v2` dibuat via class `ElectricCar`, pengaksesan method `drive_sound()` (yang dilakukan secara implisit via method `info()`) mengarah ke method milik class tersebut, dan bukan milik super class.
 
 ## A.41.7. Aturan overriding
 
