@@ -54,6 +54,26 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 >
 > Pembahasan detail mengenai special name ada di chapter [Special Names ➜ Attribute __name__ milik class type](/basic/special-names#a294-attribute-__name__-milik-class-type)
 
+## A.31.2. Penggunaan `is`
+
+Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untuk menggunakan `is` daripada `==`.
+Ini dikarenakan sifat dari operator `==` yang memanggil fungsi `__eq__` dari objek yang diperiksa.
+Hal ini dapat menyebabkan kesalahan dalam pemeriksaan objek terhadap `None`.
+
+Sebagai contoh, pada kode berikut, objek `f` memiliki tipe `Foo`, yang artinya objek tersebut tidak kosong. Namun karena fungsi `__eq__` dari kelas `Foo` telah di-overload untuk selalu mengembalikan `True`, maka pemeriksaan `f == None` akan mengembalikan `True`.
+```python
+class Foo:
+    def __eq__(self, other):
+            return True
+
+f = Foo()
+f == None
+# output ➜ True
+f is None
+# output ➜ False
+```
+> Contoh diambil dari https://stackoverflow.com/a/26611/23542056
+
 ---
 
 <div class="section-footnote">
