@@ -24,7 +24,7 @@ Selanjutnya adalah bagian terpenting dari pembelajaran di chapter ini, fungsi ya
 
 ### ◉ Skenario 1: Instance method
 
-Buat class baru untuk operasi perhitungan luas segitiga. Operasi perhitungannya disiapkan di instance method bernama `calculate_area()`. Dari sini, object buatan class ini harusnya bisa dipergunakan sebuagai argument fungsi `do_the_math()`.
+Buat class baru untuk operasi perhitungan luas segitiga. Operasi perhitungannya disiapkan di instance method bernama `calculate_area()`. Dari sini, object buatan class ini harusnya bisa dipergunakan sebagai argument fungsi `do_the_math()`.
 
 ```python
 class Triangle:
@@ -61,7 +61,7 @@ do_the_math(obj2)
 
 Hasilnya: OK ✅
 
-Fungsi `do_the_math()` berjalan sesuai harapan tanpa melihat tipe data dan struktur dari argument-nya seperti apa. Selama argument memiliki property bernama `calculate_area` dan bisa diakses dalam bentuk notasi fungsi, maka bukan masalah.
+Fungsi `do_the_math()` berjalan sesuai harapan tanpa melihat tipe data dan struktur dari argument-nya seperti apa. Selama class memiliki property bernama `calculate_area` dan bisa diakses dalam bentuk notasi fungsi, maka bukan masalah.
 
 ### ◉ Skenario 3: Attribute berisi lambda
 
@@ -83,7 +83,7 @@ Hasilnya: OK ✅
 
 ### ◉ Skenario 4: Class method
 
-Bisa dibiliang seknario ini yang paling unik. Buat sebuah class baru berisi class method `calculate_area()`. Lalu jadikan class tersebut sebagai argument pemanggilan fungsi `do_the_math()`. Jadi disini kita tidak menggunakan instance object sama sekali.
+Bisa dibilang skenario ini yang paling unik. Buat sebuah class baru berisi class method `calculate_area()`. Lalu jadikan class tersebut sebagai argument pemanggilan fungsi `do_the_math()`. Jadi disini kita tidak menggunakan instance object sama sekali.
 
 ```python
 class NotReallyA2dObject:
@@ -101,7 +101,7 @@ Fungsi `do_the_math()` tetap bisa menjalankan tugasnya dengan baik, bahkan untuk
 
 ## A.44.2. Structural typing
 
-Structural typing bisa diibartkan sebagai duck typing tapi versi yang lebih ketat. Structural typing mengharuskan suatu fungsi atau method untuk memilki spesifikasi yang sama persis sesuai yang dideklarasikan. Misalnya ada suatu object berisi method dengan hanya nama fungsi dan skema parameternya saja yang sama dibanding yang dibutuhkan, maka itu tidak cukup dan error pasti muncul.
+Structural typing bisa diibaratkan sebagai duck typing tapi versi yang lebih ketat. Structural typing mengharuskan suatu fungsi atau method untuk memilki spesifikasi yang sama persis sesuai yang dideklarasikan. Misalnya ada suatu object berisi method dengan hanya nama fungsi dan skema parameternya saja yang sama dibanding yang dibutuhkan, maka itu tidak cukup dan error pasti muncul.
 
 Cara penerapan structural typing adalah dengan menentukan tipe data parameter secara *explicit*. Mari coba praktekan via kode berikut agar lebih jelas.
 
