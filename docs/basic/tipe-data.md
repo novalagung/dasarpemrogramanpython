@@ -74,17 +74,20 @@ bool_2 = False
 
 ## A.6.4. Tipe data `None`
 
-`None` digunakan untuk mengosongkan sebuah variabel.
-Variabel dengan tipe `None` juga memiliki nilai `None`
+Tipe data `None` merepresentasikan nilai kosong (seperti nilai `null` atau `nil` di bahasa lain). Pengecekan nilai kosong digunakan 
 
 ```python
+data = "hello"
+print(data)
+# output ➜ hello
+
 data = None
+print(data)
+# output ➜ data
 
-data is None
-# output ➜ True
-
-isinstance(data, None)
-# output ➜ True
+data = "python"
+print(data)
+# output ➜ python
 ```
 
 > Penjelasan lebih detail mengenai `None` ada pada chapter [None](/basic/none)

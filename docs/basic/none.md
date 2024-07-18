@@ -54,7 +54,7 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 >
 > Pembahasan detail mengenai special name ada di chapter [Special Names ➜ Attribute __name__ milik class type](/basic/special-names#a294-attribute-__name__-milik-class-type)
 
-## A.31.2. Penggunaan `is`
+## A.31.2. Penggunaan operator `is` terhadap `None`
 
 Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untuk menggunakan operator `is` dibanding `==`, karena sifat dari operator `==` memanggil special method `__eq__()` dari objek yang diperiksa dan pada praktiknya tidak semua class menggunakan implementasi default method `__eq__()`. Dari sini maka potensi penggunaan operator `==` menghasilkan nilai yg berbeda dibanding yang diharapkan adalah ada (meskipun sangat kecil).
 
