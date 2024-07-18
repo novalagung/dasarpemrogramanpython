@@ -12,7 +12,7 @@ Pada chapter ini kita akan belajar tentang object special bernama `None`.
 
 Ketika suatu variabel berisi data yang nilainya bisa kosong, umumnya sebelum variabel tersebut digunakan, dilakukan pengecekan terlebih dahulu menggunakan seleksi kondisi untuk memastikan apakah nilainya benar-benar kosong atau tidak.
 
-Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspect_data()`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
+Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspec_data`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
 
 ```python
 def inspec_data(data):
