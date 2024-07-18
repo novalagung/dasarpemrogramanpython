@@ -133,6 +133,13 @@ Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan er
 
 Sebagai contoh, data `tuple_1` di atas jika diakses index ke-4-nya misalnya (`tuple_1[4]`) hasilnya adalah error. 
 
+```python
+tuple_1 = (2, 3, 4, 5)
+
+print("elem 0:", tuple_1[5])
+# output ➜ IndexError: tuple index out of range
+```
+
 :::
 
 ## A.14.4. Perulangan tuple

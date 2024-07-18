@@ -133,7 +133,7 @@ for c in countries:
 # Mongolia | 4 seasons | 3.398 million population
 ```
 
-## A.43.4. Attribut default value
+## A.43.4. Attribute default value
 
 Attribute data class bisa ditentukan nilai defaultnya menggunakan operator assignment `=` (penulisannya seperti deklarasi variabel). Dengan memberikan nilai default pada attribute, menjadikan parameter konstruktor menjadi opsional. Contoh:
 
@@ -168,7 +168,7 @@ apple = Fruit("Apple", ("sweet", "tart"))
 apple.name = "Orange"
 ```
 
-Kode di atas menghasilkan error karena semua attribute class `Fruit`.
+Kode di atas menghasilkan error karena semua attribute class `Fruit` immutable.
 
 ![Data class Python](img/dataclass-1.png)
 

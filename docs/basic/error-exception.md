@@ -4,13 +4,13 @@ title: A.46. Python Error & Exception
 sidebar_label: A.46. Error & Exception
 ---
 
-Secara teknsi Python interpreter mengenal dua jenis error, yaitu *syntax error* dan *exception*. Sebenarnya ada lagi satu jenis error lainnya, yaitu yang munculnya hanya di level linter (di editor) namun membuat eksekusi program menjadi gagal.
+Secara teknis Python interpreter mengenal dua jenis error, yaitu *syntax error* dan *exception*. Sebenarnya ada lagi satu jenis error lainnya, yaitu yang munculnya hanya di level linter (di editor) namun tidak membuat eksekusi program menjadi gagal.
 
 Pada chapter ini kita akan membahas tentang topik tersebut.
 
 ## A.46.1. Syntax error
 
-Syntax error adalah salah satu error jenis error yang ada di Python, yang jika muncul maka bisa dipastikan eksekusi program adalah gagal atau terhenti. Syntax error disebabkan oleh kesalah penulisan.
+Syntax error adalah salah satu jenis error yang ada di Python, yang jika muncul maka bisa dipastikan eksekusi program adalah gagal atau terhenti. Syntax error disebabkan oleh kesalahan penulisan.
 
 Misalnya ada typo pada pemanggilan fungsi print yang tidak sengaja tertulis sebagai `prind()`, sedangkan di source code sendiri tidak ada fungsi lain yang dideklarasikan dengan nama itu, maka pada situasi seperti ini terjadi syntax error.
 

@@ -77,7 +77,7 @@ Test run program:
 
 Pada penerapannya, keyword `match` ditulis diikuti oleh suatu data yang ingin dicek nilainya, kemudian di dalam block ditentukan kondisi atau pola pencocokan via keyword `case`.
 
-Gunakan kondisi `case _:` untuk menangkap kondisi yang tidak terpenuhi (seperti `else` pada seleksi kondisi menggunakan `if`). Kondisi yang selalu terpenuhi ini biasa disebut dengan *wildcard*, yang idealnya ditulis di paling akhir.
+Gunakan kondisi `case _:` untuk menangkap kondisi yang tidak terpenuhi (seperti `else` pada seleksi kondisi `if`). Kondisi yang selalu terpenuhi ini biasa disebut dengan *wildcard*, yang idealnya ditulis di paling akhir.
 
 ## A.45.2. Pencocokan pola data sequence
 
@@ -212,7 +212,7 @@ Pada kode berikut dua buah kondisi baru ditambahkan:
 
 - Kondisi `case [other]`, akan cocok jika inputan adalah list dengan lebar 1 item.
 
-    Contoh inputan yang memenuhi kriteria ini: `hello`, `makan`, `kesedihan`, dan kata-kata tanpa spasi lainnya. Hal ini karena inputan di-split menggunakan spasi (` `) dengan hasil pasti berupa list dengan lebar 1 elemen. Isi dari variabel `other` adalah string inputan.
+    Contoh inputan yang memenuhi kriteria ini: `hello`, `makan`, `kesedihan`, dan kata-kata tanpa spasi lainnya. Hal ini karena inputan di-split menggunakan spasi (` `) dengan hasil pasti berupa list dengan lebar 1 elemen. Isi dari variabel `other` adalah inputan string.
 
 - Kondisi `case other`, cocok dengan pola inputan apapun. Semua inputan ditampung di variabel `other` dalam bentuk list.
 
@@ -259,7 +259,7 @@ Output program:
 
 ### ◉ Pencocokan pola + logika OR
 
-Kondisi `or` bisa digunakan pada 1 block `case`, caranya dengan menuliskan inputan diapit tanda `()` dan didalamnya kondisi ditulis menggunakan pembatas karakter pipe `|`.
+Kondisi `or` bisa digunakan pada 1 block `case`, caranya dengan menuliskan inputan diapit tanda `()` dan didalam kondisi ditulis menggunakan pembatas karakter pipe `|`.
 
 Pada kode berikut, ada 3 buah kondisi baru ditambahkan:
 
@@ -275,7 +275,7 @@ Pada kode berikut, ada 3 buah kondisi baru ditambahkan:
 
     Hanya akan terpenuhi jika inputan adalah list dengan lebar 1 element atau inputan selain yang dikenali oleh kondisi-kondisi sebelumnya (wildcard).
 
-    Catatan: kondisi ini redundan, harusnya `case other:` saja seharusnya cukup untuk difungsikan sebagai `else`. Namun pada contoh ini tetap ditulis hanya untuk menunjukan format penulisan kondisi pola dengan logika OR.
+    Catatan: kondisi ini redundan, harusnya `case other:` saja sudah cukup untuk difungsikan sebagai `else`. Namun pada contoh ini tetap ditulis hanya untuk menunjukan format penulisan kondisi pola dengan logika OR.
 
 Source code setelah dimodifikasi:
 
@@ -336,7 +336,7 @@ match command.split(' '):
 
 Tidak hanya tipe data string dan list saja yang bisa digunakan pada pattern matching, melainkan banyak sekali tipe data lainnya juga bisa digunakan. Termasuk diantaranya adalah tipe data sequence seperti `tuple` dan `dictionary`, dan juga tipe data dari custom class.
 
-Pada contoh berikut, program ada 3 buah program dibuat yang kesemuanya berisi flow dan pattern matching yang sama persis. Perbedaannya:
+Pada contoh berikut, ada 3 buah program dibuat yang kesemuanya berisi flow dan pattern matching yang sama persis. Perbedaannya:
 
 - Pada program pertama, `tuple` digunakan pada pattern matching
 - Program ke-2 menggunakan tipe data `dict`
