@@ -15,22 +15,22 @@ Ketika suatu variabel berisi data yang nilainya bisa kosong, umumnya sebelum var
 Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspect_data()`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
 
 ```python
-def inspec_data(data):
-    if data == None:
+def inspect_data(data):
+    if data is None:
         print("data is empty. like very empty")
     else:
         print(f"data: {data}, type: {type(data).__name__}")
 
 data = 0
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: 0, type: int
 
 data = ""
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: , type: str
 
 data = None
-inspec_data(data)
+inspect_data(data)
 # output ➜ data is empty. like very empty
 
 class Car:
@@ -38,7 +38,7 @@ class Car:
         self.name = ""
 
 data = Car()
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: <__main__.Car object at 0x000001E6B38F60F0>, type: Car
 ```
 
@@ -53,6 +53,12 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 > Kode di atas berisi penerapan salah satu special name, yaitu attribute `__name__` milik class `type`.
 >
 > Pembahasan detail mengenai special name ada di chapter [Special Names ➜ Attribute __name__ milik class type](/basic/special-names#a294-attribute-__name__-milik-class-type)
+
+## A.31.2. Penggunaan operator `is` terhadap `None`
+
+Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untuk menggunakan operator `is` dibanding `==`, karena sifat dari operator `==` memanggil special method `__eq__()` dari objek yang diperiksa dan pada praktiknya tidak semua class menggunakan implementasi default method `__eq__()`. Dari sini maka potensi penggunaan operator `==` menghasilkan nilai yg berbeda dibanding yang diharapkan adalah ada (meskipun sangat kecil).
+
+Serta, operator `is` lebih cepat dibanding `==` untuk pengecekan data `None`.
 
 ---
 
@@ -76,5 +82,7 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 ### ◉ Referensi
 
 - https://docs.python.org/3/c-api/none.html
+- https://stackoverflow.com/questions/3257919/what-is-the-difference-between-is-none-and-none
+- https://stackoverflow.com/questions/26595/is-there-any-difference-between-foo-is-none-and-foo-none/26611#26611
 
 </div>

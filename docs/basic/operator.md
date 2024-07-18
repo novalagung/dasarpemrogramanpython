@@ -101,6 +101,17 @@ print("id(num_1): %s, id(num_2): %s" % (id(num_1), id(num_2)))
 
 > Di Python ada *special case* yang perlu kita ketahui perihal penerapan operator `is` untuk operasi perbandingan identitas khusus tipe data numerik. Pembahasan detailnya ada di chapter [Object ID & Reference](/basic/object-id-reference).
 
+
+:::info
+
+Pengecekan nilai kosong (atau `None`) dianjurkan untuk selalu dilakukan menggunakan operator `is`, dan menghindari penggunaan operator `==`.
+
+Hal ini karena operator `is` membandingkan identitas data dan identitas data `None` selalu valid. Sedangkan operator `==` perbandingannya dilakukan dengan via special method `__eq__()` yang default method tersebut bisa di-override isinya.
+ 
+> Lebih jelasnya penggunaan operator `is` terhadap `None` di bahas di chapter [None](https://dasarpemrogramanpython.novalagung.com/basic/none)
+
+:::
+
 ### ◉ Fungsi `print()` tanpa string formatting
 
 Statement `print("num_1 is not num_2 =", res)` adalah salah satu cara untuk printing data tanpa menggunakan string formatting (seperti `%s`).

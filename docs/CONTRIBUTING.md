@@ -24,6 +24,7 @@ E-book ini di-inisialisasi dan di-maintain oleh Noval Agung Prayogo.
 Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan waktunya untuk membantu pengembangan e-book ini.
 
 1. [Arsy Opraza Akma](https://github.com/arasopraza)
+1. [Barep Bimo Pangestu](https://github.com/bosmobosmo)
 1. [Mohammad Safri Dwi Rizky](https://github.com/safridwirizky)
 1. ... anda 🚀
 

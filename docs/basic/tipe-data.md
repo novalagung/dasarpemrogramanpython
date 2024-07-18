@@ -72,7 +72,27 @@ bool_1 = True
 bool_2 = False
 ```
 
-## A.6.4. Tipe data list
+## A.6.4. Tipe data `None`
+
+Tipe data `None` merepresentasikan nilai kosong (seperti nilai `null` atau `nil` di bahasa lain). Pengecekan nilai kosong digunakan 
+
+```python
+data = "hello"
+print(data)
+# output ➜ hello
+
+data = None
+print(data)
+# output ➜ data
+
+data = "python"
+print(data)
+# output ➜ python
+```
+
+> Penjelasan lebih detail mengenai `None` ada pada chapter [None](/basic/none)
+
+## A.6.5. Tipe data list
 
 List adalah tipe data di Python untuk menampung nilai kolektif yang disimpan secara urut, dengan isi bisa berupa banyak varian tipe data (tidak harus sejenis). Cara penerapan list adalah dengan menuliskan nilai kolektif dengan pembatas `,` dan diapit tanda `[` dan `]`.
 
@@ -97,7 +117,7 @@ print(list_1[2])
 
 > Penjelasan detail mengenai list ada pada chapter [List](/basic/list)
 
-## A.6.5. Tipe data tuple
+## A.6.6. Tipe data tuple
 
 Tuple adalah tipe data kolektif yang mirip dengan list, dengan pembeda adalah:
 
@@ -125,7 +145,7 @@ print(tuple_1[2])
 
 > Penjelasan detail mengenai tuple ada pada chapter [Tuple](/basic/tuple)
 
-## A.6.6. Tipe data dictionary
+## A.6.7. Tipe data dictionary
 
 Tipe data `dict` atau dictionary berguna untuk menyimpan data kolektif terstruktur berbentuk *key value*. Contoh penerapan:
 
@@ -156,7 +176,7 @@ profile_1 = { "name": "Noval", "hobbies": ["gaming", "learning"] }
 
 > Penjelasan detail mengenai dictionary ada pada chapter [Dictionary](/basic/dictionary)
 
-## A.6.7. Tipe data set
+## A.6.8. Tipe data set
 
 Tipe data set adalah cara lain untuk menyimpan data kolektif. Tipe data ini memiliki beberapa kelemahan:
 
@@ -174,7 +194,7 @@ print(set_1)
 
 > Penjelasan detail mengenai set ada pada chapter [Set](/basic/set)
 
-## A.6.8. Tipe data lainnya
+## A.6.9. Tipe data lainnya
 
 Selain tipe-tipe di atas ada juga beberapa tipe data lainnya, seperti frozenset, bytes, memoryview, range; yang kesemuanya akan dibahas satu per satu di chapter terpisah.
 
