@@ -12,25 +12,25 @@ Pada chapter ini kita akan belajar tentang object special bernama `None`.
 
 Ketika suatu variabel berisi data yang nilainya bisa kosong, umumnya sebelum variabel tersebut digunakan, dilakukan pengecekan terlebih dahulu menggunakan seleksi kondisi untuk memastikan apakah nilainya benar-benar kosong atau tidak.
 
-Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspec_data`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
+Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspect_data()`, tugasnya mengecek apakah variabel memiliki nilai atau tidak.
 
 ```python
-def inspec_data(data):
+def inspect_data(data):
     if data is None:
         print("data is empty. like very empty")
     else:
         print(f"data: {data}, type: {type(data).__name__}")
 
 data = 0
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: 0, type: int
 
 data = ""
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: , type: str
 
 data = None
-inspec_data(data)
+inspect_data(data)
 # output ➜ data is empty. like very empty
 
 class Car:
@@ -38,7 +38,7 @@ class Car:
         self.name = ""
 
 data = Car()
-inspec_data(data)
+inspect_data(data)
 # output ➜ data: <__main__.Car object at 0x000001E6B38F60F0>, type: Car
 ```
 
@@ -56,23 +56,9 @@ Bisa dilihat pada program di atas output tiap statement adalah berbeda-beda sesu
 
 ## A.31.2. Penggunaan `is`
 
-Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untuk menggunakan `is` daripada `==`.
-Ini dikarenakan sifat dari operator `==` yang memanggil fungsi `__eq__` dari objek yang diperiksa.
-Hal ini dapat menyebabkan kesalahan dalam pemeriksaan objek terhadap `None`.
+Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untuk menggunakan operator `is` dibanding `==`, karena sifat dari operator `==` memanggil special method `__eq__()` dari objek yang diperiksa dan pada praktiknya tidak semua class menggunakan implementasi default method `__eq__()`. Dari sini maka potensi penggunaan operator `==` menghasilkan nilai yg berbeda dibanding yang diharapkan adalah ada (meskipun sangat kecil).
 
-Sebagai contoh, pada kode berikut, objek `f` memiliki tipe `Foo`, yang artinya objek tersebut tidak kosong. Namun karena fungsi `__eq__` dari kelas `Foo` telah di-overload untuk selalu mengembalikan `True`, maka pemeriksaan `f == None` akan mengembalikan `True`.
-```python
-class Foo:
-    def __eq__(self, other):
-            return True
-
-f = Foo()
-f == None
-# output ➜ True
-f is None
-# output ➜ False
-```
-> Contoh diambil dari https://stackoverflow.com/a/26611/23542056
+Serta, operator `is` lebih cepat dibanding `==` untuk pengecekan data `None`.
 
 ---
 
@@ -96,5 +82,7 @@ f is None
 ### ◉ Referensi
 
 - https://docs.python.org/3/c-api/none.html
+- https://stackoverflow.com/questions/3257919/what-is-the-difference-between-is-none-and-none
+- https://stackoverflow.com/questions/26595/is-there-any-difference-between-foo-is-none-and-foo-none/26611#26611
 
 </div>
