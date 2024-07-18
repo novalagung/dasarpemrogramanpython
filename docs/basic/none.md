@@ -16,7 +16,7 @@ Sebagai contoh, pada kode berikut, dipersiapkan sebuah fungsi bernama `inspect_d
 
 ```python
 def inspec_data(data):
-    if data == None:
+    if data is None:
         print("data is empty. like very empty")
     else:
         print(f"data: {data}, type: {type(data).__name__}")
