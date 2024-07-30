@@ -55,7 +55,7 @@ print("hobbies:", profile["hobbies"])
 
 Pengaksesan item menggunakan key yang tidak dikenali akan menghasilkan error.
 
-Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `umur` misalnya (`profile["umur"]`) hasilnya adalah error. 
+Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error. 
 
 ```python
 profile = {
