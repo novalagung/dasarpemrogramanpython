@@ -66,7 +66,7 @@ profile = {
 }
 
 print("age:", profile["age"])
-# output ➜ KeyError: 'age'
+# KeyError: 'age'
 :::
 
 ### ◉ Urutan item dictionary
