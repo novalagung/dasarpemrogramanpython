@@ -55,8 +55,18 @@ print("hobbies:", profile["hobbies"])
 
 Pengaksesan item menggunakan key yang tidak dikenali akan menghasilkan error.
 
-Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `umur` misalnya (`profile["umur"]`) hasilnya adalah error. 
+Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error. 
 
+```python
+profile = {
+    "id": 2,
+    "name": "john wick",
+    "hobbies": ["playing with pencil"],
+    "is_female": False,
+}
+
+print("age:", profile["age"])
+# KeyError: 'age'
 :::
 
 ### ◉ Urutan item dictionary
