@@ -18,7 +18,7 @@ Versi website/ebook: **v1.0.20231224**, dan versi [Python 3.12.0](https://www.py
 
 Versi ebook bisa di-download dalam bentuk file di link berikut:
 
-> [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=beta1.20231011)
+> [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=beta1.0.20231224)
 
 ## Source Code Praktik
 
