@@ -8,7 +8,7 @@ Pada chapter ini kita akan membahas tentang docstring beserta cara penerapan dan
 
 ## A.48.1. Pengenalan docstring
 
-Di pembelajaran awal yaitu pada chapter [Komentar](/basic/komentar), telah disinggung bahwa salah satu cara menulis komentar adalah menggunakan karakter `"""` dengan penulisan di awal dan akhir komentar. Contoh: `### ini komentar ###`.
+Di pembelajaran awal yaitu pada chapter [Komentar](/basic/komentar), telah disinggung bahwa salah satu cara menulis komentar adalah menggunakan karakter `"""` dengan penulisan di awal dan akhir komentar. Contoh: `""" ini komentar """`.
 
 Komentar yang ada di dalam karakter tersebut disebut docstring. DocString memiliki keistimewaan dibanding komentar biasa yang ditulis menggunakan karakter `#`.
 
@@ -92,7 +92,7 @@ Selanjutnya coba hover fungsi atau class yang di-import dari module `Quote.py` y
 
 ![Python docstring](img/docstring-1.png)
 
-Ok, sekarang kita akan modifikasi komentar pada kode yang sudah ditulis dengan mengubahnya menjadi komentar docstring. Komentar hanya dianggap docstring ketika ditulis dengan diapit karakter `###` `###` dan penulisannya berada tepat dibawah unit yang ingin dikomentari.
+Ok, sekarang kita akan modifikasi komentar pada kode yang sudah ditulis dengan mengubahnya menjadi komentar docstring. Komentar hanya dianggap docstring ketika ditulis dengan diapit karakter `"""` `"""` dan penulisannya berada tepat dibawah unit yang ingin dikomentari.
 
 ### ◉ DocString pada class dan fungsi/method
 
@@ -159,7 +159,7 @@ Mantab bukan? DocString ini menjadi salah satu hal yang sangat membantu dalam pe
 
 ### ◉ DocString pada attribute dan variable
 
-Untuk penerapan docstring pada attribute, caranya juga sama, yaitu dengan menuliskan komentar tepat dibawah attribute atau variabel dengan karakter `###` `###`.
+Untuk penerapan docstring pada attribute, caranya juga sama, yaitu dengan menuliskan komentar tepat dibawah attribute atau variabel dengan karakter `"""` `"""`.
 
 ```python title="File quote.py"
 # ...
@@ -195,7 +195,7 @@ Output ketika di-hover:
 
 ## A.48.3. Special name ➜ class attribute `__note__`
 
-Informasi docstring milik fungsi, method, dan class bisa diakses secara excplit menggunakan class attribute `__note__`. Jika mengacu ke kode yang sudah ditulis, maka pengaksesannya seperti ini:
+Informasi docstring milik fungsi, method, dan class bisa diakses secara excplit menggunakan class attribute `__doc__`. Jika mengacu ke kode yang sudah ditulis, maka pengaksesannya seperti ini:
 
 ```python
 from quote import Quote, print_random_quote
