@@ -4,7 +4,7 @@ title: A.26. Python Lambda
 sidebar_label: A.26. Function ➜ Lambda
 ---
 
-Pada chapter ini kita akan belajar tentang *anonymous function* atau fungsi tanpa nama yang biasa disebut dengan **lambda**. 
+Pada chapter ini kita akan belajar tentang *anonymous function* atau fungsi tanpa nama yang biasa disebut dengan **lambda**.
 
 ## A.26.1. Pengenalan Lambda
 
@@ -174,7 +174,7 @@ print(res)
 # output ➜ [[1, 3, 5], [2, 4, 6]]
 ```
 
-> Pembahasan detail mengenai list comprehensian ada di chapter [List Comprehension](/basic/list-comprehension)
+> Pembahasan detail mengenai list comprehension ada di chapter [List Comprehension](/basic/list-comprehension)
 
 ## A.26.6. Lambda dengan parameter fungsi/lambda
 
