@@ -352,8 +352,8 @@ Pada variabel `fellowship` berikut akan dicari elemen yang juga ada pada variabe
 fellowship = {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam', 'merry', 'pippin'}
 hobbits = {'frodo', 'sam', 'merry', 'pippin', 'bilbo'}
 
-diff = fellowship.intersection(hobbits)
-print("diff:", diff)
+duplicates = fellowship.intersection(hobbits)
+print("duplicates:", duplicates)
 # output ➜ duplicates: {'frodo', 'pippin', 'sam', 'merry'}
 ```
 
