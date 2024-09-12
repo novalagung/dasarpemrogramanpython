@@ -347,7 +347,6 @@ Method `keys()` digunakan untuk mengakses semua keys dictionary, hasilnya adalah
 profile = {
     "id": 2,
     "name": "mario",
-    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
@@ -363,7 +362,6 @@ Method `values()` digunakan untuk mengakses semua value dictionary, hasilnya ada
 profile = {
     "id": 2,
     "name": "mario",
-    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
@@ -381,7 +379,6 @@ Untuk mengkonversinya ke bentuk list, gunakan fungsi `list()`.
 profile = {
     "id": 2,
     "name": "mario",
-    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
