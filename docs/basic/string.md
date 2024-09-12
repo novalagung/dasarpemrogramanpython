@@ -30,7 +30,7 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
     text = "a multiline string\nin python"
 
     print(text)
-    # output ↓ 
+    # output ↓
     #
     # a multiline string
     # in python
@@ -43,12 +43,12 @@ Untuk string *multiline* atau lebih dari satu baris, cara penulisannya bisa deng
     in python"""
 
     print(text)
-    # output ↓ 
+    # output ↓
     #
     # a multiline string
     # in python
     ```
-    
+
     > Teknik penulisan string menggunakan tanda `"""` atau `'''` selain digunakan untuk membuat multiline string, juga bisa dimanfaatkan untuk hal lain yaitu pembuatan docstring.
     >
     > Lebih detailnya mengenai docstring dibahas di chapter [DocString](/basic/docstring).
@@ -223,7 +223,7 @@ print(res)
 
 String masih termasuk kategori tipe data sequence, yang artinya bisa digunakan pada operasi standar sequence, contoh seperti perulangan, pengaksesan elemen, dan slicing.
 
-### ◉ Mengecek lebar karakter string
+### ◉ Mengecek jumlah karakter string
 
 Fungsi `len()` ketika digunakan pada tipe data string mengembalikan informasi jumlah karakter string.
 
@@ -275,7 +275,7 @@ Output:
 
 Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan error.
 
-Sebagai contoh, string `text = "hello"`, jika diakses index ke-5-nya misalnya (`text[5]`) hasilnya adalah error. 
+Sebagai contoh, string `text = "hello"`, jika diakses index ke-5-nya misalnya (`text[5]`) hasilnya adalah error.
 
 :::
 
@@ -314,7 +314,7 @@ Tipe data string memiliki beberapa method yang berguna untuk keperluan operasi s
     # output ➜ False, karena ada karakter 123 yang bukan merupakan alfabet
 
     print("موز".isalpha())
-    # output ➜ True, karena موز adalah abjad arabic 
+    # output ➜ True, karena موز adalah abjad arabic
 
     print("バナナ".isalpha())
     # output ➜ True, karena バナナ adalah karakter jepang
@@ -390,7 +390,7 @@ Tipe data string memiliki beberapa method yang berguna untuk keperluan operasi s
 
     ```python
     print("123abc".isalnum())
-    # output ➜ True, karena 123 adalah digit dan abc adalah alfabet 
+    # output ➜ True, karena 123 adalah digit dan abc adalah alfabet
 
     print("12345⅓".isalnum())
     # output ➜ True, karena 12345⅓ adalah digit
@@ -402,7 +402,7 @@ Tipe data string memiliki beberapa method yang berguna untuk keperluan operasi s
     # output ➜ False, karena ada karakter spasi yang bukan merupakan karakter digit ataupun alfabet
 
     print("موز".isalnum())
-    # output ➜ True, karena موز adalah abjad arabic 
+    # output ➜ True, karena موز adalah abjad arabic
 
     print("バナナ".isalnum())
     # output ➜ True, karena バナナ adalah karakter jepang
@@ -420,7 +420,7 @@ print("\n".isspace())
 # output ➜ True, karena string berisi karakter newline
 
 print("\n\r".isspace())
-# output ➜ True, karena string berisi karakter newline 
+# output ➜ True, karena string berisi karakter newline
 
 print("hello\n\r".isspace())
 # output ➜ False, karena string berisi tulisan hello yang tidak termasuk dalam kategori whitespace
