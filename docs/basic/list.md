@@ -25,7 +25,7 @@ Deklarasi variabel dan data list adalah menggunakan *literal* list dengan notasi
 # contoh list
 list_1 = [10, 70, 20]
 
-# list dengan deklarasi element secara vertikal 
+# list dengan deklarasi element secara vertikal
 list_2 = [
     'ab',
     'cd',
@@ -41,7 +41,7 @@ list_4 = []
 ```
 
 Data dalam list biasa disebut dengan **element**. Setiap elemen disimpan dalam list secara urut dengan penanda urutan yang disebut **index**.
-Niali index dimulai dari angka `0`.
+Nilai index dimulai dari angka `0`.
 
 Sebagai contoh, pada variabel `list_1` di atas:
 
@@ -180,7 +180,7 @@ print(elem_1st, elem_2nd, elem_3rd)
 
 Pengaksesan elemen menggunakan index di-luar kapasitas data akan menghasilkan error.
 
-Sebagai contoh, data `list_1` di atas jika diakses index ke-3-nya misalnya (`list_1[3]`) hasilnya adalah error. 
+Sebagai contoh, data `list_1` di atas jika diakses index ke-3-nya misalnya (`list_1[3]`) hasilnya adalah error.
 
 :::
 
@@ -204,7 +204,7 @@ else:
 
 Slicing adalah metode pengaksesan list menggunakan notasi slice. Notasi ini mirip seperti array, namun mengembalikan data bertipe tetap slice.
 
-Contoh pengaplikasian metode slicing bisa dilihat pada kode berikut. Variabel `list_2` diakses element-nya mulai index `1` hingga sebelum `3`:   
+Contoh pengaplikasian metode slicing bisa dilihat pada kode berikut. Variabel `list_2` diakses element-nya mulai index `1` hingga sebelum `3`:
 
 ```python
 list_2 = ['ab', 'cd', 'hi', 'ca']
