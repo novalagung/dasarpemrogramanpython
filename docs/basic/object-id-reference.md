@@ -124,7 +124,7 @@ Hasilnya:
 
 ### ◉ Lebih dalam mengenai korelasi operasi assignment dan object ID
 
-Mari kita modifikasi lagi kode sebelumnya agar lebih terlihat jelas efek dari opeasi assignment ke object ID.
+Mari kita modifikasi lagi kode sebelumnya agar lebih terlihat jelas efek dari operasi assignment ke object ID.
 
 Pada kode berikut, kita coba tampilkan hasil operasi perbandingan menggunakan keyword `is`. Kemudian nilai variabel `message2` diubah dan dibandingkan ulang. Setelah itu, nilai `message3` diubah untuk diisi dengan nilai dari `message2`.
 
