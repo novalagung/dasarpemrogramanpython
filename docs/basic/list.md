@@ -514,7 +514,7 @@ Ada 2 cara untuk menduplikasi list, menggunakan method `copy()` dan teknik slici
     ```
 
 > Operasi copy disini jenisnya adalah shallow copy.<br />
-> Lebih detailya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
+> Lebih detailnya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
 
 ### ◉ Sorting
 

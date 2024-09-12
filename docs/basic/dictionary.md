@@ -2,7 +2,7 @@
 sidebar_position: 16
 title: A.16. Python Dictionary
 sidebar_label: A.16. Dictionary
-# description: 
+# description:
 # keywords: []
 # faqs:
 #   - question: Tuple vs List di Python
@@ -55,7 +55,7 @@ print("hobbies:", profile["hobbies"])
 
 Pengaksesan item menggunakan key yang tidak dikenali akan menghasilkan error.
 
-Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error. 
+Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error.
 
 ```python
 profile = {
@@ -410,7 +410,7 @@ print(p2)
 Pada contoh di atas, statement `p1.copy()` menghasilkan data baru dengan isi sama seperti isi `p1`, data tersebut kemudian ditampung oleh variabel `p2`.
 
 > Operasi copy disini jenisnya adalah shallow copy.<br />
-> Lebih detailya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
+> Lebih detailnya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
 
 ### ◉ Mengosongkan isi dictionary
 

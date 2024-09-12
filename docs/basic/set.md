@@ -257,7 +257,7 @@ print("len:", len(fellowship), "data:", fellowship)
 
 Ada dua method tersedia untuk kebutuhan menghapus elemen tertentu dari suatu set, yaitu `discard()` dan `remove()`. Penggunaan keduanya adalah sama, harus disertai dengan 1 argument pemanggilan method, yaitu elemen yang ingin dihapus.
 
-Pada contoh berikut, elemen `boromir` dihapus dari set menggunakan method `discard()`, dan elemen `gandalf` dihapus menggunakan method `remove()`. 
+Pada contoh berikut, elemen `boromir` dihapus dari set menggunakan method `discard()`, dan elemen `gandalf` dihapus menggunakan method `remove()`.
 
 ```python
 fellowship = {'aragorn', 'gimli', 'legolas', 'gandalf', 'boromir', 'frodo', 'sam', 'merry', 'pippin'}
@@ -317,7 +317,7 @@ print("len:", len(data2), "data2:", data2)
 Pada contoh di atas, statement `data1.copy()` menghasilkan data baru dengan isi sama seperti isi `data1` ditampung oleh variabel bernama `data2`.
 
 > Operasi copy disini jenisnya adalah shallow copy.<br />
-> Lebih detailya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
+> Lebih detailnya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
 
 ### ◉ Pengecekan *difference* antar set
 
