@@ -154,7 +154,7 @@ print(profile)
 
 ## A.16.3. Perulangan item dictionary
 
-Gunakan keyword `for` dan `in` untuk mengiterasi data tiap key milik dictionary. Dari key tersebut kemduian akses value-nya.
+Gunakan keyword `for` dan `in` untuk mengiterasi data tiap key milik dictionary. Dari key tersebut kemudian akses value-nya.
 
 ```python
 profile = {
