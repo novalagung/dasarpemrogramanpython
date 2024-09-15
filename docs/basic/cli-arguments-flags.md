@@ -4,7 +4,7 @@ title: A.50. Python CLI Arguments & Flags
 sidebar_label: A.50. CLI Arguments & Flags
 ---
 
-Chapter ini membahas tentang pengaksean CLI argument eksekusi program Python. Yang dimaksud dengan argument adalah apapun yang ditulis setelah command `python` (atau `python.exe` di Windows). Umumnya program yang dibuat untuk keperluan tooling ataupun utility lainnya banyak memanfaatkan *command line interface* arguments ini.
+Chapter ini membahas tentang pengaksesan CLI argument eksekusi program Python. Yang dimaksud dengan argument adalah apapun yang ditulis setelah command `python` (atau `python.exe` di Windows). Umumnya program yang dibuat untuk keperluan tooling ataupun utility lainnya banyak memanfaatkan *command line interface* arguments ini.
 
 Python mengenal 2 jenis CLI arguments, yaitu raw arguments (atau cukup arguments) dan flags, keduanya dibahas di sini.
 
