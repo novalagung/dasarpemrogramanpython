@@ -131,7 +131,7 @@ jstr = json.dumps(data, indent=4)
 print(jstr)
 ```
 
-> Pada contoh di atas, JSON string di-format dengan indent sebanyak 4. Nilai inded bisa dikonfigurasi via parameter opsional `indent`.
+> Pada contoh di atas, JSON string di-format dengan indent sebanyak 4. Nilai indent bisa dikonfigurasi via parameter opsional `indent`.
 
 Untuk data dengan isi adalah tipe data yang tidak kompatibel dengan operasi JSON di Python, penggunaannya pada `json.dumps()` menghasilkan error. Contohnya pada kode berikut ada tipe data `set` disitu.
 
@@ -241,7 +241,7 @@ Penulisan data JSON ke file sangat mudah, dilakukan menggunakan teknik penulisan
         f.write(jstr)
     ```
 
-    Outcome program: file `data.json` terbuat dengan isi adalah JSON string hasil proses encoding `json.dumps()` terhadap data diu variabel `data`.
+    Outcome program: file `data.json` terbuat dengan isi adalah JSON string hasil proses encoding `json.dumps()` terhadap data di variabel `data`.
 
 ### ◉ Membaca JSON file
 
