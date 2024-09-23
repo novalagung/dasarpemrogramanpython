@@ -4,7 +4,7 @@ title: Version Changelogs & Updates
 sidebar_label: Version Changelogs & Updates
 ---
 
-## 📝 Release v1.0.20240923 (2024-09-23)
+## 📝 Release v1.2.20240923 (2024-09-23)
 
 #### ◉ Chapter update
 
