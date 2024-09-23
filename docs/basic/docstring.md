@@ -193,7 +193,7 @@ Output ketika di-hover:
 
 ![Python docstring](img/docstring-5.png)
 
-## A.48.3. Special name ➜ class attribute `__note__`
+## A.48.3. Special name ➜ class attribute `__doc__`
 
 Informasi docstring milik fungsi, method, dan class bisa diakses secara excplit menggunakan class attribute `__doc__`. Jika mengacu ke kode yang sudah ditulis, maka pengaksesannya seperti ini:
 
