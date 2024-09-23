@@ -31,7 +31,7 @@ f.close()
 
 Kode di atas akan membuka stream I/O file bernama `file.txt`. Jika file tujuan belum ada, maka otomatis dibuatkan oleh Python. Dari object kembalian fungsi `open()` nantinya kita bisa lakukan banyak jenis operasi seperti membaca isi file, menulis, menghapus, dan lainnya.
 
-> Untuk pengguna Windows, tulis saja path-nya dengan karakter `\` ter-escape.<br />Contoh: `C:\\Users\\novalagung\\Desktop\\file.txt"` 
+> Untuk pengguna Windows, tulis saja path-nya dengan karakter `\` ter-escape.<br />Contoh: `"C:\\Users\\novalagung\\Desktop\\file.txt"` 
 
 Silakan tulis kode di atas, lalu ganti path-nya dengan current path (atau bisa gunakan `.`), kemudian run programnya. Hasil eksekusi program adalah pembuatan sebuah file baru bernama `file.txt` yang isinya kosong.
 
@@ -166,7 +166,7 @@ with open("file.txt", "r", encoding="utf-8") as f:
         i += 1
 ```
 
-Kode di atas bisa disederhanakan lagi dengan cara langsung mengiterasi object file-nya. Jadi variabel `f` digunakan secara langsung pada statement perulangan. Hal ini bisa dilakukan karena tipe data kembalian fungsi `open()` adalah `TextIOWrapper` dan tipe ini termasuk tipe data yang *iteratable*.
+Kode di atas bisa disederhanakan lagi dengan cara langsung mengiterasi object file-nya. Jadi variabel `f` digunakan secara langsung pada statement perulangan. Hal ini bisa dilakukan karena tipe data kembalian fungsi `open()` adalah `TextIOWrapper` dan tipe ini termasuk tipe data yang *iterable*.
 
 ```python
 with open("file.txt", "r", encoding="utf-8") as f:
@@ -176,9 +176,9 @@ with open("file.txt", "r", encoding="utf-8") as f:
         i += 1
 ```
 
-> Lebih detailnya mengenai tipe data iteratable dibahas pada chapter [Iterator](#)
+> Lebih detailnya mengenai tipe data iterable dibahas pada chapter [Iterator](/basic/iterable-iterator)
 
-Kode yang sudah cukup ringkas di atas bisa disederhanakan lagi dengan cara membungkus tipe data `f` dalam fungsi `enumerate()`. Fungsi ini membuat suatu object yang iteratable menjadi memiliki index di setiap element-nya.
+Kode yang sudah cukup ringkas di atas bisa disederhanakan lagi dengan cara membungkus tipe data `f` dalam fungsi `enumerate()`. Fungsi ini membuat suatu object yang iterable menjadi memiliki index di setiap element-nya.
 
 ```python
 with open("file.txt", "r", encoding="utf-8") as f:

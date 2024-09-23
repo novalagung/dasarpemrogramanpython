@@ -117,7 +117,7 @@ print(" ➜ timezone:", data_datetime.tzinfo)
 
 ### ◉ Mengambil datetime hari ini / sekarang
 
-Tipe `date` dan `time` bisa dikominasikan untuk menciptakan object baru bertipe `datetime`. Caranya via class method `combine` milik tipe data `datetime`.
+Mengambil waktu hari ini dilakukan menggunakan method `today`, ini bisa diterapkan untuk tipe data `datetime` maupun `date`. Sedangkan mengambil waktu sekarang hanya bisa dilakukan pada tipe data `datetime` menggunakan method `now`. Contoh penerapannya bisa dilihat pada kode berikut.
 
 ```python
 data1 = datetime.now()
@@ -137,7 +137,7 @@ print("sekarang (date):", data2)
 
 ## A.53.2. Pengenalan timezone (`tz`)
 
-Setiap tipe data yang meyimpan informasi waktu (seperti `time` dan `datetime`) didalamnya ada informasi timezone yang bisa diakses ataupun ditentukan saat pembuatan data. Informasi timezone direpresentasikan menggunakan `dateutil.tz`, tipe data `tz` dalam package `dateutil`.
+Setiap tipe data yang menyimpan informasi waktu (seperti `time` dan `datetime`) didalamnya ada informasi timezone yang bisa diakses ataupun ditentukan saat pembuatan data. Informasi timezone direpresentasikan menggunakan `dateutil.tz`, tipe data `tz` dalam package `dateutil`.
 
 Method `tz.gettz()` digunakan untuk membuat data timezone. Contoh pengaplikasiannya:
 
@@ -179,6 +179,7 @@ Penerapan `tz` dalam pembuatan data `time` dan `timezone` dilakukan via pengisia
     from dateutil import tz
     from datetime import datetime
 
+    tzinfo = tz.gettz("America/New_York")
     data_datetime = datetime(year=2020, month=1, day=31, hour=13, minute=14, second=31, tzinfo=tzinfo)
 
     print("datetime:", data_datetime)
@@ -194,6 +195,7 @@ Penerapan `tz` dalam pembuatan data `time` dan `timezone` dilakukan via pengisia
     from dateutil import tz
     from datetime import date, time
 
+    tzinfo = tz.gettz("America/New_York")
     data_date = date(year=2020, month=1, day=31)
     data_time = time(hour=13, minute=14, second=31)
     data_datetime = datetime.combine(data_date, data_time, tzinfo=tzinfo)
