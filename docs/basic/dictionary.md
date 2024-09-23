@@ -2,7 +2,7 @@
 sidebar_position: 16
 title: A.16. Python Dictionary
 sidebar_label: A.16. Dictionary
-# description: 
+# description:
 # keywords: []
 # faqs:
 #   - question: Tuple vs List di Python
@@ -55,7 +55,7 @@ print("hobbies:", profile["hobbies"])
 
 Pengaksesan item menggunakan key yang tidak dikenali akan menghasilkan error.
 
-Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error. 
+Sebagai contoh, variabel `profile` di atas jika diakses item dengan key `age` misalnya (`profile["age"]`) hasilnya adalah error.
 
 ```python
 profile = {
@@ -154,7 +154,7 @@ print(profile)
 
 ## A.16.3. Perulangan item dictionary
 
-Gunakan keyword `for` dan `in` untuk mengiterasi data tiap key milik dictionary. Dari key tersebut kemduian akses value-nya.
+Gunakan keyword `for` dan `in` untuk mengiterasi data tiap key milik dictionary. Dari key tersebut kemudian akses value-nya.
 
 ```python
 profile = {
@@ -352,7 +352,7 @@ profile = {
 }
 
 print(list(profile.keys()))
-# output ➜ ['id', 'name', 'is_female']
+# output ➜ ['id', 'name', 'hobbies', 'is_female']
 ```
 
 ### ◉ Pengaksesan dictionary values
@@ -368,7 +368,7 @@ profile = {
 }
 
 print(list(profile.values()))
-# output ➜ [2, 'mario', False]
+# output ➜ [2, 'mario', ('playing with luigi', 'saving the mushroom kingdom'), False]
 ```
 
 ### ◉ Method `items()` dictionary
@@ -386,7 +386,7 @@ profile = {
 }
 
 print(list(profile.items()))
-# output ➜ [('id', 2), ('name', 'mario'), ('is_female', False)]
+# output ➜ [('id', 2), ('name', 'mario'), ('hobbies', ('playing with luigi', 'saving the mushroom kingdom')), ('is_female', False)]
 ```
 
 ### ◉ Copy dictionary
@@ -410,7 +410,7 @@ print(p2)
 Pada contoh di atas, statement `p1.copy()` menghasilkan data baru dengan isi sama seperti isi `p1`, data tersebut kemudian ditampung oleh variabel `p2`.
 
 > Operasi copy disini jenisnya adalah shallow copy.<br />
-> Lebih detailya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
+> Lebih detailnya mengenai shallow copy vs deep copy dibahas pada chapter terpisah.
 
 ### ◉ Mengosongkan isi dictionary
 

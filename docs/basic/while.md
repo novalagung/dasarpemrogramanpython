@@ -11,7 +11,7 @@ faqs:
     answer: 'Contoh perulanga di Python menggunakan keyword while ➜ while i < n: print("index:", i)'
 ---
 
-Di Pyhon, selain keyword `for` ada juga keyword `while` yang fungsinya kurang lebih sama yaitu untuk perulangan. Bedanya, perulangan menggunakan `while` terkontrol via operasi logika atau nilai `bool`.
+Di Python, selain keyword `for` ada juga keyword `while` yang fungsinya kurang lebih sama yaitu untuk perulangan. Bedanya, perulangan menggunakan `while` terkontrol via operasi logika atau nilai `bool`.
 
 Pada chapter ini kita akan mempelajari cara penerapannya.
 
@@ -100,7 +100,7 @@ while i < n:
     while j < n - i:
         print("*", end=" ")
         j += 1
-    
+
     print()
     i += 1
 ```
@@ -123,7 +123,7 @@ for i in range(n):
     while j < n - i:
         print("*", end=" ")
         j += 1
-    
+
     print()
 ```
 

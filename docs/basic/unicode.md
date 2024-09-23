@@ -89,7 +89,7 @@ print(f'code point of {text} in decimal: {codePoint}')
 # output ➜ code point of 안 in decimal: 50504
 ```
 
-Untuk menampilkan code point dalam notasi hexadesimal, cukup bungkus menggunakan fungsi `hex()`.
+Untuk menampilkan code point dalam notasi heksadesimal, cukup bungkus menggunakan fungsi `hex()`.
 
 ```python
 text = "안"
@@ -102,13 +102,13 @@ print(f'code point of {text} in hex: {hex(codePoint)}')
 # output ➜ code point of 안 in hex: 0xc548
 ```
 
-Bisa dilihat dari program di atas, unicode code point dari karakter `안` dalam bentuk hexadesimal adalah `c548`. Jika dicek pada praktek sebelumnya, kode hexadesimal yang sama kita gunakan juga dalam penulisan karakter unicode menggunakan notasi `\uXXXX` (yaitu `\uc548`).
+Bisa dilihat dari program di atas, unicode code point dari karakter `안` dalam bentuk heksadesimal adalah `c548`. Jika dicek pada praktek sebelumnya, kode heksadesimal yang sama kita gunakan juga dalam penulisan karakter unicode menggunakan notasi `\uXXXX` (yaitu `\uc548`).
 
 ### ◉ Fungsi `chr()`
 
 Fungsi `chr()` adalah kebalikan dari fungsi `ord()`, kegunaannya adalah untuk menampilkan string sesuai code point.
 
-Pada contoh dibawah ini fungsi `chr()` digunakan untuk memunculkan karakter dengan code point desimal `50504` dan juga hexadesimal `C548`, yang keduanya adalah merepresentasikan karakter yang sama, yaitu `안`.
+Pada contoh dibawah ini fungsi `chr()` digunakan untuk memunculkan karakter dengan code point desimal `50504` dan juga heksadesimal `C548`, yang keduanya adalah merepresentasikan karakter yang sama, yaitu `안`.
 
 ```python
 codePoint = chr(50504)

@@ -2,7 +2,7 @@
 sidebar_position: 11
 title: A.11. Perulangan Python ➜ break, continue
 sidebar_label: A.11. Perulangan ➜ break, continue
-# description: 
+# description:
 # keywords: []
 # faqs:
 #   - question: Seleksi kondisi di Python
@@ -66,15 +66,15 @@ Di Python, algoritma seperti ini bisa diterapkan namun menggunakan tambahan kode
 ```python
 max = int(input("jumlah bintang: "))
 
-outerLoop = True
+outer_loop = True
 for i in range(max):
-    if not outerLoop: 
+    if not outer_loop:
         break
 
     for j in range(i + 1):
         print("*", end=" ")
         if j >= 7:
-            outerLoop = False
+            outer_loop = False
             break
     print()
 ```
@@ -82,8 +82,8 @@ for i in range(max):
 Penjelasan:
 
 - Program yang memiliki perulanga *nested* dengan jumlah perulangan ada 2.
-- Disiapkan sebuah variabel `bool` bernama `outerLoop` untuk kontrol perulangan terluar.
-- Ketika nilai `j` (yang merupakan variabel counter perulangan terdalam) adalah lebih dari atau sama dengan `7`, maka variabel `outerLoop` di set nilainya menjadi `False`, dan perulangan terdalam di-`break` secara paksa.
+- Disiapkan sebuah variabel `bool` bernama `outer_loop` untuk kontrol perulangan terluar.
+- Ketika nilai `j` (yang merupakan variabel counter perulangan terdalam) adalah lebih dari atau sama dengan `7`, maka variabel `outer_loop` di set nilainya menjadi `False`, dan perulangan terdalam di-`break` secara paksa.
 - Dengan ini maka perulangan terluar akan terhenti.
 
 ---

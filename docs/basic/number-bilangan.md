@@ -41,7 +41,7 @@ Literal integer *default*-nya adalah berbasis 10, contohnya seperti `24` dan `13
 
 Selain basis 10, bilangan bulat bisa dituliskan menggunakan basis lain, misalnya heksadesimal/oktal/biner, caranya dengan memanfaatkan *prefix* atau suatu awalan saat penulisan literalnya.
 
-- Prefix literal untuk hexadesimal: `0x`
+- Prefix literal untuk heksadesimal: `0x`
 - Prefix literal untuk oktal: `0o`
 - Prefix literal untuk biner: `0b`
 
@@ -329,7 +329,7 @@ print(f"angka float: {angka_float}")
 # output ➜ angka float: 3.141592653589
 ```
 
-Khusus untuk bilangan float yang nilai belakang komanya adalah `0` bisa dituliskan dengan tanpa menuliskan angka `0`-nya. Contoh: 
+Khusus untuk bilangan float yang nilai belakang komanya adalah `0` bisa dituliskan dengan tanpa menuliskan angka `0`-nya. Contoh:
 
 ```python
 angka_float = 3.

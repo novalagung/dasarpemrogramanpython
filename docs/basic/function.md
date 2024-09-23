@@ -12,7 +12,7 @@ O iya, chapter ini merupakan chapter pembuka pembahasan topik fungsi. Ada banyak
 
 Function atau fungsi adalah kode program yang terisolasi dalam satu blok kode, yang bisa dipanggil sewaktu-waktu. Fungsi memiliki beberapa atribut seperti nama fungsi, isi fungsi, parameter/argument, dan nilai balik.
 
-Pembuatan fungsi dilakukan dengan keyword `def` diikuti dengan nama fungsi, lali di bawahnya ditulis body/isi fungsi. Sebagai contoh pada kode berikut fungsi `say_hello()` dideklarasikan dengan isi adalah sebuah statement yang menampilkan text `hello`.
+Pembuatan fungsi dilakukan dengan keyword `def` diikuti dengan nama fungsi, lalu di bawahnya ditulis body/isi fungsi. Sebagai contoh pada kode berikut fungsi `say_hello()` dideklarasikan dengan isi adalah sebuah statement yang menampilkan text `hello`.
 
 ```python
 def say_hello():
@@ -47,7 +47,7 @@ Untuk tambahan latihan, buat satu fungsi lagi, lalu isi dengan banyak statement.
 ```python
 def print_something():
     print("hello")
-    
+
     today = "Thursday"
     print(f"happy {today}")
 

@@ -84,7 +84,7 @@ print(obj9)
 # output ➜ {'name': 'Hajime Kashimo', 'age': 400, 'race': 'human', 'era': '400 year ago'}
 ```
 
-Pada statement `obj8` semua argument pemanggilan fungsi ditulis menggunakan metode *keyword argument* dan urutannya diubah total. Sewaktu di-print, hasilnya tetap valid. Sedangkan pada statement `obj9`, hanya argument parameter `era` dan `race` yang ditulis menggunakan metode *keyword argument* dengan urutan diubah. Sisalnya (yaitu `name` dan `age`) ditulis menggunakan metode *positional argument* secara urut.
+Pada statement `obj8` semua argument pemanggilan fungsi ditulis menggunakan metode *keyword argument* dan urutannya diubah total. Sewaktu di-print, hasilnya tetap valid. Sedangkan pada statement `obj9`, hanya argument parameter `era` dan `race` yang ditulis menggunakan metode *keyword argument* dengan urutan diubah. Sisanya (yaitu `name` dan `age`) ditulis menggunakan metode *positional argument* secara urut.
 
 Kesimpulannya:
 
