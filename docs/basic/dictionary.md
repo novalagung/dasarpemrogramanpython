@@ -347,11 +347,12 @@ Method `keys()` digunakan untuk mengakses semua keys dictionary, hasilnya adalah
 profile = {
     "id": 2,
     "name": "mario",
+    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
 print(list(profile.keys()))
-# output ➜ ['id', 'name', 'is_female']
+# output ➜ ['id', 'name', 'hobbies', 'is_female']
 ```
 
 ### ◉ Pengaksesan dictionary values
@@ -362,11 +363,12 @@ Method `values()` digunakan untuk mengakses semua value dictionary, hasilnya ada
 profile = {
     "id": 2,
     "name": "mario",
+    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
 print(list(profile.values()))
-# output ➜ [2, 'mario', False]
+# output ➜ [2, 'mario', ('playing with luigi', 'saving the mushroom kingdom'), False]
 ```
 
 ### ◉ Method `items()` dictionary
@@ -379,11 +381,12 @@ Untuk mengkonversinya ke bentuk list, gunakan fungsi `list()`.
 profile = {
     "id": 2,
     "name": "mario",
+    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
 }
 
 print(list(profile.items()))
-# output ➜ [('id', 2), ('name', 'mario'), ('is_female', False)]
+# output ➜ [('id', 2), ('name', 'mario'), ('hobbies', ('playing with luigi', 'saving the mushroom kingdom')), ('is_female', False)]
 ```
 
 ### ◉ Copy dictionary
