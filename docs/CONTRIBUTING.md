@@ -26,6 +26,7 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 1. [Arsy Opraza Akma](https://github.com/arasopraza)
 1. [Barep Bimo Pangestu](https://github.com/bosmobosmo)
 1. [Mohammad Safri Dwi Rizky](https://github.com/safridwirizky)
+1. [Muhammad Saleh Solahudin](https://github.com/ZihxS)
 1. ... anda 🚀
 
 ## Ebook/webhook techstack & architecture
