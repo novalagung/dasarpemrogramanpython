@@ -212,7 +212,7 @@ Sekarang jalankan program untuk pengetesan.
 
 Bisa dilihat isi data yang muncul via pemanggilan fungsi `read_data()` sesuai dengan data yang di-insert.
 
-## A.51.3. Delete data CSV
+## A.51.4. Delete data CSV
 
 Operasi delete data bisa dilakukan dengan menuliskan ulang isi file CSV tetapi meng-exclude data yang ingin dihapus. Kurang lebih kodenya seperti ini:
 
@@ -238,7 +238,7 @@ def delete_data(row_index):
 File CSV dibaca dua kali:
 
 - Pembacaan pertama adalah untuk pengambilan list data untuk disimpan ke variabel `rows`
-- Pembacaan ke-2 adalah untuk penulisan ulang ulang header ke file CSV dan juga data terkecuali untuk baris data yang dihapus.
+- Pembacaan ke-2 adalah untuk penulisan ulang header ke file CSV dan juga data terkecuali untuk baris data yang dihapus.
 
 Setelah itu, panggil fungsi `delete_data()` di fungsi `control_flow()`:
 
