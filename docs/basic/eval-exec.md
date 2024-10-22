@@ -21,7 +21,7 @@ print(area)
 
 Variabel `a`, `b`, dan `c` di ekspresi `'(a + b) / 20 + (c * c)'` nilainya terisi oleh nilai variabel `a`, `b`, dan `c` yang sudah dideklarasikan sebelumnya.
 
-Ekspresi string berisi apapun bisa digunakan pada fungsi `eval()` ini, asalkan hanya ekspresinya hanya 1 baris.
+Ekspresi string berisi apapun bisa digunakan pada fungsi `eval()` ini, asalkan ekspresinya hanya 1 baris.
 
 Jika ekspresi tidak valid, maka eksekusi fungsi `eval()` menghasilkan error, dan ketika itu terjadi ada baiknya di-handle dengan baik. Contoh:
 
