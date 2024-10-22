@@ -120,7 +120,7 @@ Selain menggunakan class `enum.Enum` saat deklarasi, bisa juga menggunakan salah
 
 - Class `enum.Enum` ➡️ property boleh berisi data bertipe apapun
 - Class `enum.StrEnum` ➡️ property hanya boleh berisi tipe data string
-- Class `enum.IntEnum` ➡️ property hanya boleh berisi tipe data string
+- Class `enum.IntEnum` ➡️ property hanya boleh berisi tipe data integer
 
 Cara penerapan variant enum yang telah disebut di atas adalah masih sama. Cukup ganti `Enum` dengan turunan class yang diinginkan, lalu sesuaikan tipe data nilai property di dalamnya.
 
