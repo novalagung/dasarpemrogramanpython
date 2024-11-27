@@ -114,7 +114,7 @@ for n in LoopReverse(numbers):
 
 Penjelasan:
 - Sewaktu class dinisialisasi, instance attribute `i` disiapkan dengan nilai `0` dan attribute `data` berisi data yang disisipkan via argument (pada konteks ini yang dimaksud adalah data `[23, 2, 1, 54]`).
-- Di setiap perulangan, fungsi `__next__(self)` dipanggil, ketika nilai `i` masih di bawah jumlah item `data`, maka item nomor `i` dari belakang dikembalikan. Selebihnya, exception `StopIteration` di-rause untuk menandai bahwa iterasi sudah dihentikan.
+- Di setiap perulangan, fungsi `__next__(self)` dipanggil, ketika nilai `i` masih di bawah jumlah item `data`, maka item nomor `i` dari belakang dikembalikan. Selebihnya, exception `StopIteration` di-raise untuk menandai bahwa iterasi sudah dihentikan.
 
 Coba test juga pengaksesan item iterator via fungsi `next()`. Contoh:
 
@@ -123,16 +123,16 @@ numbers = [23, 2, 1, 54]
 numbers_iter = LoopReverse(numbers)
 
 n = next(numbers_iter)
-print(n) # output ➜ 23
-
-n = next(numbers_iter)
-print(n) # output ➜ 2
+print(n) # output ➜ 54
 
 n = next(numbers_iter)
 print(n) # output ➜ 1
 
 n = next(numbers_iter)
-print(n) # output ➜ 54
+print(n) # output ➜ 2
+
+n = next(numbers_iter)
+print(n) # output ➜ 23
 ```
 
 Selain menggunakan class `Iterator` sebagai superclass, iterator custom class juga bisa dibuat dengan cukup menambahkan fungsi `__iter__(self)` yang mengembalikan data `self` tanpa perlu meng-inherit class `Iterator`. Contoh:

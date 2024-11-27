@@ -35,11 +35,11 @@ Tak hanya ke variabel saja, keyword ini bisa digunakan untuk menghapus attribute
 ```python
 obj = ["Noval", "Malang", "Chad"]
 print(obj)
-# output ➜ name: ['Noval', 'Malang', 'Chad']
+# output ➜ ['Noval', 'Malang', 'Chad']
 
 del obj[1]
 print(obj)
-# output ➜ name: ['Noval', 'Chad']
+# output ➜ ['Noval', 'Chad']
 ```
 
 ### ◉ Delete dictionary item
@@ -51,15 +51,15 @@ obj = {
     "gender": "Chad"
 }
 print(obj)
-# output ➜ name: {'name': 'Noval', 'city': 'Malang', 'gender': 'Chad'}
+# output ➜ {'name': 'Noval', 'city': 'Malang', 'gender': 'Chad'}
 
 del obj["city"]
 print(obj)
-# output ➜ name: {'name': 'Noval', 'gender': 'Chad'}
+# output ➜ {'name': 'Noval', 'gender': 'Chad'}
 
 del obj["gender"]
 print(obj)
-# output ➜ name: {'gender': 'Chad'}
+# output ➜ {'name': 'Noval'}
 ```
 
 ### ◉ Delete class/object property
@@ -103,10 +103,11 @@ say_hello()
 try:
     del say_hello
     say_hello()
-    # output ➜ name 'say_hello' is not defined
+    # raise exception ⬇️
 
 except Exception as err:
     print(err)
+    # output ➜ name 'say_hello' is not defined
 ```
 
 ### ◉ Delete class
@@ -125,10 +126,11 @@ print(p.name, p.city, p.gender)
 try:
     del Person
     p = Person("Noval", "Malang", "Chad")
-    # output ➜ name 'Person' is not defined
+    # raise exception ⬇️
 
 except Exception as err:
     print(err)
+    # output ➜ name 'Person' is not defined
 ```
 
 ---
