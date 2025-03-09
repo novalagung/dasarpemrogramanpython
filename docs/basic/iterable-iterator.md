@@ -65,10 +65,10 @@ print(n) # output ➜ 44
 
 Data list `numbers` dikonversi ke bentuk iterator menggunakan fungsi `iter()`, kemudian digunakan sebagai argument pemanggilan fungsi `next()` 4 kali, hasilnya:
 
-- Pemanggilan ke-1 mengembalikan item index ke-1, yaitu angka `10`
-- Pemanggilan ke-2 mengembalikan item index ke-2, yaitu angka `12`
-- Pemanggilan ke-3 mengembalikan item index ke-3, yaitu angka `32`
-- Pemanggilan ke-4 mengembalikan item index ke-4, yaitu angka `44`
+- Pemanggilan ke-1 mengembalikan item index ke-0, yaitu angka `10`
+- Pemanggilan ke-2 mengembalikan item index ke-1, yaitu angka `12`
+- Pemanggilan ke-3 mengembalikan item index ke-2, yaitu angka `32`
+- Pemanggilan ke-4 mengembalikan item index ke-3, yaitu angka `44`
 
 Dari sini terlihat bahwa object iterator benar-benar mengingat informasi state-nya. Setelah pemanggilan fungsi `next()` pertama, object `numbers_iter` tau bahwa item indeks ke-1 sudah diakses, dan pengaksesan berikutnya adalah indeks ke-2, dan seterusnya.
 
@@ -146,7 +146,7 @@ class LoopReverse:
 
     def __iter__(self):
         return self
-    
+
     def __next__(self):
         if (self.i+1) > len(self.data):
             raise StopIteration
@@ -167,7 +167,7 @@ for n in LoopReverse(numbers):
 # 23
 ```
 
-Method `__iter__(self)` harus mengembalikan object iterator yang dimana harus memiliki method `__next__(self)`. Di contoh di atas, method `__next__(self)` kebetulan memang posisinya satu level dengan method `__iter__(self)`, oleh karena itu object `self` dijadikan nilai balik.
+Method `__iter__(self)` harus mengembalikan object iterator yang dimana harus memiliki method `__next__(self)`. Pada contoh di atas, method `__next__(self)` kebetulan memang posisinya satu level dengan method `__iter__(self)`, oleh karena itu object `self` dijadikan nilai balik.
 
 ---
 
