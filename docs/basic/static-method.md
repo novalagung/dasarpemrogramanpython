@@ -28,11 +28,11 @@ class Person:
         obj = cls()
         obj.name = name
         return obj
-    
+
     @staticmethod
     def say_hello():
         print("hello")
-    
+
     @staticmethod
     def say_something(message, name = None):
         if name != None:
@@ -58,7 +58,7 @@ Person.say_something("hello folks! #3")
 # output ➜ hello folks! #3
 ```
 
-Di contoh di atas, ada dua buah static method dideklarasikan:
+Pada contoh di atas, ada dua buah static method dideklarasikan:
 
 - Method `say_hello()` dideklarasikan tanpa parameter
 - Method `say_something()` dideklarasikan dengan 2 buah parameter

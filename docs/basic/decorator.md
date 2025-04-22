@@ -78,7 +78,7 @@ def say_hello():
 say_hello()
 ```
 
-Jalankan program, outpunya kurang lebih seperti ini:
+Jalankan program, outputnya kurang lebih seperti ini:
 
 ![Python decorator](img/decorator-1.png)
 
@@ -117,7 +117,7 @@ def generate_random_list(length):
     for _ in range(0, length):
         n = random.randint(0, 10)
         r.append(n)
-    
+
     return r
 
 def unique_list(data):
@@ -303,7 +303,7 @@ def generate_random_list(length):
     for _ in range(0, length):
         n = random.randint(0, 10)
         r.append(n)
-    
+
     return r
 
 def decorator_unique_list(func):

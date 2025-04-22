@@ -31,7 +31,7 @@ f.close()
 
 Kode di atas akan membuka stream I/O file bernama `file.txt`. Jika file tujuan belum ada, maka otomatis dibuatkan oleh Python. Dari object kembalian fungsi `open()` nantinya kita bisa lakukan banyak jenis operasi seperti membaca isi file, menulis, menghapus, dan lainnya.
 
-> Untuk pengguna Windows, tulis saja path-nya dengan karakter `\` ter-escape.<br />Contoh: `"C:\\Users\\novalagung\\Desktop\\file.txt"` 
+> Untuk pengguna Windows, tulis saja path-nya dengan karakter `\` ter-escape.<br />Contoh: `"C:\\Users\\novalagung\\Desktop\\file.txt"`
 
 Silakan tulis kode di atas, lalu ganti path-nya dengan current path (atau bisa gunakan `.`), kemudian run programnya. Hasil eksekusi program adalah pembuatan sebuah file baru bernama `file.txt` yang isinya kosong.
 
@@ -90,7 +90,7 @@ Program di-run 3x dan isinya tetap sama (tidak menumpuk), ini karena setiap kali
 
 Gunakan mode `a` untuk append konten ke file yang isinya bisa saja tidak kosong (agar isi konten tidak ditimpa).
 
-Coba jalankan kode berikut terahdap file `file.txt` yang sebelumnya sudah dibuat. Saat program di-run kondisi file sudah terisi dan tidak dikosongkan terlebih dahulu. Dengan mengeksekusi `write()` disitu maka isi konten akan bertambah terus setiap kali program di-run.
+Coba jalankan kode berikut terhadap file `file.txt` yang sebelumnya sudah dibuat. Saat program di-run kondisi file sudah terisi dan tidak dikosongkan terlebih dahulu. Dengan mengeksekusi `write()` disitu maka isi konten akan bertambah terus setiap kali program di-run.
 
 ```python
 with open("file.txt", "a", encoding="utf-8") as f:
@@ -222,7 +222,7 @@ Flow program di atas kurang lebih seperti ini:
 1. Kemudian `lorem ipsum dolor\n` ditulis ke file, maka text tersebut ada di baris baru di akhir file.
 1. Lalu ketika method `read()` dibaca lagi, isinya kosong, karena cursor posisinya sudah ada di baris akhir file.
 1. Kemudian ketika file dibaca ulang menggunakan fungsi `open()` dengan block `with` baru, cursor kembali aktif di baris paling awal.
-1. Lalu file dibaca, maka seluruh isi konten yang beru dikembalikan.
+1. Lalu file dibaca, maka seluruh isi konten yang baru dikembalikan.
 
 Mode `w+`, `a+`, dan `r+` kesemuanya bisa digunakan untuk baca dan tulis dalam 1 sesi, dengan perbedaan ada di posisi kursornya aktif dimana. Jika pembaca tertarik untuk mempelajarinya lebih detail, silakan baca diskusi di StackOverflow berikut:
 
@@ -398,7 +398,3 @@ os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
 - https://builtin.com/data-science/python-list-files-in-directory
 
 </div>
-
-
-
-

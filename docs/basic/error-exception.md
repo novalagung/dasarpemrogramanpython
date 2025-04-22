@@ -61,7 +61,7 @@ Output program:
 
 ![Python exception](img/error-exception-3.png)
 
-Alternatif solusi lainnya untuk mengatasi exception adalah dengan pengaplikasian kombinasi keyword `try` dan `catch`. Lebih detailnya akan dibahas di chapter berikutnya, di chapter [Exception Handling (try, catch, finally)](#). 
+Alternatif solusi lainnya untuk mengatasi exception adalah dengan pengaplikasian kombinasi keyword `try` dan `catch`. Lebih detailnya akan dibahas di chapter berikutnya, di chapter [Exception Handling (try, catch, finally)](#).
 
 ## A.46.3. Throw exception
 
@@ -88,17 +88,17 @@ Outputnya:
 
 Cara membuat exception adalah dengan menggunakan keyword `raise` diikuti dengan pemanggilan class `Exception()` yang argument-nya diisi dengan custom error.
 
-Pada contoh di atas, exception dimunculkan dengan pesan error `we do not allow 0 or negative number`. 
+Pada contoh di atas, exception dimunculkan dengan pesan error `we do not allow 0 or negative number`.
 
 ## A.46.4. Linter error / warning
 
-Linter adalah suatu program utilisa yang berguna untuk melakukan pengecekan kualitas kode saat pengembangan (penulisan kode). Linter akan memunculkan error atau warning jika ditemukan pada beberapa bagian kode yang ditulis adalah kurang baik.
+Linter adalah suatu program utilitas yang berguna untuk melakukan pengecekan kualitas kode saat pengembangan (penulisan kode). Linter akan memunculkan error atau warning jika ditemukan pada beberapa bagian kode yang ditulis adalah kurang baik.
 
 Di Python, jika pembaca menggunakan VSCode editor dan sudah meng-install extension Python, linter akan otomatis bekerja saat menulis kode.
 
 Linter error adalah warning yang muncul di editor saat kode tidak sesuai baik secara *syntactic* maupun secara *semantic*. Error yang muncul karena alasan semantik tidak akan membuat program terhenti atau gagal running. Program tetap bisa jalan normal saat di-run.
 
-Salah satu contoh linter error adalah ketika ada suatu fungsi yang saat pemanggilannya diisi oleh tipe data dengan tipe yang tidak sesuai dibading dengan yang sudah dideklarasikan. Pada situasi seperti ini error muncul di editor, ada highlight merah di situ.
+Salah satu contoh linter error adalah ketika ada suatu fungsi yang saat pemanggilannya diisi oleh tipe data dengan tipe yang tidak sesuai dibanding dengan yang sudah dideklarasikan. Pada situasi seperti ini error muncul di editor, ada highlight merah di situ.
 
 ![Python exception](img/error-exception-5.png)
 

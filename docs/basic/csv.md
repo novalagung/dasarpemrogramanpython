@@ -19,7 +19,7 @@ Garrosh Hellscream,,098878212
 
 Penjelasan singkat tentang CSV:
 - Baris pertama umumnya berisi informasi header, atau nama kolom.
-- Di contoh di atas, ada 3 buah header, yaitu `name`, `email`, dan `phone`.
+- Pada contoh di atas, ada 3 buah header, yaitu `name`, `email`, dan `phone`.
 - Tanda koma *default*-nya digunakan sebagai pembatas data dan kolom.
 - Setiap baris data ditandai dengan *newline* atau baris baru. Umumnya data dimulai pada baris ke-2.
 - Di setiap baris, data ditulis sesuai urutan header menggunakan pembatas tanda koma.

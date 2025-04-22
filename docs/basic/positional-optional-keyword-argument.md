@@ -122,7 +122,7 @@ print_matrix(matrix=[
 ])
 ```
 
-Silakan run program di atas, dan perhatikan outpunya. Error tidak muncul saat eksekusi statement `print_matrix()` pertama yang padahal tidak ada data yang disisipkan saat pemanggilan fungsi. Hal ini karena fungsi tersebut pada parameter `matrix` sudah ada nilai *default*-nya.
+Silakan run program di atas, dan perhatikan outputnya. Error tidak muncul saat eksekusi statement `print_matrix()` pertama yang padahal tidak ada data yang disisipkan saat pemanggilan fungsi. Hal ini karena fungsi tersebut pada parameter `matrix` sudah ada nilai *default*-nya.
 
 ![Python optional argument positional argument keyword only argument](img/positional-optional-keyword-argument-1.png)
 

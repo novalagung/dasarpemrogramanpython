@@ -10,7 +10,7 @@ Python mengenal 2 jenis CLI arguments, yaitu raw arguments (atau cukup arguments
 
 ## A.50.1. CLI arguments `sys.argv`
 
-Data CLI argument eksekusi program bisa diakses via `sys.argv`. Variabel `sys.argv` ini berisi data argument bertipe string tersimpan dalam list. 
+Data CLI argument eksekusi program bisa diakses via `sys.argv`. Variabel `sys.argv` ini berisi data argument bertipe string tersimpan dalam list.
 
 > Dalam penggunaannya module `sys` harus di-import terlebih dahulu
 
@@ -75,7 +75,7 @@ def get_arg(index):
 if __name__ == "__main__":
     print(f"type: {type(sys.argv).__name__}")
     print(f"len:  {len(sys.argv)}")
-    
+
     print(f"arg1: {get_arg(0)}")
     print(f"arg2: {get_arg(1)}")
     print(f"arg3: {get_arg(2)}")
@@ -95,7 +95,7 @@ Python menyediakan module `argparse` berisi banyak API untuk keperluan operasi f
 
 Untuk menerapkan flag, sebuah object parser perlu dibuat menggunakan `argparse.ArgumentParser()`, dengan isi parameter adalah informasi program (seperti nama dan deskripsi). Kemudian dari object tersebut, didaftarkan beberapa flag argument (misalnya `--name`) beserta property-nya. Lalu di akhir, method `parse_args()` wajib ditulis dan pengaksesan nilai flag dilakukan dari object kembalian method tersebut.
 
-Program di bawah ini berisi peneprapan flag argument untuk program sederhana yang kegunaannya untuk pembuatan file. Nama dan path file beserta isinya dikontrol via CLI flag.
+Program di bawah ini berisi penerapan flag argument untuk program sederhana yang kegunaannya untuk pembuatan file. Nama dan path file beserta isinya dikontrol via CLI flag.
 
 ```python
 import argparse
@@ -117,7 +117,7 @@ if __name__ == "__main__":
     main()
 ```
 
-Coba jalankan program di atas dengan perintah standar `python main.py`. Outpunya:
+Coba jalankan program di atas dengan perintah standar `python main.py`. Outputnya:
 
 ![Python CLI Arguments & Flags](img/cli-arguments-flags-3.png)
 
@@ -146,7 +146,7 @@ Kembali ke bagian deklarasi flag menggunakan `parser.add_argument()`, dalam pemb
 | Keyword&nbsp;param&nbsp;`required` | Penanda apakah flag wajib diisi atau opsional. Jika diisi `True` maka wajib untuk diisi dan memunculkan error jika tidak diisi |
 | Keyword&nbsp;param&nbsp;`choices` | Jika diisi dengan nilai list, maka element list menjadi opsi pengisian flag. Jika saat pemanggilan flag diisi dengan nilai yang tidak ada di list maka error muncul. |
 
-> Selain parameter di atas, ada juga beberapa lainnya. Selengkapnya bisa cek di halaman dokumentasi https://docs.python.org/3/library/argparse.html 
+> Selain parameter di atas, ada juga beberapa lainnya. Selengkapnya bisa cek di halaman dokumentasi https://docs.python.org/3/library/argparse.html
 
 Ok, agar makin paham, mari praktek lagi dengan memodifikasi program sebelumnya menjadi seperti ini:
 
@@ -179,7 +179,7 @@ Perbedaan program terbaru dibanding sebelumnya:
 - Flag `--path` dibuatkan *shorthand*-nya yaitu `-p`.
 - Flag `--content` dibuatkan *shorthand*-nya yaitu `-c`.
 - Ketika flag `-op` bernilai `write file`, maka program melakukan penulisan konten dengan isi dan tujuan file sesuai dengan nilai flag saat eksekusi.
-- Ketika flag `-op` bernilai `list items`, maka program menampilkan list files/folders pada path yang ditentukan via flag `--path`. 
+- Ketika flag `-op` bernilai `list items`, maka program menampilkan list files/folders pada path yang ditentukan via flag `--path`.
 
 O iya, perlu diketahui bahwa ketika flag labelnya adalah frasa dan menggunakan karakter `-` sebagai pembatas kata, maka pengaksesannya menggunakan pembatas `_`. Contohnya bisa dilihat pada flag `--operation-mode` yang pengaksesan nilainya dilakukan via `args.operation_mode`.
 
