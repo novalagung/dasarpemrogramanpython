@@ -19,7 +19,7 @@
     "@docusaurus/plugin-google-gtag": "^2.2.0",
     "@docusaurus/plugin-sitemap": "^2.2.0",
     "@docusaurus/preset-classic": "^2.2.0",
-    "@docusaurus/theme-search-algolia": "^2.2.0",
+    "@docusaurus/theme-search-algolia": "^2.4.3",
     "@mdx-js/react": "^1.6.22",
     "@stackql/docusaurus-plugin-structured-data": "adamstudiogh/docusaurus-plugin-structured-data",
     "clsx": "^1.2.1",
