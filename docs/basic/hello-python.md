@@ -39,7 +39,7 @@ File `main.py` adalah file program python. Nama file program bisa apa saja, tapi
 
 Command `python <nama_file_program>` digunakan untuk menjalankan program. Cukup ganti `<nama_file_program>` dengan nama file program (yang pada contoh ini adalah `main.py`) maka kode program di dalam file tersebut akan di-run oleh Python interpreter.
 
-Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built-in* yang ada dalam Python stdlib (standard library), yaitu fungsi bernama `print()` yang kegunaannya adalah untuk menampilkan pesan string (yang disipkan pada argument pemanggilan fungsi `print()`). Pesan tersebut akan mucnul ke layar output stdout (pada contoh ini adalah terminal milik editor penulis).
+Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built-in* yang ada dalam Python stdlib (standard library), yaitu fungsi bernama `print()` yang kegunaannya adalah untuk menampilkan pesan string (yang disipkan pada argument pemanggilan fungsi `print()`). Pesan tersebut akan muncul ke layar output stdout (pada contoh ini adalah terminal milik editor penulis).
 
 > - Pembahasan detail mengenai fungsi ada di chapter [Function](/basic/function)
 > - Pembahasan detail mengenai Python standard library (stdlib) ada di chapter [Python standard library (stdlib)](#)
