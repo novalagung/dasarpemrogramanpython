@@ -61,7 +61,7 @@ Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa
 | `>` | apakah kiri lebih besar dibanding kanan | `res = 4 > 5` ➜ hasilnya `res` nilainya `False` |
 | `<` | apakah kiri lebih kecil dibanding kanan | `res = 4 < 5` ➜ hasilnya `res` nilainya `True` |
 | `>=` | apakah kiri lebih besar atau sama dengan kanan | `res = 5 >= 5` ➜ hasilnya `res` nilainya `True` |
-| `<=` | apakah kiri lebih kecil atau sama dengan kanan | `res = 4 <= 5` ➜ hasilnya `res` nilainya `False` |
+| `<=` | apakah kiri lebih kecil atau sama dengan kanan | `res = 5 <= 4` ➜ hasilnya `res` nilainya `False` |
 
 ## A.7.4. Operator logika
 
