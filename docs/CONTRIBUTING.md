@@ -28,6 +28,7 @@ Berikut merupakan hall of fame kontributor yang sudah berbaik hati menyisihkan w
 1. [Mohammad Safri Dwi Rizky](https://github.com/safridwirizky)
 1. [Muhammad Saleh Solahudin](https://github.com/ZihxS)
 1. [V1337Q](https://github.com/V1337Q)
+1. [Rofid](https://github.com/alimurrofid)
 1. ... anda 🚀
 
 ## Ebook/webhook techstack & architecture

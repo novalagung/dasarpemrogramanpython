@@ -8,7 +8,7 @@ Python adalah bahasa pemrograman high-level yang sangat *powerful*, sintaksnya s
 
 Website/ebook tutorial Dasar Pemrograman Python ini cocok untuk pembaca yang ingin mempelajari pemrograman python dalam kurun waktu yang relatif cepat, dan gratis. Konten pembelajaran pada ebook ini disajikan secara ringkas tidak bertele-tele tapi tetap mencakup point penting yang harus dipelajari.
 
-Selain topik fundamental python programming, nantinya akan disedikan juga pembahasan *advance* lainnya, **stay tuned!**
+Selain topik fundamental python programming, nantinya akan disediakan juga pembahasan *advance* lainnya, **stay tuned!**
 
 > Versi website/ebook: **v1.2.20240923**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
 
