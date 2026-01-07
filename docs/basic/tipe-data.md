@@ -74,7 +74,7 @@ bool_2 = False
 
 ## A.6.4. Tipe data `None`
 
-Tipe data `None` merepresentasikan nilai kosong (seperti nilai `null` atau `nil` di bahasa lain). Pengecekan nilai kosong digunakan 
+Tipe data `None` merepresentasikan nilai kosong (seperti nilai `null` atau `nil` di bahasa lain). Nilai ini umumnya digunakan untuk menandai bahwa suatu variabel belum memiliki data atau tidak berisi nilai apa pun.
 
 ```python
 data = "hello"

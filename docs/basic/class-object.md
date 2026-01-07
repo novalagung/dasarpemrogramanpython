@@ -10,7 +10,7 @@ Python mendukung paradigma pemrograman berbasis objek (OOP) melalui implementasi
 
 ## A.33.1. Pengenalan Class
 
-Class adalah *blueprint* untuk membuat variabel, class bisa diartikan juga sebagai tipe data. Di Python, setiap data pasti memiliki tipe data yang tipe tersebut merupakan adalah class. Sebagai contoh:
+Class adalah *blueprint* untuk membuat variabel, class bisa diartikan juga sebagai tipe data. Di Python, setiap data pasti memiliki tipe data yang tipe tersebut adalah class. Sebagai contoh:
 
 - Data string `"noval"` tipe datanya adalah class `str`
 - Data numerik `24` tipe datanya adalah class `int`
