@@ -38,7 +38,7 @@ Coba lakukan sedikit experiment dengan mengubah urutan pengisian data contohnya 
 
 ```python
 obj4 = create_sorcerer("400 year ago", 400, "human", "Hajime Kashimo")
-print(obj3)
+print(obj4)
 # output ➜ {'name': '400 year ago', 'age': 400, 'race': 'human', 'era': 'Hajime Kashimo'}
 ```
 
@@ -189,19 +189,19 @@ print_matrix(res4)
 # output ↓
 #
 # matrix * scalar 4:
-# [2, 4, 6, 8]
-# [10, 12, 14, 16]
-# [18, 20, 22, 24]
+# [4, 8, 12, 16]
+# [20, 24, 28, 32]
+# [36, 40, 44, 48]
 
 print(f"matrix * scalar {7}:")
 res5 = matrix_multiply_scalar(scalar=7, matrix=matrix)
+print_matrix(res5)
 # output ↓
 #
-# print_matrix(res5)
 # matrix * scalar 7:
-# [2, 4, 6, 8]
-# [10, 12, 14, 16]
-# [18, 20, 22, 24]
+# [7, 14, 21, 28]
+# [35, 42, 49, 56]
+# [63, 70, 77, 84]
 ```
 
 Pada kode di atas fungsi `matrix_multiply_scalar()` dipanggil beberapa kali:

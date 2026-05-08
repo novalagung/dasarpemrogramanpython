@@ -4,7 +4,7 @@ title: A.54. Python DateTime Parsing & Formatting
 sidebar_label: A.54. DateTime ➜ Parsing & Formatting
 ---
 
-Chapter ini merupakan lanjutan dari chapter sebelumnmya. Di sini kita akan belajar tentang teknik parsing dan formatting pada tipe data `datetime`.
+Chapter ini merupakan lanjutan dari chapter sebelumnya. Di sini kita akan belajar tentang teknik parsing dan formatting pada tipe data `datetime`.
 
 ## A.54.1. Parsing `datetime`
 
@@ -47,7 +47,7 @@ Contoh implementasinya seperti ini:
     # output ➜ datetime: 1985-04-12 23:20:50.520000+07:00
     ```
 
-Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting.md#a543-tabel-kode-format).
+Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting#a543-tabel-kode-format).
 
 ### ◉ Via `datetime.fromisoformat()` terhadap data ISO Date Time (ISO 8601)
 
@@ -127,7 +127,7 @@ print(data_datetime.strftime('%m/%d/%Y %H:%M:%S %z'))
 # output ➜ 04/12/1985 23:20:50 +0700
 ```
 
-Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting.md#a543-tabel-kode-format).
+Selengkapnya silakan cek di bagian [A.54.3. Tabel kode format](/basic/datetime-parsing-formatting#a543-tabel-kode-format).
 
 ### ◉ Method `datetime.isoformat()` ➜ ISO Date Time (ISO 8601)
 

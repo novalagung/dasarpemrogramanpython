@@ -69,7 +69,7 @@ Python mengenal operasi perbandingan standar yang umumnya juga dipakai di bahasa
 | :-: | :- | :- |
 | `and` | operasi logika **AND** | `res = (4 == 5) and (2 != 3)` ➜ hasilnya `res` nilainya `False` |
 | `or` | operasi logika **OR** | `res = (4 == 5) or (2 != 3)` ➜ hasilnya `res` nilainya `True` |
-| `not` atau `!` | operasi logika **negasi** (atau **NOT**) | `res = not (2 == 3)` ➜ hasilnya `res` nilainya `True`<br />`res = !(2 == 3)` ➜ hasilnya `res` nilainya `True` |
+| `not` | operasi logika **negasi** (atau **NOT**) | `res = not (2 == 3)` ➜ hasilnya `res` nilainya `True` |
 
 ## A.7.5. Operator bitwise
 

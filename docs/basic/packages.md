@@ -211,7 +211,7 @@ Hasilnya adalah error:
 
 Melanjutkan pembahasan sebelumnya dimana `import *` menghasilkan error, hal tersebut terjadi karena Python tidak bisa mendeteksi module apa saja yang bisa direpresentasikan dengan `*` saat meng-import suatu package.
 
-Untuk mengatasi error, tambahkan file bernama `___init___.py` di setiap package/folder. Dengan ini maka struktur file program menjadi seperti ini:
+Untuk mengatasi error, tambahkan file bernama `__init__.py` di setiap package/folder. Dengan ini maka struktur file program menjadi seperti ini:
 
 <div style={{ width: '250px' }}>
 

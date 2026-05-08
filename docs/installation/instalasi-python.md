@@ -10,15 +10,15 @@ Ada banyak cara yang bisa dipilih untuk instalasi Python, silakan pilih sesuai p
 
 ### ◉ Instalasi di Windows
 
-- Via [Microsoft Store Package](https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5?hl=en-id&gl=id&rtc=1)
-- Via [Official Python installer](https://www.python.org/downloads/release/python-3106/)
-- Via [Chocolatey package manager](https://community.chocolatey.org/packages/python/3.10.6)
+- Via [Microsoft Store Package](https://apps.microsoft.com/detail/9ncvdn91xzqp?hl=en-id&gl=id)
+- Via [Official Python installer](https://www.python.org/downloads/release/python-3120/)
+- Via [Chocolatey package manager](https://community.chocolatey.org/packages/python/3.12.0)
 - Via [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/python/web-frameworks)
 
 ### ◉ Instalasi di MacOS
 
 - Via [Homebrew](https://docs.brew.sh/Homebrew-and-Python)
-- Via [Official Python installer](https://www.python.org/downloads/release/python-3106/)
+- Via [Official Python installer](https://www.python.org/downloads/release/python-3120/)
 
 ### ◉ Instalasi di OS lainnya
 
@@ -26,7 +26,7 @@ Ada banyak cara yang bisa dipilih untuk instalasi Python, silakan pilih sesuai p
 
 ### ◉ Instalasi via source code
 
-- Tarball source code bisa diunduh di [situs official Python](https://www.python.org/downloads/release/python-3106/)
+- Tarball source code bisa diunduh di [situs official Python](https://www.python.org/downloads/release/python-3120/)
 
 ### ◉ Instalasi via Anaconda
 

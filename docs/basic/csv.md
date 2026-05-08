@@ -274,7 +274,7 @@ Jalankan ulang program, test fungsionalitas mode 1, 2, dan 3.
 
 Kurang lebih seperti itu penerapan operasi CSV di Python. Silakan lanjut explore dan praktek dengan pembuatan program sejenis lainnya agar makin paham.
 
-## A.51.4. `csv.writer()` dan `csv.reader()`
+## A.51.5. `csv.writer()` dan `csv.reader()`
 
 Selain menggunakan fungsi `csv.DictWriter()` dan `csv.DictReader()`, operasi baca tulis CSV bisa dilakukan menggunakan fungsi `csv.writer()` dan `csv.reader()`.
 

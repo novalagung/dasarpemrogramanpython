@@ -23,6 +23,8 @@ Variabel `a`, `b`, dan `c` di ekspresi `'(a + b) / 20 + (c * c)'` nilainya teris
 
 Ekspresi string berisi apapun bisa digunakan pada fungsi `eval()` ini, asalkan ekspresinya hanya 1 baris.
 
+> ⚠️ **Peringatan**: Fungsi `eval()` dan `exec()` sangat berbahaya jika digunakan dengan input dari sumber tidak terpercaya, karena dapat mengeksekusi kode berbahaya. Hindari menggunakannya pada data dari user. Sebagai alternatif yang lebih aman, gunakan `ast.literal_eval()` untuk mengevaluasi literal Python.
+
 Jika ekspresi tidak valid, maka eksekusi fungsi `eval()` menghasilkan error, dan ketika itu terjadi ada baiknya di-handle dengan baik. Contoh:
 
 ```python
@@ -184,6 +186,52 @@ print(res)
 # calculating area of circle with r: 10
 # 314.0
 ```
+
+## A.57.4. Fungsi `ast.literal_eval()`
+
+Seperti yang sudah disebutkan pada peringatan di [A.57.1](#a571-fungsi-eval), fungsi `eval()` dan `exec()` berbahaya jika digunakan dengan input dari sumber tidak terpercaya karena dapat mengeksekusi kode berbahaya.
+
+Sebagai alternatif yang aman untuk mengevaluasi literal Python (seperti string, angka, list, tuple, dict, bool, `None`), Python menyediakan fungsi `ast.literal_eval()` dari module `ast` (bagian dari stdlib).
+
+Fungsi `ast.literal_eval()` hanya mengevaluasi literal — tidak bisa mengeksekusi ekspresi arbitrer. Ini membuatnya aman digunakan untuk parsing data dari user.
+
+Contoh penggunaan:
+
+```python
+import ast
+
+# aman: mengevaluasi literal dict
+data = ast.literal_eval("{'name': 'Noval', 'age': 30}")
+print(data)
+# output ➜ {'name': 'Noval', 'age': 30}
+print(type(data))
+# output ➜ <class 'dict'>
+
+# aman: mengevaluasi literal list
+numbers = ast.literal_eval("[1, 2, 3, 4, 5]")
+print(numbers)
+# output ➜ [1, 2, 3, 4, 5]
+
+# aman: mengevaluasi literal tuple
+coord = ast.literal_eval("(10, 20)")
+print(coord)
+# output ➜ (10, 20)
+
+# aman: mengevaluasi tipe data primitif
+value = ast.literal_eval("3.14")
+print(value)
+# output ➜ 3.14
+```
+
+### ◉ Perbedaan `ast.literal_eval()` vs `eval()`
+
+| Aspek | `eval()` | `ast.literal_eval()` |
+|:-|:-|:-|
+| Keamanan | Berbahaya dengan input tidak terpercaya | Aman (hanya literal) |
+| Kode yang dieksekusi | Ekspresi Python apapun | Hanya literal Python |
+| Risiko injeksi | Tinggi | Tidak ada |
+
+Jika input yang akan dievaluasi bukan literal (misalnya ekspresi matematika), tetap gunakan `eval()`, tapi pastikan input berasal dari sumber terpercaya.
 
 ---
 

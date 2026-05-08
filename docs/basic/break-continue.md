@@ -81,7 +81,7 @@ for i in range(max):
 
 Penjelasan:
 
-- Program yang memiliki perulanga *nested* dengan jumlah perulangan ada 2.
+- Program yang memiliki perulangan *nested* dengan jumlah perulangan ada 2.
 - Disiapkan sebuah variabel `bool` bernama `outer_loop` untuk kontrol perulangan terluar.
 - Ketika nilai `j` (yang merupakan variabel counter perulangan terdalam) adalah lebih dari atau sama dengan `7`, maka variabel `outer_loop` di set nilainya menjadi `False`, dan perulangan terdalam di-`break` secara paksa.
 - Dengan ini maka perulangan terluar akan terhenti.
