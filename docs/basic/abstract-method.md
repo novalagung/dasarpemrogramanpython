@@ -158,8 +158,8 @@ Output program setelah diperbaiki:
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/abstract-class">
-        github.com/novalagung/dasarpemrogramanpython-example/../abstract-class
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/abstract-method">
+        github.com/novalagung/dasarpemrogramanpython-example/../abstract-method
     </a>
 </pre>
 

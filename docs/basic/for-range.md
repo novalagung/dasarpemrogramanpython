@@ -51,7 +51,7 @@ print("r:", list(r))
 ![perulangan for range](img/for-range-2.png)
 
 > - Pembahasan detail mengenai list ada di chapter [List](/basic/list)
-> - Pembahasan detail mengenai *type conversion* ada di chapter [Konversi Tipe Data](#)
+> - Pembahasan detail mengenai *type conversion* ada di chapter [Tipe Data](/basic/tipe-data)
 
 ## A.9.2. Penerapan fungsi `range()`
 

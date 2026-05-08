@@ -98,7 +98,7 @@ Kode di atas menghasilkan:
 
 ### ◉ Fungsi `type()`
 
-Fungsi `type()` digunakan untuk melihat informasi tipe data dari suatu nilai atau variabel. Fungsi ini mengembalikan string dalam format `<class 'tipe_data'>`.
+Fungsi `type()` digunakan untuk melihat informasi tipe data dari suatu nilai atau variabel. Fungsi ini mengembalikan objek class (instance dari `type`), yang saat di-print umumnya tampil dalam format `<class 'tipe_data'>`.
 
 ### ◉ *Type conversion* / konversi tipe data
 
@@ -114,7 +114,7 @@ print("inputan user:", grade, type(grade))
 
 ![if else di python](img/if-elif-else-4.png)
 
-> Pembahasan detail mengenai *type conversion* ada di chapter [Konversi Tipe Data](#)
+> Pembahasan detail mengenai *type conversion* ada di chapter [Tipe Data](/basic/tipe-data)
 
 ## A.8.3. Keyword `else`
 

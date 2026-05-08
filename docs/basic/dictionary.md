@@ -439,8 +439,8 @@ print("len:", len(profile), "data:", profile)
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/dictionary">
-        github.com/novalagung/dasarpemrogramanpython-example/../dictionary
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/dict">
+        github.com/novalagung/dasarpemrogramanpython-example/../dict
     </a>
 </pre>
 

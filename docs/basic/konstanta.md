@@ -38,7 +38,7 @@ Keyword `import` digunakan untuk meng-import sesuatu, sedangkan keyword `from` d
 
 Statement `from typing import Final` artinya adalah meng-import tipe `Final` dari module `typing` yang dimana module ini merupakan bagian dari Python standard library (stdlib).
 
-> Pembahasan detail mengenai Python standard library (stdlib) ada di chapter [Python standard library (stdlib)](#)
+> Pembahasan detail mengenai Python standard library (stdlib) akan dibahas pada chapter khusus Python standard library (stdlib).
 
 ## A.5.2. Tipe *class* `typing.Final`
 
@@ -80,7 +80,7 @@ Mengacu ke dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.pyth
 - [Variabel](/basic/variabel)
 - [Tipe Data](/basic/tipe-data)
 - [Modules](/basic/modules)
-- [Python standard library (stdlib)](#)
+- Python standard library (stdlib) *(chapter khusus, segera hadir)*
 
 ### ◉ Referensi
 

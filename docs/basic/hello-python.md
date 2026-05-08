@@ -42,7 +42,7 @@ Command `python <nama_file_program>` digunakan untuk menjalankan program. Cukup 
 Statement `print("<pesan_text>")` adalah penerapan dari salah satu fungsi *built-in* yang ada dalam Python stdlib (standard library), yaitu fungsi bernama `print()` yang kegunaannya adalah untuk menampilkan pesan string (yang disisipkan pada argument pemanggilan fungsi `print()`). Pesan tersebut akan muncul ke layar output stdout (pada contoh ini adalah terminal milik editor penulis).
 
 > - Pembahasan detail mengenai fungsi ada di chapter [Function](/basic/function)
-> - Pembahasan detail mengenai Python standard library (stdlib) ada di chapter [Python standard library (stdlib)](#)
+> - Pembahasan detail mengenai Python standard library (stdlib) akan dibahas pada chapter khusus Python standard library (stdlib).
 >
 > Untuk sekarang, penulis tidak anjurkan untuk lompat ke pembahasan tersebut. Silakan ikuti pembelajaran chapter per chapter secara berurutan.
 

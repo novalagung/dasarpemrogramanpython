@@ -22,7 +22,7 @@ Setiap perubahan pada website/ebook bisa dilihat di halaman berikut:
 
 Versi ebook bisa di-download dalam bentuk file di link berikut:
 
-> PDF/Ebook file: [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=v1.2.20240923)
+> PDF/Ebook file: [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=v1.3.20260608)
 
 ## Source Code Praktik
 
@@ -37,7 +37,7 @@ Dianjurkan untuk sekedar tidak copy-paste dari source code dalam proses belajar,
 
 Website/ebook ini merupakan project open source, teruntuk siapapun yang ingin berkontribusi silakan langsung saja cek [github.com/novalagung/dasarpemrogramanpython](https://github.com/novalagung/dasarpemrogramanpython). Cek juga halaman kontributor berikut untuk melihat list kontributor.
 
-> [Contribution & Tech Stack][/CONTRIBUTING]
+> [Contribution & Tech Stack](/CONTRIBUTING)
 
 ## Lisensi dan Status FOSSA
 
