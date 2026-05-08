@@ -10,7 +10,7 @@ Website/ebook tutorial Dasar Pemrograman Python ini cocok untuk pembaca yang ing
 
 Selain topik fundamental python programming, nantinya akan disediakan juga pembahasan *advance* lainnya, **stay tuned!**
 
-> Versi website/ebook: **v1.2.20240923**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
+> Versi website/ebook: **v1.3.20260608**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
 
 ## Update Konten & Versi Terbaru
 
