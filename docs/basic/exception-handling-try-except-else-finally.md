@@ -228,9 +228,9 @@ try:
     print(f"in fair distribution, each person shall receive {res:.0f} banana")
 
 except Exception as err:
-    if err == ValueError:
+    if isinstance(err, ValueError):
         print(f"oops! not valid number detected. {err}")
-    elif err == ZeroDivisionError:
+    elif isinstance(err, ZeroDivisionError):
         print(f"oops! unable to distribute banana because there is no person available. {err}")
     else:
         print(f"oops! something wrong. {err}")

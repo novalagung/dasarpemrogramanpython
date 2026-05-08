@@ -11,7 +11,7 @@ Chapter ini membahas tentang salah satu aspek penting dalam pemrograman OOP, yai
 Untuk mewujudkan inheritance setidaknya dua buah class dibutuhkan:
 
 - Super class / parent class, yaitu class yang property-nya ingin diwariskan atau diturunkan ke class dibawahnya.
-- Sub class / derrived class, yaitu class yang mewarisi property dari parent class.
+- Sub class / derived class, yaitu class yang mewarisi property dari parent class.
 
 Misalkan, ada sebuah class bernama `Vehicle` dan class ini memiliki property berikut:
 

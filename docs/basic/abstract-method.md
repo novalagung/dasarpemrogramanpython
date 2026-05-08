@@ -4,7 +4,7 @@ title: A.42. Python OOP ➜ Abstract Method
 sidebar_label: A.42. OOP ➜ Abstract Method
 ---
 
-Pada chapter ini kita akan mempelejari tentang apa itu abstract method beserta bagaimana penerapannya pada pemrograman OOP menggunakan Python.
+Pada chapter ini kita akan mempelajari tentang apa itu abstract method beserta bagaimana penerapannya pada pemrograman OOP menggunakan Python.
 
 ## A.42.1. Pengenalan abstract method
 

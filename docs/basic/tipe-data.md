@@ -21,7 +21,7 @@ Ada setidaknya 3 tipe data numerik di Python, yaitu:
 | `float` | menampung bilangan desimal atau *floating point* | ` number_2 = 3.14 ` |
 | `complex` | menampung nilai berisi kombinasi bilangan real dan imajiner | ` number_3 = 120+3j ` |
 
-> Penjelasan detail mengenai string ada pada chapter [Number](/basic/number-bilangan)
+> Penjelasan detail mengenai numerik ada pada chapter [Number](/basic/number-bilangan)
 
 ## A.6.2. Tipe data string / `str`
 
@@ -83,7 +83,7 @@ print(data)
 
 data = None
 print(data)
-# output ➜ data
+# output ➜ None
 
 data = "python"
 print(data)
@@ -165,7 +165,7 @@ print("name: %s" % (profile_1["name"]))
 # output ➜ name: Noval
 
 print("hobbies: %s" % (profile_1["hobbies"]))
-# output ➜ name: ["gaming", "learning"]
+# output ➜ hobbies: ["gaming", "learning"]
 ```
 
 Penulisan data dictionary diperbolehkan secara horizontal, contohnya seperti berikut:

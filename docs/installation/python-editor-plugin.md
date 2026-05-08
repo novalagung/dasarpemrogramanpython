@@ -12,14 +12,14 @@ Ada cukup banyak pilihan editor dan IDE untuk development menggunakan Python, di
 - [GNU Emacs](https://www.gnu.org/s/emacs/)
 - [JetBrains PyCharm](https://www.jetbrains.com/pycharm/)
 - [Spyder](https://www.spyder-ide.org/)
-- [Sublime Text](http://www.sublimetext.com/), dengan tambahan package [Python](https://realpython.com/python-modules-packages/)
+- [Sublime Text](http://www.sublimetext.com/), dengan tambahan package [Python](https://www.sublimetext.com/docs/python.html)
 - [Vim](https://www.vim.org/)
 - [Visual Studio](https://visualstudio.microsoft.com/vs/features/python/)
 - [Visual Studio Code (VSCode)](https://code.visualstudio.com/), dengan tambahan extension [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) dan [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
 
 Selain list di atas, ada juga editor lainnya yang bisa digunakan, contohnya seperti:
 
-- [Python standard shell (REPL)](https://www.python.org/shell/)
+- [Python standard shell (REPL)](https://docs.python.org/3/tutorial/interpreter.html)
 - [Jupyter](https://jupyter.org/)
 
 ## Preferensi editor penulis

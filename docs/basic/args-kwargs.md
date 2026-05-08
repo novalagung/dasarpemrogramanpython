@@ -140,7 +140,7 @@ print_data("sesuk prei", 2023, phone="nokia 3315", networks=["GSM", "TDMA"])
 # message: sesuk prei
 # number: 2023
 # 
-# param: phone, value: nokia 3310
+# param: phone, value: nokia 3315
 # param: networks, value: ['GSM', 'TDMA']
 ```
 

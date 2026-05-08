@@ -161,7 +161,7 @@ def transpose_matrix1(m):
         tm.append(tr)
     return tm
 
-transpose_matrix2 = lambda m : [[row[i] for row in matrix] for i in range(len(m[0]))]
+transpose_matrix2 = lambda m : [[row[i] for row in m] for i in range(len(m[0]))]
 
 matrix = [[1, 2], [3, 4], [5, 6]]
 

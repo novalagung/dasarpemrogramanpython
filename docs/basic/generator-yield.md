@@ -106,10 +106,11 @@ Contoh operasi baca file yang setiap baris konten file dikembalikan sebagai data
 
 ```python
 def file_reader(file_name):
-    for row in open(file_name, "r"):
-        yield row
+    with open(file_name, "r") as f:
+        for row in f:
+            yield row
 
-for row in open('content.txt'):
+for row in file_reader('content.txt'):
     print(row.strip())
 ```
 

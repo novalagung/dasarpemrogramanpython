@@ -159,8 +159,8 @@ Di dalam fungsi `aggregate()`, closure `f` diharapkan untuk memiliki parameter y
 ### ◉ Source code praktik
 
 <pre>
-    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/args-kwargs">
-        github.com/novalagung/dasarpemrogramanpython-example/../args-kwargs
+    <a href="https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/closure">
+        github.com/novalagung/dasarpemrogramanpython-example/../closure
     </a>
 </pre>
 

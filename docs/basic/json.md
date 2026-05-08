@@ -290,6 +290,6 @@ for key in data:
 
 ### ◉ Referensi
 
-- https://docs.python.org/3/library/csv.html
+- https://docs.python.org/3/library/json.html
 
 </div>

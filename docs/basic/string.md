@@ -196,7 +196,7 @@ Ada beberapa metode yang bisa digunakan untuk *string concatenation* atau operas
 
     Pada penerapannya, karakter pembatas atau *separator* ditulis terlebih dahulu, kemudian di-*chain* dengan method join dengan isi argument adalah list yang ingin digabung.
 
-    ````python
+    ```python
     text = " ".join(["hello", "python"])
     print(text)
     # output ➜ hello python

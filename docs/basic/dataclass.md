@@ -10,23 +10,23 @@ Python menyediakan module bernama `dataclasses` dengan isi beberapa API untuk me
 
 ## A.43.1. Pengenalan Data Class
 
-Di bawah ini dicontohkan class bernama `Planet` disiapkan untuk pembuatan data berisi informasi planet. Class ini memiliki 3 buah instance attribute, yaitu `name`, `diameter`, dan `natural_sattelites`. Deklarasi attribute ditulis dalam fungsi `__init__()`.
+Di bawah ini dicontohkan class bernama `Planet` disiapkan untuk pembuatan data berisi informasi planet. Class ini memiliki 3 buah instance attribute, yaitu `name`, `diameter`, dan `natural_satellites`. Deklarasi attribute ditulis dalam fungsi `__init__()`.
 
 ```python
 class Planet:
-    def __init__(self, name, diameter, natural_sattelites):
+    def __init__(self, name, diameter, natural_satellites):
         self.name = name
         self.diameter = diameter
-        self.natural_sattelites = natural_sattelites
+        self.natural_satellites = natural_satellites
 
 planets = [
     Planet("Mercury", 4879, []),
-    Planet(name="Venus", diameter=12104, natural_sattelites=[]),
-    Planet(diameter=12742, name="Earth", natural_sattelites=["Moon"]),
+    Planet(name="Venus", diameter=12104, natural_satellites=[]),
+    Planet(diameter=12742, name="Earth", natural_satellites=["Moon"]),
 ]
 
 for p in planets:
-    print(f"{p.name} | {p.diameter} km | {len(p.natural_sattelites)} moons")
+    print(f"{p.name} | {p.diameter} km | {len(p.natural_satellites)} moons")
 
 # output ↓
 #
@@ -48,7 +48,7 @@ from dataclasses import dataclass
 class Planet:
     name: str
     diameter: float
-    natural_sattelites: list[str]
+    natural_satellites: list[str]
 
 planets = [
     Planet("Mercury", 4879, []),
@@ -57,7 +57,7 @@ planets = [
 ]
 
 for p in planets:
-    print(f"{p.name} | {p.diameter} km | {len(p.natural_sattelites)} moons")
+    print(f"{p.name} | {p.diameter} km | {len(p.natural_satellites)} moons")
 
 # output ↓
 #
@@ -77,17 +77,17 @@ Cukup tambahkan decorator `@dataclass` saat deklarasi class, lalu tulis attribut
     class Planet:
         name: str
         diameter: float
-        natural_sattelites: list[str]
+        natural_satellites: list[str]
     ```
 
 - Penulisan class biasa
 
     ```python
     class Planet:
-        def __init__(self, name, diameter, natural_sattelites):
+        def __init__(self, name, diameter, natural_satellites):
             self.name = name
             self.diameter = diameter
-            self.natural_sattelites = natural_sattelites
+            self.natural_satellites = natural_satellites
     ```
 
 ## A.43.2. Attribute mutability
@@ -99,7 +99,7 @@ mars = Planet("Mars", 4, ["Phobos", "Deimos"])
 mars.name = "Red Planet"
 mars.diameter = 6779
 
-print(f"{mars.name} | {mars.diameter} km | {len(mars.natural_sattelites)} moons")
+print(f"{mars.name} | {mars.diameter} km | {len(mars.natural_satellites)} moons")
 # output ➜ Red Planet | 6779 km | 2 moons
 ```
 
@@ -112,10 +112,10 @@ Data class bisa memiliki instance method dengan penulisan deklarasi sama persis 
 class Country:
     name: str
     seasons: list
-    number_of_populations: float
+    number_of_population: float
     
     def info(self) -> str:
-        return f"{self.name} | {len(self.seasons)} seasons | {self.number_of_populations} million population"
+        return f"{self.name} | {len(self.seasons)} seasons | {self.number_of_population} million population"
 
 countries = [
     Country("Indonesia", ["Rainy", "Dry"], 275.5),
@@ -142,10 +142,10 @@ Attribute data class bisa ditentukan nilai defaultnya menggunakan operator assig
 class Country:
     name = "Indonesia"
     seasons = ["Rainy", "Dry"]
-    number_of_populations = 275.5
+    number_of_population = 275.5
     
     def info(self) -> str:
-        return f"{self.name} | {len(self.seasons)} seasons | {self.number_of_populations} million population"
+        return f"{self.name} | {len(self.seasons)} seasons | {self.number_of_population} million population"
 
 c = Country()
 print(c.info())

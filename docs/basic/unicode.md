@@ -102,7 +102,7 @@ print(f'code point of {text} in hex: {hex(codePoint)}')
 # output ➜ code point of 안 in hex: 0xc548
 ```
 
-Bisa dilihat dari program di atas, unicode code point dari karakter `안` dalam bentuk heksadesimal adalah `c548`. Jika dicek pada praktek sebelumnya, kode heksadesimal yang sama kita gunakan juga dalam penulisan karakter unicode menggunakan notasi `\uXXXX` (yaitu `\uc548`).
+Bisa dilihat dari program di atas, unicode code point dari karakter `안` dalam bentuk heksadesimal adalah `c548`. Jika dicek pada praktek sebelumnya, kode heksadesimal yang sama kita gunakan juga dalam penulisan karakter unicode menggunakan notasi `\uXXXX` (yaitu `\uC548`).
 
 ### ◉ Fungsi `chr()`
 

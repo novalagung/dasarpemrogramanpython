@@ -17,7 +17,7 @@ Tuple adalah tipe data sequence yang ideal digunakan untuk menampung nilai kolek
 
 Pada chapter ini kita akan belajar tentang topik ini.
 
-## A.15.1. Tuple vs. List
+## A.14.1. Tuple vs. List
 
 Tipe data tuple sekilas memiliki beberapa kemiripan dan juga perbedaan jika dibandingkan dengan list.
 
@@ -305,7 +305,7 @@ Bisa dilihat penerapan metode *packing* cukup mudah. Tulis saja data atau variab
 
 Pada contoh di atas, variabel `row_data` menampung nilai tuple hasil *packing* variabel `first_name`, `rank`, dan `win`.
 
-O iya, penulisan tuple boleh juga dituliskan tanpa menggunakan karakterk `(` & `)`.
+O iya, penulisan tuple boleh juga dituliskan tanpa menggunakan karakter `(` & `)`.
 
 ```python
 # dengan ()
