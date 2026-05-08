@@ -49,9 +49,9 @@ class Product:
 ```python title="models/product.py"
 class Company:
 
-    def __init__(self, name = "", products =[]):
+    def __init__(self, name="", products=None):
         self.name = name
-        self.products = products
+        self.products = products if products is not None else []
         self.__version = 1.0
     
     def __print_name(self):

@@ -568,11 +568,6 @@ Penjelasan:
 - [Tipe Data](/basic/tipe-data)
 - [String ➜ formatting](/basic/string#a173-string-formatting)
 
-### ◉ TBA
-
-- nan
-- inf
-
 ### ◉ Referensi
 
 - https://pythondev.readthedocs.io/numbers.html

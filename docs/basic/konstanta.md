@@ -44,6 +44,8 @@ Statement `from typing import Final` artinya adalah meng-import tipe `Final` dar
 
 Tipe `Final` digunakan untuk menandai suatu variabel adalah tidak bisa diubah nilainya (konstanta). Cara penerapan `Final` bisa dengan dituliskan tipe data konstanta-nya secara eksplisit, atau boleh tidak ditentukan (tipe akan diidentifikasi oleh interpreter berdasarkan tipe data nilainya).
 
+> **Catatan**: Perlu diketahui bahwa `Final` hanya memberikan informasi ke type checker (mypy/Pylance) bahwa suatu variabel bersifat konstan. Di runtime, Python tidak menghasilkan error jika nilai variabel yang ditandai `Final` diubah. Immutability hanya berlaku di level type checking, bukan runtime.
+
 ```python
 # tipe konstanta PI tidak ditentukan secara explisit,
 # melainkan didapat dari tipe data nilai

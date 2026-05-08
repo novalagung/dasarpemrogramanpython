@@ -94,7 +94,7 @@ matrix = [
 ]
 
 for row in matrix:
-    for cel in row:
+    for cell in row:
         print(cel, end=" ")
     print()
 ```
@@ -376,7 +376,7 @@ x = list_3.pop(7)
 
 ![list python](img/list-2.png)
 
-> - Lebih detailnya mengenai error dibahas pada chapter [Error](#)
+> - Lebih detailnya mengenai error dibahas pada chapter [Error & Exception](/basic/error-exception)
 
 Selain menggunakan method `pop()`, keyword `del` bisa difungsikan untuk hal yang sama, yaitu menghapus elemen tertentu. Contoh penerapannya:
 

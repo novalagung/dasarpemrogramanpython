@@ -207,10 +207,6 @@ Tabel kode format sesuai C89 standard:
 
 - [Date, Time, DateTime, Timezone](/basic/datetime-timezone)
 
-### ◉ TBA
-
-- Locale
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/datetime.html

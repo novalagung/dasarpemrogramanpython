@@ -200,10 +200,6 @@ print(transposed)
 - [List](/basic/list)
 - [Generator & Yield](/basic/generator-yield)
 
-### ◉ TBA
-
-- Stack vs Queue
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/datastructures.html

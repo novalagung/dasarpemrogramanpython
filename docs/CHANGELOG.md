@@ -81,7 +81,6 @@ sidebar_label: Version Changelogs & Updates
     - [File/Data Format ➜ JSON](/basic/json)
     - [Date, Time, DateTime, Timezone](/basic/datetime-timezone)
     - [DateTime ➜ Parsing & Formatting](/basic/datetime-parsing-formatting)
-- Perbaikan kesalahan kode
 
 #### ◉ General update
 

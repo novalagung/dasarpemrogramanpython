@@ -151,7 +151,7 @@ for i in range(5, -5, -1):
 
 Perulangan menggunakan `for` bisa dilakukan pada beberapa jenis tipe data (seperti list, string, tuple, dan lainnya) caranya dengan langsung menuliskan saja variabel atau data tersebut pada statement `for`. 
 
-> Tipe data yang bisa digunakan pada keyword `for` bisasa disebut dengan tipe iterator. Lebih detailnya dibahas pada chapter [Iterator](#).
+> Tipe data yang bisa digunakan pada keyword `for` bisasa disebut dengan tipe iterator. Lebih detailnya dibahas pada chapter [Iterable & Iterator](/basic/iterable-iterator).
 
 Contoh penerapannya bisa dilihat di bawah ini:
 

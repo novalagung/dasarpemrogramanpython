@@ -61,7 +61,7 @@ Output program:
 
 ![Python exception](img/error-exception-3.png)
 
-Alternatif solusi lainnya untuk mengatasi exception adalah dengan pengaplikasian kombinasi keyword `try` dan `catch`. Lebih detailnya akan dibahas di chapter berikutnya, di chapter [Exception Handling (try, catch, finally)](#).
+Alternatif solusi lainnya untuk mengatasi exception adalah dengan pengaplikasian kombinasi keyword `try` dan `catch`. Lebih detailnya akan dibahas di chapter berikutnya, di chapter [Exception Handling (try, except, else, finally)](/basic/exception-handling-try-except-else-finally).
 
 ## A.47.3. Throw exception
 

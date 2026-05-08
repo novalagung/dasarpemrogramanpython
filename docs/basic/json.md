@@ -85,11 +85,11 @@ import json
 
 data = {
     'name': 'Maiev Shadowsong',
-    'affliations': ['Warden', 'Alliance']
+    'affiliations': ['Warden', 'Alliance']
 }
 jstr = json.dumps(data)
 print(jstr)
-# output ➜ {"name": "Maiev Shadowsong", "affliations": ["Warden", "Alliance"]}
+# output ➜ {"name": "Maiev Shadowsong", "affiliations": ["Warden", "Alliance"]}
 ```
 
 Contoh data lain dengan struktur list berisi elemen dictionary:
@@ -158,7 +158,7 @@ Proses decode data JSON string ke tipe data Python dilakukan menggunakan fungsi 
 ```python
 import json
 
-jstr1 = '{ "name": "Maiev Shadowsong", "affliations": ["Warden", "Alliance"], "age": 10000, "active": true }'
+jstr1 = '{ "name": "Maiev Shadowsong", "affiliations": ["Warden", "Alliance"], "age": 10000, "active": true }'
 data1 = json.loads(jstr1)
 
 print(f"type: {type(data1).__name__}")
@@ -169,7 +169,7 @@ for key in data1:
 # output ↓
 # 
 # name: Maiev Shadowsong
-# affliations: ['Warden', 'Alliance']
+# affiliations: ['Warden', 'Alliance']
 # age: 10000
 # active: True
 ```
@@ -180,11 +180,11 @@ Contoh lain operasi decode data JSON string berisi array object:
 jstr2 = """
 [{
     "name": "Maiev Shadowsong",
-    "affliations": ["Warden", "Alliance"],
+    "affiliations": ["Warden", "Alliance"],
     "age": 10000
 }, {
     "name": "Illidan Stormrage",
-    "affliations": ["Illidari", "Armies of Legionfall"],
+    "affiliations": ["Illidari", "Armies of Legionfall"],
     "age": 15000
 }]
 """
@@ -194,11 +194,11 @@ print(f"type: {type(data2).__name__}")
 # output ➜ type: list
 
 for row in data2:
-    print(f"-> name: {row["name"]}, afflications: {row["affliations"]}, age: {row["age"]}")
+    print(f"-> name: {row["name"]}, affiliations: {row["affiliations"]}, age: {row["age"]}")
 # output ↓
 # 
-# -> name: Maiev Shadowsong, afflications: ['Warden', 'Alliance'], age: 10000
-# -> name: Illidan Stormrage, afflications: ['Illidari', 'Armies of Legionfall'], age: 15000
+# -> name: Maiev Shadowsong, affiliations: ['Warden', 'Alliance'], age: 10000
+# -> name: Illidan Stormrage, affiliations: ['Illidari', 'Armies of Legionfall'], age: 15000
 ```
 
 ### ◉ Menulis data JSON ke file
@@ -211,11 +211,11 @@ Penulisan data JSON ke file sangat mudah, dilakukan menggunakan teknik penulisan
     jstr = """
     [{
         "name": "Maiev Shadowsong",
-        "affliations": ["Warden", "Alliance"],
+        "affiliations": ["Warden", "Alliance"],
         "age": 10000
     }, {
         "name": "Illidan Stormrage",
-        "affliations": ["Illidari", "Armies of Legionfall"],
+        "affiliations": ["Illidari", "Armies of Legionfall"],
         "age": 15000
     }]
     """
@@ -233,7 +233,7 @@ Penulisan data JSON ke file sangat mudah, dilakukan menggunakan teknik penulisan
 
     data = {
         'name': 'Maiev Shadowsong',
-        'affliations': ['Warden', 'Alliance']
+        'affiliations': ['Warden', 'Alliance']
     }
     jstr = json.dumps(data)
 
@@ -250,7 +250,7 @@ Operasi baca JSON file dilakukan dengan membaca file seperti biasa lalu di-decod
 Contoh penerapannya bisa dilihat pada program di bawah ini. Sebelumnya, pastikan untuk menyediakan sebuah file JSON untuk keperluan testing dengan nama `data.json`. Isi file tersebut dengan data JSON string berikut:
 
 ```json
-{"name": "Maiev Shadowsong", "affliations": ["Warden", "Alliance"]}
+{"name": "Maiev Shadowsong", "affiliations": ["Warden", "Alliance"]}
 ```
 
 Lalu tulis kode berikut kemudian run:
@@ -267,7 +267,7 @@ for key in data:
 # output ↓
 # 
 # name: Maiev Shadowsong
-# affliations: ['Warden', 'Alliance']
+# affiliations: ['Warden', 'Alliance']
 ```
 
 ---

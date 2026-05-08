@@ -166,10 +166,6 @@ Di contoh, ditambahkan block `try except` untuk menangkap error yang muncul saat
     </a>
 </pre>
 
-### ◉ TBA
-
-- Variabel global pada module
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/faq/programming.html

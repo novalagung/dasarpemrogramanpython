@@ -754,11 +754,6 @@ Ada beberapa metode konversi tipe data ke string, diantaranya:
 - [String ➜ Unicode](/basic/unicode)
 - [Slice](/basic/slice)
 
-### ◉ TBA
-
-- Bytes
-- Konversi tipe data ke string
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/string.html

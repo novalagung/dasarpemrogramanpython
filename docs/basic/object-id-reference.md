@@ -49,13 +49,13 @@ message1 = "hello world"
 message2 = message1
 message3 = "hello world"
 
-print(f": message1, id: {message1}, data: {id(message1)}")
+print(f"var: message1, data: {message1}, id: {id(message1)}")
 # output ➜ var: message1, data: hello world, id: 2131034204400
 
-print(f": message2, id: {message2}, data: {id(message2)}")
+print(f"var: message2, data: {message2}, id: {id(message2)}")
 # output ➜ var: message2, data: hello world, id: 2131034204400
 
-print(f": message3, id: {message3}, data: {id(message3)}")
+print(f"var: message3, data: {message3}, id: {id(message3)}")
 # output ➜ var: message3, data: hello world, id: 2131034205616
 ```
 
@@ -230,7 +230,7 @@ numbers2 = numbers1
 numbers2.append(9)
 
 print("numbers1", numbers1, id(numbers1), sys.getsizeof(numbers1))
-print("numbers2", numbers1, id(numbers2), sys.getsizeof(numbers2))
+print("numbers2", numbers2, id(numbers2), sys.getsizeof(numbers2))
 ```
 
 Output program:
@@ -339,10 +339,6 @@ print(f"str1 is str2: {str1 is str2}")
 ### ◉ Chapter relevan lainnya
 
 - [Slice](/basic/slice)
-
-### ◉ TBA
-
-- Hashable
 
 ### ◉ Referensi
 

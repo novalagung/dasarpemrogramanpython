@@ -241,7 +241,7 @@ data.append(("noob saibot", 6, False, ['brotherhood of shadow']))
 data.append(("tifa lockhart", 2, True, ['avalanche']))
 
 # print data
-print("name | rank | win | affliation")
+print("name | rank | win | affiliation")
 print("------------------------------")
 for row in data:
     for cell in row:
@@ -358,7 +358,7 @@ Berikut adalah contoh penerapannya, dimisalkan ada data kolektif yang didapat da
 - Tuple element index 0 berisi `name`.
 - Tuple element index 1 berisi `rank`.
 - Tuple element index 2 berisi `win`.
-- Tuple element index 3 berisi `affliation`, dimana affliation bisa saja kosong.
+- Tuple element index 3 berisi `affiliation`, dimana affiliation bisa saja kosong.
 
 Sample data bisa dilihat berikut ini:
 
@@ -370,7 +370,7 @@ data = [
 ]
 ```
 
-Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi dengan nilai tuple `()`.
+Bisa dilihat data `kucing meong` tidak memiliki `affiliation`, karena terisi dengan nilai tuple `()`.
 
 ---
 
@@ -389,11 +389,6 @@ Bisa dilihat data `kucing meong` tidak memiliki `affliation`, karena terisi deng
 ### ◉ Chapter relevan lainnya
 
 - [List](/basic/list)
-
-### ◉ TBA
-
-- Slicing tuple
-- Zip
 
 ### ◉ Referensi
 
