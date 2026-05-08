@@ -1,12 +1,12 @@
 ---
-sidebar_position: 29
-title: A.29. Python Variables Scope (Local vs. Global)
-sidebar_label: A.29. Variables Scope (Local vs. Global)
+sidebar_position: 30
+title: A.30. Python Variables Scope (Local vs. Global)
+sidebar_label: A.30. Variables Scope (Local vs. Global)
 ---
 
 Pada chapter ini kita akan membahas tentang variable scope, yaitu kapan suatu variabel valid dan bisa digunakan di dalam block serta beberapa fungsi yang masih relevan dengan topik variabel scope.
 
-## A.29.1. Local vs. global variable
+## A.30.1. Local vs. global variable
 
 Global variable adalah variabel yang dideklarasikan di root (tidak di dalam suatu block fungsi). Sedangkan local variable adalah yang dideklarasikan di dalam suatu block dan hanya valid di block tersebut saja.
 
@@ -53,7 +53,7 @@ Sampai sini bisa ditarik kesimpulan bahwa variabel global bisa diakses dari mana
 - Jika variabel local dideklarasikan di dalam block fungsi/lambda/closure, maka pengaksesannya dari luar block menghasilkan error.
 - Jika variabel local dideklarasikan di block seleksi kondisi atau lainnya, maka pengaksesannya dari luar block diperbolehkan dan tidak membuat eksekusi program menjadi error. Namun warning atau error di level linter muncul.
 
-## A.29.2. Local dan global variable dengan nama sama
+## A.30.2. Local dan global variable dengan nama sama
 
 Katakanlah ada variabel global dan variabel local yang namanya sama persis, di situasi seperti ini maka nilai variabel local pada block-nya adalah sesuai dengan saat deklarasinya dalam block. Di luar block, variabel tersebut nilainya kembali berisi nilai variabel global.
 
@@ -79,7 +79,7 @@ Bisa dilihat dari output bahwa variabel `name` nilainya adalah `Keymaster Urmgrg
 
 Dari sini bisa diambil kesimpulan bahwa di luar block, perubahan nilai variabel local tidak berefek ke variabel global, meskipun namanya sama persis.
 
-## A.29.3. Keyword `global`
+## A.30.3. Keyword `global`
 
 Untuk mengubah nilai suatu variabel global dari block, maka perlu adanya penggunaan keyword `global`. Keyword ini menandai variabel dalam block bahwa reference yang digunakan adalah variabel global. Efeknya, perubahan nilai pada variabel juga berpengaruh ke variabel global.
 
@@ -104,7 +104,7 @@ print("greetings", name)
 
 Cara penggunaan keyword `global` adalah dengan cukup menuliskannya di dalam block kemudian diikuti nama variabel. Dari output terlihat bahwa di luar block fungsi `greet()` nilai variabel `name` berubah.
 
-## A.29.4. Fungsi `globals()`
+## A.30.4. Fungsi `globals()`
 
 Fungsi `globals()` mengembalikan informasi semua variabel global yang bisa diakses dari tempat dimana fungsi dipanggil. Nilai balik berbentuk dictionary dengan `key` adalah nama variabel dan `value` adalah nilai variabel.
 
@@ -121,7 +121,7 @@ task_one()
 # output ➜ 12
 ```
 
-## A.29.5. Fungsi `locals()`
+## A.30.5. Fungsi `locals()`
 
 Fungsi `locals()` mengembalikan informasi variabel yang dideklarasikan di block dimana fungsi tersebut dipanggil dengan nilai balik berbentuk dictionary.
 

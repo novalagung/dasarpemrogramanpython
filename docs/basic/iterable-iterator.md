@@ -1,12 +1,12 @@
 ---
-sidebar_position: 58
-title: A.58. Python Iterable & Iterator
-sidebar_label: A.58. Iterable & Iterator
+sidebar_position: 59
+title: A.59. Python Iterable & Iterator
+sidebar_label: A.59. Iterable & Iterator
 ---
 
 Pada chapter ini kita akan belajar tentang konsep sekaligus penerapan iterable dan iterator di Python.
 
-## A.58.1. Apa itu iterable?
+## A.59.1. Apa itu iterable?
 
 **Iteration** atau iterasi adalah proses pengaksesan item-item suatu data kolektif sesuai urutannya satu-per-satu (menggunakan metode perulangan). Penerapan keyword `for in` pada data string, list, atau data kolektif lainnya adalah contoh dari iterasi.
 
@@ -26,7 +26,7 @@ Begitu juga dengan variabel `numbers`, nilai numerik dalam list di-iterasi denga
 
 **Iterable** adalah object yang bisa di-iterasi, contohnya seperti tuple, list, string, dan tipe data kolektif lainnya. Sederhananya, setiap object yang bisa digunakan pada keyword `for in` adalah pasti iterable.
 
-## A.58.2. Apa itu iterator?
+## A.59.2. Apa itu iterator?
 
 Iterator berbeda dibanding iterable. Iterator adalah object iterable yang bisa mengingat *state* perulangannya. Jadi object tersebut tau informasi seperti perulangan sedang berada di indeks ke berapa, elemen berikutnya apa, dan info mengenai kapan perulangan berhenti.
 
@@ -74,7 +74,7 @@ Dari sini terlihat bahwa object iterator benar-benar mengingat informasi state-n
 
 > Penggunaan fungsi `next()` terhadap object iterator yang sudah terakses semua itemnya menghasilkan error. Manfaatkan keyword `try except` jika diperlukan.
 
-## A.58.3. Custom iterator
+## A.59.3. Custom iterator
 
 Selain menggunakan fungsi `iter()` pembuatan iterator juga bisa dilakukan via custom class. Caranya dengan mendesain custom class agar memiliki 2 hal berikut:
 

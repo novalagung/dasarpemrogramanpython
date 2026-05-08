@@ -1,12 +1,12 @@
 ---
-sidebar_position: 39
-title: A.39. Python OOP ➜ Static Method
-sidebar_label: A.39. OOP ➜ Static Method
+sidebar_position: 40
+title: A.40. Python OOP ➜ Static Method
+sidebar_label: A.40. OOP ➜ Static Method
 ---
 
 Chapter ini membahas tentang static method beserta penggunaan dan perbedaannya dibanding jenis method lainnya.
 
-## A.39.1. Pengenalan static method
+## A.40.1. Pengenalan static method
 
 Telah kita pelajari bahwa suatu fungsi agar dikenali sebagai method harus dideklarasikan di dalam block `class` dan memiliki parameter implicit `self` (untuk instance method) dan `cls` (untuk class method).
 
@@ -68,7 +68,7 @@ Kedua method tersebut diakses untuk memunculkan 5 buah output berbeda via instan
 - Method `say_hello()` dipanggil 2x via instance object `edward` dan via class `Person`
 - Method `say_something()` juga sama, diakses via instance object 2x dan diakses via class 1x
 
-## A.39.2. Fungsi `staticmethod()`
+## A.40.2. Fungsi `staticmethod()`
 
 Python menyediakan fungsi bernama `staticmethod()` yang kegunaannya adalah untuk mengkonversi fungsi biasa (yang dideklarasikan di luar class) menjadi static method milik suatu class.
 
@@ -153,7 +153,7 @@ say_something("nice to meet you")
 
 Fungsi `say_something()` sendiri tetap bisa digunakan secara normal meskipun telah dijadikan sebagai static method milik class `Person`.
 
-## A.39.3. Summary
+## A.40.3. Summary
 
 Perbedaan antara constructor, instance method, class method, dan static method bisa dilihat di bawah ini:
 
