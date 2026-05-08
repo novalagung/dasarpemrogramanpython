@@ -101,7 +101,7 @@ Ada tips agar data dictionary yang di-print di console muncul dengan tampilan ya
 
     ![Python dictionary pretty print](img/dictionary-3.png)
 
-    > Lebih detailnya mengenai JSON dibahas di chapter [JSON](#)
+    > Lebih detailnya mengenai JSON dibahas di chapter [File/Data Format ➜ JSON](/basic/json)
 
 ## A.16.2. Inisialisasi dictionary
 
@@ -122,7 +122,7 @@ Pembuatan data dictionary bisa dilakukan menggunakan beberapa cara:
 
     ```python
     profile = dict(
-        set="id",
+        identifier="set",
         name="john wick",
         hobbies=["playing with pencil"],
         is_female=False,
@@ -133,7 +133,7 @@ Pembuatan data dictionary bisa dilakukan menggunakan beberapa cara:
 
     ```python
     profile = dict([
-        ('set', "id"),
+        ('identifier', "set"),
         ('name', "john wick"),
         ('hobbies', ["playing with pencil"]),
         ('is_female', False)
@@ -186,44 +186,44 @@ profile = {
     "name": "mario",
     "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
-    "affliations": [
+    "affiliations": [
         {
             "name": "luigi",
-            "affliation": "brother"
+            "affiliation": "brother"
         },
         {
             "name": "mushroom kingdom",
-            "affliation": "protector"
+            "affiliation": "protector"
         },
     ]
 }
 
 print("name:", profile["name"])
 print("hobbies:", profile["hobbies"])
-print("affliations:")
+print("affiliations:")
 
-for item in profile["affliations"]:
-    print("  ➜ %s (%s)" % (item["name"], item["affliation"]))
+for item in profile["affiliations"]:
+    print("  ➜ %s (%s)" % (item["name"], item["affiliation"]))
 
 # output ↓
 #
 # name: mario
 # hobbies: ('playing with luigi', 'saving the mushroom kingdom')
-# affliations:
+# affiliations:
 #   ➜ luigi (brother)
 #   ➜ mushroom kingdom (protector)
 ```
 
-Pada kode di atas, key `affliations` berisi list object dictionary.
+Pada kode di atas, key `affiliations` berisi list object dictionary.
 
 Contoh cara mengakses value nested item dictionary:
 
 ```python
-value = profile["affliations"][0]["name"], profile["affliations"][0]["affliation"]
+value = profile["affiliations"][0]["name"], profile["affiliations"][0]["affiliation"]
 print("  ➜ %s (%s)" % (value))
 # output ➜ luigi (brother)
 
-value = profile["affliations"][1]["name"], profile["affliations"][1]["affliation"]
+value = profile["affiliations"][1]["name"], profile["affiliations"][1]["affiliation"]
 print("  ➜ %s (%s)" % (value))
 # output ➜ mushroom kingdom (protector)
 ```
@@ -238,24 +238,24 @@ profile = {
     "name": "mario",
     "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
     "is_female": False,
-    "affliations": [
+    "affiliations": [
         {
             "name": "luigi",
-            "affliation": "brother"
+            "affiliation": "brother"
         },
         {
             "name": "mushroom kingdom",
-            "affliation": "protector"
+            "affiliation": "protector"
         },
     ]
 }
 
-print(profile["affliations"][0]["name"])
+print(profile["affiliations"][0]["name"])
 # output ➜ luigi
 
-profile["affliations"][0]["name"] = "luigi steven"
+profile["affiliations"][0]["name"] = "luigi steven"
 
-print(profile["affliations"][0]["name"])
+print(profile["affiliations"][0]["name"])
 # output ➜ luigi steven
 ```
 

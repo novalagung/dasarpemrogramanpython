@@ -201,10 +201,6 @@ print(is_substring_exists)
 - [Tipe Data](/basic/tipe-data)
 - [String ➜ formatting](/basic/string#a173-string-formatting)
 
-### ◉ TBA
-
-- Operator `@` for matrix multiplication
-
 ### ◉ Referensi
 
 - https://realpython.com/python-operators-expressions/

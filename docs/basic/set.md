@@ -442,11 +442,11 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     hobbits = {'frodo', 'sam', 'merry', 'pippin'}
     dunedain = {'aragorn'}
     elf = {'legolas'}
-    dwarf = {'gimly'}
+    dwarf = {'gimli'}
     human = {'boromir'}
     maiar = {'gandalf'}
 
-    fellowship_1 = hobbits.union(dunedain).union(dunedain).union(elf).union(dwarf).union(human).union(maiar)
+    fellowship_1 = hobbits.union(dunedain).union(elf).union(dwarf).union(human).union(maiar)
     print("fellowship_1:", fellowship_1)
     # output ➜ fellowship_1: {'boromir', 'gimly', 'legolas', 'pippin', 'sam', 'aragorn', 'frodo', 'gandalf', 'merry'}
     ```
@@ -457,7 +457,7 @@ Operasi *extend* (atau *concat* atau *union*) adalah operasi penggabungan dua da
     hobbits = {'frodo', 'sam', 'merry', 'pippin'}
     dunedain = {'aragorn'}
     elf = {'legolas'}
-    dwarf = {'gimly'}
+    dwarf = {'gimli'}
     human = {'boromir'}
     maiar = {'gandalf'}
 

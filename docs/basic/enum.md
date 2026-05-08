@@ -21,7 +21,7 @@ class City(Enum):
     JAKARTA = 4
 
 print(list(City))
-# output ➜ [<City.MALANG: 1>, <City.SURABAYA: 2>, <City.YOGYAKARTA: 3>, <City.JAKARTA: 4>
+# output ➜ [<City.MALANG: 1>, <City.SURABAYA: 2>, <City.YOGYAKARTA: 3>, <City.JAKARTA: 4>]
 ```
 
 Nilai property enum bisa diisi dengan data apapun. Pada contoh di atas, nilai property enum `City` diisi dengan angka numerik.
@@ -224,10 +224,6 @@ for c in City:
 ### ◉ Chapter relevan lainnya
 
 - [Konstanta](/basic/konstanta)
-
-### ◉ TBA
-
-- `IntFlag` and `Flag` https://docs.python.org/3/howto/enum.html#intflag
 
 ### ◉ Referensi
 

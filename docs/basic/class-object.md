@@ -35,7 +35,7 @@ class Car:
 
 Pada contoh di atas, class `Car` memiliki tiga attribute: `name`, `manufacturer`, dan `year`. Nantinya, variabel objek yang dibuat dari class tersebut akan memiliki tiga atribut sesuai dengan yang dideklarasikan.
 
-> Fungsi `__init__(self)` disebut dengan method konstruktor. Pembahasan detail mengenai konstruktor ada di chapter [Class ➜ Constructor](#)
+> Fungsi `__init__(self)` disebut dengan method konstruktor. Pembahasan detail mengenai konstruktor ada di chapter [Class ➜ Constructor](/basic/class-constructor)
 
 ### ◉ Deklarasi class tanpa attribute
 
@@ -116,7 +116,7 @@ Sebelumnya, kita telah membuat class bernama `Car` yang memiliki 3 attribute:
 
 Attribute sebenarnya ada 2 jenis, yaitu instance attribute dan class attribute. **Yang sedang kita pelajari di chapter ini adalah instance attribute.**
 
-> Perbedaan mendetail antara instance attribute vs class attribute ada di chapter [Class ➜ Class Attribute & Method](#)
+> Perbedaan mendetail antara instance attribute vs class attribute ada di chapter [Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute)
 
 Cara deklarasi instance attribute mirip dengan deklarasi variabel, perbedaannya pada penulisannya diawali dengan `self.`. Selain itu deklarasinya harus berada di dalam body fungsi `__init__(self)`.
 

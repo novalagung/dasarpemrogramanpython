@@ -458,11 +458,6 @@ Output program:
 - [OOP ➜ Abstract Method](/basic/abstract-method)
 - [OOP ➜ Data Class](/basic/dataclass)
 
-### ◉ TBA
-
-- method & lambda
-- method & closure
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/classes.html

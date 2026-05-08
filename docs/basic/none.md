@@ -60,6 +60,22 @@ Ketika memeriksa apakah sebuah objek bernilai `None` atau tidak, disarankan untu
 
 Serta, operator `is` lebih cepat dibanding `==` untuk pengecekan data `None`.
 
+Kebalikan dari pengecekan `is None` adalah `is not None`, digunakan untuk memastikan bahwa suatu variabel tidak berisi `None`.
+
+```python
+def format_data(data):
+    if data is not None:
+        print(f"data: {data}")
+    else:
+        print("no data")
+
+format_data("hello")
+# output ➜ data: hello
+
+format_data(None)
+# output ➜ no data
+```
+
 ---
 
 <div class="section-footnote">

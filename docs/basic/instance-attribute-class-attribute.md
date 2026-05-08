@@ -235,10 +235,6 @@ print(f"Object book2 note: {book2.note}")
 - [OOP ➜ Class & Object](/basic/class-object)
 - [OOP ➜ Property Visibility](/basic/property-visibility)
 
-### ◉ TBA
-
-- list-type attribute behaviour on class attribute vs instance attribute
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/tutorial/classes.html

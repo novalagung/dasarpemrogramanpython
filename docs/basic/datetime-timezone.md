@@ -359,10 +359,6 @@ print_dt(data_utc_tz)
 
 - [DateTime ➜ Parsing & Formatting](/basic/datetime-parsing-formatting)
 
-### ◉ TBA
-
-- Locale
-
 ### ◉ Referensi
 
 - https://docs.python.org/3/library/datetime.html

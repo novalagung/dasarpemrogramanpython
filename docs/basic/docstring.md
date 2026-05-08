@@ -188,8 +188,7 @@ class Quote:
         print(quotes[i])
 ```
 
-Coba sekarang 
-Output ketika di-hover:
+Coba sekarang lihat output ketika di-hover:
 
 ![Python docstring](img/docstring-5.png)
 
