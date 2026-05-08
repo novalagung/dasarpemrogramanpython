@@ -204,7 +204,7 @@ print(f"bin2: {bin2:b}")
     </tbody>
 </table>
 
-> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](/basic/string.md#a173-string-formatting)
+> Lebih detailnya mengenai string formatting dibahas pada chapter [String Formatting](/basic/string#a173-string-formatting)
 
 ### ◉ Operasi perbandingan antar basis
 

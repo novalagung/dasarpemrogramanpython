@@ -21,7 +21,7 @@ python main.py
 
 ### ◉ Menggunakan tombol run `▶`
 
-Cara run program ini lebih praktis karena tingal klik-klik saja. Di toolbar VSCode sebelah kanan atas ada tombol `▶`, gunakan tombol tersebut untuk menjalankan program.
+Cara run program ini lebih praktis karena tinggal klik-klik saja. Di toolbar VSCode sebelah kanan atas ada tombol `▶`, gunakan tombol tersebut untuk menjalankan program.
 
 ![hello world python](img/hello-python-3.png)
 

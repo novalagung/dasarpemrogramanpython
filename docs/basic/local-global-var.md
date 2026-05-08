@@ -51,7 +51,7 @@ Di editor terlihat variabel `greet_message` digaris-bawahi merah, menandakan ada
 Sampai sini bisa ditarik kesimpulan bahwa variabel global bisa diakses dari mana saja, sedangkan variabel local bisa diakses di dalam block dimana ia dideklarasikan. Pengaksesan variabel local diluar block-nya memiliki efek samping berikut:
 
 - Jika variabel local dideklarasikan di dalam block fungsi/lambda/closure, maka pengaksesannya dari luar block menghasilkan error.
-- Jika variabel local dideklarasikan di block seleksi kondisi atau lainnya, maka pengaksesaannya dari luar block diperbolehkan dan tidak membuat eksekusi program menjadi error. Namun warning atau error di level linter muncul.
+- Jika variabel local dideklarasikan di block seleksi kondisi atau lainnya, maka pengaksesannya dari luar block diperbolehkan dan tidak membuat eksekusi program menjadi error. Namun warning atau error di level linter muncul.
 
 ## A.29.2. Local dan global variable dengan nama sama
 

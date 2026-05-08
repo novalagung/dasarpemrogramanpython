@@ -386,10 +386,36 @@ os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
 - [File/Data Format ➜ CSV](/basic/csv)
 - [File/Data Format ➜ JSON](/basic/json)
 
-### ◉ TBA
+## A.49.12. `pathlib.Path` (modern file path handling)
 
-- Pathlib https://docs.python.org/3/library/pathlib.html
-- Search pattern
+Selain menggunakan `os.path` dan fungsi manual string untuk manipulasi path, Python menyediakan module `pathlib` yang menawarkan pendekatan object-oriented dalam pengelolaan path file dan folder. `pathlib.Path` bisa digunakan untuk operasi yang telah dibahas sebelumnya dengan cara yang lebih intuitif.
+
+```python
+from pathlib import Path
+
+# membuat folder
+Path("/path/to/somefolder").mkdir(parents=True, exist_ok=True)
+
+# mengecek apakah file ada
+if Path("/path/to/something/file.txt").is_file():
+    print("file.txt is exists")
+
+# membaca isi file
+content = Path("/path/to/something/file.txt").read_text(encoding="utf-8")
+print(content)
+
+# menulis file
+Path("/path/to/something/file.txt").write_text("hello python", encoding="utf-8")
+
+# menampilkan isi folder
+for f in Path("/path/to/something").iterdir():
+    print(f)
+
+# menghapus file
+Path("/path/to/something/file.txt").unlink()
+```
+
+Dengan `pathlib`, kode menjadi lebih ringkas dan mudah dibaca tanpa perlu meng-import module `os` secara terpisah.
 
 ### ◉ Referensi
 
