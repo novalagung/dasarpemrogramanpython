@@ -18,11 +18,16 @@ sidebar_label: Version Changelogs & Updates
     - [Python Pattern Matching ➜ match](/basic/pattern-matching) — koreksi: tambah `self.` pada method
     - [Exception Handling](/basic/exception-handling-try-except-else-finally) — koreksi: `err == ValueError` jadi `isinstance()`
     - [File/Data Format ➜ JSON](/basic/json) — koreksi: reference link CSV ke JSON
+    - [Object ID & Reference](/basic/object-id-reference) — koreksi: f-string template mismatch & wrong variable name di `print()`
 - Perbaikan konten
     - [Tipe Data](/basic/tipe-data) — koreksi cross-reference & output comment
     - [Slice](/basic/slice) — penambahan negative index slicing
     - [Function ➜ Positional, Optional, Keyword Arguments](/basic/positional-optional-keyword-argument) — koreksi output contoh kode
     - [File/Data Format ➜ CSV](/basic/csv) — koreksi duplikasi nomor section
+    - [Dictionary](/basic/dictionary) — koreksi: `set` sebagai key diganti `identifier` (shadowing built-in)
+    - [OOP ➜ Property Visibility](/basic/property-visibility) — koreksi: mutable default arg `products=[]` diganti `None` + guard
+    - [Konstanta](/basic/konstanta) — penambahan catatan `Final` hanya type-checker hint
+    - [None](/basic/none) — penambahan contoh `is not None`
 - Perbaikan typo dan/atau kesalahan kode
     - [Run Python di VSCode](/basic/run-program-python)
     - [Perulangan ➜ break, continue](/basic/break-continue)
@@ -40,11 +45,27 @@ sidebar_label: Version Changelogs & Updates
     - [OOP ➜ DataClass](/basic/dataclass)
     - [DateTime ➜ Parsing & Formatting](/basic/datetime-parsing-formatting)
     - [Eval & Exec](/basic/eval-exec)
+    - [List](/basic/list)
+    - [Set](/basic/set)
+    - [DocString](/basic/docstring)
+    - [Enumeration](/basic/enum)
+- Perbaikan dead link
+    - [OOP ➜ Class & Object](/basic/class-object) — link Constructor & Class Attribute
+    - [Dictionary](/basic/dictionary) — link JSON
+    - [Error & Exception](/basic/error-exception) — link Exception Handling
+    - [Perulangan ➜ for & range](/basic/for-range) — link Iterator
+    - [List](/basic/list) — link Error & Exception
+- Penghapusan placeholder TBA (tersimpan di docs-wip.md)
 - Perbaikan kode contoh (examples/)
     - [examples/lambda/main_5.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/lambda)
     - [examples/pattern-matching/main_4.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/pattern-matching)
     - [examples/exception-handling/main_2.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/exception-handling-try-except-else-finally)
     - [examples/eval-exec/main_4.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/eval-exec) — penambahan contoh `ast.literal_eval()`
+    - [examples/object-id-reference/main_4.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/object-id-reference)
+    - [examples/property-visibility/models/company.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/property-visibility)
+    - [examples/dict/main_2.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/dictionary)
+    - [examples/set/main_3.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/set)
+    - [examples/none/main_2.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/none) — penambahan contoh `is not None`
 
 #### ◉ General update
 
@@ -55,6 +76,7 @@ sidebar_label: Version Changelogs & Updates
 - Penambahan section `pathlib` pada chapter File I/O
 - Update contoh kode untuk selaras dengan perbaikan di docs
 - Pembuatan backlog system untuk tracking review konten
+- Pembuatan docs-wip.md untuk tracking topik yang direncanakan
 
 ## 📝 Release v1.2.20240923 (2024-09-23)
 
