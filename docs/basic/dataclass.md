@@ -1,14 +1,14 @@
 ---
-sidebar_position: 43
-title: A.43. Python OOP ➜ DataClass
-sidebar_label: A.43. OOP ➜ DataClass
+sidebar_position: 44
+title: A.44. Python OOP ➜ DataClass
+sidebar_label: A.44. OOP ➜ DataClass
 ---
 
 Data class adalah class yang didesain khusus untuk tujuan penyimpanan data.
 
 Python menyediakan module bernama `dataclasses` dengan isi beberapa API untuk mempermudah pembuatan data class. Pada chapter ini kita akan mempelajarinya.
 
-## A.43.1. Pengenalan Data Class
+## A.44.1. Pengenalan Data Class
 
 Di bawah ini dicontohkan class bernama `Planet` disiapkan untuk pembuatan data berisi informasi planet. Class ini memiliki 3 buah instance attribute, yaitu `name`, `diameter`, dan `natural_satellites`. Deklarasi attribute ditulis dalam fungsi `__init__()`.
 
@@ -90,7 +90,7 @@ Cukup tambahkan decorator `@dataclass` saat deklarasi class, lalu tulis attribut
             self.natural_satellites = natural_satellites
     ```
 
-## A.43.2. Attribute mutability
+## A.44.2. Attribute mutability
 
 Selayaknya seperti class biasa, instance attribute dataclass adalah *mutable* atau bisa diubah nilainya. Contoh penerapan:
 
@@ -103,7 +103,7 @@ print(f"{mars.name} | {mars.diameter} km | {len(mars.natural_satellites)} moons"
 # output ➜ Red Planet | 6779 km | 2 moons
 ```
 
-## A.43.3. Instance method
+## A.44.3. Instance method
 
 Data class bisa memiliki instance method dengan penulisan deklarasi sama persis seperti deklarasi method pada umumnya. Contohnya bisa dilihat di bawah ini, dimana ada data class bernama `Country` berisi 3 buah instance attribute dan satu buah instance method bernama `info()`.
 
@@ -133,7 +133,7 @@ for c in countries:
 # Mongolia | 4 seasons | 3.398 million population
 ```
 
-## A.43.4. Attribute default value
+## A.44.4. Attribute default value
 
 Attribute data class bisa ditentukan nilai defaultnya menggunakan operator assignment `=` (penulisannya seperti deklarasi variabel). Dengan memberikan nilai default pada attribute, menjadikan parameter konstruktor menjadi opsional. Contoh:
 
@@ -152,7 +152,7 @@ print(c.info())
 # output ➜ Indonesia | 2 seasons | 275.5 million population
 ```
 
-## A.43.5. Frozen attribute
+## A.44.5. Frozen attribute
 
 Frozen data class adalah data class yang *immutable*, artinya setelah dideklarasikan maka tidak bisa diubah nilai attribute-nya. Cara meng-enable frozen attribute adalah dengan menambahkan `frozen=True` pada decorator `@dataclass`.
 
@@ -172,7 +172,7 @@ Kode di atas menghasilkan error karena semua attribute class `Fruit` immutable.
 
 ![Data class Python](img/dataclass-1.png)
 
-## A.43.6. Inheritance
+## A.44.6. Inheritance
 
 Data class bisa diturunkan seperti umumnya class dengan cara penulisan masih sama. Contoh:
 

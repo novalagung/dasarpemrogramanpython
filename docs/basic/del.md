@@ -1,14 +1,14 @@
 ---
-sidebar_position: 55
-title: A.55. Python Delete Object
-sidebar_label: A.55. Delete Object
+sidebar_position: 56
+title: A.56. Python Delete Object
+sidebar_label: A.56. Delete Object
 ---
 
 Pada sekian chapter yang lalu kita telah belajar tentang object [None](/basic/none), fungsinya untuk menandai variabel agar bernilai kosong.
 
 Kali ini yang kita pelajari adalah keyword `del` untuk operasi delete object. Hasil penggunaan keyword `del` benar-benar menghapus variabel beserta isinya, jadi tidak hanya mengosongkan nilainya.
 
-## A.55.1. Keyword `del`
+## A.56.1. Keyword `del`
 
 Penggunaan `None` sebagai nilai suatu variabel menjadikan variabel tersebut tetap ada tapi nilainya berubah menjadi `None`. Jadi penggunaan `None` disini berguna untuk mengosongkan variabel tanpa menghapus variabel itu sendiri.
 

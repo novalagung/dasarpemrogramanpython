@@ -1,12 +1,12 @@
 ---
-sidebar_position: 28
-title: A.28. Python Packages
-sidebar_label: A.28. Packages
+sidebar_position: 29
+title: A.29. Python Packages
+sidebar_label: A.29. Packages
 ---
 
 Pada chapter ini, kita akan membahas cara Python mengelola module melalui packages. Dengan package, module bisa diakses menggunakan notasi pengaksesan module, contohnya seperti `calculate.calc_hypotenuse()`.
 
-## A.28.1. Pengenalan Packages
+## A.29.1. Pengenalan Packages
 
 Mari kita mulai dengan sedikit mengulang pembahasan yang ada di chapter sebelumnya. Di Python, module direpresentasikan oleh file, dan agar bisa mengakses item yang ada dalam module tersebut kita perlu meng-import-nya terlebih dahulu.
 
@@ -105,11 +105,11 @@ Ok, selanjutnya coba jalankan program dan lihat hasilnya:
 
 ![Python packages](img/packages-1.png)
 
-## A.28.2. *Naming convention* package
+## A.29.2. *Naming convention* package
 
 Berdasarkan dokumentasi [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/), disarankan untuk menulis nama package dengan huruf kecil (lowercase) dan dianjurkan untuk menghindari penggunaan underscore.
 
-## A.28.3. Metode import module package
+## A.29.3. Metode import module package
 
 Seperti halnya module biasa, module dalam package bisa di-import dengan beberapa cara:
 
@@ -207,7 +207,7 @@ Hasilnya adalah error:
 
 ![Python packages](img/packages-2.png)
 
-## A.28.4. File `__init__.py`
+## A.29.4. File `__init__.py`
 
 Melanjutkan pembahasan sebelumnya dimana `import *` menghasilkan error, hal tersebut terjadi karena Python tidak bisa mendeteksi module apa saja yang bisa direpresentasikan dengan `*` saat meng-import suatu package.
 
@@ -291,6 +291,7 @@ Variabel yang diawali dan diakhir dengan karakter double underscore seperti `__a
 ### ◉ Chapter relevan lainnya
 
 - [Modules](/basic/modules)
+- [PIP & Dependency Management](/basic/pip)
 - [Special names](/basic/special-names)
 
 ### ◉ Referensi

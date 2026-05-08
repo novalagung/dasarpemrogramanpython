@@ -1,12 +1,12 @@
 ---
-sidebar_position: 57
-title: A.57. Python Eval & Exec
-sidebar_label: A.57. Eval & Exec
+sidebar_position: 58
+title: A.58. Python Eval & Exec
+sidebar_label: A.58. Eval & Exec
 ---
 
 Pada chapter ini kita akan mempelajari fungsi `eval()` untuk eksekusi *expression*, fungsi `exec()` untuk eksekusi syntax Python, dan fungsi `compile()`.
 
-## A.57.1. Fungsi `eval()`
+## A.58.1. Fungsi `eval()`
 
 String berisi ekspresi seperti `PI * r * r` bisa dieksekusi kemudian diambil hasilnya menggunakan fungsi `eval()`. Cara penggunaannya sangat mudah, tulis saja ekspresi sebagai argument pemanggilan fungsi. Misalnya:
 
@@ -57,7 +57,7 @@ By default, variabel dalam ekspresi terisi oleh nilai variabel yang sudah didekl
 
 > Pemanggilan `eval('expr')` tanpa parameter ke-2 dan ke-3 adalah ekuivalen dengan statement `eval('expr', globals(), locals())`
 
-## A.57.2. Fungsi `exec()`
+## A.58.2. Fungsi `exec()`
 
 Fungsi `exec()` berguna untuk eksekusi string berisi kode Python. Cara penggunaannya mirip seperti `eval()`. Contoh:
 
@@ -118,7 +118,7 @@ Fungsi `exec()` berguna untuk eksekusi string berisi kode Python. Cara penggunaa
 
 Selama string berisi kode Python dengan syntax valid, maka bisa dijalankan via fungsi `exec()` ini.
 
-## A.57.3. Fungsi `compile()`
+## A.58.3. Fungsi `compile()`
 
 Fungsi `compile()` digunakan untuk kompilasi expression maupun kode Python, untuk kemudian digunakan pada fungsi `eval()`, `exec()`, ataupun untuk keperluan lainnya (seperti parse AST dan lainnya).
 
@@ -187,9 +187,9 @@ print(res)
 # 314.0
 ```
 
-## A.57.4. Fungsi `ast.literal_eval()`
+## A.58.4. Fungsi `ast.literal_eval()`
 
-Seperti yang sudah disebutkan pada peringatan di [A.57.1](#a571-fungsi-eval), fungsi `eval()` dan `exec()` berbahaya jika digunakan dengan input dari sumber tidak terpercaya karena dapat mengeksekusi kode berbahaya.
+Seperti yang sudah disebutkan pada peringatan di [A.58.1](#a571-fungsi-eval), fungsi `eval()` dan `exec()` berbahaya jika digunakan dengan input dari sumber tidak terpercaya karena dapat mengeksekusi kode berbahaya.
 
 Sebagai alternatif yang aman untuk mengevaluasi literal Python (seperti string, angka, list, tuple, dict, bool, `None`), Python menyediakan fungsi `ast.literal_eval()` dari module `ast` (bagian dari stdlib).
 

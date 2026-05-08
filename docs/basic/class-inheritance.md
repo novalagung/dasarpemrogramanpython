@@ -1,12 +1,12 @@
 ---
-sidebar_position: 41
-title: A.41. Python OOP ➜ Class Inheritance
-sidebar_label: A.41. OOP ➜ Class Inheritance
+sidebar_position: 42
+title: A.42. Python OOP ➜ Class Inheritance
+sidebar_label: A.42. OOP ➜ Class Inheritance
 ---
 
 Chapter ini membahas tentang salah satu aspek penting dalam pemrograman OOP, yaitu inheritance atau pewarisan sifat, dimana sifat yang dimaksud adalah property seperti attribute, method, dan lainnya.
 
-## A.41.1. Pengenalan Inheritance
+## A.42.1. Pengenalan Inheritance
 
 Untuk mewujudkan inheritance setidaknya dua buah class dibutuhkan:
 
@@ -89,7 +89,7 @@ v3.info()
 
 Bisa dilihat dari contoh, bahwa property milik class `Vehicle` bisa diakses via instance object yang dibuat dari class itu sendiri maupun dari object yang dibuat dari subclass `ElectricCar`.
 
-## A.41.2. Class `object` inheritance
+## A.42.2. Class `object` inheritance
 
 Python memiliki class bawaan bernama `object` yang pada praktiknya otomatis menjadi super class dari semua class bawaan Python maupun custom class yang kita buat sendiri.
 
@@ -136,7 +136,7 @@ if isinstance(v2, object):
 # v2 class inherit from class object
 ```
 
-## A.41.3. Constructor overriding
+## A.42.3. Constructor overriding
 
 *Overriding* adalah istilah pemrograman OOP untuk menimpa/mengganti suatu method dengan method baru yang nama dan strukturnya sama tapi isinya berbeda.
 
@@ -203,7 +203,7 @@ AttributeError: 'ElectricCar' object has no attribute 'number_of_wheels'
 
 Solusi permasalahan di atas ada pada penjelasan section berikut ini.
 
-## A.41.4. Fungsi `super()`
+## A.42.4. Fungsi `super()`
 
 Fungsi `super()` adalah salah satu fungsi istimewa bawaan python, yang ketika diakses di dalam suatu instance method maka pemanggilannya mengarah ke variabel `self` milik super class (bukan variabel `self` milik class itu sendiri).
 
@@ -281,7 +281,7 @@ Jika dianalogikan, bisa dibilang kode di atas adalah ekuivalen dengan kode ke-2 
 
 Sampai sini semoga cukup jelas.
 
-## A.41.5. Alternatif cara mengakses super class constructor
+## A.42.5. Alternatif cara mengakses super class constructor
 
 Selain menggunakan `super().__init__()` ada cara lain untuk memanggil konstruktor super class, yaitu dengan mengakses method `__init__()` via class secara langsung. Contoh:
 
@@ -309,7 +309,7 @@ Statement `Vehicle.__init__(self)` pada kode di atas adalah ekuivalen dengan kod
 
 Teknik pemanggilan constructor via class ini lebih sering digunakan pada class yang memiliki parent class lebih dari satu. Lebih jelasnya akan kita bahas di bawah.
 
-## A.41.6. Method overriding
+## A.42.6. Method overriding
 
 Tidak hanya constructor, method super class juga bisa di-override dengan method baru. Pada kode berikut, method `drive_sound()` di-override dengan isi mengembalikan nilai string berbeda, yang sebelumnya `vroom vroooommmm` kini menjadi `zzzzzzz`.
 
@@ -353,7 +353,7 @@ Dalam konteks inheritance, ketika di sub class terdapat method dengan nama yang 
 - Object `v1` dibuat via class `Vehicle`, pengaksesan method `drive_sound()` mengarah ke method milik class tersebut
 - Object `v2` dibuat via class `ElectricCar`, pengaksesan method `drive_sound()` (yang dilakukan secara implisit via method `info()`) mengarah ke method milik class tersebut, dan bukan milik super class.
 
-## A.41.7. Aturan overriding
+## A.42.7. Aturan overriding
 
 Setiap bahasa pemrograman yang mengadopsi OOP, aturan penerapan method overriding berbeda satu sama lain. Di Python sendiri, method dianggap meng-override suatu method atau constructor super class jika namanya adalah dideklarasikan sama persis. Perihal apakah skema parameter-nya diubah, atau return type-nya diubah, itu tidak menjadi syarat wajib overriding.
 
@@ -392,7 +392,7 @@ v2.info()
 
 Method `drive_sound()` di-override dengan diubah skema parameternya, dari yang tidak memiliki parameter sekarang menjadi memiliki parameter `sound`. Selain itu tipe datanya juga diubah, dari yang sebelumnya string menjadi tuple.
 
-## A.41.8. Nested inheritance
+## A.42.8. Nested inheritance
 
 Penerapan inheritance tidak hanya terbatas pada dua buah class saja, melainkan bisa lebih. Class bisa diturunkan, kemudian turunannya diturunkan lagi, dan seterusnya.
 
@@ -440,7 +440,7 @@ v3.info()
 # output ➜ electric car has 4 wheels. engine sound: ('friendly sound', 'zzzzzzz')
 ```
 
-## A.41.9. Special name ➜ class attribute `__mro__`
+## A.42.9. Special name ➜ class attribute `__mro__`
 
 Setiap class memiliki class attribute `__mro__` yang berisi informasi hirarki class itu sendiri. Attribute tersebut bertipe data tuple. Dari nilai balik attribute tersebut gunakan perulangan untuk mengiterasi seluruh elemennya.
 
@@ -479,7 +479,7 @@ Hirarki paling atas semua class selalu class `object`.
 
 > MRO sendiri merupakan kependekan dari istilah **Method Resolution Order**
 
-## A.41.10. Multiple inheritance
+## A.42.10. Multiple inheritance
 
 Suatu class tidak dibatasi hanya bisa menjadi sub class dari 1 buah class saja. Bisa jadi ada lebih dari 1 class yang diturunkan dengan level hirarki yang sama.
 

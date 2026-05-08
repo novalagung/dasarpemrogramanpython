@@ -1,18 +1,18 @@
 ---
-sidebar_position: 59
-title: A.59. Python Generator & Yield
-sidebar_label: A.59. Generator & Yield
+sidebar_position: 60
+title: A.60. Python Generator & Yield
+sidebar_label: A.60. Generator & Yield
 ---
 
 Pada chapter ini kita akan belajar tentang konsep generator serta pengaplikasiannya menggunakan keyword `yield` dan *generator expression*.
 
-## A.59.1. Generator object
+## A.60.1. Generator object
 
 Generator object adalah object iterator yang dibuat via fungsi generator (menggunakan keyword `yield`) atau via *generator expression*.
 
 > Mengenai apa itu iterator, pembahasannya ada di chapter sebelumnya, yaitu [Iterable & Iterator](/basic/iterable-iterator)
 
-## A.59.2. Generator function
+## A.60.2. Generator function
 
 Generator function adalah salah satu cara pembuatan generator object. Ciri khasnya di dalam fungsi ada statement berisi keyword `yield`.
 
@@ -114,7 +114,7 @@ for row in file_reader('content.txt'):
     print(row.strip())
 ```
 
-## A.59.3. Generator expression
+## A.60.3. Generator expression
 
 Generator comprehension (atau yang umumnya dikenal sebagai generator expression) adalah ekspresi statement yang ditulis dalam format tertentu yang otomatis terdeteksi sebagai *generator object*.
 
