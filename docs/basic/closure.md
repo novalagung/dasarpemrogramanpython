@@ -4,7 +4,7 @@ title: A.25. Python Closure
 sidebar_label: A.25. Function ➜ Closure
 ---
 
-Closure adalah istilah umum dalam programming untuk deklarasi fungsi yang berada di dalam fungsi (*nested function*). Pada chapter ini kita akan mempelajari cara implementasinya.
+Closure adalah istilah umum dalam programming untuk fungsi yang dideklarasikan di dalam fungsi lain (*nested function*) dan menangkap variabel dari scope diluar fungsi. Pada chapter ini kita akan mempelajari cara implementasinya.
 
 ## A.25.1. Pengenalan Closure
 
@@ -142,9 +142,9 @@ Ada juga fungsi `sum()` dideklarasikan dengan tugas untuk menghitung total dari 
 Kemudian di bawahnya ada 4 buah statement pemanggilan fungsi `aggregate()`:
 
 - Pemanggilan ke-1 adalah perhitungan nilai total `numbers`. Fungsi `sum` yang telah dideklarasikan sebelumnya dijadikan sebagai argument pemanggilan fungsi `aggregate()` untuk ditampung di parameter `f`.
-- Pemanggilan ke-2 adalah perhitungan nilai rata-rata dimana fungsi `avg` yang telah dideklarasikan dijadikan sebagai argument pemanggilan fungsi `aggregate()`..
+- Pemanggilan ke-2 adalah perhitungan nilai rata-rata dimana fungsi `avg` yang telah dideklarasikan dijadikan sebagai argument pemanggilan fungsi `aggregate()`.
 - Pemanggilan ke-3 adalah perhitungan nilai maksimum. Fungsi `max` yang merupakan fungsi bawaan Python digunakan sebagai argument pemanggilan fungsi `aggregate()`.
-- Pemanggilan ke-1 adalah perhitungan nilai minimum. Fungsi `min` yang merupakan fungsi bawaan Python digunakan sebagai argument pemanggilan fungsi `aggregate()`.
+- Pemanggilan ke-4 adalah perhitungan nilai minimum. Fungsi `min` yang merupakan fungsi bawaan Python digunakan sebagai argument pemanggilan fungsi `aggregate()`.
 
 Dari contoh terlihat bagaimana contoh penerapan closure sebagai nilai argument parameter fungsi. Fungsi atau closure bisa digunakan sebagai nilai argument, dengan catatan skema parameter-nya harus disesuaikan dengan kebutuhan.
 

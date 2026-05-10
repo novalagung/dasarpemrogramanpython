@@ -46,7 +46,7 @@ class Product:
         self.__version = 1.0
 ```
 
-```python title="models/product.py"
+```python title="models/company.py"
 class Company:
 
     def __init__(self, name="", products=None):

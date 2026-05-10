@@ -72,7 +72,7 @@ Kedua method tersebut diakses untuk memunculkan 5 buah output berbeda via instan
 
 Python menyediakan fungsi bernama `staticmethod()` yang kegunaannya adalah untuk mengkonversi fungsi biasa (yang dideklarasikan di luar class) menjadi static method milik suatu class.
 
-Sebagai contoh, kode praktek yang telah ditulis kita *refactor* menjadi seperti ini. Fungsi `say_hello()` dan `say_something()` dideklarasikan sebagai fungsi biasa. Kemudian dijadikan sebagai class method milik class `Person` via penerapan `staticmethod()`.
+Sebagai contoh, kode praktek yang telah ditulis kita *refactor* menjadi seperti ini. Fungsi `say_hello()` dan `say_something()` dideklarasikan sebagai fungsi biasa. Kemudian dijadikan sebagai static method milik class `Person` via penerapan `staticmethod()`.
 
 ```python
 def say_hello():
@@ -124,7 +124,7 @@ class Person:
 
 Attribute `say_hello` dan `say_something` keduanya menjadi static method.
 
-Nama class attribute penampung pemanggilan fungsi `staticmethod()` bisa nama apapun, tidak harus sama dengan nama fungsi aslinya. Contohnya bisa dilihat pada kode berikut, fungsi `say_something()` dijadikan sebagai class method bernama `greet()` milik class `Person`.
+Nama class attribute penampung pemanggilan fungsi `staticmethod()` bisa nama apapun, tidak harus sama dengan nama fungsi aslinya. Contohnya bisa dilihat pada kode berikut, fungsi `say_something()` dijadikan sebagai static method bernama `greet()` milik class `Person`.
 
 ```python
 def say_something(message, name = None):

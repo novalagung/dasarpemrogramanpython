@@ -22,16 +22,21 @@ Fungsi `open()` dalam penggunannya membutuhkan pengisian beberapa parameter:
 Bentuk paling sederhana penerapan operasi buka file:
 
 ```python
-f = open("/path/to/file/file.txt", "w", encoding="utf-8")
+from pathlib import Path
+
+file_path = Path("file.txt")
+f = open(file_path, "w", encoding="utf-8")
 
 # ...
 
 f.close()
 ```
 
-Kode di atas akan membuka stream I/O file bernama `file.txt`. Jika file tujuan belum ada, maka otomatis dibuatkan oleh Python. Dari object kembalian fungsi `open()` nantinya kita bisa lakukan banyak jenis operasi seperti membaca isi file, menulis, menghapus, dan lainnya.
+Kode di atas akan membuka stream I/O file bernama `file.txt`. Jika file tujuan belum ada, maka otomatis dibuatkan oleh Python. Karena `open()` menerima path-like object, kita juga bisa memakai `Path` agar path lebih konsisten. Dari object kembalian fungsi `open()` nantinya kita bisa lakukan banyak jenis operasi file seperti membaca isi file dan menulis konten.
 
-> Untuk pengguna Windows, tulis saja path-nya dengan karakter `\` ter-escape.<br />Contoh: `"C:\\Users\\novalagung\\Desktop\\file.txt"`
+> Parameter ke-1 sebenarnya juga bisa diisi dengan string path biasa misalnya `open("file.txt", "w", encoding="utf-8")`, tetapi pada chapter ini kita lebih sering memakai `Path` supaya penulisan path lebih konsisten dan mudah dibaca.
+>
+> Untuk pengguna Windows, jika memakai string path, tulis saja karakter dengan meng-escape `\`.<br />Contoh: `"C:\\Users\\novalagung\\Desktop\\file.txt"`
 
 Silakan tulis kode di atas, lalu ganti path-nya dengan current path (atau bisa gunakan `.`), kemudian run programnya. Hasil eksekusi program adalah pembuatan sebuah file baru bernama `file.txt` yang isinya kosong.
 
@@ -44,7 +49,10 @@ File yang dibuka, wajib untuk selalu ditutup di akhir. Karena membiarkan file te
 Untuk mengecek apakah file sedang terbuka stream-nya, bisa dengan melihat nilai attribute `closed`.
 
 ```python
-f = open("file.txt", "w", encoding="utf-8")
+from pathlib import Path
+
+file_path = Path("file.txt")
+f = open(file_path, "w", encoding="utf-8")
 print("file is closed:", f.closed)
 # output ➜ file is closed: False
 
@@ -60,7 +68,11 @@ print("file is closed:", f.closed)
 Ada cara yang lebih efisien dalam operasi buka file agar file otomatis ter-close setelah digunakan, yaitu dengan menggunakan keyword `with` diikuti statement `open()` lalu syntax `as nama_variabel`. Kurang lebih seperti ini penulisannya:
 
 ```python
-with open("file.txt", "w", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "w", encoding="utf-8") as f:
     print("file is closed:", f.closed)
     # output ➜ file is closed: False
     # ...
@@ -74,7 +86,11 @@ print("file is closed:", f.closed)
 Operasi penulisan konten ke file dilakukan via method `write()` milik object file. Contoh penerapannya bisa dilihat pada kode berikut, dimana ada method `write()` digunakan 3x untuk menulis karakter string.
 
 ```python
-with open("file.txt", "w", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "w", encoding="utf-8") as f:
     f.write("hello")
     f.write("python\n")
     f.write("how are you?\n")
@@ -93,7 +109,11 @@ Gunakan mode `a` untuk append konten ke file yang isinya bisa saja tidak kosong 
 Coba jalankan kode berikut terhadap file `file.txt` yang sebelumnya sudah dibuat. Saat program di-run kondisi file sudah terisi dan tidak dikosongkan terlebih dahulu. Dengan mengeksekusi `write()` disitu maka isi konten akan bertambah terus setiap kali program di-run.
 
 ```python
-with open("file.txt", "a", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "a", encoding="utf-8") as f:
     f.write("happy monday\n")
 ```
 
@@ -124,7 +144,11 @@ happy monday
 Kemudian baca isinya per baris menggunakan kode berikut:
 
 ```python
-with open("file.txt", "a", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "a", encoding="utf-8") as f:
     print(f"line 1: {f.readline()}")
     print(f"line 2: {f.readline()}")
     print(f"line 3: {f.readline()}")
@@ -136,10 +160,14 @@ Output program:
 
 ![Python file](img/file-4.png)
 
-Malah error? Kok bisa? Error ini disebabkan karena kita menggunakan mode `a` yang mode tersebut hanya valid untuk operasi append. Kita perlu mengubah mode menjadi `r` untuk operasi pembacaan file.
+Malah error? Kok bisa? Error ini disebabkan karena kita menggunakan mode `a` yang bersifat *append only*. Mode ini tidak dipakai untuk membaca file, jadi ketika method baca dipanggil hasilnya error. Untuk pembacaan file kita perlu mengubah mode menjadi `r`.
 
 ```python
-with open("file.txt", "r", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r", encoding="utf-8") as f:
     print(f"line 1: {f.readline()}")
     print(f"line 2: {f.readline()}")
     print(f"line 3: {f.readline()}")
@@ -156,7 +184,11 @@ Bisa dilihat method `readline()` mengembalikan data per baris dari atas ke bawah
 Dalam penerapannya, dianjurkan untuk menggunakan method ini dalam perulangan kemudian ditambahkan pengecekan isi konten untuk menandai bahwa konten sudah terbaca semua. Contohnya seperti ini:
 
 ```python
-with open("file.txt", "r", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r", encoding="utf-8") as f:
     i = 0
     while True:
         line = f.readline()
@@ -169,7 +201,11 @@ with open("file.txt", "r", encoding="utf-8") as f:
 Kode di atas bisa disederhanakan lagi dengan cara langsung mengiterasi object file-nya. Jadi variabel `f` digunakan secara langsung pada statement perulangan. Hal ini bisa dilakukan karena tipe data kembalian fungsi `open()` adalah `TextIOWrapper` dan tipe ini termasuk tipe data yang *iterable*.
 
 ```python
-with open("file.txt", "r", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r", encoding="utf-8") as f:
     i = 1
     for line in f:
         print(f"line {i}: {line}")
@@ -181,7 +217,11 @@ with open("file.txt", "r", encoding="utf-8") as f:
 Kode yang sudah cukup ringkas di atas bisa disederhanakan lagi dengan cara membungkus tipe data `f` dalam fungsi `enumerate()`. Fungsi ini membuat suatu object yang iterable menjadi memiliki index di setiap element-nya.
 
 ```python
-with open("file.txt", "r", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r", encoding="utf-8") as f:
     for i, line in enumerate(f):
         print(f"line {i+1}: {line}")
 ```
@@ -189,7 +229,11 @@ with open("file.txt", "r", encoding="utf-8") as f:
 Jika goal dari program adalah hanya membaca isi file secara menyeluruh, sebenarnya lebih praktis lagi menggunakan method `read()`.
 
 ```python
-with open("file.txt", "r", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r", encoding="utf-8") as f:
     print(f.read())
 ```
 
@@ -200,12 +244,16 @@ Di awal chapter telah dijelaskan tentang kegunaan mode `w`, `a`, dan `r`. Lalu b
 Sebagai contoh, pada program berikut, mode `r+` digunakan. O iya, proses pembacaan file dilakukan 2x ya, penjelasan disertakan dibawahnya.
 
 ```python
-with open("file.txt", "r+", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "r+", encoding="utf-8") as f:
     print(f"read:\n{f.read()}")
     f.write("lorem ipsum dolor\n")
     print(f"read:\n{f.read()}")
 
-with open("file.txt", "r+", encoding="utf-8") as f:
+with open(file_path, "r+", encoding="utf-8") as f:
     print(f"read:\n{f.read()}")
 ```
 
@@ -230,111 +278,103 @@ https://stackoverflow.com/questions/1466000/difference-between-modes-a-a-w-w-and
 
 ## A.50.7. Mengosongkan isi file
 
-Cara mengosongkan file bisa dilakukan dengan mudah menggunakan mode `w`. Baca file menggunakan mode tersebut kemudian langsung `close()` saja. Boleh menggunakan keyword `with` atau bisa langsung sebaris statement. Contoh penerapannya bisa dilihat di kode berikut. 3 block statement di situ semuanya ekuivalen, membuat isi file menjadi kosong.
+Cara mengosongkan file bisa dilakukan dengan mudah menggunakan mode `w`. Buka file menggunakan mode tersebut kemudian langsung `close()` saja. Boleh menggunakan keyword `with` atau bisa langsung sebaris statement. Contoh penerapannya bisa dilihat di kode berikut. 3 block statement di situ semuanya ekuivalen, membuat isi file menjadi kosong.
 
 ```python
-with open("file.txt", "w", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "w", encoding="utf-8") as f:
     pass
 
-with open("file.txt", "w", encoding="utf-8"):
+with open(file_path, "w", encoding="utf-8"):
     pass
 
-open("file.txt", "w", encoding="utf-8").close()
+open(file_path, "w", encoding="utf-8").close()
 ```
 
 Opsi lainnya adalah menggunakan method `truncate()`.
 
 ```python
-with open("file.txt", "w", encoding="utf-8") as f:
+from pathlib import Path
+
+file_path = Path("file.txt")
+
+with open(file_path, "w", encoding="utf-8") as f:
     f.truncate()
 ```
 
 ## A.50.8. Menghapus file atau folder
 
-API `os.remove()` digunakan untuk menghapus file, sedangkan `os.rmdir()` untuk menghapus folder. Contoh penerapan:
+API `os.remove()` digunakan untuk menghapus file, sedangkan `os.rmdir()` untuk menghapus folder. Untuk path yang dipakai, kita bisa membangunnya secara modern dengan `pathlib.Path` agar lebih aman dan mudah dibaca. Contoh penerapan:
 
 - Menghapus file:
 
     ```python
     import os
+    from pathlib import Path
 
-    os.remove("/path/to/something/file.txt")
+    file_path = Path(__file__).resolve().parent / "file.txt"
+    os.remove(file_path)
     ```
 
 - Menghapus folder:
 
     ```python
     import os
+    from pathlib import Path
 
-    os.rmdir("/path/to/something")
-    ```
-
-    Untuk path berbasis windows, pastikan karakter `\` ditulis dengan cara di-escape (ditulis `\\`).
-
-    ```python
-    import os
-
-    os.rmdir("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
+    target_dir = Path(__file__).resolve().parent / "tmp-example-dir"
+    target_dir.mkdir(exist_ok=True)
+    os.rmdir(target_dir)
     ```
 
 ## A.50.9. Mengecek apakah file atau folder ada
 
-API `os.path.isfile()` digunakan untuk mengecek apakah suatu file ada.
+Untuk mengecek apakah suatu file ada, gunakan `Path.is_file()`.
 
 ```python
-import os.path
+from pathlib import Path
 
-if os.path.isfile("/path/to/something/file.txt"):
+file_path = Path(__file__).resolve().parent / "file.txt"
+if file_path.is_file():
     print("file.txt is exists")
 else:
     print("file.txt is not exists")
 ```
 
-Untuk pengecekan terhadap folder, gunakan `os.path.exists()`. Fungsi ini bisa digunakan baik untuk pengecekan file ataupun folder.
+Untuk pengecekan terhadap folder, gunakan `Path.is_dir()`.
 
 ```python
-if os.path.exists("/path/to/something"):
+from pathlib import Path
+
+path_location = Path(__file__).resolve().parent / "something"
+if path_location.is_dir():
     print("something is exists")
 else:
     print("something is not exists")
 ```
 
-Untuk path berbasis windows, pastikan karakter `\` ditulis dengan cara di-escape (ditulis `\\`).
-
-```python
-if os.path.exists("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples\\file.txt"):
-    print("file.txt is exists")
-else:
-    print("file.txt is not exists")
-```
-
 ## A.50.10. Membuat folder baru
 
-API `os.makedirs()` digunakan untuk membuat folder baru.
+API `Path.mkdir()` digunakan untuk membuat folder baru.
 
 ```python
-import os
+from pathlib import Path
 
-os.makedirs("/path/to/somefolder")
-```
-
-Untuk path berbasis windows, pastikan karakter `\` ditulis dengan cara di-escape (ditulis `\\`).
-
-```python
-import os
-
-os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
+(Path(__file__).resolve().parent / "somefolder").mkdir(parents=True, exist_ok=True)
 ```
 
 ## A.50.11. Menampilkan isi folder
 
-- Menggunakan `os.listdir()`:
+- Menggunakan `Path.iterdir()`:
 
     ```python
-    import os
+    from pathlib import Path
 
-    path_location = "C:\\LibsSoftLink\\dasarpemrogramanpython\\examples\\file"
-    for f in os.listdir(path_location):
+    path_location = Path(__file__).resolve().parent
+    for f in path_location.iterdir():
         print(f)
     ```
 
@@ -342,28 +382,29 @@ os.makedirs("C:\\LibsSoftLink\\dasarpemrogramanpython\\examples")
 
     ```python
     import os
+    from pathlib import Path
 
-    path_location = "C:\\LibsSoftLink\\dasarpemrogramanpython\\examples\\file"
+    path_location = Path(__file__).resolve().parent
     for (dirpath, dirnames, filenames) in os.walk(path_location):
         print(dirpath, dirnames, filenames)
     ```
 
     Penjelasan:
 
-    - Variabel `dirpath` berisi current
-    - Variabel `dirnames` berisi folder yang berada dalam current folder
-    - Variabel `filenames` berisi file yang berada dalam current folder
+    - Variabel `dirpath` berisi path folder saat ini.
+    - Variabel `dirnames` berisi folder yang berada di dalam folder saat ini.
+    - Variabel `filenames` berisi file yang berada di dalam folder saat ini.
 
 
-- Menggunakan `glob.glob()`:
+- Menggunakan `Path.rglob()`:
 
-    API `glob.glob()` ini didesain untuk pencarian. Jadi pada penerapannya perlu ditambahi kondisi *wildcard* pencarian. Misalnya, dengan menambahkan `**` di akhir path, maka pencarian dilakukan terhadap semua jenis file dan folder.
+    API `Path.rglob()` ini didesain untuk pencarian rekursif. Jadi pada penerapannya cukup tambahkan pola `*` agar pencarian mencakup semua jenis file dan folder di bawah folder saat ini.
 
     ```python
-    import glob
+    from pathlib import Path
 
-    path_location = "C:\\LibsSoftLink\\dasarpemrogramanpython\\examples\\file"
-    for f in glob.glob(f"{path_location}\\**", recursive=True):
+    path_location = Path(__file__).resolve().parent
+    for f in path_location.rglob("*"):
         print(f)
     ```
 
@@ -393,26 +434,32 @@ Selain menggunakan `os.path` dan fungsi manual string untuk manipulasi path, Pyt
 ```python
 from pathlib import Path
 
+# lokasi folder chapter ini
+base_dir = Path(__file__).resolve().parent
+sample_dir = base_dir / "pathlib-sample"
+sample_file = sample_dir / "file.txt"
+
 # membuat folder
-Path("/path/to/somefolder").mkdir(parents=True, exist_ok=True)
+sample_dir.mkdir(parents=True, exist_ok=True)
 
 # mengecek apakah file ada
-if Path("/path/to/something/file.txt").is_file():
+if sample_file.is_file():
     print("file.txt is exists")
 
 # membaca isi file
-content = Path("/path/to/something/file.txt").read_text(encoding="utf-8")
+content = sample_file.read_text(encoding="utf-8")
 print(content)
 
 # menulis file
-Path("/path/to/something/file.txt").write_text("hello python", encoding="utf-8")
+sample_file.write_text("hello python", encoding="utf-8")
 
 # menampilkan isi folder
-for f in Path("/path/to/something").iterdir():
+for f in sample_dir.iterdir():
     print(f)
 
 # menghapus file
-Path("/path/to/something/file.txt").unlink()
+sample_file.unlink(missing_ok=True)
+sample_dir.rmdir()
 ```
 
 Dengan `pathlib`, kode menjadi lebih ringkas dan mudah dibaca tanpa perlu meng-import module `os` secara terpisah.

@@ -137,7 +137,9 @@ print("sekarang (date):", data2)
 
 ## A.54.2. Pengenalan timezone (`tz`)
 
-Setiap tipe data yang menyimpan informasi waktu (seperti `time` dan `datetime`) didalamnya ada informasi timezone yang bisa diakses ataupun ditentukan saat pembuatan data. Informasi timezone direpresentasikan menggunakan `dateutil.tz`, tipe data `tz` dalam package `dateutil` (package pihak ketiga, perlu di-install via `pip install python-dateutil`).
+Setiap tipe data yang menyimpan informasi waktu (seperti `time` dan `datetime`) didalamnya ada informasi timezone yang bisa diakses ataupun ditentukan saat pembuatan data. Informasi timezone direpresentasikan menggunakan `dateutil.tz`, tipe data `tz` dalam package 3rd-party `dateutil`.
+
+> Install `dateutil` menggunakan command `python -m pip install python-dateutil`
 
 Method `tz.gettz()` digunakan untuk membuat data timezone. Contoh pengaplikasiannya:
 
@@ -185,7 +187,7 @@ Penerapan `tz` dalam pembuatan data `time` dan `timezone` dilakukan via pengisia
     print("datetime:", data_datetime)
     # output ➜ datetime: 2020-01-31 13:14:31-05:00
 
-    print("timezone:", data_time.tzinfo)
+    print("timezone:", data_datetime.tzinfo)
     # output ➜ timezone: tzfile('US/Eastern')
     ```
 
@@ -193,7 +195,7 @@ Penerapan `tz` dalam pembuatan data `time` dan `timezone` dilakukan via pengisia
 
     ```python
     from dateutil import tz
-    from datetime import date, time
+    from datetime import date, time, datetime
 
     tzinfo = tz.gettz("America/New_York")
     data_date = date(year=2020, month=1, day=31)
@@ -203,7 +205,7 @@ Penerapan `tz` dalam pembuatan data `time` dan `timezone` dilakukan via pengisia
     print("datetime:", data_datetime)
     # output ➜ datetime: 2020-01-31 13:14:31-05:00
 
-    print("timezone:", data_time.tzinfo)
+    print("timezone:", data_datetime.tzinfo)
     # output ➜ timezone: tzfile('US/Eastern')
     ```
 

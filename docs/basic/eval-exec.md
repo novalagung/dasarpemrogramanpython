@@ -189,7 +189,7 @@ print(res)
 
 ## A.58.4. Fungsi `ast.literal_eval()`
 
-Seperti yang sudah disebutkan pada peringatan di [A.58.1](#a571-fungsi-eval), fungsi `eval()` dan `exec()` berbahaya jika digunakan dengan input dari sumber tidak terpercaya karena dapat mengeksekusi kode berbahaya.
+Seperti yang sudah disebutkan pada peringatan di [A.58.1](#a581-fungsi-eval), fungsi `eval()` dan `exec()` berbahaya jika digunakan dengan input dari sumber tidak terpercaya karena dapat mengeksekusi kode berbahaya.
 
 Sebagai alternatif yang aman untuk mengevaluasi literal Python (seperti string, angka, list, tuple, dict, bool, `None`), Python menyediakan fungsi `ast.literal_eval()` dari module `ast` (bagian dari stdlib).
 
@@ -252,7 +252,6 @@ Jika input yang akan dievaluasi bukan literal (misalnya ekspresi matematika), te
 - https://stackoverflow.com/questions/2220699/whats-the-difference-between-eval-exec-and-compile
 
 </div>
-
 
 
 

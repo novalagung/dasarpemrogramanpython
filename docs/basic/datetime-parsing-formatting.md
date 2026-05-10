@@ -81,7 +81,9 @@ print("datetime:", data_datetime)
 # output ➜ datetime: 2023-12-19 17:05:33.244000
 ```
 
-Informasi timezone juga bisa ditentukan pada saat parsing. Caranya gunakan parameter `tz` method di atas:
+Informasi timezone juga bisa ditentukan pada saat parsing. Caranya dengan mengisi parameter `tz` milik method `datetime.fromtimestamp()`.
+
+> Pengisian informasi timezone melibatkan package 3rd-party `dateutil` yang bisa di-install dengan command `python -m pip install python-dateutil`
 
 ```python
 from dateutil import tz
@@ -103,7 +105,7 @@ print("datetime:", data_datetime)
 # output ➜ datetime: 2021-05-12 08:00:00
 ```
 
-Selengkapnya mengenai format yang didukung oleh parser ini bisa di cek di halaman dokumentasi Python https://dateutil.readthedocs.io/en/stable/parser.html
+Selengkapnya mengenai format yang didukung oleh parser ini bisa di cek di halaman dokumentasi `python-dateutil` https://dateutil.readthedocs.io/en/stable/parser.html
 
 ## A.55.2. Formatting `datetime`
 

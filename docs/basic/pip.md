@@ -4,7 +4,7 @@ title: A.28. Python PIP & Dependency Management
 sidebar_label: A.28. PIP & Dependency
 ---
 
-Chapter ini merupakan lanjutan dari chapter [Packages](/basic/packages). Setelah belajar membuat module dan package sendiri, sekarang kita akan belajar cara menginstall dan menggunakan package milik orang lain (third-party) menggunakan **pip**.
+Chapter ini membahas cara menginstall dan menggunakan package milik orang lain (third-party) menggunakan **pip**. Pembahasan ini relevan dengan chapter [Modules](/basic/modules) dan [Packages](/basic/packages), karena package third-party yang diinstall via pip nantinya juga digunakan lewat mekanisme import.
 
 ## A.28.1. Apa itu pip?
 

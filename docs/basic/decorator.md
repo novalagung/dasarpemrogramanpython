@@ -45,13 +45,11 @@ Bisa dilihat di kode, bahwa fungsi `inspeksi` bisa langsung digunakan sebagai de
 
 > Untuk nama closure tidak ada aturan yang mengikat harus dinamai apa. Pada contoh di atas closure fungsi `inspeksi()` penulis namai `inner_func()`.
 
-Fungsi `say_hello()` ditempeli decorator `@inspeksi`, artinya pemanggilan fungsi tersebut adalah ekuivalen dengan statement ke-2 kode berikut:
+Fungsi `say_hello()` ditempeli decorator `@inspeksi`, artinya saat fungsi itu didefinisikan, hasilnya ekuivalen dengan statement berikut:
 
 ```python
+say_hello = inspeksi(say_hello)
 say_hello()
-# output ➜ hello world
-
-inspeksi(say_hello)()
 # output ➜ hello world
 ```
 
@@ -268,19 +266,16 @@ Output eksekusi program:
 
 Bisa dilihat, data list yang dihasilkan adalah unik dan urutannya terbalik, menandakan dua decorator yang kita pasang ke fungsi `generate_random_unique_reverse_sorted_list()` bekerja dengan baik.
 
-Pada chaining decorator, urutan eksekusi fungsi decorator adalah dari yang paling bawah kemudian ke atas. Ilustrasi eksekusi fungsi dan decorator pada contoh yang telah dipraktikan kurang lebih ekuivalen dengan kode di bawah ini:
+Pada chaining decorator, urutan eksekusi fungsi decorator adalah dari yang paling bawah kemudian ke atas. Jadi yang dibungkus adalah *function object*-nya, bukan data hasil eksekusi fungsi. Ilustrasi sederhananya kurang lebih seperti ini:
 
 ```python
-data = decorator_reverse_list(decorator_unique_list(generate_random_list(length)))
-print(data)
-
-# ... atau ...
-
-data1 = generate_random_list(length)
-data2 = decorator_unique_list(data1)
-data3 = decorator_reverse_list(data2)
-print(data3)
+f = generate_random_list
+f = decorator_unique_list(f)
+f = decorator_reverse_list(f)
+print(f(15))
 ```
+
+Artinya, fungsi `generate_random_list` dibungkus dulu oleh `decorator_unique_list`, lalu hasilnya dibungkus lagi oleh `decorator_reverse_list`. Pemanggilan `f(15)` baru terjadi setelah proses wrapping selesai.
 
 ## A.41.5. **\*args** & **\*\*kwargs** pada decorator
 

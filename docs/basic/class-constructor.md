@@ -12,7 +12,7 @@ Pada chapter ini kita akan belajar tentang konstruktor dan apa saja yang bisa di
 
 Di bahasa yang mengadopsi konsep OOP, setiap class memiliki *default constructor*. Sebagai contoh pada statement pembuatan object bertipe class `Car`, syntax `Car()` digunakan dan syntax tersebut merupakan contoh penerapan pengaksesan konstruktor.
 
-> Sederhananya, konstruktor adalah kelas yang dipanggil seperti fungsi dengan notasi `<Class>()`.
+> Sederhananya, konstruktor adalah fungsi khusus yang dipanggil seperti fungsi dengan notasi `<Class>()` saat object dibuat.
 
 Agar makin jelas, silakan praktekan kode sederhana berikut:
 

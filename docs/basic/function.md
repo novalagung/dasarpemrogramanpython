@@ -38,9 +38,10 @@ Suatu fungsi hanya bisa diakses atau dipanggil setelah fungsi tersebut dideklara
 
 ![Function in python](img/function-2.png)
 
-Pada contoh di atas, selain `say_hello()` sebenarnya ada satu buah fungsi lagi yang digunakan pada contoh, yaitu `print()`. Fungsi `print()` dideklarasikan dalam Python Standard Library (stdlib). Sewaktu program dijalankan fungsi-fungsi dalam stdlib otomatis ter-*import* dan bisa digunakan.
+Pada contoh di atas, selain `say_hello()` sebenarnya ada satu buah fungsi lagi yang digunakan pada contoh, yaitu `print()`. Fungsi `print()` adalah fungsi *built-in* dari namespace `builtins`, sehingga bisa langsung digunakan tanpa import.
 
-> Lebih detailnya mengenai Python Standard Library dibahas pada chapter Python Standard Library
+> - Lebih detailnya mengenai Python Standard Library dibahas pada chapter Python Standard Library
+> - Lebih detailnya mengenai namespace `builtins` dibahas pada chapter Python Standard Library
 
 Untuk tambahan latihan, buat satu fungsi lagi, lalu isi dengan banyak statement. Misalnya:
 

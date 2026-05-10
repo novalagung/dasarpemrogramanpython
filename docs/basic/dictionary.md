@@ -67,6 +67,8 @@ profile = {
 
 print("age:", profile["age"])
 # KeyError: 'age'
+```
+
 :::
 
 ### ◉ Urutan item dictionary
@@ -328,6 +330,13 @@ print("len:", len(profile), "data:", profile)
 Method `pop()` digunakan untuk menghapus item dictionary berdasarkan key.
 
 ```python
+profile = {
+    "id": 2,
+    "name": "mario",
+    "hobbies": ("playing with luigi", "saving the mushroom kingdom"),
+    "is_female": False,
+}
+
 profile.pop("hobbies")
 print(profile)
 ```

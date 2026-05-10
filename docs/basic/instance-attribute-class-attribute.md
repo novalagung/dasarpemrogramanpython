@@ -180,10 +180,10 @@ print(f"Class Book note: {Book.note}")
 # output ➜ Class Book note: A class type to represent a book
 
 print(f"Object book1 note: {book1.note}")
-# output ➜ Object book2 note: A class type to represent a book
+# output ➜ Object book1 note: A class type to represent a book
 
 print(f"Object book2 note: {book2.note}")
-# output ➜ Object book1 note: A book
+# output ➜ Object book2 note: A book
 
 print(f"Class Book note: {Book.note}")
 # output ➜ Class Book note: A class type to represent a book

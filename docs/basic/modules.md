@@ -10,7 +10,7 @@ Pada chapter ini, kita akan menjelajahi konsep module beserta implementasinya di
 
 Module di Python merupakan istilah untuk file yang berisi kode-kode python (seperti deklarasi variabel, fungsi, class, dan lainnya). Kode-kode tersebut diisolasi sesuai dengan tugasnya. Contoh:
 
-- Module `numbers` berisi fungsi-fungsi untuk keperluan operasi angka
+- Module `math` berisi fungsi-fungsi untuk keperluan operasi matematika
 - Module `random` yang isinya kode untuk generate data random
 
 Dengan adanya module kode menjadi lebih modular, rapi, dan mudah dikelola.
