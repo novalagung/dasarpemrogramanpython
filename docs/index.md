@@ -10,7 +10,7 @@ Website/ebook tutorial Dasar Pemrograman Python ini cocok untuk pembaca yang ing
 
 Selain topik fundamental python programming, nantinya akan disediakan juga pembahasan *advance* lainnya, **stay tuned!**
 
-> Versi website/ebook: **v1.3.20260608**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
+> Versi website/ebook: **v1.3.20260510**, dan versi [Python 3.12.0](https://www.python.org/downloads/release/python-3120/).
 
 ## Update Konten & Versi Terbaru
 
@@ -22,7 +22,7 @@ Setiap perubahan pada website/ebook bisa dilihat di halaman berikut:
 
 Versi ebook bisa di-download dalam bentuk file di link berikut:
 
-> PDF/Ebook file: [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=v1.3.20260608)
+> PDF/Ebook file: [Dasar Pemrograman Python.pdf](https://github.com/novalagung/dasarpemrogramanpython/raw/ebooks/dasarpemrogramanpython.pdf?v=v1.3.20260510)
 
 ## Source Code Praktik
 
