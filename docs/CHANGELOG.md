@@ -56,7 +56,22 @@ sidebar_label: Version Changelogs & Updates
     - [Perulangan ➜ for & range](/basic/for-range) — link Iterator
     - [List](/basic/list) — link Error & Exception
 - Penghapusan placeholder TBA (tersimpan di docs-wip.md)
+- Chapter update lanjutan
+    - [File I/O](/basic/file) — modernisasi contoh `open()` dengan `Path`, penjelasan path string vs `Path`, dan penyelarasan contoh awal dengan gaya modern
+    - [OOP ➜ Constructor](/basic/class-constructor) — koreksi definisi constructor agar tidak tertukar dengan class
+    - [Function ➜ Decorator](/basic/decorator) — pelurusan penjelasan chaining decorator agar tidak misleading
+    - [OOP ➜ Static Method](/basic/static-method) — koreksi istilah `static method` vs `class method`
+    - [Modules](/basic/modules) — koreksi contoh module `math`
+    - [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute) — koreksi output comment yang tertukar
+    - [Eval & Exec](/basic/eval-exec) — koreksi anchor internal pada referensi `A.58.1`
+    - [OOP ➜ Property Visibility](/basic/property-visibility) — koreksi label code block `Company`
+    - [Function ➜ Closure](/basic/closure) — penegasan definisi closure dan koreksi urutan penjelasan
 - Perbaikan kode contoh (examples/)
+    - [examples/file/main_1.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) s.d. [examples/file/main_7.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh awal `open()` sekarang memakai `Path("file.txt")`
+    - [examples/file/main_8.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh hapus file/folder selaras dengan `pathlib.Path`
+    - [examples/file/main_9.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh cek file/folder selaras dengan `Path.is_file()` dan `Path.is_dir()`
+    - [examples/file/main_10.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh membuat folder memakai `Path.mkdir()`
+    - [examples/file/main_11.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh listing folder diselaraskan dengan `Path.iterdir()` dan `Path.rglob()`
     - [examples/lambda/main_5.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/lambda)
     - [examples/pattern-matching/main_4.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/pattern-matching)
     - [examples/exception-handling/main_2.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/exception-handling-try-except-else-finally)
@@ -77,26 +92,6 @@ sidebar_label: Version Changelogs & Updates
 - Update contoh kode untuk selaras dengan perbaikan di docs
 - Pembuatan backlog system untuk tracking review konten
 - Pembuatan docs-wip.md untuk tracking topik yang direncanakan
-
-#### ◉ Chapter update lanjutan
-
-- [File I/O](/basic/file) — modernisasi contoh `open()` dengan `Path`, penjelasan path string vs `Path`, dan penyelarasan contoh awal dengan gaya modern
-- [OOP ➜ Constructor](/basic/class-constructor) — koreksi definisi constructor agar tidak tertukar dengan class
-- [Function ➜ Decorator](/basic/decorator) — pelurusan penjelasan chaining decorator agar tidak misleading
-- [OOP ➜ Static Method](/basic/static-method) — koreksi istilah `static method` vs `class method`
-- [Modules](/basic/modules) — koreksi contoh module `math`
-- [OOP ➜ Instance Attribute & Class Attribute](/basic/instance-attribute-class-attribute) — koreksi output comment yang tertukar
-- [Eval & Exec](/basic/eval-exec) — koreksi anchor internal pada referensi `A.58.1`
-- [OOP ➜ Property Visibility](/basic/property-visibility) — koreksi label code block `Company`
-- [Function ➜ Closure](/basic/closure) — penegasan definisi closure dan koreksi urutan penjelasan
-
-#### ◉ Perbaikan kode contoh (examples/)
-
-- [examples/file/main_1.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) s.d. [examples/file/main_7.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh awal `open()` sekarang memakai `Path("file.txt")`
-- [examples/file/main_8.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh hapus file/folder selaras dengan `pathlib.Path`
-- [examples/file/main_9.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh cek file/folder selaras dengan `Path.is_file()` dan `Path.is_dir()`
-- [examples/file/main_10.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh membuat folder memakai `Path.mkdir()`
-- [examples/file/main_11.py](https://github.com/novalagung/dasarpemrogramanpython-example/tree/master/file) — contoh listing folder diselaraskan dengan `Path.iterdir()` dan `Path.rglob()`
 
 ## 📝 Release v1.2.20240923 (2024-09-23)
 
